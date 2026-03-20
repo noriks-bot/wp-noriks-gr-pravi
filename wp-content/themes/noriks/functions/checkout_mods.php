@@ -596,10 +596,10 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_city']['label'] = 'Πόλη';
     $fields['billing']['billing_city']['placeholder'] = 'Επιλέξτε πόλη';
     $fields['billing']['billing_phone']['label'] = 'Τηλέφωνο';
-    $fields['billing']['billing_phone']['placeholder'] = 'Broj mobilnog telefona';
+    $fields['billing']['billing_phone']['placeholder'] = 'Αριθμός κινητού τηλεφώνου';
     $fields['billing']['billing_phone']['description'] = '<span class="desc-left">Primjer: 0912345678</span><span class="desc-right">Za pomoć s dostavom</span>';
-    $fields['billing']['billing_email']['label'] = 'E-mail adresa';
-    $fields['billing']['billing_email']['placeholder'] = 'E-mail adresa';
+    $fields['billing']['billing_email']['label'] = 'Διεύθυνση email';
+    $fields['billing']['billing_email']['placeholder'] = 'Διεύθυνση email';
     $fields['billing']['billing_email']['description'] = 'Για επιβεβαίωση παραγγελίας και παρακολούθηση αποστολής';
     $fields['billing']['billing_email']['required'] = false;
     $fields['billing']['billing_country']['default'] = 'GR';

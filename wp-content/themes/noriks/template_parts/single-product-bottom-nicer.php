@@ -1,6 +1,6 @@
 
-<?php
-if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 'starter-pack' ), 'product_cat', get_the_id() )  )   :
+<?php 
+if (  has_term( array( 'starter-paketi','orto-starter' ), 'product_cat', get_the_id() )  )   : 
 ?>
 
 
@@ -11,51 +11,58 @@ if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="https://noriks.com/gr/wp-content/uploads/2026/02/starter-1_Gr.png">
+          <img style="" src="<?php echo get_template_directory_uri(); ?>/img/starter-1.png
+">
       </div>
     </div>
 
-   <!-- Right Content -->
-<div class="why-col why-content">
-  <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-ΓΙΑΤΙ ΟΙ ΑΝΘΡΩΠΟΙ ΕΠΙΛΕΓΟΥΝ ΤΟ STARTER PACK;
-  </h2>
+    <!-- Right Content -->
+    <div class="why-col why-content">
+      <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
+ZAŠTO LJUDI BIRAJU STARTER PAKET?
+      </h2>
 
-  <div style="margin-left: 20px;" class="why-point">
-    <p style="font-style: italic; line-height: 1.2;">
-      <strong>«Το πήρα γιατί δεν ήμουν σίγουρος αν θα μου ταιριάζει.»</strong>
-      <span style="font-weight:normal;">Νίκος - Θεσσαλονίκη</span>
-    </p>
-    <p class="description">
-Πολλοί πελάτες ξεκινούν με το starter pack επειδή θέλουν πρώτα να δουν πώς εφαρμόζει και πώς φοριέται το NORIKS. Ένα t-shirt και ένα μποξεράκι αρκούν για να αποφασίσουν χωρίς μεγάλη επένδυση.
-    </p>
-  </div>
+      <div style="margin-left: 20px;" class="why-point">
+        <p  style="    font-style: italic;
+    line-height: 1.2;"  ><strong>“Uzeo sam jer nisam bio siguran hoće li mi odgovarati.” 
 
-  <div style="margin-left: 20px;" class="why-point">
-    <p style="font-style: italic; line-height: 1.2;">
-      <strong>«Μετά την πρώτη φορά που το φόρεσα, παρήγγειλα αμέσως κι άλλα.»</strong>
-      <span style="font-weight:normal;">Κώστας - Πάτρα</span>
-    </p>
-    <p class="description">
-Περισσότερο από το 95% των πελατών παραγγέλνει ξανά μετά το starter pack. Όχι επειδή το είχαν σχεδιάσει, αλλά επειδή από την πρώτη κιόλας μέρα νιώθουν τη διαφορά στην εφαρμογή, την άνεση και την ποιότητα.
-    </p>
-  </div>
 
-  <div style="margin-left: 20px;" class="why-point">
-    <p style="font-style: italic; line-height: 1.2;">
-      <strong>«Το υλικό και η εφαρμογή με έπεισαν.»</strong>
-      <span style="font-weight:normal;">Γιώργος - Αθήνα</span>
-    </p>
-    <p class="description">
-Το μπλουζάκι και τα μποξεράκια είναι μαλακά, ελαφριά και ευχάριστα στο δέρμα. Το starter pack είναι ο πιο συχνός λόγος που το NORIKS γίνεται γρήγορα μέρος της καθημερινής γκαρνταρόμπας.
-    </p>
-  </div>
-</div>
 
-    
-    
-    
-    
+</strong><span style="font-weight:normal;">Marko - Zagreb</span></p>
+        <p class="description">Mnogi kupci krenu sa starter paketom jer žele prvo vidjeti kako NORIKS stoji i kako se nosi. Jedna majica i jedne bokserice dovoljne su da bez velikog ulaganja donesu odluku.
+
+
+
+</p>
+      </div>
+
+      <div style="margin-left: 20px;" class="why-point">
+        <p  style="    font-style: italic;
+    line-height: 1.2;" ><strong>“Nakon prvog nošenja sam odmah naručio još.” 
+
+
+
+</strong><span style="font-weight:normal;">Pavle - Split</span></p>
+        <p class="description">Više od 95% kupaca nakon starter paketa ponovno naruči. Ne zato što su planirali, nego zato što već prvi dan osjete razliku u kroju, udobnosti i kvaliteti.
+
+
+</p>
+      </div>
+
+      <div style="margin-left: 20px;" class="why-point">
+        <p  style="    font-style: italic;
+    line-height: 1.2;"  ><strong>“Materijal i fit su me uvjerili.” 
+
+
+
+</strong><span style="font-weight:normal;">Ante - Pula</span></p>
+        <p class="description">Majica i bokserice su mekane, lagane i ugodne na koži. Starter paket je najčešći razlog zašto NORIKS brzo postane dio svakodnevne garderobe.
+
+
+
+</p>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -68,48 +75,50 @@ if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-           <img style="" src="https://noriks.com/gr/wp-content/uploads/2026/02/starter-2_gr.png">
+           <img style="" src="<?php echo get_template_directory_uri(); ?>/img/starter-2.png
+">
       </div>
     </div>
 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-ΣΥΝΔΥΑΣΜΟΣ ΠΟΥ ΦΟΡΑΙΣ ΚΑΘΕ ΜΕΡΑ
+KOMBINACIJA KOJA SE NOSI SVAKI DAN
 
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Σχεδιασμένα για ολοήμερη άνεση
+        <p><strong>Dizajnirano za cjelodnevnu udobnost
 
 
 </strong></p>
-        <p class="description">Το μπλουζάκι και τα μποξεράκια είναι φτιαγμένα για φόρεμα από το πρωί μέχρι το βράδυ, χωρίς ρυθμίσεις και δυσφορία. Όλα μένουν στη θέση τους, δεν σφίγγουν και επιτρέπουν ελεύθερη κίνηση όλη μέρα.
+        <p class="description">Majica i bokserice napravljene su za nošenje od jutra do večeri, bez prilagođavanja i nelagode. Sve stoji na mjestu, ne steže i omogućuje slobodno kretanje tijekom cijelog dana.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Εφαρμογή που συνεργάζεται με το σώμα
+        <p><strong>Kroj koji radi s tijelom
 
 
 </strong></p>
-        <p class="description">Η εφαρμογή του μπλουζακιού αναδεικνύει το πάνω μέρος του σώματος, ενώ τα μποξεράκια παρέχουν αρκετό χώρο και σταθερότητα χωρίς να ανεβαίνουν. Το αποτέλεσμα είναι μια σίγουρη, χαλαρή αίσθηση και περιποιημένη εμφάνιση σε κάθε περίσταση.
+        <p class="description">Kroj majice naglašava gornji dio tijela, dok bokserice pružaju dovoljno prostora i stabilnost bez podizanja. Rezultat je siguran, opušten osjećaj i uredan izgled u svakoj situaciji.
+
 
 </p>
       </div>
 
-   <div style="margin-left: 20px;" class="why-point">
-  <p><strong>Ποιότητα που νιώθεις από την πρώτη στιγμή</strong></p>
-  <p class="description">
-Τα υλικά είναι μαλακά, διαπνέοντα και ευχάριστα στο δέρμα, χωρίς να χάνουν το σχήμα τους μετά το πλύσιμο. Από την πρώτη κιόλας φορά γίνεται ξεκάθαρο γιατί αυτός ο συνδυασμός γίνεται γρήγορα μέρος της καθημερινής γκαρνταρόμπας.
-  </p>
-</div>
+      <div style="margin-left: 20px;" class="why-point">
+        <p><strong>Kvaliteta koju osjetiš odmah
 
-      
-      
-      
+
+</strong></p>
+        <p class="description">Materijali su mekani, prozračni i ugodni na koži, bez gubitka oblika nakon pranja. Već pri prvom nošenju jasno je zašto ova kombinacija brzo postaje dio svakodnevne garderobe.
+
+
+</p>
+      </div>
     </div>
 
   </div>
@@ -126,43 +135,48 @@ if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="" src="https://noriks.com/gr/wp-content/uploads/2026/02/starter-3_gr.png">
+          <img style="" src="<?php echo get_template_directory_uri(); ?>/img/starter-3.png
+">
       </div>
     </div>
 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-Η ΠΙΟ ΕΥΚΟΛΗ ΚΑΙ ΑΣΦΑΛΗΣ ΑΡΧΗ
+NAJLAKŠI I NAJSIGURNIJI POČETAK
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Ελάχιστο ρίσκο
+        <p><strong>Najmanji mogući rizik
 
 
 </strong></p>
-        <p class="description">Γιατί σας επιτρέπει να γνωρίσετε την ποιότητα χωρίς μεγάλη επένδυση. Αντί να αγοράσετε πολλά κομμάτια εκ των προτέρων, παίρνετε ένα μπλουζάκι και ένα μποξεράκι - ακριβώς αρκετά για να δείτε πώς εφαρμόζουν, πώς φοριούνται και ποιο είναι το υλικό.
+        <p class="description">Zato što ti omogućuje da upoznaš kvalitetu bez velikog ulaganja.
+Umjesto da kupuješ više komada unaprijed, uzmeš jednu majicu i jedne bokserice — taman dovoljno da vidiš kako stoje, kako se nose i kako se osjeća materijal.
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Ο τέλειος τρόπος να ξεκινήσετε
+        <p><strong>Osmišljeno za prvi korak
 
 
 </strong></p>
-        <p class="description">Το πακέτο εκκίνησης δημιουργήθηκε ως πρώτη εμπειρία, όχι ως απόθεμα. Είναι διαθέσιμο μόνο μία φορά ανά πελάτη σε ειδική τιμή, ώστε η απόφαση να είναι απλή και χωρίς δεύτερη σκέψη.
+        <p class="description">Starter paket je osmišljen kao prvo iskustvo, ne kao zaliha.
+Dostupan je samo jednom po kupcu i po posebnoj cijeni, kako bi odluka bila jednostavna i bez razmišljanja.
 
 
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Μια εμπειρία στην οποία επιστρέφετε
+        <p><strong>Iskustvo koje se ponavlja
 
 
 </strong></p>
-        <p class="description">Οι περισσότεροι άνδρες μένουν στη NORIKS γιατί αναγνωρίζουν τη διαφορά στην εφαρμογή, την άνεση και την ποιότητα. Αλλά το πρώτο βήμα είναι ακριβώς αυτό - ελάχιστο ρίσκο, καθαρή εντύπωση.
+        <p class="description">Većina muškaraca nakon toga nastavi s NORIKS-om jer shvati razliku u kroju, udobnosti i kvaliteti.
+Ali prvi korak je ovaj — najmanji rizik, najčišći dojam. 
+
 </p>
       </div>
     </div>
@@ -180,8 +194,8 @@ if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 
 
 
 
-<?php
-if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 'mplouzoakia-mavro' ), 'product_cat', get_the_id() )  ||  has_term( array('sady', 'set', 'seta', 'bundles'), 'product_cat', get_the_id() )) :
+<?php 
+if (  has_term( array( 'majice', 'orto-majice' ), 'product_cat', get_the_id() )  ||  has_term( 'black-friday', 'product_cat', get_the_id() )) : 
 ?>
 
 
@@ -194,10 +208,10 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-        <video
-          autoplay muted loop playsinline
+        <video 
+          autoplay muted loop playsinline 
           class="why-video">
-          <source src="https://noriks.com/gr/wp-content/uploads/2025/09/noriks_gif_gr_2-1.mp4" type="video/mp4">
+          <source src="https://noriks.com/gr/wp-content/uploads/2025/09/noriks_gif_hr_2-1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
@@ -229,16 +243,16 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
 </section>
 
 
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
 <!-- table section -->
 
-
-
+  
+  
 <section class="comparison-section" style="padding-top: 30px;" >
     <div class="comparison-intro">
      <!-- <h4 class="highlight"><?php echo get_field("_comp_table_t1", "options"); ?></h4>-->
@@ -246,10 +260,10 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
       <p style="    opacity: 0.6;" class="note"><?php echo get_field("_comp_table_t3", "options"); ?></p>
     </div>
   </section>
-
-
+  
+  
 <section class="comparison-table-section">
-
+ 
  <div class="comparison-container">
    <table class="comparison-table">
       <thead>
@@ -263,24 +277,24 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
         </tr>
       </thead>
       <tbody>
-
+          
           <?php
           $_comp_table_fieldlines = get_field("_comp_table_fieldlines","options");
           ?>
-
+          
             <?php if ($_comp_table_fieldlines): ?>
              <?php foreach ($_comp_table_fieldlines as $item): ?>
-
+          
                     <tr>
                       <td><?php echo $item['text']; ?></td>
                       <td class="bg-best"><span  style="background: #496d8f;" class="checkmark">✔</span></td>
                       <td class="bg-bad"><span class="crossmark">✖</span></td>
                     </tr>
-
+                    
             <?php endforeach; ?>
         <?php endif; ?>
-
-
+       
+       
       </tbody>
     </table>
 
@@ -292,170 +306,50 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
 
 
 
-
-
-<?php if( get_the_ID() == 3015 ): ?>
-  <section class="reviews-section">
-      
-      
-      
-    
-     <div class="container" style="width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;">
-         
-         <!--
-    <div class="reviews-rating">
-
-      <span style="color: #333;"><?php echo get_field("homepage_section_3_t1"); ?></span>
-    </div>
--->
-
-    <h2 class="collections__title" style="text-align: left;font-size: clamp(28px, 2.5vw, 40px);
-    margin-bottom: 13px;"><?php echo get_field("homepage_section_3_t2"); ?></h2>
-
-    <div class="reviews-grid">
-
-    <?php 
-    $bigreviews_reviews_fields = get_field("bigreviews_reviews_fields", "option");
-    
-    
-    $bigreviews_reviews_fields = array_intersect_key(
-    $bigreviews_reviews_fields,
-    array_flip([0, 1, 5])
-);
-    
-      $bigreviews_reviews_fields2 = get_field("bigreviews_reviews_fields_2", "option");
-    
-
-    //var_dump($header_nav);
-    ?>
-    
-
-      <?php if ($bigreviews_reviews_fields): ?>
-    <?php foreach ($bigreviews_reviews_fields as $item): ?>
-      <!-- Review 1 -->
-      <div class="review-card">
-        <img src="<?php echo $item['img']; ?>" alt="" class="review-image">
-        <div class="review-content">
-          <div class="review-meta">
-            <div class="review-name"><?php echo $item['name']; ?></div>
-            <div class="verified"><?php echo $item['t1']; ?></div>
-          </div>
-          <div class="review-text"><?php echo $item['t2']; ?></div>
-          <div class="review-product">
-            <img src="<?php echo $item['img2']; ?>" alt="Shirt Pack">
-            <a href="<?php echo $item['link']; ?>"><?php echo $item['t3']; ?></a>
-          </div>
-        </div>
-      </div>
-     <?php endforeach; ?>
-  <?php endif; ?>
-          <?php if ($bigreviews_reviews_fields2): ?>
-    <?php foreach ($bigreviews_reviews_fields2 as $item): ?>
-      <!-- Review 1 -->
-      <div class="review-card">
-        <img src="<?php echo $item['img']; ?>" alt="" class="review-image">
-        <div class="review-content">
-          <div class="review-meta">
-            <div class="review-name"><?php echo $item['name']; ?></div>
-            <div class="verified"><?php echo $item['t1']; ?></div>
-          </div>
-          <div class="review-text"><?php echo $item['t2']; ?></div>
-          <div class="review-product">
-            <img src="<?php echo $item['img2']; ?>" alt="Shirt Pack">
-            <a href="<?php echo $item['link']; ?>"><?php echo $item['t3']; ?></a>
-          </div>
-        </div>
-      </div>
-     <?php endforeach; ?>
-  <?php endif; ?>
-    
-    
-
-    </div>
-
- </div>
-  </section>
-  
-  <style>
-  .review-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    will-change: transform;
-    padding: 0 !important;
-  }
-
-  .review-card:hover {
-    transform: scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    z-index: 2;
-  }
-  
-  
-  .reviews-section {
-    margin: 0 auto;
-    padding: 0 0 20px 0px;
-}
-
-.comparison-table-section {
-
-    padding-bottom:  20px;
-}
-</style>
-
-<?php endif; ?>
-
-
-
-
 <section class="why-section">
   <div class="container why-container">
 
     <!-- Left Video -->
     <div class="why-col">
       <div class="video-wrapper">
-          <img style="width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;  " src="/hr/wp-content/themes/noriks/img/majice-3 (1).jpeg">
+          <img style="width: 100%;       
+    aspect-ratio: 1/1; 
+    object-fit: cover;  " src="<?php echo get_template_directory_uri(); ?>/img/majice-3 (1).jpeg">
       </div>
     </div>
 
-   <!-- Right Content -->
-<div class="why-col why-content">
-  <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-    ΓΙΑΤΙ ΑΥΤΟ ΤΟ T-SHIRT ΘΑ ΓΙΝΕΙ ΤΟ ΝΕΟ ΣΟΥ STANDARD;
-  </h2>
+    <!-- Right Content -->
+    <div class="why-col why-content">
+      <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
+        ZAŠTO ĆE TI OVA MAJICA POSTATI STANDARD?
+      </h2>
 
-  <div style="margin-left: 20px;" class="why-point">
-    <p><strong>Σχεδιασμένο για την πραγματική ζωή</strong></p>
-    <p class="description">
-      Αυτό το t-shirt είναι φτιαγμένο για ολοήμερη χρήση — από το πρωί μέχρι το βράδυ. Δεν χρειάζεται καμία διόρθωση ή σκέψη· απλώς εφαρμόζει τέλεια σε κάθε περίσταση.
-    </p>
-  </div>
+      <div style="margin-left: 20px;" class="why-point">
+        <p><strong>Dizajnirana za stvarni život
+</strong></p>
+        <p class="description">Ova majica napravljena je za cjelodnevno nošenje, od jutra do večeri. Ne traži prilagođavanje ni razmišljanje — jednostavno stoji dobro u svakoj situaciji.
+</p>
+      </div>
 
-  <div style="margin-left: 20px;" class="why-point">
-    <p><strong>Γραμμή που καταλαβαίνει το σώμα</strong></p>
-    <p class="description">
-      Η γραμμή σχεδιάστηκε ώστε να ακολουθεί το περίγραμμα του σώματος χωρίς να πιέζει, αναδεικνύοντας τα σωστά σημεία. Το αποτέλεσμα είναι μια προσεγμένη, γεμάτη αυτοπεποίθηση εμφάνιση χωρίς αίσθηση δυσφορίας.
-    </p>
-  </div>
+      <div style="margin-left: 20px;" class="why-point">
+        <p><strong>Kroj koji razumije tijelo
+</strong></p>
+        <p class="description">Kroj je razvijan da prati liniju tijela bez stezanja i naglašava ono što treba. Rezultat je uredan, samopouzdan izgled bez osjećaja nelagode.
+</p>
+      </div>
 
-  <div style="margin-left: 20px;" class="why-point">
-    <p><strong>Θα καταλάβεις τη διαφορά από την πρώτη φορά που θα το φορέσεις</strong></p>
-    <p class="description">
-      Το ύφασμα είναι απαλό, ελαφρύ και διαπνέον πάνω στο δέρμα. Από την πρώτη κιόλας χρήση γίνεται ξεκάθαρο γιατί αυτό το t-shirt θα γίνει γρήγορα το αγαπημένο σου.
-    </p>
-  </div>
-</div>
-
-    
-    
-    
+      <div style="margin-left: 20px;" class="why-point">
+        <p><strong>Osjeti razliku već pri prvom nošenju
+</strong></p>
+        <p class="description">Materijal je mekan, lagan i prozračan na koži. Nakon prvog nošenja jasno je zašto ova majica brzo postaje ona koju najčešće biraš.
+</p>
+      </div>
+    </div>
 
   </div>
 </section>
 
-
+  
 <!-- table section -->
 
 <?php endif; ?>
@@ -468,7 +362,7 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
 
 <!-- here we include new file BOXERIRICE-->
 
-<?php if ( has_term( array( 'orto-starter2', 'orto-bokserice', 'mpoxerakia', 'boxers', 'mpoxer' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
+<?php if ( has_term( array( 'bokserice', 'bokserice-sastavi-paket',  'orto-bokserice' ), 'product_cat', get_the_ID() )  && !has_term( 'black-friday', 'product_cat', get_the_ID() ) ): ?>
 
 
 
@@ -476,20 +370,20 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
     .why-container  {
     max-width: 1440px !important;
 }
-
+    
 </style>
 
 
-<?php
-if(  get_the_ID() == 39181 ):
+<?php 
+if(  get_the_ID() == 39181 ): 
 ?>
 
 
 <!-- invlude video views here -->
 
 
-<?php
-endif;
+<?php 
+endif; 
 ?>
 
 
@@ -509,23 +403,23 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img src="/hr/wp-content/uploads/2025/12/recreate_without_photo_equipment_98300wkq98yf4jbkroa5.jpg">
+       <img src="/gr/wp-content/uploads/2025/12/recreate_without_photo_equipment_98300wkq98yf4jbkroa5.jpg">
     </div>
 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-Ευέλικτη εφαρμογή για γεμάτους μηρούς
+        Fleksibilan rez za snažnije noge
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Άνεση όλη μέρα
+        <p><strong>Cjelodnevna udobnost
 </strong></p>
-        <p class="description">Ειδικά σχεδιασμένα για άνδρες με πιο γεμάτους μηρούς. Το ελαστικό και εύκαμπτο υλικό παρέχει μέγιστη άνεση χωρίς σφίξιμο ή δυσάρεστη πίεση στη μέση. Το εσώρουχο μένει στη θέση του και δεν ανεβαίνει, ώστε να κινείστε ελεύθερα όλη μέρα.</p>
+        <p class="description">Posebno dizajnirano za muškarce s debljim bedrima. Elastični i rastezljivi materijal pruža maksimalnu udobnost bez zatezanja ili neugodnog pojasa. Donje rublje ostaje na mjestu i ne podiže se, pa se možete slobodno kretati cijeli dan.</p>
       </div>
 
-
-
+    
+    
     </div>
 
   </div>
@@ -545,36 +439,35 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img src="https://noriks.com/gr/wp-content/uploads/2026/02/prednosti-in-lastnosti2_gr.png">
+       <img src="/gr/wp-content/uploads/2025/12/recreate_this_picture_to_look_more_real_same_text_on_it_zidddz68sbcgp6wmizbl.jpg">
     </div>
 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-      Λιγότερη φθορά και ζημιά
+       Manje trošenja i oštećenja
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Σούπερ ανθεκτικά 💪
+        <p><strong>Super izdržljivo 💪
 </strong></p>
-        <p class="description">"Ξεχάστε τα εσώρουχα που σκίζονται γρήγορα.
-Τα σορτς NORIKS είναι κατασκευασμένα από πιο ανθεκτικό υλικό - διαρκούν περισσότερο και σας γλιτώνουν από περιττές επισκέψεις στα καταστήματα."
+        <p class="description">Zaboravite na stalnu kupovinu poderanog donjeg rublja. NORIKS šortsevi su napravljeni od jačeg materijala – traju duže i štede vam put u trgovinu.
 </p>
       </div>
 
       <div style="margin-left: 20px;" class="why-point">
-
-
+        
+        
         <p class="description">
-
-       ✅ Λιγότερο σκίσιμο <br/>
-✅ Λιγότερη εφίδρωση <br/>
-✅ Άνεση όλη την ημέρα <br/>
-
+        
+        ✅ Manje poderanja  <br/>
+        ✅ Manje znojenja  <br/>
+        ✅ Udobnost tijekom cijelog dana <br/>
+                
         </p>
       </div>
 
-
+     
     </div>
 
   </div>
@@ -593,24 +486,25 @@ endif;
 
     <!-- Left Video -->
     <div class="why-col">
-       <img style="width: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;  " src="/hr/wp-content/uploads/2025/12/create_same_style_studio_photo_with_younger_guy_30_years_normal_look_and_croatian_can_look_midldle__e99c86vy07c57mjd38f6.jpg">
+       <img style="width: 100%;       
+    aspect-ratio: 1/1; 
+    object-fit: cover;  " src="/gr/wp-content/uploads/2025/12/create_same_style_studio_photo_with_younger_guy_30_years_normal_look_and_croatian_can_look_midldle__e99c86vy07c57mjd38f6.jpg">
     </div>
 
     <!-- Right Content -->
     <div class="why-col why-content">
       <h2 style="color: #222; text-align:left; margin-left: 20px; font-family: 'Barlow', sans-serif; color:#222223;">
-      Αρκετός χώρος για τα πάντα
+       Dovoljno prostora za sve
       </h2>
 
       <div style="margin-left: 20px;" class="why-point">
-        <p><strong>Κύριοι, αφήστε την περιοχή σας να αναπνέει ελεύθερα!
-</strong></p>Τα εσώρουχα NORIKS παρέχουν υποστήριξη όλη μέρα χωρίς να χάνουν το σχήμα τους. Το ουράνια απαλό modal υλικό τεντώνεται και εφαρμόζει τέλεια εκεί που πρέπει. Ο χώρος για τον «εξοπλισμό» σας είναι ευρύτερος και πιο ευέλικτος, ώστε να μην νιώθετε στριμωγμένοι.</p>
+        <p><strong>Dečki, dopustite svom međunožju da slobodno diše!
+</strong></p>
+        <p class="description">NORIKS donje rublje pruža podršku tijekom cijelog dana, a da pritom ne gubi oblik. Nebeski mekan Modal materijal rasteže se i savršeno pristaje na pravim mjestima. Prostor za vaše “gadžete” je prostraniji i fleksibilniji, pa se ne osjećate skučenima.</p>
       </div>
 
-
-
+   
+   
     </div>
 
   </div>
@@ -637,9 +531,9 @@ endif;
 
 <style>
     .most-popular {
-
+    
         padding-top: 20px;
-
+    
     }
 </style>
 
@@ -660,20 +554,20 @@ endif;
 
 
 
-<?php
+<?php 
 /************ get products by category homepage  ************/
 
 $products = array();
 
 // If current product is in category 'bokserice' → load all products from that category
-if ( has_term( array( 'mpoxer', 'orto-bokserice', 'bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', get_the_ID() ) ) {
+if ( has_term( array( 'bokserice', 'orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ) {
 
-    // Get all products from category 'bokserice' / boxers
+    // Get all products from category 'bokserice'
     $wc_products = wc_get_products( array(
         'limit'    => 8,
         'orderby'  => 'menu_order',
         'order'    => 'ASC',
-        'category' => array( 'mpoxer' )
+        'category' => array( 'bokserice' )
     ) );
 
     if ( ! empty( $wc_products ) ) {
@@ -693,7 +587,7 @@ if ( has_term( array( 'mpoxer', 'orto-bokserice', 'bokserice-sastavi-paket', 'bo
 
             // Get the product field (post object)
             $product_post = get_sub_field( 'product' );
-
+            
             if ( $product_post && $product_post instanceof WP_Post ) {
                 $product = wc_get_product( $product_post->ID );
                 if ( $product instanceof WC_Product ) {
@@ -876,85 +770,14 @@ a:hover {
 }
 </style>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialize Slick Carousel (Mobile only)
-  if (window.innerWidth <= 768) {
-    jQuery('.slider-mobile').not('.slick-initialized').slick({
-      slidesToShow: 1,
-      centerMode: true,
-      centerPadding: '60px',
-      arrows: false,
-      dots: true,
-      infinite: false
-    });
-  }
-});
-</script>
+<!-- Slick carousel init and styles removed -->
 
-<style>
-.slider-mobile .slick-list {
-  padding-left: 0 !important;
-  margin-left: 0px;
-}
 
-.slider-mobile {
-  overflow: visible;
-}
-
-.slick-slide {
-  transition: all 0.3s ease;
-  margin-right: 20px !important;
-  margin-left: -1px;
-}
-
-.slick-list {
-  overflow: visible;
-}
-
-/* Full-width horizontal dot container */
-.slick-dots {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-/* Optional: give some padding or spacing on the sides */
-.slick-dots li {
-  flex: 1;
-  text-align: center;
-}
-
-/* Square dots */
-.slick-dots li button {
-  width: 95%;
-  height: 7px;
-  border-radius: 1px;
-  background: #ccc;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 0;
-  margin: 0 auto;
-}
-
-/* Active dot style */
-.slick-dots li.slick-active button {
-  background: #333;
-}
-
-.slider-mobile {
-  width: 100%;
-}
-</style>
+<?php if(   get_the_id() != 5567  ): ?>
 
 <section style="display:block; max-width:1440px; margin:0 auto; padding-bottom:30px;" class="most-popular">
   <div class="container" style="padding-left:10px; padding-right:10px;">
-    <h2 class="section-title" style="margin-bottom:20px;">Έτοιμοι συνδυασμοί - εύκολοι και γρήγοροι</h2>
+    <h2 class="section-title" style="margin-bottom:20px;">Gotove kombinacije – jednostavno i brzo</h2>
 
     <div class="products-grid slider-mobile">
       <?php foreach ($products as $index => $product): ?>
@@ -1036,10 +859,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 if ($shirt_count != 1):
                   if ($alt_output == false):
-                    $is_boxers = has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $current_product_id );
+                    $is_boxers = has_term( array( 'bokserice', 'orto-bokserice' , 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
 
                     if ($is_boxers):
-                      $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
+                      $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ ανά μποξεράκι";
                     else:
                       $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . get_field("singlepp_priceper_after","options");
                     endif;
@@ -1099,7 +922,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
 
             <div class="product-info">
-
+             
               <h3 class="product-name"><?php echo esc_html($product_name); ?></h3>
 
               <div class="price">
@@ -1121,6 +944,7 @@ document.addEventListener('DOMContentLoaded', function () {
   </div>
 </section>
 
+<?php endif; ?>
 
 
 
@@ -1138,19 +962,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-
-
-
+  
+  
   <style>
-
+      
       .comparison-section-gray  {
          border-radius: 5px;
         }
-
+              
       .comparison-intro-gray  {
            margin-bottom: 0;
         }
-
+      
   </style>
   <div  style="background: #f9f9f9; padding-top: 30px;" >
 <section style="background: #f9f9f9; max-width: 1440px;" class="comparison-section comparison-section-gray">
@@ -1158,28 +981,28 @@ document.addEventListener('DOMContentLoaded', function () {
     padding-right: 10px;" class="comparison-intro comparison-intro-gray ">
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
-
-          <?php if ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', get_the_ID() ) ): ?>
-
+          
+          <?php if ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket' ), 'product_cat', get_the_ID() ) ): ?>
+          
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
-
+          
           <?php else: ?>
-
+          
           Nisi sam u potrazi za savršenim boksericama.
-
+          
           <?php endif; ?>
-
-
+          
+          
           </h1>
     <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?></p>
     </div>
   </section>
   </div>
-
-
+  
+  
   <style>
       @media (max-width: 768px) {
-
+          
           .basic-reviews-section  {
                padding-left: 0px;
                padding-right: 0px;
@@ -1192,15 +1015,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 line-height: 1.3;
             }
             .review {
-
+  
                 padding-bottom: 15px;
                 margin-bottom: 16px;
 
             }
       }
   </style>
-
-
+  
+  
   <style>
 .loader {
   border: 4px solid #f3f3f3;
@@ -1233,20 +1056,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-<?php
+<?php 
   // ===== CONFIG: LANGUAGE & DATA =====
   $reviews_language = get_field("webshop_language", "options");
   if (!$reviews_language) { $reviews_language = "EN"; }
 
   // Detect if current product belongs to bokserice group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();
-  $is_bokserice_page  = has_term( array( 'boxerky','orto-bokserice', 'bokserice-sastavi-paket', 'bokserice', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $current_product_id );
+  $is_bokserice_page  = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id );
 
   // Include review pools
   if ( ! $is_bokserice_page )  {
     include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'.php';
   } else {
-    include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'_bokserice.php';
+    include get_stylesheet_directory() . '/auto_reviews/HR_bokserice.php';
   }
 
   include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'-2.php';
@@ -1309,7 +1132,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       $is_bokserice = false;
       if ( $product_id ) {
-          $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket', 'mpoxer', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $product_id );
+          $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $product_id );
       }
 
       $cache_key = $transient_key . ( $is_bokserice ? '_bokserice' : '_all' );
@@ -1330,13 +1153,13 @@ document.addEventListener('DOMContentLoaded', function () {
       ];
 
       if ( $is_bokserice ) {
-          $args['category'] = [ 'mpoxer' ];
+          $args['category'] = [ 'bokserice' ];
       } else {
           $args['tax_query'] = [
               [
                   'taxonomy' => 'product_cat',
                   'field'    => 'slug',
-                  'terms'    => [ 'mpoxer' ],
+                  'terms'    => [ 'bokserice' ],
                   'operator' => 'NOT IN',
               ],
           ];
@@ -1411,9 +1234,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     return $reviews;
   }
-
-
-
+  
+  
+  
   /**
  * Avatar images rules:
  * - First $first_n reviews ALWAYS get an image (if available)
@@ -1471,9 +1294,9 @@ function assign_unique_avatars_first3_then_random_until30(
 
   return $reviews;
 }
-
-
-
+  
+  
+  
   /**
  * Assign avatars for first N reviews:
  * - Use each real image at most once (no repeats).
@@ -1596,8 +1419,8 @@ $auto_reviews_en   = assign_unique_avatars_first3_then_random_until30($auto_revi
 
 $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_pool, $daily_seed, 'shipping', 0);
 
-
-
+  
+  
 
   // ===== PAGINATION CHUNKS =====
   $initial_count = 18;   // show on load
@@ -1623,18 +1446,18 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <div class="reviews-tabs" style="display:flex;gap:18px;border-bottom:1px solid #cbc8c8;margin-bottom:18px;">
       <button type="button" class="reviews-tab is-active" data-tab="product"
         style="appearance:none;background:#00000008;border:1px solid #cbc8c8;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Κριτικές προϊόντος', 'your-textdomain'); ?> (692)
+        <?php echo esc_html__('Recenzije proizvoda', 'your-textdomain'); ?> (692)
       </button>
       <button type="button" class="reviews-tab" data-tab="shipping"
         style="appearance:none;background:transparent;border:1px solid transparent;border-bottom:0;padding:8px 14px;border-radius:0;font-weight:700;">
-        <?php echo esc_html__('Κριτικές παράδοσης', 'your-textdomain'); ?> (389)
+        <?php echo esc_html__('Recenzije dostave', 'your-textdomain'); ?> (389)
       </button>
     </div>
 
     <!-- PRODUCT GRID (default visible) -->
     <div class="reviews-grid" id="reviews-grid-product">
       <?php if (!empty($initial_product)) : foreach ($initial_product as $review) :
-        $name  = $review['name'] ?? 'Ανώνυμος';
+        $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
         $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
@@ -1659,7 +1482,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Επιβεβαιωμένο','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
           </div>
           <div class="content"><?php echo esc_html($text); ?></div>
         </article>
@@ -1669,7 +1492,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <!-- SHIPPING GRID (hidden initially) -->
     <div class="reviews-grid" id="reviews-grid-shipping" style="display:none;">
       <?php if (!empty($initial_ship)) : foreach ($initial_ship as $review) :
-        $name  = $review['name'] ?? 'Ανώνυμος';
+        $name  = $review['name'] ?? 'Anonymní';
         $text  = $review['text'] ?? '';
         $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
@@ -1696,7 +1519,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
               <div class="avatar">👤</div>
             <?php endif; ?>
             <div class="name"><?php echo esc_html($name); ?></div>
-            <span class="verified"><?php _e('Επιβεβαιωμένο','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
           </div>
           <?php if (!empty($review['headline'])) : ?>
             <div class="headline"><?php echo esc_html($review['headline']); ?></div>
@@ -1713,7 +1536,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
     <div class="cta-button" style="background:transparent;padding:0;justify-content:left;">
       <a class="cta-button2 button button--xl"
          style="margin:0 auto;text-align:left;background:black;font-family:'Roboto',sans-serif;color:#fff;text-transform:none;font-size:15px;padding:10px 25px;"
-         href="#">Načíst více</a>
+         href="#"><?php echo get_field("singlepp_content_standard_reviews_seemore_button","options"); ?></a>
     </div>
     <div id="reviews-loading" style="display:none;text-align:center;padding:15px;">
       <div class="loader"></div>
@@ -1776,7 +1599,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
 
         const url       = review.product_url   || '#';
         const title     = review.product_title || 'Jedna Siva Majica';
-        const name      = review.name          || 'Ανώνυμος';
+        const name      = review.name          || 'Anonymní';
         const text      = review.text          || '';
         const headline  = review.headline      || '';
         const date      = review.assigned_date || '';
@@ -1791,7 +1614,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
           <div class="identity">
             ${avatarHtml(avatarUrl)}
             <div class="name">${esc(name)}</div>
-            <span class="verified"><?php _e('Επιβεβαιωμένο','your-textdomain'); ?></span>
+            <span class="verified"><?php _e('Potvrđeno','your-textdomain'); ?></span>
           </div>
           ${headline ? `<div class="headline">${esc(headline)}</div>` : ''}
           <div class="content">${esc(text)}</div>
@@ -1895,13 +1718,13 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
 
 /* Identity */
 .review-card .identity{
-
+    
   display:flex;
   align-items:flex-start;   /* ⬅️ top-align items */
   gap:12px;
   margin:2px 0 12px;
-
-
+  
+  
 }
 .review-card .avatar{
   width:32px; height:32px;
@@ -2027,7 +1850,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
 
 
 
-<?php
+<?php 
 $faq_list = get_field('faq_list', 'option');
 $faq_list2 = get_field('faq_list_2', 'option');
 $faq_list3 = get_field('faq_list_3', 'option');
@@ -2038,17 +1861,17 @@ $faq_list3 = get_field('faq_list_3', 'option');
 
 
 <section class="faq-section">
-  <h2>Συχνές ερωτήσεις</h2>
+  <h2><?php echo get_field("singlepp_content_part_faq_h1","options"); ?></h2>
+  
 
-
-   <!-- first faq container -->
+   <!-- first faq container --> 
       <div class="faq-container">
          <h4 style="text-align:left; font-size: 1rem;
             font-weight: 700;
             color: #222223;
             margin-bottom: 10px; "><?php echo get_field('faq_title_1', 'option'); ?></h4>
-            <?php
-              if( $faq_list && is_array($faq_list) ):
+            <?php 
+              if( $faq_list && is_array($faq_list) ): 
                       foreach( $faq_list as $faq_item ):
               ?>
                     <div class="faq-item">
@@ -2064,17 +1887,17 @@ $faq_list3 = get_field('faq_list_3', 'option');
             endif;
             ?>
       </div>
-    <!-- first faq container -->
-
-     <!-- 2 faq container -->
+    <!-- first faq container --> 
+  
+     <!-- 2 faq container --> 
       <div class="faq-container">
           <br/>
          <h4 style="text-align:left; font-size: 1rem;
             font-weight: 700;
             color: #001e36;
             margin-bottom: 10px; "><?php echo get_field('faq_title_2', 'option'); ?></h4>
-            <?php
-              if( $faq_list2 && is_array($faq_list2) ):
+            <?php 
+              if( $faq_list2 && is_array($faq_list2) ): 
                       foreach( $faq_list2 as $faq_item ):
               ?>
                     <div class="faq-item">
@@ -2090,17 +1913,17 @@ $faq_list3 = get_field('faq_list_3', 'option');
             endif;
             ?>
       </div>
-        <!-- 2 faq container -->
-
-     <!-- 3 faq container -->
+        <!-- 2 faq container --> 
+  
+     <!-- 3 faq container --> 
       <div class="faq-container">
           <br/>
          <h4 style="text-align:left; font-size: 1rem;
             font-weight: 700;
             color: #001e36;
             margin-bottom: 10px; "><?php echo get_field('faq_title_3', 'option'); ?></h4>
-            <?php
-              if( $faq_list3 && is_array($faq_list3) ):
+            <?php 
+              if( $faq_list3 && is_array($faq_list3) ): 
                       foreach( $faq_list3 as $faq_item ):
               ?>
                     <div class="faq-item">
@@ -2116,8 +1939,8 @@ $faq_list3 = get_field('faq_list_3', 'option');
             endif;
             ?>
       </div>
-  <!-- 3 faq container -->
-
+  <!-- 3 faq container --> 
+  
 </section>
 
 <script>
@@ -2142,6 +1965,6 @@ $faq_list3 = get_field('faq_list_3', 'option');
     });
   });
 </script>
-
+		
 
 

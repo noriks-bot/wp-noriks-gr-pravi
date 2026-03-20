@@ -73,14 +73,14 @@ global $product;
         
           <div class="feature">
           
-  <img src="/gr/wp-content/themes/noriks/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
-          <p class="feature__text">Αντικαταβολή</p>
+  <img src="<?php echo get_template_directory_uri(); ?>/img/cod_icon_.png" alt="Customer Support Icon" class="feature__icon info-icon">
+          <p class="feature__text">Plaćanje i pouzećem</p>
         </div>
         
         
         <div class="feature">
-      <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
-          <p class="feature__text">Δοκιμάστε 30 ημέρες, χωρίς ρίσκο</p>
+      <img src="https://noriks.com/gr/wp-content/uploads/2025/07/footer_icon1-1.png" alt="Shirt Icon" class="feature__icon info-icon">
+          <p class="feature__text">Isprobajte 30 dana, bez rizika</p>
         </div>
         
         
@@ -89,7 +89,7 @@ global $product;
         <div class="feature">
      
        
-        <img src="https://noriks.com/hr/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
+        <img src="https://noriks.com/gr/wp-content/uploads/2025/07/footer_icon3-1.png" alt="Shipping Icon" class="feature__icon info-icon">
           <p class="feature__text">Δωρεάν αποστολή για παραγγελίες άνω των 70 €</p>
         </div>
 
@@ -106,7 +106,7 @@ global $product;
 <div class="shipping-box">
   <h2 id="shipping-window" class="shipping-title"></h2>
   <p class="shipping-sub">
-    Παραγγείλτε εντός <span id="midnight-countdown" class="countdown"></span>
+    Naručite u sljedećih <span id="midnight-countdown" class="countdown"></span>
   </p>
 </div>
 
@@ -151,15 +151,15 @@ global $product;
 
     // Get shipping days: today +2 business days, today +3 business days
     const today = new Date();
-    const first  = addBusinessDays(today, 4);
-    const second = addBusinessDays(today, 8);
+    const first  = addBusinessDays(today, 2);
+    const second = addBusinessDays(today, 3);
 
     function formatDayMonth(d) {
       return `${d.getDate()}.${d.getMonth()+1}.`; // e.g. 21.8.
     }
 
     const windowEl = document.getElementById('shipping-window');
-    windowEl.textContent = `Παράδοση από ${weekdays[first.getDay()]}  ${formatDayMonth(first)} έως ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
+    windowEl.textContent = `Dostava od ${weekdays[first.getDay()]}  ${formatDayMonth(first)} do ${weekdays[second.getDay()]}, ${formatDayMonth(second)}`;
 
     // Countdown to midnight
     const cdEl = document.getElementById('midnight-countdown');
@@ -198,11 +198,11 @@ global $product;
 
 $is_singles_boxers = has_term( 'singles-boxers', 'product_cat', $current_product_id );
 
-$is_boxers = has_term( array( 'mpoxer','orto-bokserice', 'bokserice-sastavi-paket', 'bokserice', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi' ), 'product_cat', $current_product_id );
+$is_boxers = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi	' ), 'product_cat', $current_product_id );
 
-$is_carape = has_term( array( 'kaltses', 'zimske-carape', 'kaltses', 'socks' ), 'product_cat', $current_product_id );
+$is_carape = has_term( array( 'carape', 'zimske-carape' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-bokserica', 'set', 'seta', 'bundles', 'paketo-ekkinisis' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'black-friday', 'majice-i-bokserice-paketi	', 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id );
 
 ?>
 
@@ -439,11 +439,7 @@ $is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-
         
         
         
-              Τα premium μπλουζάκια μας είναι κατασκευασμένα από πρωτοκλασάτο μείγμα 60% βαμβακιού ring-spun και 40% πολυεστέρα, που εξασφαλίζει εξαιρετικά απαλό ύφασμα ανθεκτικό στις τσαλάκωσες.
-<br><br>
-Τα μποξεράκια NORIKS είναι κατασκευασμένα από πρωτοκλασάτο μείγμα 95% modal και 5% ελαστάνης, που εξασφαλίζει εξαιρετικά απαλό και ελαστικό ύφασμα που προσαρμόζεται τέλεια στο σώμα. Το ελαστικό λάστιχο είναι σχεδιασμένο για βέλτιστη εφαρμογή, παρέχοντας άνεση χωρίς σφίξιμο και τέλεια εμφάνιση κάτω από τα ρούχα.
-<br>
-
+                Naše premium majice izrađene su od vrhunske mješavine 60% prstenasto predenog pamuka i 40% poliestera, što osigurava izuzetno mekanu tkaninu otpornu na gužvanje.  <br><br>NORIKS bokserice izrađene su od vrhunske mješavine 95% modala i 5% elastana, što osigurava izuzetno mekanu i elastičnu tkaninu koja se savršeno prilagođava tijelu. Elastičan pojas dizajniran je za optimalno pristajanje, pružajući udobnost bez stezanja i savršen izgled ispod odjeć   <br>
         
         <?php else: ?>
         
@@ -462,10 +458,10 @@ $is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-
     
     
      
-     <!-- 2 - slika tablica velicina 
+     <!-- 2 - slika tablica velicina -->
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
-        <h3>Πίνακας μεγεθών</h3>
+        <h3>Tablice veličina</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
@@ -473,7 +469,7 @@ $is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-
            <?php if( $is_boxers ): ?>
        
         
-            <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
+          <img src="/gr/wp-content/uploads/2025/12/boxers_size.jpg">
           
           
           
@@ -481,25 +477,23 @@ $is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-
         <?php elseif(  $is_carape ): ?>
         
         
-                  <img src="https://noriks.com/gr/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_Gr.png">
+                  <img src="/gr/wp-content/uploads/2025/11/Nogavice_tabela_velikosti.jpg">
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/gr/wp-content/uploads/2025/09/noriks_tablica_gr.jpg">
+     <img src="https://noriks.com/gr/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png">
+<img src="/gr/wp-content/uploads/2025/12/boxers_size.jpg">
         
-         <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
-          
           <?php else: ?>
       
       
-     <img src="https://noriks.com/gr/wp-content/uploads/2025/09/noriks_tablica_gr.jpg">
-        
+       <img src="https://noriks.com/gr/wp-content/uploads/2025/08/Izdelek-brez-naslova-8-1-e1755177806475.png">
         
             
         <?php endif; ?>
       </div>
     </div>
--->
+
 
     <!-- 3 - savjeti za pranje-->
     <div class="accordion-item">
@@ -533,26 +527,27 @@ $is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-
         <h3><?php echo get_field("singlepp_acc_h_3","options"); ?></h3>
         <div class="toggle">+</div>
       </div>
-    <div class="accordion-content">
-  <p></p>
-  Πιστεύουμε τόσο πολύ ότι θα σας αρέσει το NORIKS, που έχετε <b data-stringify-type="bold">30 ημέρες</b> για επιστροφή ή δωρεάν ανταλλαγή.
-  Χωρίς γραφειοκρατία, χωρίς άγχος – το λύνουμε με λίγα κλικ.
-  </p>
+      <div class="accordion-content">
+       <p></p>
+       Toliko vjerujemo da će ti se NORIKS svidjeti da imaš <b data-stringify-type="bold">30 dana</b> za povrat ili besplatnu zamjenu.
+Bez papirologije, bez stresa – riješimo u par klikova. </p>
 
-  <p>
-    <a href="mailto:info@noriks.com" style="display: flex; align-items: center; text-decoration: none; color: #333;">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333" style="margin-right: 6px;" viewBox="0 0 16 16">
-        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217L8 8.083 0 4.217V4zm0 1.383v6.234l5.803-3.122L0 5.383zM6.761 8.83 0 12.383V12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.383l-6.761-3.553L8 9.917l-1.239-.653zM16 5.383l-5.803 3.112L16 11.617V5.383z"/>
-      </svg>
-      info@noriks.com
-    </a>
-  </p>
+<p>
+    
 
-  <p>
-    Απλώς στείλτε μας email ότι θέλετε ανταλλαγή και <b data-stringify-type="bold">τα κανονίζουμε αμέσως.</b>
-  </p>
-</div>
 
+
+  <a href="mailto:info@noriks.com" style="display: flex; align-items: center; text-decoration: none; color: #333;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#333" style="margin-right: 6px;" viewBox="0 0 16 16">
+      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v.217L8 8.083 0 4.217V4zm0 1.383v6.234l5.803-3.122L0 5.383zM6.761 8.83 0 12.383V12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-.383l-6.761-3.553L8 9.917l-1.239-.653zM16 5.383l-5.803 3.112L16 11.617V5.383z"/>
+    </svg>
+    info@noriks.com
+  </a>
+</p>
+<p>Samo nam napiši mail da želiš zamjenu i <b data-stringify-type="bold">odmah ćemo sve srediti.</b></p>
+       
+       
+      </div>
     </div>
 
 

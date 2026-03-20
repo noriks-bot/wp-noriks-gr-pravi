@@ -99,7 +99,8 @@ $(this).append('<div class="qty-btn-group"><button type="button" class="qty-btn 
                     </svg>
                   </span>
                   <span class="wc-reserve-note__text">
-                   Παρακαλώ βιαστείτε! Κάποιος μόλις παρήγγειλε ένα από τα προϊόντα στο καλάθι σας. Η κράτηση ισχύει για <strong id="wc-reserve-timer">10:00</strong> λεπτά.
+                    Παρακαλώ βιαστείτε! Κάποιος μόλις παρήγγειλε ένα από τα προϊόντα στο καλάθι σας. 
+                    Η κράτηση ισχύει για <strong id="wc-reserve-timer">10:00</strong> λεπτά.
                   </span>
                 </div>
                 

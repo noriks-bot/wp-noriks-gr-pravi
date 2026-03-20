@@ -38,7 +38,7 @@ get_header(); ?>
   <div class="hero__media" aria-hidden="true">
     <!-- Replace with your image -->
     <img
-      src="/gr/wp-content/themes/noriks/img/noriks-hero.jpeg"
+      src="<?php echo get_template_directory_uri(); ?>/img/noriks-hero.jpeg"
       alt=""
     />
   </div>
@@ -46,10 +46,10 @@ get_header(); ?>
   <div class="hero__overlay" aria-hidden="true"></div>
 
   <div class="hero__content">
-    <!--<p class="hero__eyebrow">ΝΕΟ: NORIKS </p>-->
-    <h1 class="hero__title">Το μπλουζάκι που λύνει όλα τα προβλήματα.</h1>
+    <!--<p class="hero__eyebrow">NOVO: NORIKS </p>-->
+    <h1 class="hero__title">Majica koja rješava sve probleme.</h1>
 
-    <a class="hero__btn" href="/gr/shop">ΑΓΟΡΑΣΤΕ ΤΩΡΑ</a>
+    <a class="hero__btn" href="/gr/shop">KUPUJTE SADA</a>
   </div>
 </section>
 
@@ -174,16 +174,16 @@ get_header(); ?>
     <h2 class="collections__title">Αγοράστε ανά συλλογή</h2>
 
     <a class="collections__cta" href="/gr/shop">
-      Όλα τα προϊόντα <span aria-hidden="true">›</span>
+      Svi produkti <span aria-hidden="true">›</span>
     </a>
   </div>
 
   <div class="collections__grid">
     <!-- Card 1 -->
-    <a class="collection-card" href="https://noriks.com/gr/product-category/mplouzoakia/">
+    <a class="collection-card" href="/gr/product-category/majice/">
       <div class="collection-card__media">
         <img
-          src="/gr/wp-content/themes/noriks/img/noriks-majice.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/noriks-majice.jpeg"
           alt="Crew neck t-shirt"
         />
       </div>
@@ -191,10 +191,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Μπλουζάκια</h3>
+            <h3 class="collection-card__name">Majice</h3>
           </div>
           <p class="collection-card__desc">
-Άνεση όλη μέρα. Χωρίς τράβηγμα.
+           Udobnost cijeli dan. Bez stezanja.
           </p>
         </div>
 
@@ -203,10 +203,10 @@ get_header(); ?>
     </a>
 
     <!-- Card 2 -->
-    <a class="collection-card" href="https://noriks.com/gr/product-category/mpoxer/">
+    <a class="collection-card" href="/gr/product-category/bokserice/">
       <div class="collection-card__media">
         <img
-          src="/gr/wp-content/themes/noriks/img/noriks-boksarice.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/noriks-boksarice.jpeg"
           alt="V-neck t-shirt"
         />
       </div>
@@ -214,10 +214,10 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Μποξεράκια</h3>
+            <h3 class="collection-card__name">Bokserice</h3>
           </div>
           <p class="collection-card__desc">
-   Απαλά. Αναπνεύσιμα. Αξιόπιστα.
+          Mekane. Prozračne. Pouzdane.
 
           </p>
         </div>
@@ -227,10 +227,10 @@ get_header(); ?>
     </a>
 
     <!-- Card 3 -->
-    <a class="collection-card" href="https://noriks.com/gr/product-category/set/">
+    <a class="collection-card" href="/gr/product-category/kompleti/">
       <div class="collection-card__media">
         <img
-          src="/gr/wp-content/themes/noriks/img/noriks-kompleti.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/noriks-kompleti.jpeg"
           alt="Long sleeve shirt"
         />
       </div>
@@ -238,11 +238,11 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Σετ</h3>
+            <h3 class="collection-card__name">Kompleti</h3>
        
           </div>
           <p class="collection-card__desc">
-Η καλύτερη σχέση ποιότητας-τιμής σε σετ.
+Najbolja vrijednost po paketu.
           </p>
         </div>
 
@@ -250,11 +250,11 @@ get_header(); ?>
       </div>
     </a>
     
-    <!-- Card 4 - Starter Pack -->
-    <a class="collection-card" href="https://noriks.com/gr/shop/?yith_wcan=1&product_cat=paketo-ekkinisis&orderby=popularity">
+    <!-- Card 3 -->
+    <a class="collection-card" href="/gr/product-category/starter-paketi/">
       <div class="collection-card__media">
         <img
-          src="/gr/wp-content/themes/noriks/img/starter-paket_.jpeg"
+          src="<?php echo get_template_directory_uri(); ?>/img/starter-paket_.jpeg"
           alt="Long sleeve shirt"
         />
       </div>
@@ -262,12 +262,12 @@ get_header(); ?>
       <div class="collection-card__body">
         <div class="collection-card__text">
           <div class="collection-card__topline">
-            <h3 class="collection-card__name">Πακέτο εκκίνησης</h3>
+            <h3 class="collection-card__name">Starter pack</h3>
            
            
           </div>
           <p class="collection-card__desc">
-Δοκιμάστε NORIKS πιο οικονομικά.
+Probaj NORIKS po boljoj cijeni.
 
           </p>
         </div>
@@ -508,79 +508,7 @@ if ( have_rows('homepage_section_2_product_list') ) {
 /************ get products by category homepage  ************/
 ?>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  // Initialize Slick Carousel (Mobile only) for PRODUCT CARDS (not images)
-  if (window.innerWidth <= 768) {
-    jQuery('.slider-mobile').not('.slick-initialized').slick({
-      slidesToShow: 1,
-      centerMode: true,
-      centerPadding: '60px',
-      arrows: false,
-      dots: true,
-      infinite: false
-    });
-  }
-
-  // REMOVED: Glide init (no more image slider)
-});
-</script>
-
-<style>
-.slider-mobile .slick-list {
-  padding-left: 0 !important;
-  margin-left: 0px;
-}
-
-.slider-mobile {
-  overflow: visible;
-  width: 100%;
-}
-
-.slick-slide {
-  transition: all 0.3s ease;
-  margin-right: 20px !important;
-  margin-left: -1px;
-}
-
-.slick-list {
-  overflow: visible; /* important! */
-}
-
-/* Full-width horizontal dot container */
-.slick-dots {
-  display: flex !important;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 10px 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slick-dots li {
-  flex: 1;
-  text-align: center;
-}
-
-/* Square dots */
-.slick-dots li button {
-  width: 95%;
-  height: 7px;
-  border-radius: 1px;
-  background: #ccc;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font-size: 0;
-  margin: 0 auto;
-}
-
-/* Active dot style */
-.slick-dots li.slick-active button {
-  background: #333;
-}
-</style>
+<!-- Slick carousel init and styles removed -->
 
 <style>
 /* Ensure each grid item (product card) behaves correctly */
@@ -660,7 +588,7 @@ a:hover {
     </h2>
 
     <a class="collections__cta" href="/gr/shop">
-      Όλα τα προϊόντα  <span aria-hidden="true">›</span>
+      Svi produkti  <span aria-hidden="true">›</span>
     </a>
   </div>
 
@@ -741,13 +669,13 @@ a:hover {
                   if ( $alt_output == false ):
 
                     $current_product_id = $product->get_id();
-                    $is_boxers = has_term( array('bokserice','bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia'), 'product_cat', $current_product_id );
+                    $is_boxers = has_term( array('bokserice','bokserice-sastavi-paket'), 'product_cat', $current_product_id );
 
                     if ( $is_boxers ):
                       if ( has_term('black-friday', 'product_cat', $current_product_id ) ):
                         $topseler_text = "Black Friday ";
                       else:
-                        $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ po boksericama";
+                        $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . "€ ανά μποξεράκι";
                       endif;
                     else:
                       $topseler_text = get_field("singlepp_priceper_before","options") . " " . $tmp_price . " " . get_field("singlepp_priceper_after","options");
