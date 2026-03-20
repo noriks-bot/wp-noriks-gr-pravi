@@ -6,30 +6,15 @@
  */
 
 include(get_template_directory() . '/functions/checkout_mods.php');
-include(get_template_directory() . '/functions/thankyou_upsell.php');
 include(get_template_directory() . '/functions/cpts.php');
 include(get_template_directory() . '/functions/options.php');
 include(get_template_directory() . '/functions/single_product_mods.php');
 include(get_template_directory() . '/functions/discounts.php');
 
-/**
- * Auto-apply coupon from URL parameter on checkout
- * Usage: /checkout/?coupon=SMS20
- */
-add_action('woocommerce_before_checkout_form', 'auto_apply_coupon_from_url', 10);
-function auto_apply_coupon_from_url() {
-    if (isset($_GET['coupon']) && !empty($_GET['coupon'])) {
-        $coupon_code = sanitize_text_field($_GET['coupon']);
-        if (!WC()->cart->has_discount($coupon_code)) {
-            WC()->cart->apply_coupon($coupon_code);
-        }
-    }
-}
-
 
 
 add_filter( 'woocommerce_gallery_image_size', function() {
-    return 'large';
+    return 'full';
 });
 
 
@@ -90,7 +75,7 @@ if( $webshop_language == null  || $webshop_language == false  || $webshop_langua
 if ($webshop_language == "EN") {
   include(get_template_directory() . '/functions/lang/en.php');
 } else if ($webshop_language == "HR") {
-  // hr.php not used on GR
+  include(get_template_directory() . '/functions/lang/hr.php');
 } else if ($webshop_language == "GR") {
   include(get_template_directory() . '/functions/lang/gr.php');
 }
@@ -195,49 +180,14 @@ function enqueue_main_styles() {
 
     // Enqueue checkout.css on checkout
     if (function_exists('is_checkout') && is_checkout()) {
-        wp_enqueue_style('google-roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap', array(), null);
         wp_enqueue_style(
             'checkout-style',
             get_template_directory_uri() . '/css/checkout.css',
             array(),
-            md5_file(get_template_directory() . '/css/checkout.css'),
+            filemtime(get_template_directory() . '/css/checkout.css'),
             'all'
         );
-        wp_enqueue_script(
-            'checkout-fields',
-            get_template_directory_uri() . '/js/checkout-fields.js',
-            array('jquery'),
-            filemtime(get_template_directory() . '/js/checkout-fields.js'),
-            true
-        );
     }
-
-    // Enqueue header.css (load everywhere)
-    wp_enqueue_style(
-        'header-style',
-        get_template_directory_uri() . '/css/header.css',
-        array(),
-        filemtime(get_template_directory() . '/css/header.css'),
-        'all'
-    );
-
-    // Enqueue footer.css (load everywhere)
-    wp_enqueue_style(
-        'footer-style',
-        get_template_directory_uri() . '/css/footer.css',
-        array(),
-        filemtime(get_template_directory() . '/css/footer.css'),
-        'all'
-    );
-
-    // Enqueue header.js (load everywhere)
-    wp_enqueue_script(
-        'header-js',
-        get_template_directory_uri() . '/js/header.js',
-        array('jquery'),
-        filemtime(get_template_directory() . '/js/header.js'),
-        true
-    );
     
     
    
