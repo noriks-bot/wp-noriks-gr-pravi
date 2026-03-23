@@ -462,8 +462,8 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     $fields['billing']['billing_address_2']['label'] = 'Αριθμός';
     $fields['billing']['billing_address_2']['placeholder'] = 'Αριθμός';
     $fields['billing']['billing_address_2']['required'] = true;
-    $fields['billing']['billing_postcode']['label'] = 'Ταχυδρομικός κώδικας';
-    $fields['billing']['billing_postcode']['placeholder'] = 'Ταχυδρομικός κώδικας';
+    $fields['billing']['billing_postcode']['label'] = 'Τ.Κ.';
+    $fields['billing']['billing_postcode']['placeholder'] = 'Τ.Κ.';
     $fields['billing']['billing_city']['label'] = 'Πόλη';
     $fields['billing']['billing_city']['placeholder'] = 'Επιλέξτε πόλη';
     $fields['billing']['billing_phone']['label'] = 'Τηλέφωνο';
