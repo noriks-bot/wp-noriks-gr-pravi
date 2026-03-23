@@ -73,7 +73,7 @@ if ( WC()->cart->is_empty() ) return;
               </label>
             </li>
             <li class="wc_payment_method payment_method_braintree_credit_card">
-              <input id="noriks_pm_card" type="radio" class="input-radio" name="noriks_payment" value="stripe_cc" data-order_button_text="Naruči">
+              <input id="noriks_pm_card" type="radio" class="input-radio" name="noriks_payment" value="stripe_cc" data-order_button_text="Παραγγελία">
               <label for="noriks_pm_card">
                 Πιστωτική κάρτα <span class="payment-fee-free">Δωρεάν</span>
                 <div class="sv-wc-payment-gateway-card-icons">
@@ -84,7 +84,7 @@ if ( WC()->cart->is_empty() ) return;
               </label>
             </li>
             <li class="wc_payment_method payment_method_braintree_paypal">
-              <input id="noriks_pm_paypal" type="radio" class="input-radio" name="noriks_payment" value="ppcp-gateway" data-order_button_text="Naruči">
+              <input id="noriks_pm_paypal" type="radio" class="input-radio" name="noriks_payment" value="ppcp-gateway" data-order_button_text="Παραγγελία">
               <label for="noriks_pm_paypal">
                 PayPal <span class="payment-fee-free">Δωρεάν</span>
                 <img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">
