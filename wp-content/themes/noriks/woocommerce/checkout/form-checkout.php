@@ -73,7 +73,7 @@ if ( WC()->cart->is_empty() ) return;
               </label>
             </li>
             <li class="wc_payment_method payment_method_braintree_credit_card">
-              <input id="noriks_pm_card" type="radio" class="input-radio" name="noriks_payment" value="stripe_cc" data-order_button_text="Παραγγελία">
+              <input id="noriks_pm_card" type="radio" class="input-radio" name="noriks_payment" value="stripe_cc" data-order_button_text="Naruči">
               <label for="noriks_pm_card">
                 Πιστωτική κάρτα <span class="payment-fee-free">Δωρεάν</span>
                 <div class="sv-wc-payment-gateway-card-icons">
@@ -84,7 +84,7 @@ if ( WC()->cart->is_empty() ) return;
               </label>
             </li>
             <li class="wc_payment_method payment_method_braintree_paypal">
-              <input id="noriks_pm_paypal" type="radio" class="input-radio" name="noriks_payment" value="ppcp-gateway" data-order_button_text="Παραγγελία">
+              <input id="noriks_pm_paypal" type="radio" class="input-radio" name="noriks_payment" value="ppcp-gateway" data-order_button_text="Naruči">
               <label for="noriks_pm_paypal">
                 PayPal <span class="payment-fee-free">Δωρεάν</span>
                 <img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">
@@ -141,7 +141,7 @@ if ( WC()->cart->is_empty() ) return;
 
                 <!-- Shipping -->
                 <div class="c--darkgray review-section-container review-addons shipping_order_review">
-                  <div class="review-addons-title"><div>Paket24 Hrvatske pošte</div></div>
+                  <div class="review-addons-title"><div>ΕΛΤΑ Courier</div></div>
                   <div class="review-addons-price review-sale-price">
                     <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
                   </div>
@@ -151,7 +151,7 @@ if ( WC()->cart->is_empty() ) return;
             </div>
             <div class="vigo-checkout-total__sum flex flex--middle border_price">
               <div class="flex__item f--l">
-                Ukupni iznos: <span class="f--bold price_total_wrapper"><?php echo WC()->cart->get_total(); ?></span>
+                Σύνολο: <span class="f--bold price_total_wrapper"><?php echo WC()->cart->get_total(); ?></span>
               </div>
             </div>
           </div>
@@ -189,7 +189,7 @@ if ( WC()->cart->is_empty() ) return;
     <label class="checkbox">
       <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
     </label>
-    Pročitao sam i prihvaćam <a href="#" id="terms_conditions_link">Opće uvjete prodaje</a> i <a href="#" id="withdrawal_policy_link">pravo na odustajanje</a>.
+    Διάβασα και αποδέχομαι <a href="#" id="terms_conditions_link">τους Γενικούς Όρους Πώλησης</a> i <a href="#" id="withdrawal_policy_link">το δικαίωμα υπαναχώρησης</a>.
   </div>
 </div>
 

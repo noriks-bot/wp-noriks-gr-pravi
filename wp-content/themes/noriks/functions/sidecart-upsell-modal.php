@@ -74,7 +74,7 @@ function noriks_ajax_add_to_cart() {
     } else {
         // Get WC notices for error message
         $notices = wc_get_notices('error');
-        $msg = !empty($notices) ? strip_tags($notices[0]['notice'] ?? $notices[0]) : 'Greška pri dodavanju';
+        $msg = !empty($notices) ? strip_tags($notices[0]['notice'] ?? $notices[0]) : 'Σφάλμα κατά την προσθήκη';
         wc_clear_notices();
         wp_send_json_error(['message' => $msg]);
     }
@@ -156,7 +156,7 @@ function noriks_upsell_modal_markup() {
                     </div>
                 </div>
                 <div class="noriks-modal-qty-row">
-                    <span class="noriks-attr-label">KOLIČINA</span>
+                    <span class="noriks-attr-label">ΠΟΣΟΤΗΤΑ</span>
                     <select id="noriks-qty-val" class="noriks-qty-select">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -172,7 +172,7 @@ function noriks_upsell_modal_markup() {
                 </div>
                 <div id="noriks-modal-attributes" class="noriks-modal-attributes"></div>
                 <div id="noriks-modal-error" class="noriks-modal-error" style="display:none;">Επιλέξτε όλες τις επιλογές</div>
-                <button id="noriks-modal-add" class="noriks-modal-add-btn">DODAJ U KOŠARICU</button>
+                <button id="noriks-modal-add" class="noriks-modal-add-btn">ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ</button>
             </div>
             <div id="noriks-modal-loading" class="noriks-modal-loading" style="display:none;">
                 <div class="noriks-spinner"></div>
@@ -436,7 +436,7 @@ function noriks_upsell_modal_markup() {
                 $attrs.append($group);
             });
 
-            $('#noriks-modal-add').text('DODAJ U KOŠARICU').removeClass('adding added');
+            $('#noriks-modal-add').text('ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ').removeClass('adding added');
 
             // Auto-select first option for each attribute
             setTimeout(function() {
@@ -529,16 +529,16 @@ function noriks_upsell_modal_markup() {
             console.log('Variations:', JSON.stringify(modalData.variations.map(function(v){return v.attributes})));
             console.log('Match:', variation);
             if (!variation) {
-                $('#noriks-modal-error').text('Ova kombinacija nije dostupna').show();
+                $('#noriks-modal-error').text('Αυτός ο συνδυασμός δεν είναι διαθέσιμος').show();
                 return;
             }
 
             if (!variation.is_in_stock) {
-                $('#noriks-modal-error').text('Nema na zalihi').show();
+                $('#noriks-modal-error').text('Εξαντλήθηκε').show();
                 return;
             }
 
-            $btn.addClass('adding').text('DODAJEM...');
+            $btn.addClass('adding').text('ΠΡΟΣΘΕΤΩ...');
 
             var qty = parseInt($('#noriks-qty-val').val()) || 1;
             var data = {
@@ -559,7 +559,7 @@ function noriks_upsell_modal_markup() {
                 console.log('=== ADD TO CART RESPONSE ===', JSON.stringify(res));
                 
                 if (res.success !== false && res.fragments) {
-                    $btn.removeClass('adding').addClass('added').text('✓ DODANO!');
+                    $btn.removeClass('adding').addClass('added').text('✓ ΠΡΟΣΤΕΘΗΚΕ!');
                     
                     // Apply fragments to update side cart
                     $.each(res.fragments, function(key, value) {
@@ -572,19 +572,19 @@ function noriks_upsell_modal_markup() {
                         closeModal();
                     }, 800);
                 } else if (res.success === false) {
-                    $btn.removeClass('adding').text('DODAJ U KOŠARICU');
-                    var msg = (res.data && res.data.message) ? res.data.message : 'Greška pri dodavanju';
+                    $btn.removeClass('adding').text('ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ');
+                    var msg = (res.data && res.data.message) ? res.data.message : 'Σφάλμα κατά την προσθήκη';
                     $('#noriks-modal-error').text(msg).show();
                 } else {
                     // Fallback: no fragments but no error either — refresh
-                    $btn.removeClass('adding').addClass('added').text('✓ DODANO!');
+                    $btn.removeClass('adding').addClass('added').text('✓ ΠΡΟΣΤΕΘΗΚΕ!');
                     $(document.body).trigger('wc_fragment_refresh');
                     setTimeout(closeModal, 800);
                 }
             }).fail(function(xhr) {
                 console.error('Add to cart failed:', xhr.responseText);
-                $btn.removeClass('adding').text('DODAJ U KOŠARICU');
-                $('#noriks-modal-error').text('Greška pri dodavanju').show();
+                $btn.removeClass('adding').text('ΠΡΟΣΘΗΚΗ ΣΤΟ ΚΑΛΑΘΙ');
+                $('#noriks-modal-error').text('Σφάλμα κατά την προσθήκη').show();
             });
         });
 

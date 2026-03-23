@@ -10,7 +10,7 @@ if (!defined('ABSPATH')) exit;
 // Output clean HTML directly - no wp_head(), no WP template
 ?>
 <!DOCTYPE html>
-<html lang="hr" >
+<html lang="el" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
@@ -21,15 +21,15 @@ if (!defined('ABSPATH')) exit;
 	        <meta name="robots" content="noindex, nofollow"><link rel='dns-prefetch' href='//widget.trustpilot.com' />
 <link rel='dns-prefetch' href='//static.klaviyo.com' />
 <link rel='dns-prefetch' href='//js.braintreegateway.com' />
-<meta name="title" content="Dovršite kupnju" />
-<meta name="description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor proizvoda po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta name="title" content="Ολοκλήρωση αγοράς" />
+<meta name="description" content="Όλα όσα χρειάζεστε σε ένα μέρος. Εξερευνήστε μεγάλη ποικιλία προϊόντων στις χαμηλότερες τιμές. Κάντε κλικ τώρα!" />
 <meta name="image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
 <meta property="og:locale" content="hr" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Dovršite kupnju" />
-<meta property="og:description" content="Sve što vam treba na jednom mjestu. Istražite veliki izbor proizvoda po najnižim cijenama. Kliknite sada i uživajte u najboljim ponudama i velikoj raznolikosti!" />
+<meta property="og:title" content="Ολοκλήρωση αγοράς" />
+<meta property="og:description" content="Όλα όσα χρειάζεστε σε ένα μέρος. Εξερευνήστε μεγάλη ποικιλία προϊόντων στις χαμηλότερες τιμές. Κάντε κλικ τώρα!" />
 <meta property="og:image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
-<meta property="og:image:alt" content="Vigoshop - Dovršite kupnju" />
+<meta property="og:image:alt" content="Vigoshop - Ολοκλήρωση αγοράς" />
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -185,10 +185,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   
   
   <div class="woocommerce-billing-fields__field-wrapper">
-    <p class="form-row form-row-first form-group col-xs-12 validate-required" id="billing_first_name_field" data-priority="30"><label for="billing_first_name" class="required_field">Ime&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_first_name" id="billing_first_name" placeholder="Ime"  value="" aria-required="true" maxlength="80" autocomplete="given-name" /></span></p><p class="form-row form-row-last form-group col-xs-12 validate-required" id="billing_last_name_field" data-priority="40"><label for="billing_last_name" class="required_field">Prezime&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_last_name" id="billing_last_name" placeholder="Prezime"  value="" aria-required="true" maxlength="80" autocomplete="family-name" /></span></p><div class="form-row form-row-wide col-xs-12">Εισαγάγετε τη διεύθυνση όπου θα βρίσκεστε <b>μεταξύ 8:00 και 16:00</b>.</div><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="required_field">Ulica&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_1" id="billing_address_1" placeholder="Ulica"  value="" aria-required="true" maxlength="80" autocomplete="address-line1" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text required_field">Kućni broj&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_2" id="billing_address_2" placeholder="Kućni broj"  value="" autocomplete="address-line2" maxlength="80" aria-required="true" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required validate-postcode" id="billing_postcode_field" data-priority="70"><label for="billing_postcode" class="required_field">Poštanski broj&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_postcode" id="billing_postcode" placeholder="Poštanski broj"  value="" aria-required="true" maxlength="30" autocomplete="postal-code" /></span></p><p class="form-row form-row-wide dropdown form-group form-group col-xs-12 validate-required" id="billing_city_field" data-priority=""><label for="billing_city" class="required_field">Grad&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><select name="billing_city" id="billing_city" class="select form-input" aria-required="true" data-allow_clear="true" data-placeholder="Επιλέξτε πόλη">
+    <p class="form-row form-row-first form-group col-xs-12 validate-required" id="billing_first_name_field" data-priority="30"><label for="billing_first_name" class="required_field">Ime&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_first_name" id="billing_first_name" placeholder="Όνομα"  value="" aria-required="true" maxlength="80" autocomplete="given-name" /></span></p><p class="form-row form-row-last form-group col-xs-12 validate-required" id="billing_last_name_field" data-priority="40"><label for="billing_last_name" class="required_field">Prezime&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_last_name" id="billing_last_name" placeholder="Επώνυμο"  value="" aria-required="true" maxlength="80" autocomplete="family-name" /></span></p><div class="form-row form-row-wide col-xs-12">Εισαγάγετε τη διεύθυνση όπου θα βρίσκεστε <b>μεταξύ 8:00 και 16:00</b>.</div><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="required_field">Ulica&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_1" id="billing_address_1" placeholder="Οδός"  value="" aria-required="true" maxlength="80" autocomplete="address-line1" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text required_field">Αριθμός&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_2" id="billing_address_2" placeholder="Αριθμός"  value="" autocomplete="address-line2" maxlength="80" aria-required="true" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required validate-postcode" id="billing_postcode_field" data-priority="70"><label for="billing_postcode" class="required_field">Ταχυδρομικός κώδικας&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_postcode" id="billing_postcode" placeholder="Ταχυδρομικός κώδικας"  value="" aria-required="true" maxlength="30" autocomplete="postal-code" /></span></p><p class="form-row form-row-wide dropdown form-group form-group col-xs-12 validate-required" id="billing_city_field" data-priority=""><label for="billing_city" class="required_field">Grad&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><select name="billing_city" id="billing_city" class="select form-input" aria-required="true" data-allow_clear="true" data-placeholder="Επιλέξτε πόλη">
 							<option value=""  selected='selected'>Επιλέξτε πόλη</option>
-						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Telefon&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Broj mobilnog telefona"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">E-mail adresa&nbsp;<span class="optional">(neobavezno)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="E-mail adresa"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Županija&nbsp;<span class="optional">(neobavezno)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="placeholder_province"  data-input-classes="form-input" data-label="Županija">
-						<option value="">Odaberite opciju&hellip;</option><option value="HR-01" >Zagreb County</option><option value="HR-02" >Krapina-Zagorje County</option><option value="HR-03" >Sisak-Moslavina County</option><option value="HR-04" >Karlovac County</option><option value="HR-05" >Varaždin County</option><option value="HR-06" >Koprivnica-Križevci County</option><option value="HR-07" >Bjelovar-Bilogora County</option><option value="HR-08" >Primorje-Gorski Kotar County</option><option value="HR-09" >Lika-Senj County</option><option value="HR-10" >Virovitica-Podravina County</option><option value="HR-11" >Požega-Slavonia County</option><option value="HR-12" >Brod-Posavina County</option><option value="HR-13" >Zadar County</option><option value="HR-14" >Osijek-Baranja County</option><option value="HR-15" >Šibenik-Knin County</option><option value="HR-16" >Vukovar-Srijem County</option><option value="HR-17" >Split-Dalmatia County</option><option value="HR-18" >Istria County</option><option value="HR-19" >Dubrovnik-Neretva County</option><option value="HR-20" >Međimurje County</option><option value="HR-21" >Zagreb City</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Country / Region&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Hrvatska</strong><input type="hidden" name="billing_country" id="billing_country" value="GR" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Sign me up to receive email updates and news&nbsp;<span class="optional">(neobavezno)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Sign up for exclusive offers and news via text messages&nbsp;<span class="optional">(neobavezno)</span></label></span></p>  </div>
+						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Telefon&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Αριθμός κινητού τηλεφώνου"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">Διεύθυνση email&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="Διεύθυνση email"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Περιφέρεια&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="placeholder_province"  data-input-classes="form-input" data-label="Περιφέρεια">
+						<option value="">Επιλέξτε επιλογή&hellip;</option><option value="GR-A" >Ανατολική Μακεδονία και Θράκη</option><option value="GR-B" >Κεντρική Μακεδονία</option><option value="GR-C" >Δυτική Μακεδονία</option><option value="GR-D" >Ήπειρος</option><option value="GR-E" >Θεσσαλία</option><option value="GR-F" >Ιόνια Νησιά</option><option value="GR-G" >Δυτική Ελλάδα</option><option value="GR-H" >Στερεά Ελλάδα</option><option value="GR-I" >Αττική</option><option value="GR-J" >Πελοπόννησος</option><option value="GR-K" >Βόρειο Αιγαίο</option><option value="GR-L" >Νότιο Αιγαίο</option><option value="GR-M" >Κρήτη</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Χώρα / Περιοχή&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Ελλάδα</strong><input type="hidden" name="billing_country" id="billing_country" value="GR" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Sign me up to receive email updates and news&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Sign up for exclusive offers and news via text messages&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p>  </div>
 
   </div>
 
@@ -201,11 +201,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 	
 	
 		
-			<h3>Dodatne informacije</h3>
+			<h3>Επιπλέον πληροφορίες</h3>
 
 		
 		<div class="woocommerce-additional-fields__field-wrapper">
-							<p class="form-row notes form-group col-xs-12" id="order_comments_field" data-priority=""><label for="order_comments" class="">Napomene uz narudžbu&nbsp;<span class="optional">(neobavezno)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text form-input" id="order_comments" placeholder="Bilješke o vašoj narudžbi.  "  rows="2" cols="5"maxlength="80"></textarea></span></p>					</div>
+							<p class="form-row notes form-group col-xs-12" id="order_comments_field" data-priority=""><label for="order_comments" class="">Σημειώσεις παραγγελίας&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><textarea name="order_comments" class="input-text form-input" id="order_comments" placeholder="Σημειώσεις για την παραγγελία σας.  "  rows="2" cols="5"maxlength="80"></textarea></span></p>					</div>
 
 	
 	<div id="custom_shipping">
@@ -248,7 +248,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <div class="vigo-gift__tooltip">
                     <div class="flex flex--autosize flex--middle">
                         <div class="flex__item down_arrow "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.061,12.354a1.5,1.5,0,0,0-2.122,0L13.5,14.793V6a1.5,1.5,0,0,0-3,0v8.793L8.061,12.354a1.5,1.5,0,0,0-2.122,2.121l3.586,3.586a3.5,3.5,0,0,0,4.95,0l3.586-3.586A1.5,1.5,0,0,0,18.061,12.354Z"/></svg></div>
-                        <div class="flex__item f--bold">  Dodajte u narudžbu</div>
+                        <div class="flex__item f--bold">  Προσθέστε στην παραγγελία</div>
                     </div>
                 </div>
                 <div class="flex sup_inner_wrapper">
@@ -258,20 +258,20 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                                 <label for="surprise_item_upsell_0" class=""></label>
                                 <input id="surprise_item_upsell_0" type="checkbox" class="checkbox-simple checkbox-simple--green val--bottom"  disabled/>
                             </div>
-                            <div class="f--l f--bold surprise_title">Proizvod iznenađenja</div>
+                            <div class="f--l f--bold surprise_title">Προϊόν-έκπληξη</div>
                             <div class="tag_wrapper">
                                 <div class="tag tag--red">
                                     <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                                </div>
                             </div>
                         </div>
-                        <div class="f--m c--darkgray s-top--s">U vrijednosti između 5 € i 15 €.</div>
+                        <div class="f--m c--darkgray s-top--s">Αξίας μεταξύ 5 € και 15 €.</div>
                     </div>
                     <div class="vigo-checkout-gift__img">
                         <img decoding="async" class="img" src="https://images.vigo-shop.com/general/present_responsive.svg" alt="Gift icon">
                     </div>
                 </div>
                 <div class="c--darkgray remove_wrapper">
-                    <div class="remove_surprise vigo-checkout-total__trash hide"><svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 1.15398H15.4286C15.7429 1.15398 16 1.41215 16 1.7309V2.88474C16 3.20334 15.7442 3.46166 15.4286 3.46166H0.571429C0.255857 3.46166 0 3.20334 0 2.88474V1.7309C0 1.41222 0.255857 1.15398 0.571429 1.15398H4.57143L4.98536 0.318892C5.08214 0.123461 5.27996 0 5.49643 0H10.5039C10.7204 0 10.9183 0.123461 11.015 0.318892L11.4286 1.15398ZM1.14286 16.7308C1.14286 17.6863 1.91071 18.4615 2.85714 18.4615H13.1429C14.0893 18.4615 14.8571 17.6863 14.8571 16.7308V4.61549H1.14286V16.7308ZM10.8571 7.50009C10.8571 7.17917 11.1107 6.92317 11.4286 6.92317C11.7464 6.92317 12 7.18008 12 7.50009V15.5769C12 15.897 11.7455 16.1539 11.4286 16.1539C11.1116 16.1539 10.8571 15.897 10.8571 15.5769V7.50009ZM8 6.92317C7.68214 6.92317 7.42857 7.17917 7.42857 7.50009V15.5769C7.42857 15.897 7.68304 16.1539 8 16.1539C8.31696 16.1539 8.57143 15.897 8.57143 15.5769V7.50009C8.57143 7.18008 8.31786 6.92317 8 6.92317ZM4 7.50009C4 7.17917 4.25357 6.92317 4.57143 6.92317C4.88929 6.92317 5.14286 7.18008 5.14286 7.50009V15.5769C5.14286 15.8979 4.88929 16.1539 4.57143 16.1539C4.25357 16.1539 4 15.897 4 15.5769V7.50009Z" /></svg>                        <span>Ukloni</span></div>
+                    <div class="remove_surprise vigo-checkout-total__trash hide"><svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 1.15398H15.4286C15.7429 1.15398 16 1.41215 16 1.7309V2.88474C16 3.20334 15.7442 3.46166 15.4286 3.46166H0.571429C0.255857 3.46166 0 3.20334 0 2.88474V1.7309C0 1.41222 0.255857 1.15398 0.571429 1.15398H4.57143L4.98536 0.318892C5.08214 0.123461 5.27996 0 5.49643 0H10.5039C10.7204 0 10.9183 0.123461 11.015 0.318892L11.4286 1.15398ZM1.14286 16.7308C1.14286 17.6863 1.91071 18.4615 2.85714 18.4615H13.1429C14.0893 18.4615 14.8571 17.6863 14.8571 16.7308V4.61549H1.14286V16.7308ZM10.8571 7.50009C10.8571 7.17917 11.1107 6.92317 11.4286 6.92317C11.7464 6.92317 12 7.18008 12 7.50009V15.5769C12 15.897 11.7455 16.1539 11.4286 16.1539C11.1116 16.1539 10.8571 15.897 10.8571 15.5769V7.50009ZM8 6.92317C7.68214 6.92317 7.42857 7.17917 7.42857 7.50009V15.5769C7.42857 15.897 7.68304 16.1539 8 16.1539C8.31696 16.1539 8.57143 15.897 8.57143 15.5769V7.50009C8.57143 7.18008 8.31786 6.92317 8 6.92317ZM4 7.50009C4 7.17917 4.25357 6.92317 4.57143 6.92317C4.88929 6.92317 5.14286 7.18008 5.14286 7.50009V15.5769C5.14286 15.8979 4.88929 16.1539 4.57143 16.1539C4.25357 16.1539 4 15.897 4 15.5769V7.50009Z" /></svg>                        <span>Αφαίρεση</span></div>
                 </div>
 
             </div>
@@ -291,23 +291,23 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>  </label>
   </li>
 <li class="wc_payment_method payment_method_braintree_credit_card">
-  <input id="payment_method_braintree_credit_card" type="radio" class="input-radio" name="payment_method" value="braintree_credit_card"  data-order_button_text="Παραγγελία" />
+  <input id="payment_method_braintree_credit_card" type="radio" class="input-radio" name="payment_method" value="braintree_credit_card"  data-order_button_text="Naruči" />
 
   <label for="payment_method_braintree_credit_card">
     Πιστωτική κάρτα <span class="payment-fee-free">Δωρεάν</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
       <div class="payment_box payment_method_braintree_credit_card" style="display:none;">
-      <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
+      <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Πληροφορίες πληρωμής"><legend style="display:none;">Πληροφορίες πληρωμής</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
 		<input type="hidden" id="wc-braintree-credit-card-device-data" name="wc_braintree_device_data" />
 				<div class="form-row ">
 			<label for="wc-braintree-credit-card-context-hosted"></label>
 			<div id="wc-braintree-credit-card-context-hosted" class="" data-placeholder=""></div>
 		</div>
 				<div class="form-row form-row-wide wc-braintree-hosted-field-card-number-parent wc-braintree-hosted-field-parent">
-			<label for="wc-braintree-credit-card-account-number-hosted">Broj kartice<abbr class="required" title="required">&nbsp;*</abbr></label>
+			<label for="wc-braintree-credit-card-account-number-hosted">Αριθμός κάρτας<abbr class="required" title="required">&nbsp;*</abbr></label>
 			<div id="wc-braintree-credit-card-account-number-hosted" class="js-sv-wc-payment-gateway-credit-card-form-inputjs-sv-wc-payment-gateway-credit-card-form-account-number wc-braintree-hosted-field-card-number wc-braintree-hosted-field" data-placeholder="•••• •••• •••• ••••"></div>
 		</div>
 				<div class="form-row form-row-first wc-braintree-hosted-field-card-expiry-parent wc-braintree-hosted-field-parent">
-			<label for="wc-braintree-credit-card-expiry-hosted">Datum isteka<abbr class="required" title="required">&nbsp;*</abbr></label>
+			<label for="wc-braintree-credit-card-expiry-hosted">Ημερομηνία λήξης<abbr class="required" title="required">&nbsp;*</abbr></label>
 			<div id="wc-braintree-credit-card-expiry-hosted" class="js-sv-wc-payment-gateway-credit-card-form-inputjs-sv-wc-payment-gateway-credit-card-form-expiry wc-braintree-hosted-field-card-expiry wc-braintree-hosted-field" data-placeholder="MM/GG"></div>
 		</div>
 				<div class="form-row form-row-last wc-braintree-hosted-field-card-csc-parent wc-braintree-hosted-field-parent">
@@ -320,12 +320,12 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 		</style>    </div>
   </li>
 <li class="wc_payment_method payment_method_braintree_paypal">
-  <input id="payment_method_braintree_paypal" type="radio" class="input-radio" name="payment_method" value="braintree_paypal"  data-order_button_text="Παραγγελία" />
+  <input id="payment_method_braintree_paypal" type="radio" class="input-radio" name="payment_method" value="braintree_paypal"  data-order_button_text="Naruči" />
 
   <label for="payment_method_braintree_paypal">
     PayPal <span class="payment-fee-free">Δωρεάν</span><img decoding="async" src="https://images.vigo-shop.com/general/checkout/paypal/PayPal.svg" alt="PayPal">  </label>
       <div class="payment_box payment_method_braintree_paypal" style="display:none;">
-      <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Informacije o plaćanju"><legend style="display:none;">Informacije o plaćanju</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
+      <fieldset id="wc-braintree-paypal-paypal-form" aria-label="Πληροφορίες πληρωμής"><legend style="display:none;">Πληροφορίες πληρωμής</legend><div class="wc-braintree-paypal-new-payment-method-form js-wc-braintree-paypal-new-payment-method-form">		<input type="hidden" id="wc_braintree_paypal_payment_nonce" name="wc_braintree_paypal_payment_nonce" />
 		<input type="hidden" id="wc-braintree-paypal-device-data" name="wc_braintree_device_data" />
 		<p class="form-row " id="wc-braintree-paypal-context_field" data-priority=""><span class="woocommerce-input-wrapper"><input type="hidden" class="input-hidden " name="wc-braintree-paypal-context" id="wc-braintree-paypal-context" value="shortcode"  /></span></p>
 		
@@ -359,11 +359,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div id="pdf">
     <div class="pdf-title-container">
         <h3 class="pdf-title">
-            KUPITE E-KNJIGU<!--            <span class="green-label">-->
+            ΑΓΟΡΑΣΤΕ E-BOOK<!--            <span class="green-label">-->
 <!--                --><!--            </span>-->
         </h3>
     </div>
-    <p class="pdf-description">Kada kupite e-knjigu, besplatno Vam dajemo troškove dostave.</p>
+    <p class="pdf-description">Όταν αγοράζετε e-book, σας προσφέρουμε δωρεάν αποστολή.</p>
 
     <div id="pdf-grid">
         <div class="table-grid">
@@ -375,15 +375,15 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <!--                <div class="top-price-label">-->
 <!--                    <span>--><!--</span>-->
 <!--                </div>-->
-                <label for="ebook_true">E-knjiga</label>
+                <label for="ebook_true">E-book</label>
             </div>
             <div id="pdf-select-false" class="cell-grid column-selected top">
                 <input type="radio" id="ebook_false"  name="ebook_offer" value="false" checked>
-                <label for="ebook_false">Ne želim e-knjigu</label>
+                <label for="ebook_false">Δεν θέλω e-book</label>
             </div>
 
             <div class="cell-grid">
-                E-knjiga:
+                E-book:
             </div>
             <div class="cell-grid column-option">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
@@ -395,11 +395,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 Dostava:
             </div>
             <div class="cell-grid column-option">
-                Δωρεάν            </div>
+                Besplatno            </div>
             <div class="cell-grid column-selected">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
                         <div class="cell-grid">
-                Ukupna narudžba:
+                Σύνολο παραγγελίας:
             </div>
             <div class="cell-grid totals column-option bottom">
                 <span class="totals"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span></span>
@@ -410,10 +410,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
     <p class="pdf-more-info">
         <img decoding="async" src="https://images.vigo-shop.com/general/checkout/pdf_info_icon.svg">
-        <u>Više informacija o e-knjizi</u>
+        <u>Περισσότερες πληροφορίες για το e-book</u>
     </p>
     <p class="pdf-more-info-description">
-        Odaberite našu e-knjigu i dobijte pristup trikovima koji mijenjaju život, savjetima za uštedu novca i vrhunskoj pogodnosti. Također štedite na otpremi. Odaberite e-knjigu za pametniju, lakšu i pristupačniju budućnost!</p>
+        Επιλέξτε το e-book μας και αποκτήστε πρόσβαση σε κόλπα που αλλάζουν τη ζωή, συμβουλές εξοικονόμησης χρημάτων και κορυφαίες προσφορές. Εξοικονομείτε επίσης στα μεταφορικά. Επιλέξτε το e-book για ένα πιο έξυπνο, εύκολο και οικονομικό μέλλον!</p>
 </div>
 
 
@@ -441,7 +441,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <div class="c--darkgray review-section-container review-addons shipping_order_review">
                 <div class="review-addons-title">
                     <div>
-                        Paket24 Hrvatske pošte                    </div>
+                        ΕΛΤΑ Courier                    </div>
                 </div>
 
                                     <div class="review-addons-price review-sale-price"> <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                    </div>
@@ -454,7 +454,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
         <div class="vigo-checkout-total__sum flex flex--middle border_price">
         <div class="flex__item f--l">
-            Ukupni iznos: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
+            Σύνολο: <span class="f--bold price_total_wrapper"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>        </div>
     </div>
 </div>
 
@@ -472,13 +472,13 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 
     
         <div id="order_review" class="woocommerce-checkout-review-order container container--xs bg--white">
-            <button type="submit" class="button alt button--l button--block button--green button--rounded button--green-gradient" name="woocommerce_checkout_place_order" id="place_order" data-value="Naruči" />Naruči</button></div><div class="checkout-warranty flex flex--center flex--middle">
+            <button type="submit" class="button alt button--l button--block button--green button--rounded button--green-gradient" name="woocommerce_checkout_place_order" id="place_order" data-value="Παραγγελία" />Παραγγελία</button></div><div class="checkout-warranty flex flex--center flex--middle">
     <div class="flex__item--autosize checkout-warranty__icon">
        <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_gr.png">
     </div>
     <div class="flex__item--autosize f--m checkout-warranty__text">
-        <strong>Kupujte bez brige </strong><br>
-        Povrat novca moguć u roku od 90 dana    </div>
+        <strong>Αγοράστε χωρίς ανησυχία </strong><br>
+        Επιστροφή χρημάτων εντός 90 ημερών    </div>
 </div>
 
 <div class="agreed_terms_txt">
@@ -487,7 +487,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <label class="checkbox">
                 <input type="checkbox" class="input-checkbox" name="agree_to_checkout_terms" id="agree_to_terms_checkbox" value="1">
             </label>
-            Pročitao sam i prihvaćam <a href="#" id="terms_conditions_link"> Opće uvjete prodaje </a> i <a href="#" id="withdrawal_policy_link"> pravo na odustajanje </a>.        </div>
+            Διάβασα και αποδέχομαι <a href="#" id="terms_conditions_link"> τους Γενικούς Όρους Πώλησης </a> i <a href="#" id="withdrawal_policy_link"> το δικαίωμα υπαναχώρησης </a>.        </div>
     </div>
 
 <div id="terms-conditions-popup" class="checkout-popup" style="display: none;">
@@ -515,7 +515,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify">Tvrtka upravlja internetskom trgovinom u skladu s Općim uvjetima poslovanja. Internetska trgovina dostupna je kupcima u svakom trenutku, pri čemu tvrtka zadržava pravo privremeno onemogućiti ili obustaviti internetsku trgovinu bez prethodne najave.</p>
 <p class="ql-align-justify">Postoji mogućnost da će internetska trgovina biti privremeno nedostupna ili da privremeno neće biti moguće izvršiti plaćanja zbog održavanja i ažuriranja internetske trgovine. Tvrtka neće biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja internetske trgovine.</p>
 <h3 class="ql-align-justify"><strong>ii. Izvršavanje narudžbe u internetskoj trgovini</strong></h3>
-<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Narudžba potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
+<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Παραγγελία potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
 <p class="ql-align-justify">
 <p class="ql-align-justify">Postupak kupnje:</p>
 <ol>
@@ -534,9 +534,9 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify"><strong>Načini plaćanja</strong></p>
 <p class="ql-align-justify">U našoj internetskoj trgovini možete upotrebljavati sljedeće načine plaćanja:</p>
 <ul>
-<li class="ql-align-justify">Plaćanje pouzećem – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
-<li class="ql-align-justify">Plaćanje kreditnom karticom;</li>
-<li class="ql-align-justify">Plaćanje preko PayPala.</li>
+<li class="ql-align-justify">Πληρωμή pouzećem – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
+<li class="ql-align-justify">Πληρωμή kreditnom karticom;</li>
+<li class="ql-align-justify">Πληρωμή preko PayPala.</li>
 </ul>
 <p class="ql-align-justify">Tvrtka zadržava pravo provjere odabranog načina plaćanja s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina plaćanja tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
 <p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos narudžbe (uključujući sve troškove povezane s transakcijom i isporukom) u skladu s odabranim načinom plaćanja. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina plaćanja.</p>
@@ -558,7 +558,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv tvrtke, tvrtka ograničava svoju odgovornost za štete na trostruku tržišnu cijenu proizvoda.</p>
 <p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise proizvoda i fotografije. Ipak, ne možemo jamčiti da su svi podaci o proizvodu i njihove fotografije potpuno točni. Budući da se određeni proizvodi mogu nabaviti kod različitih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu proizvoda. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost proizvoda.&nbsp;&nbsp;</p>
 <h3 class="ql-align-justify"><strong>v. Pravo na odustajanje od Ugovora</strong></h3>
-<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke narudžbe, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno pravo na odustajanje od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
+<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke narudžbe, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno το δικαίωμα υπαναχώρησης od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
 <p class="ql-align-justify">Smatra se da je izjava o odustajanju izdana pravodobno ako je podnesena u roku za odustajanje od Ugovora. Izjavu o odustajanju možete dostaviti na unaprijed dogovorenom obrascu ili nam je možete poslati e-poštom.&nbsp;Obrazac možete pronaći na kartici „Pravo na odustajanje od kupnje” pri dnu web-mjesta. Teret dokazivanja koji se odnosi na ostvarivanje prava na odustajanje iz ovog članka snosi potrošač.</p>
 <p class="ql-align-justify"><strong>Odustajanjem od Ugovora kupac može steći povrat novca ili zamijeniti proizvod, ali ne može iskoristiti kredit!</strong></p>
 <p class="ql-align-justify">Nakon predaje izjave o odustajanju, svoje proizvode morate vratiti u roku od 14 dana od datuma izjave o odustajanju. Robu pošaljite na našu adresu: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za povrat u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih proizvoda, zapakiranih u originalno pakiranje ili ambalažu koja proizvode štiti na isti način kao i originalna ambalaža. Ne možete vratiti oštećene proizvode, proizvode u izmijenjenoj količini ili proizvode upakirane u neprikladnu ambalažu. Molimo vratite artikle kao paketnu pošiljku, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od kupnje, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od kupnje), to može značajno produžiti vrijeme potrebno za obradu vašeg zahtjeva. U slučaju odustajanja od ugovora, podmirit ćete samo troškove povrata robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
@@ -666,7 +666,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <h3 class="ql-align-justify"><strong>xi. Platforma za rješavanje sporova</strong></h3>
 <p class="ql-align-justify">U skladu s pravnim standardima, tvrtka HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja potrošačkih sporova kao pružatelja koji je ovlašten rješavati potrošačke sporove koje potrošači mogu pokrenuti na temelju izvansudske nagodbe Zakona o potrošačkim sporovima.</p>
 <p class="ql-align-justify">Platforma za rješavanje sporova dostupna je na stranici&nbsp;<a href="https://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
-<p class="ql-align-justify">Više informacija o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/hr/MEMO_13_193">ec.europa.eu</a>.</p>
+<p class="ql-align-justify">Περισσότερες πληροφορίες o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/gr/MEMO_13_193">ec.europa.eu</a>.</p>
 <p class="ql-align-justify">
 <h2 class="ql-align-justify"><strong>3. KOMUNIKACIJA</strong></h2>
 <p class="ql-align-justify">Tvrtka će se obratiti korisniku samo s pomoću daljinske komunikacije ako je to potrebno za izvršavanje narudžbe.</p>
@@ -677,7 +677,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <li class="ql-align-justify">jasno prikazivati pošiljatelja,</li>
 <li class="ql-align-justify">jasno označiti razne promocije i druge tehnike marketinga kao takve.</li>
 </ul>
-<p class="ql-align-justify">Više informacija u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
+<p class="ql-align-justify">Περισσότερες πληροφορίες u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
 <h2 class="ql-align-justify"><strong>4. INTELEKTUALNO VLASNIŠTVO</strong></h2>
 <p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na našem web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
 <p class="ql-align-justify">Kupnjom proizvoda ili upotrebom web-mjesta, korisnik neće steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za proizvode i/ili web-mjesto. Korisnik može upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
@@ -719,7 +719,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify"><strong>HS PLUS d.o.o.,</strong></p>
 <p class="ql-align-justify"><strong>Poštanska ulica 25,</strong></p>
 <p class="ql-align-justify"><strong>10410 Velika Gorica</strong></p>
-<p class="ql-align-justify"><strong>Hrvatska</strong></p>
+<p class="ql-align-justify"><strong>Ελλάδα</strong></p>
 <p class="ql-align-justify">Savjetujemo vam da paket pošaljete preporučenom poštom s potvrdom pošiljke, kako bi bilo moguće riješiti vaš prigovor čak i u slučaju gubitka paketa na temelju potvrde o isporuci putem broja za praćenje.</p>
 <p class="ql-align-justify"><strong>Trošak dostave je na strani pošiljatelja, ne prihvaćamo pošiljke sa otkupninom.</strong></p>
 <p class="ql-align-justify"><strong>Čim reklamacijska služba primi Vaš paket</strong>, novi proizvod šalje se u zamjenu ili se otkupnina vraća na Vaš tekući račun u roku od 8 radnih dana. Vratit ćemo iznos za vraćene proizvode i troškove najjeftinijeg rješenja dostave (standardna naknada za dostavu). Prioritetno rukovanje, osiguranje paketa i plaćanje pouzećem predstavljaju dodatni trošak koji se može izbjeći, a usluga se izvršava samo na poseban zahtjev klijenta. Prilagođeni troškovi neće biti vraćeni. U slučaju odustajanja od kupnje, kupac snosi troškove povratne dostave, tako da se također ne vraćaju troškovi povratne dostave proizvoda.</p>
@@ -747,11 +747,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     </div>
 </div>
         <div id="custom_mailing_checkout_field">
-            <p class="form-row email_opt_in" id="email_opt_in_field" data-priority="15"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="email_opt_in" id="email_opt_in" value="1" class="input-checkbox "  /> Da, želim prvi/a saznati za trenutne akcije. <span id="mailing_read_more_link" style="text-decoration: underline">Više informacija</span>&nbsp;<span class="optional">(neobavezno)</span></label></span></p>        </div>
+            <p class="form-row email_opt_in" id="email_opt_in_field" data-priority="15"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="email_opt_in" id="email_opt_in" value="1" class="input-checkbox "  /> Ναι, θέλω να μαθαίνω πρώτος/η για τις τρέχουσες προσφορές. <span id="mailing_read_more_link" style="text-decoration: underline">Περισσότερες πληροφορίες</span>&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p>        </div>
         <div id="checkout-popup">
             <div class="checkout-popup-wrapper">
                 <img decoding="async" class="img-info" src="https://images.vigo-shop.com/general/vigoshop_info.svg">
-                <span>HSplus d.o.o. može UPOTREBLJAVATI osobne podatke koji su poslani (uključujući povijest kupnje i vaše postavke) za prilagođenu komunikaciju putem SMS poruka, telefonskih poziva, tiskanih kataloga i/ili e-pošte u vezi s proizvodima, posebnim ponudama, istraživanjima, promocijama, događajima i ostalim komunikacijama. U svakom trenutku možete povući svoju suglasnost za primanje e-pošte pritiskanjem veze za odjavu pretplate u svakoj poruci e-pošte. Dodatne informacije, uključujući informacije o ostvarivanju vaših prava u vezi s osobnim podacima koje smo prikupili, potražite u                     <span id="terms-conditions-content_email-checkbox">
+                <span>HSplus d.o.o. može UPOTREBLJAVATI osobne podatke koji su poslani (uključujući povijest kupnje i vaše postavke) za prilagođenu komunikaciju putem SMS poruka, telefonskih poziva, tiskanih kataloga i/ili e-pošte u vezi s proizvodima, posebnim ponudama, istraživanjima, promocijama, događajima i ostalim komunikacijama. U svakom trenutku možete povući svoju suglasnost za primanje e-pošte pritiskanjem veze za odjavu pretplate u svakoj poruci e-pošte. Επιπλέον πληροφορίες, uključujući informacije o ostvarivanju vaših prava u vezi s osobnim podacima koje smo prikupili, potražite u                     <span id="terms-conditions-content_email-checkbox">
                         UVJETIMA I ODREDBAMA                    </span>.
                         <div class="terms-conditions-content_email" style="display: none;">
                             <h2 class="ql-align-justify"><strong>Opći uvjeti poslovanja</strong></h2>
@@ -776,7 +776,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify">Tvrtka upravlja internetskom trgovinom u skladu s Općim uvjetima poslovanja. Internetska trgovina dostupna je kupcima u svakom trenutku, pri čemu tvrtka zadržava pravo privremeno onemogućiti ili obustaviti internetsku trgovinu bez prethodne najave.</p>
 <p class="ql-align-justify">Postoji mogućnost da će internetska trgovina biti privremeno nedostupna ili da privremeno neće biti moguće izvršiti plaćanja zbog održavanja i ažuriranja internetske trgovine. Tvrtka neće biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja internetske trgovine.</p>
 <h3 class="ql-align-justify"><strong>ii. Izvršavanje narudžbe u internetskoj trgovini</strong></h3>
-<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Narudžba potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
+<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Παραγγελία potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
 <p class="ql-align-justify">
 <p class="ql-align-justify">Postupak kupnje:</p>
 <ol>
@@ -795,9 +795,9 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify"><strong>Načini plaćanja</strong></p>
 <p class="ql-align-justify">U našoj internetskoj trgovini možete upotrebljavati sljedeće načine plaćanja:</p>
 <ul>
-<li class="ql-align-justify">Plaćanje pouzećem – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
-<li class="ql-align-justify">Plaćanje kreditnom karticom;</li>
-<li class="ql-align-justify">Plaćanje preko PayPala.</li>
+<li class="ql-align-justify">Πληρωμή pouzećem – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
+<li class="ql-align-justify">Πληρωμή kreditnom karticom;</li>
+<li class="ql-align-justify">Πληρωμή preko PayPala.</li>
 </ul>
 <p class="ql-align-justify">Tvrtka zadržava pravo provjere odabranog načina plaćanja s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina plaćanja tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
 <p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos narudžbe (uključujući sve troškove povezane s transakcijom i isporukom) u skladu s odabranim načinom plaćanja. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina plaćanja.</p>
@@ -819,7 +819,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv tvrtke, tvrtka ograničava svoju odgovornost za štete na trostruku tržišnu cijenu proizvoda.</p>
 <p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise proizvoda i fotografije. Ipak, ne možemo jamčiti da su svi podaci o proizvodu i njihove fotografije potpuno točni. Budući da se određeni proizvodi mogu nabaviti kod različitih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu proizvoda. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost proizvoda.&nbsp;&nbsp;</p>
 <h3 class="ql-align-justify"><strong>v. Pravo na odustajanje od Ugovora</strong></h3>
-<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke narudžbe, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno pravo na odustajanje od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
+<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke narudžbe, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno το δικαίωμα υπαναχώρησης od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
 <p class="ql-align-justify">Smatra se da je izjava o odustajanju izdana pravodobno ako je podnesena u roku za odustajanje od Ugovora. Izjavu o odustajanju možete dostaviti na unaprijed dogovorenom obrascu ili nam je možete poslati e-poštom.&nbsp;Obrazac možete pronaći na kartici „Pravo na odustajanje od kupnje” pri dnu web-mjesta. Teret dokazivanja koji se odnosi na ostvarivanje prava na odustajanje iz ovog članka snosi potrošač.</p>
 <p class="ql-align-justify"><strong>Odustajanjem od Ugovora kupac može steći povrat novca ili zamijeniti proizvod, ali ne može iskoristiti kredit!</strong></p>
 <p class="ql-align-justify">Nakon predaje izjave o odustajanju, svoje proizvode morate vratiti u roku od 14 dana od datuma izjave o odustajanju. Robu pošaljite na našu adresu: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za povrat u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih proizvoda, zapakiranih u originalno pakiranje ili ambalažu koja proizvode štiti na isti način kao i originalna ambalaža. Ne možete vratiti oštećene proizvode, proizvode u izmijenjenoj količini ili proizvode upakirane u neprikladnu ambalažu. Molimo vratite artikle kao paketnu pošiljku, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od kupnje, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od kupnje), to može značajno produžiti vrijeme potrebno za obradu vašeg zahtjeva. U slučaju odustajanja od ugovora, podmirit ćete samo troškove povrata robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
@@ -927,7 +927,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <h3 class="ql-align-justify"><strong>xi. Platforma za rješavanje sporova</strong></h3>
 <p class="ql-align-justify">U skladu s pravnim standardima, tvrtka HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja potrošačkih sporova kao pružatelja koji je ovlašten rješavati potrošačke sporove koje potrošači mogu pokrenuti na temelju izvansudske nagodbe Zakona o potrošačkim sporovima.</p>
 <p class="ql-align-justify">Platforma za rješavanje sporova dostupna je na stranici&nbsp;<a href="https://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
-<p class="ql-align-justify">Više informacija o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/hr/MEMO_13_193">ec.europa.eu</a>.</p>
+<p class="ql-align-justify">Περισσότερες πληροφορίες o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/gr/MEMO_13_193">ec.europa.eu</a>.</p>
 <p class="ql-align-justify">
 <h2 class="ql-align-justify"><strong>3. KOMUNIKACIJA</strong></h2>
 <p class="ql-align-justify">Tvrtka će se obratiti korisniku samo s pomoću daljinske komunikacije ako je to potrebno za izvršavanje narudžbe.</p>
@@ -938,7 +938,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <li class="ql-align-justify">jasno prikazivati pošiljatelja,</li>
 <li class="ql-align-justify">jasno označiti razne promocije i druge tehnike marketinga kao takve.</li>
 </ul>
-<p class="ql-align-justify">Više informacija u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
+<p class="ql-align-justify">Περισσότερες πληροφορίες u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
 <h2 class="ql-align-justify"><strong>4. INTELEKTUALNO VLASNIŠTVO</strong></h2>
 <p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na našem web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
 <p class="ql-align-justify">Kupnjom proizvoda ili upotrebom web-mjesta, korisnik neće steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za proizvode i/ili web-mjesto. Korisnik može upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
@@ -986,12 +986,12 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div class="partial_inner_section">
             <img src="https://images.vigo-shop.com/general/banner_icons/delivery_icon.svg" alt="">
             <div class="text_wrapper">
-                Dostavlja: Paket24 Hrvatske pošte            </div>
+                Αποστολή: ΕΛΤΑ Courier            </div>
         </div>
 
                     <div class="partial_inner_section">
                 <img src="https://images.vigo-shop.com/general/banner_icons/COD_icon.svg" alt="">
-                <div class="text_wrapper">Plaćanje pouzećem</div>
+                <div class="text_wrapper">Πληρωμή pouzećem</div>
             </div>
                 <div class="partial_inner_section delivery-from-eu-warehouse ">
             <img class="delivery-from-eu-warehouse__icon" src="https://images.vigo-shop.com/general/flags/eu-warehouse.svg">
@@ -1047,7 +1047,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="button button--link" id="scroll-to-top">
                         <div class="flex flex--autosize flex--middle flex--center">
                             <div class="flex__item back-top-icon"><svg viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M15.8654 2.30769H1.05769C0.473758 2.30769 0 1.79119 0 1.15409C0 0.516985 0.473758 0 1.05769 0H15.8654C16.4515 0 16.9231 0.516504 16.9231 1.15361C16.9231 1.79071 16.4493 2.30769 15.8654 2.30769ZM7.36833 8.30031L3.42706 12.3225C3.01302 12.7461 2.32115 12.7636 1.88252 12.3662C1.44298 11.9687 1.42157 11.3049 1.83561 10.8813L7.66581 4.93316C8.07847 4.50946 8.8445 4.50946 9.25726 4.93316L15.0874 10.8813C15.5014 11.3036 15.4803 11.968 15.0405 12.3644C14.8296 12.5557 14.5606 12.65 14.2916 12.65C14.0001 12.65 13.7132 12.5408 13.4959 12.3203L9.55464 8.30031V18.9501C9.55464 19.5297 9.06272 20 8.46149 20C7.86025 20 7.36833 19.5283 7.36833 18.9475V8.30031Z" /></svg></div>
-                            <div class="flex__item f--m c--lightgray scroll-to-top-text">Natrag na vrh</div>
+                            <div class="flex__item f--m c--lightgray scroll-to-top-text">Επιστροφή στην κορυφή</div>
                         </div>
                     </a>
                 </div>
@@ -1064,10 +1064,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M10.9107 7.38848H11.6071C12.3761 7.38848 13 8.04356 13 8.85098V14.701C13 15.5084 12.3761 16.1635 11.6071 16.1635H1.39286C0.623884 16.1635 0 15.5084 0 14.701V8.85098C0 8.04356 0.623884 7.38848 1.39286 7.38848H2.08929V5.19473C2.08929 2.64145 4.0683 0.563477 6.5 0.563477C8.9317 0.563477 10.9107 2.64145 10.9107 5.19473V7.38848ZM4.41071 5.19473V7.38848H8.58928V5.19473C8.58928 3.98512 7.65201 3.00098 6.5 3.00098C5.34799 3.00098 4.41071 3.98512 4.41071 5.19473Z" fill="white"/>
             </svg></div>
                             <div
-                                class="flex__item f--bold c--gray">100% sigurna kupnja</div>
+                                class="flex__item f--bold c--gray">100% ασφαλής αγορά</div>
                         </div>
                         <div
-                            class="f--s c--gray">osigurano 256-bitnim šifriranjem</div>
+                            class="f--s c--gray">εξασφαλισμένη με κρυπτογράφηση 256-bit</div>
                     </div>
                 </div>
             </div>
@@ -1075,7 +1075,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <a class="button button--link" id="scroll-to-top">
                     <div class="flex flex--autosize flex--middle">
                         <div class="flex__item"><svg viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8654 2.30769H1.05769C0.473758 2.30769 0 1.79119 0 1.15409C0 0.516985 0.473758 0 1.05769 0H15.8654C16.4515 0 16.9231 0.516504 16.9231 1.15361C16.9231 1.79071 16.4493 2.30769 15.8654 2.30769ZM7.36833 8.30031L3.42706 12.3225C3.01302 12.7461 2.32115 12.7636 1.88252 12.3662C1.44298 11.9687 1.42157 11.3049 1.83561 10.8813L7.66581 4.93316C8.07847 4.50946 8.8445 4.50946 9.25726 4.93316L15.0874 10.8813C15.5014 11.3036 15.4803 11.968 15.0405 12.3644C14.8296 12.5557 14.5606 12.65 14.2916 12.65C14.0001 12.65 13.7132 12.5408 13.4959 12.3203L9.55464 8.30031V18.9501C9.55464 19.5297 9.06272 20 8.46149 20C7.86025 20 7.36833 19.5283 7.36833 18.9475V8.30031Z" fill="#99A0A7"/></svg></div>
-                        <div class="flex__item f--m c--lightgray">Natrag na vrh</div>
+                        <div class="flex__item f--m c--lightgray">Επιστροφή στην κορυφή</div>
                     </div>
                 </a>
             </div>
@@ -1119,8 +1119,8 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <img id="close_terms_conditions" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
             </div>
             <div class='mobile-notice-modal__head s-all--s'>
-                <div class="f--l f--bold c--darkgray">Trebate li pomoć pri kupnji?</div>
-                <div class="f--s c--gray">Za Vas smo dostupni svaki radni dan od <strong>07:00 - 19:00</strong>, a vikendom od <strong>08:00 - 18:00.</strong></div>
+                <div class="f--l f--bold c--darkgray">Χρειάζεστε βοήθεια με την αγορά;</div>
+                <div class="f--s c--gray">Είμαστε διαθέσιμοι κάθε εργάσιμη ημέρα από <strong>07:00 - 19:00</strong>, και τα Σαββατοκύριακα από <strong>08:00 - 18:00.</strong></div>
             </div>
                 <div class="mobile-notice-modal__body">
             <div class="flex flex--vertical">
@@ -1131,7 +1131,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearGradient id="ge5urdfv4a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#66ff74"/><stop offset="1" stop-color="#00b822"/></linearGradient><clipPath id="1s5y4t255b"><path data-name="Rectangle 3641" style="fill:none" d="M0 0h17.171v17.296H0z"/></clipPath></defs><path data-name="Path 11937" d="M4 0h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" style="fill:#00b822"/><g data-name="Group 10478"><g data-name="Group 10477" style="clip-path:url(#1s5y4t255b)" transform="translate(3.415 3)"><path data-name="Path 11934" d="M8.594 1.484a7.093 7.093 0 1 1-3.846 13.052.142.142 0 0 0-.114-.018l-1.128.3L2.1 15.2l.377-1.406.29-1.084a.142.142 0 0 0-.021-.118 7.091 7.091 0 0 1 5.848-11.1m0-1.492a8.577 8.577 0 0 0-7.443 12.84.142.142 0 0 1 .014.108l-.123.459-.377 1.406L0 17.3l2.483-.665 1.406-.377.526-.141a.142.142 0 0 1 .1.013A8.577 8.577 0 1 0 8.594 0" style="fill:#fff"/><path data-name="Path 11935" d="M52.9 55.99a1.835 1.835 0 0 1 .8-.027.4.4 0 0 1 .293.226c.324.688.431.961.663 1.486a.986.986 0 0 1-.233 1.118 12.15 12.15 0 0 0-.333.316c-.168.179.9 2.308 3.106 2.9a.276.276 0 0 0 .284-.092c.223-.271.438-.554.659-.828a.4.4 0 0 1 .459-.118c.732.286.942.448 1.675.734a.378.378 0 0 1 .284.386 1.781 1.781 0 0 1-1.2 1.845 2.723 2.723 0 0 1-.462.076c-2.867.179-6.64-2.839-7.028-5.7A2.291 2.291 0 0 1 52.9 55.99" transform="translate(-47.575 -51.327)" style="fill:#fff"/></g></g></svg></div>
                             <div
-                                class="flex__item desktop_contact desktop_whatsapp_contact">Pošaljite nam Whatsapp poruku</div>
+                                class="flex__item desktop_contact desktop_whatsapp_contact">Στείλτε μας μήνυμα στο Whatsapp</div>
                             <div class="flex__item mobile_contact mobile_whatsapp_contact">
                                 <strong>Whatsapp</strong></div>
                         </div>
@@ -1140,7 +1140,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="  flex__item t--no-decoration c--text s-all--s" href="tel:+385-1-3300-004">
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><path d="M18.298 13.0304L14.2715 11.3042C13.7973 11.0989 13.241 11.2374 12.9189 11.6374L11.2827 13.6346C8.71287 12.3729 6.62544 10.2833 5.36371 7.71585L7.36059 6.08161C7.75952 5.75577 7.89534 5.20253 7.69361 4.72829L5.96763 0.702075C5.74148 0.185903 5.18461 -0.0964881 4.63947 0.03005L0.8988 0.89281C0.369985 1.01341 0 1.47911 0 2.02312C0 11.3855 7.61494 19 16.9777 19C17.5221 19 17.9864 18.6301 18.1077 18.1012L18.9705 14.3608C19.0955 13.8171 18.8139 13.2531 18.298 13.0304Z"/></svg></div>
-                            <div class="flex__item desktop_contact desktop_phone_contact">Za naručivanje nazovite: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
+                            <div class="flex__item desktop_contact desktop_phone_contact">Για παραγγελίες καλέστε: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
                             <div class="flex__item mobile_contact mobile_phone_contact">
                                 <strong>01 3300 004</strong></div>
                         </div>

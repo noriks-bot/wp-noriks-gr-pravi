@@ -3,7 +3,7 @@
  * Thankyou page — Post-purchase upsell with two-step flow
  *
  * Step 1: Single product offer (bokserice)
- * Step 2: 6-product grid (after "Ne želim" or after adding 1 item)
+ * Step 2: 6-product grid (after "Δεν θέλω" or after adding 1 item)
  *
  * Style: Red background, no border-radius, red buttons
  *
@@ -536,9 +536,9 @@ body.woocommerce-order-received .woocommerce {
         <div class="ty-success" style="background:#fde8e8;">
             <div class="ty-success-icon" style="background:#dc3545;">✕</div>
             <h1>Η παραγγελία απέτυχε</h1>
-            <p>Banka je odbila transakciju. Pokušajte ponovno.</p>
+            <p>Η τράπεζα απέρριψε τη συναλλαγή. Δοκιμάστε ξανά.</p>
             <p style="margin-top:16px;">
-                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#971b1b;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Pokušaj ponovno</a>
+                <a href="<?php echo esc_url( $order->get_checkout_payment_url() ); ?>" style="display:inline-block;background:#971b1b;color:#fff;padding:12px 32px;text-decoration:none;font-weight:700;">Δοκιμάστε ξανά</a>
             </p>
         </div>
     <?php else : ?>
@@ -560,7 +560,7 @@ body.woocommerce-order-received .woocommerce {
 
                 <div class="tyuo_timer">
                     <div class="timer_wrapper">
-                        <div class="special_offer_txt">Posebna ponuda ističe</div>
+                        <div class="special_offer_txt">Η ειδική προσφορά λήγει</div>
                         <div class="time" id="ty-timer">05:00</div>
                     </div>
                     <div class="title">Προσθέστε ακόμη ένα προϊόν με 50% επιπλέον έκπτωση</div>
@@ -569,11 +569,11 @@ body.woocommerce-order-received .woocommerce {
                 <div class="tyuo_middle_section">
                     <div class="sub_title">
                         <span class="sub_title__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="11.293" viewBox="0 0 15 11.293"><path d="M50.915,62.211,46.07,57.366a.44.44,0,0,1,0-.623L47.208,55.6a.44.44,0,0,1,.623,0l3.084,3.084a.441.441,0,0,0,.623,0l7.512-7.513a.44.44,0,0,1,.623,0l1.138,1.138a.44.44,0,0,1,0,.623l-9.273,9.274a.441.441,0,0,1-.623,0" transform="translate(-12.941 319.806)" fill="#47b426"></path></svg></span>
-                        Poslat ćemo ga u istom paketu
+                        Θα το στείλουμε στο ίδιο πακέτο
                     </div>
                     <div class="clue_text">
                         <span class="clue_text__icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="14.333" viewBox="0 0 15 14.333"><path d="M6.885.383,5.1,4a.686.686,0,0,1-.517.375l-3.994.58a.686.686,0,0,0-.38,1.17L3.1,8.945a.686.686,0,0,1,.2.607L2.614,13.53a.686.686,0,0,0,1,.723l3.572-1.878a.686.686,0,0,1,.639,0l3.572,1.878a.686.686,0,0,0,1-.723l-.682-3.978a.686.686,0,0,1,.2-.607l2.89-2.817a.686.686,0,0,0-.38-1.17l-3.994-.58A.686.686,0,0,1,9.9,4L8.116.383a.686.686,0,0,0-1.23,0" fill="#971b1b"></path></svg></span>
-                        Razmislite kome biste mogli pokloniti proizvod
+                        Σκεφτείτε σε ποιον θα μπορούσατε να χαρίσετε το προϊόν
                     </div>
                 </div>
 
@@ -606,8 +606,8 @@ body.woocommerce-order-received .woocommerce {
                     <div class="ty-upsell-status" id="ty-upsell-status"></div>
 
                     <div class="buttons-section">
-                        <a class="pass-btn" id="ty-btn-skip">Ne želim</a>
-                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">DODAJ U NARUDŽBU</div>
+                        <a class="pass-btn" id="ty-btn-skip">Δεν θέλω</a>
+                        <div class="buy-btn" id="ty-btn-add" data-product-id="<?php echo esc_attr( $upsell_product_id ); ?>">ΠΡΟΣΘΗΚΗ ΣΤΗΝ ΠΑΡΑΓΓΕΛΙΑ</div>
                     </div>
                 </div>
 
@@ -628,7 +628,7 @@ body.woocommerce-order-received .woocommerce {
                 <div class="ty-section-body open" id="ty-grid-body">
                 <div class="ty-section-body-inner" style="padding:0;">
                 <div class="ty-grid-trust">
-                    ✔ Sve šaljemo u istom paketu
+                    ✔ Όλα αποστέλλονται στο ίδιο πακέτο
                 </div>
                 <div class="ty-grid">
                     <?php foreach ( $grid_products as $gp ) :
@@ -668,12 +668,12 @@ body.woocommerce-order-received .woocommerce {
                         <button class="g-add-btn"
                                 data-product-id="<?php echo $gp->get_id(); ?>"
                                 data-sale-price="<?php echo $gp_sale; ?>">
-                            DODAJ
+                            ΠΡΟΣΘΗΚΗ
                         </button>
                     </div>
                     <?php endforeach; ?>
                 </div>
-                <button class="ty-grid-close" id="ty-grid-close">Ne želim dodatnu ponudu</button>
+                <button class="ty-grid-close" id="ty-grid-close">Δεν θέλω επιπλέον προσφορά</button>
                 </div><!-- /ty-section-body-inner -->
                 </div><!-- /ty-section-body -->
             </div>
@@ -732,11 +732,11 @@ body.woocommerce-order-received .woocommerce {
             </div>
             <div class="ty-section-body open">
                 <div class="ty-section-body-inner">
-                    <div class="ty-row"><span class="ty-row-label">Ime</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Όνομα</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_first_name() . ' ' . $order->get_billing_last_name() ); ?></span></div>
                     <div class="ty-row"><span class="ty-row-label">Διεύθυνση</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_address_1() . ' ' . $order->get_billing_address_2() ); ?></span></div>
-                    <div class="ty-row"><span class="ty-row-label">Grad</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Πόλη</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_postcode() . ' ' . $order->get_billing_city() ); ?></span></div>
                     <?php if ( $order->get_billing_phone() ) : ?>
-                    <div class="ty-row"><span class="ty-row-label">Telefon</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_phone() ); ?></span></div>
+                    <div class="ty-row"><span class="ty-row-label">Τηλέφωνο</span><span class="ty-row-value"><?php echo esc_html( $order->get_billing_phone() ); ?></span></div>
                     <?php endif; ?>
 
                 </div>
@@ -786,7 +786,7 @@ body.woocommerce-order-received .woocommerce {
             if (midSec) midSec.style.display = 'none';
             var timerSec = wrap.querySelector('.tyuo_timer');
             if (timerSec) {
-                timerSec.innerHTML = '<div class="title" style="padding:8px 0;">PONUDA JE ISTEKLA</div>';
+                timerSec.innerHTML = '<div class="title" style="padding:8px 0;">Η ΠΡΟΣΦΟΡΑ ΕΛΗΞΕ</div>';
             }
             // Also hide the grid section if visible
             if (overlay) overlay.style.display = 'none';
@@ -853,7 +853,7 @@ body.woocommerce-order-received .woocommerce {
             .catch(function(){});
     }
 
-    // ─── Step 1: "Ne želim" → show grid ───
+    // ─── Step 1: "Δεν θέλω" → show grid ───
     var skipBtn = document.getElementById('ty-btn-skip');
     if (skipBtn) {
         skipBtn.addEventListener('click', function() {
@@ -861,7 +861,7 @@ body.woocommerce-order-received .woocommerce {
         });
     }
 
-    // ─── Step 1: "DODAJ" → add to order, then show grid ───
+    // ─── Step 1: "ΠΡΟΣΘΗΚΗ" → add to order, then show grid ───
     var addBtn = document.getElementById('ty-btn-add');
     if (addBtn) {
         addBtn.addEventListener('click', function() {
@@ -881,7 +881,7 @@ body.woocommerce-order-received .woocommerce {
             fetch(ajaxUrl, { method: 'POST', body: fd })
                 .then(function(r) { return r.json(); })
                 .then(function(d) {
-                    addBtn.textContent = '✓ DODANO';
+                    addBtn.textContent = '✓ ΠΡΟΣΤΕΘΗΚΕ';
                     addBtn.classList.add('added');
                     refreshOrderItems();
                     // Show grid after short delay
@@ -891,7 +891,7 @@ body.woocommerce-order-received .woocommerce {
                 })
                 .catch(function() {
                     addBtn.disabled = false;
-                    addBtn.textContent = 'DODAJ U NARUDŽBU';
+                    addBtn.textContent = 'ΠΡΟΣΘΗΚΗ ΣΤΗΝ ΠΑΡΑΓΓΕΛΙΑ';
                 });
         });
     }
@@ -921,17 +921,17 @@ body.woocommerce-order-received .woocommerce {
                     .then(function(r) { return r.json(); })
                     .then(function(d) {
                         if (d.success) {
-                            el.textContent = '✔ DODANO';
+                            el.textContent = '✔ ΠΡΟΣΤΕΘΗΚΕ';
                             el.classList.add('added');
                             refreshOrderItems();
                         } else {
-                            el.textContent = d.data || 'Napaka';
-                            setTimeout(function() { el.disabled = false; el.textContent = 'DODAJ'; }, 2000);
+                            el.textContent = d.data || 'Σφάλμα';
+                            setTimeout(function() { el.disabled = false; el.textContent = 'ΠΡΟΣΘΗΚΗ'; }, 2000);
                         }
                     })
                     .catch(function() {
                         el.disabled = false;
-                        el.textContent = 'DODAJ';
+                        el.textContent = 'ΠΡΟΣΘΗΚΗ';
                     });
             });
         });
@@ -967,12 +967,12 @@ function removeUpsellItem(btn) {
                 // Reset the main upsell section — show it again
                 var upsellWrap = document.getElementById('ty-upsell');
                 if (upsellWrap) upsellWrap.style.display = '';
-                // Reset "DODAJ" button back to active
+                // Reset "ΠΡΟΣΘΗΚΗ" button back to active
                 var mainAddBtn = document.getElementById('ty-btn-add');
                 if (mainAddBtn) {
                     mainAddBtn.disabled = false;
                     mainAddBtn.classList.remove('added');
-                    mainAddBtn.textContent = 'DODAJ U NARUDŽBU';
+                    mainAddBtn.textContent = 'ΠΡΟΣΘΗΚΗ ΣΤΗΝ ΠΑΡΑΓΓΕΛΙΑ';
                 }
                 // Hide grid section
                 var gridSection = document.getElementById('ty-grid-section');
@@ -981,7 +981,7 @@ function removeUpsellItem(btn) {
                 document.querySelectorAll('.g-add-btn.added').forEach(function(gb) {
                     gb.disabled = false;
                     gb.classList.remove('added');
-                    gb.textContent = 'DODAJ';
+                    gb.textContent = 'ΠΡΟΣΘΗΚΗ';
                 });
                 // Refresh order items
                 var rfd = new FormData();
