@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Vigo Checkout (Standalone)
- * Description: Pixel-perfect vigoshop.hr checkout replica - standalone HTML, no WP template.
+ * Description: Pixel-perfect vigoshop.gr checkout replica - standalone HTML, no WP template.
  */
 
 // Prevent direct access
@@ -21,15 +21,15 @@ if (!defined('ABSPATH')) exit;
 	        <meta name="robots" content="noindex, nofollow"><link rel='dns-prefetch' href='//widget.trustpilot.com' />
 <link rel='dns-prefetch' href='//static.klaviyo.com' />
 <link rel='dns-prefetch' href='//js.braintreegateway.com' />
-<meta name="title" content="Ολοκλήρωση αγοράς" />
-<meta name="description" content="Όλα όσα χρειάζεστε σε ένα μέρος. Εξερευνήστε μεγάλη ποικιλία προϊόντων στις χαμηλότερες τιμές. Κάντε κλικ τώρα!" />
-<meta name="image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
+<meta name="title" content="Ολοκληρώστε την αγορά" />
+<meta name="description" content="Ό,τι χρειάζεστε σε ένα μέρος. Εξερευνήστε μεγάλη ποικιλία προϊόντων στις χαμηλότερες τιμές. Κάντε κλικ τώρα και απολαύστε τις καλύτερες προσφορές!" />
+<meta name="image" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
 <meta property="og:locale" content="hr" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Ολοκλήρωση αγοράς" />
-<meta property="og:description" content="Όλα όσα χρειάζεστε σε ένα μέρος. Εξερευνήστε μεγάλη ποικιλία προϊόντων στις χαμηλότερες τιμές. Κάντε κλικ τώρα!" />
-<meta property="og:image" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
-<meta property="og:image:alt" content="Vigoshop - Ολοκλήρωση αγοράς" />
+<meta property="og:title" content="Ολοκληρώστε την αγορά" />
+<meta property="og:description" content="Ό,τι χρειάζεστε σε ένα μέρος. Εξερευνήστε μεγάλη ποικιλία προϊόντων στις χαμηλότερες τιμές. Κάντε κλικ τώρα και απολαύστε τις καλύτερες προσφορές!" />
+<meta property="og:image" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png" />
+<meta property="og:image:alt" content="Vigoshop - Ολοκληρώστε την αγορά" />
 <style id='classic-theme-styles-inline-css' type='text/css'>
 /*! This file is auto-generated */
 .wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
@@ -40,93 +40,93 @@ if (!defined('ABSPATH')) exit;
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
-<link rel='stylesheet' id='select2-css' href='https://vigoshop.hr/app/plugins/woocommerce/assets/css/select2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='select2-css' href='https://vigoshop.gr/app/plugins/woocommerce/assets/css/select2.css' type='text/css' media='all' />
 <style id='woocommerce-inline-inline-css' type='text/css'>
 .woocommerce form .form-row .required { visibility: visible; }
 </style>
-<link rel='stylesheet' id='brands-styles-css' href='https://vigoshop.hr/app/plugins/woocommerce/assets/css/brands.css' type='text/css' media='all' />
-<link rel='stylesheet' id='hsplus-child-style-css' href='https://vigoshop.hr/app/themes/hsplus-child/style.css' type='text/css' media='all' />
-<link rel='stylesheet' id='app-css' href='https://vigoshop.hr/app/themes/hsplus/dist/app-bb7116ca22.css' type='text/css' media='all' />
-<link rel='stylesheet' id='swiper-style-css' href='https://vigoshop.hr/app/themes/hsplus/assets/plugins/swiper/swiper.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='app-extra-css' href='https://vigoshop.hr/app/themes/hsplus/dist/vigoshop-2809b8fc43.css' type='text/css' media='all' />
-<link rel='stylesheet' id='agent-kc-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/agent-kc/css/agent-kc-d24968c5d8.css' type='text/css' media='all' />
-<link rel='stylesheet' id='cart-warranty-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/cart-warranty/css/cart-warranty-294993db14.css' type='text/css' media='all' />
-<link rel='stylesheet' id='checkout-extra-triggers-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/checkout-extra-triggers/css/checkout-extra-triggers-8a82c39c7f.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom-validation-styles-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/checkout-validation/css/custom-checkout-general-3ba2df51f0.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom-checkout-hr-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/checkout-validation/css/custom-checkout-hr-708bf051cd.css' type='text/css' media='all' />
-<link rel='stylesheet' id='cookie-consent-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/cookie-consent/css/cookie-consent-0f1f70401c.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom-payment-notice-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/custom-payment-notice/css/custom-payment-notice-0baf6bff40.css' type='text/css' media='all' />
-<link rel='stylesheet' id='header-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/header/css/header-f98b75e0d2.css' type='text/css' media='all' />
-<link rel='stylesheet' id='hide-payments-test-product-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/hide-payments-test-product/css/hide-payments-test-product-e46f2e914d.css' type='text/css' media='all' />
-<link rel='stylesheet' id='general-shop-elements-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/homepage-shop-elements/css/general-shop-elements-a82fb8d5a2.css' type='text/css' media='all' />
-<link rel='stylesheet' id='lazy-load-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/image-lazy-load/css/lazy-load-4b6eac4005.css' type='text/css' media='all' />
-<link rel='stylesheet' id='payment-methods-fixes-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/payment-methods-fixes/css/payment-methods-fixes-75bc076f0b.css' type='text/css' media='all' />
-<link rel='stylesheet' id='product-page-courier-info-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/product-page-courier-info/css/product-page-courier-info-96801577cc.css' type='text/css' media='all' />
-<link rel='stylesheet' id='product-page-warranty-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/product-page-warranty/css/product-page-warranty-7d50f99458.css' type='text/css' media='all' />
-<link rel='stylesheet' id='sv-wc-payment-gateway-payment-form-v5_15_10-css' href='https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/css/frontend/sv-wc-payment-gateway-payment-form.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='wc-braintree-css' href='https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/assets/css/frontend/wc-braintree.min.css' type='text/css' media='all' />
-<link rel='stylesheet' id='video-in-product-gallery-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/video-in-product-gallery/css/video-in-product-gallery-89309214b3.css' type='text/css' media='all' />
-<link rel='stylesheet' id='abandoned-cart-restore-addons-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/abandoned-cart-restore-addons/css/abandoned-cart-restore-addons-740a577066.css' type='text/css' media='all' />
-<link rel='stylesheet' id='cart-item-restore-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/cart-item-restore/css/cart-item-restore-b6a0f18b47.css' type='text/css' media='all' />
-<link rel='stylesheet' id='checkout-order-review-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/checkout-order-review/css/checkout-order-review-17423b66f5.css' type='text/css' media='all' />
-<link rel='stylesheet' id='checkout-timer-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/checkout-timer/css/checkout-timer-73c98a5995.css' type='text/css' media='all' />
-<link rel='stylesheet' id='checkout-upsell-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/checkout-upsell/css/checkout-upsell-49a595b20c.css' type='text/css' media='all' />
-<link rel='stylesheet' id='coupon-banner-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/coupon-banner/css/coupon-banner-d56e152358.css' type='text/css' media='all' />
-<link rel='stylesheet' id='custom-cta-settings-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/custom-cta-settings/css/custom-cta-settings-0fd450b106.css' type='text/css' media='all' />
-<link rel='stylesheet' id='email-checkbox-subscription-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/email-checkbox-subscription/css/email-checkbox-subscription-1def327263.css' type='text/css' media='all' />
-<link rel='stylesheet' id='free-shipping-above-quantity-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/free-shipping-above-quantity/css/free-shipping-above-quantity-02588a20ff.css' type='text/css' media='all' />
-<link rel='stylesheet' id='loader-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/loader/css/loader-c25fc35077.css' type='text/css' media='all' />
-<link rel='stylesheet' id='notice-test-product-only-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/notice-test-product-only/css/notice-test-product-only-21c486c451.css' type='text/css' media='all' />
-<link rel='stylesheet' id='order-received-popup-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/order-received-popup/css/order-received-popup-c97d38fd18.css' type='text/css' media='all' />
-<link rel='stylesheet' id='parcel-pickup-hr-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/parcel-pickup/css/parcel-pickup-hr-8754cf5c08.css' type='text/css' media='all' />
-<link rel='stylesheet' id='extra-shipping-method-buttons-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/parcel-pickup/css/extra-shipping-method-buttons-093d5c786e.css' type='text/css' media='all' />
-<link rel='stylesheet' id='pdf-products-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/pdf-products/css/pdf-products-2009e19a3b.css' type='text/css' media='all' />
-<link rel='stylesheet' id='pdf-special-offer-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/pdf-products/css/pdf-special-offer-545e3ee266.css' type='text/css' media='all' />
-<link rel='stylesheet' id='pdf-special-offer-homepage-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/pdf-products/css/pdf-special-offer-homepage-eca0ed3481.css' type='text/css' media='all' />
-<link rel='stylesheet' id='shipping-method-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/shipping-method/css/shipping-method-14ad2b0a1f.css' type='text/css' media='all' />
-<link rel='stylesheet' id='terms-and-conditions-link-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/terms-and-conditions-link/css/terms-and-conditions-link-4d809e8b6d.css' type='text/css' media='all' />
-<link rel='stylesheet' id='virtual-products-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/virtual-products/css/virtual-products-ff847d8762.css' type='text/css' media='all' />
-<link rel='stylesheet' id='quantity-discount-price-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/quantity-discount-price/css/quantity-discount-price-86d6e7d23e.css' type='text/css' media='all' />
-<link rel='stylesheet' id='hsplus-css' href='https://vigoshop.hr/app/plugins/mk-abandoned/public/css/hsplus-public.css' type='text/css' media='all' />
-<script type="text/javascript" src="https://vigoshop.hr/wp/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://vigoshop.hr/app/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js" id="selectWoo-js" defer="defer" data-wp-strategy="defer"></script>
-<script type="text/javascript" src="https://vigoshop.hr/wp/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
-<script type="text/javascript" src="https://vigoshop.hr/wp/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
+<link rel='stylesheet' id='brands-styles-css' href='https://vigoshop.gr/app/plugins/woocommerce/assets/css/brands.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hsplus-child-style-css' href='https://vigoshop.gr/app/themes/hsplus-child/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='app-css' href='https://vigoshop.gr/app/themes/hsplus/dist/app-bb7116ca22.css' type='text/css' media='all' />
+<link rel='stylesheet' id='swiper-style-css' href='https://vigoshop.gr/app/themes/hsplus/assets/plugins/swiper/swiper.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='app-extra-css' href='https://vigoshop.gr/app/themes/hsplus/dist/vigoshop-2809b8fc43.css' type='text/css' media='all' />
+<link rel='stylesheet' id='agent-kc-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/agent-kc/css/agent-kc-d24968c5d8.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cart-warranty-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/cart-warranty/css/cart-warranty-294993db14.css' type='text/css' media='all' />
+<link rel='stylesheet' id='checkout-extra-triggers-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/checkout-extra-triggers/css/checkout-extra-triggers-8a82c39c7f.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-validation-styles-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/checkout-validation/css/custom-checkout-general-3ba2df51f0.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-checkout-hr-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/checkout-validation/css/custom-checkout-hr-708bf051cd.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-consent-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/cookie-consent/css/cookie-consent-0f1f70401c.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-payment-notice-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/custom-payment-notice/css/custom-payment-notice-0baf6bff40.css' type='text/css' media='all' />
+<link rel='stylesheet' id='header-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/header/css/header-f98b75e0d2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hide-payments-test-product-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/hide-payments-test-product/css/hide-payments-test-product-e46f2e914d.css' type='text/css' media='all' />
+<link rel='stylesheet' id='general-shop-elements-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/homepage-shop-elements/css/general-shop-elements-a82fb8d5a2.css' type='text/css' media='all' />
+<link rel='stylesheet' id='lazy-load-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/image-lazy-load/css/lazy-load-4b6eac4005.css' type='text/css' media='all' />
+<link rel='stylesheet' id='payment-methods-fixes-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/payment-methods-fixes/css/payment-methods-fixes-75bc076f0b.css' type='text/css' media='all' />
+<link rel='stylesheet' id='product-page-courier-info-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/product-page-courier-info/css/product-page-courier-info-96801577cc.css' type='text/css' media='all' />
+<link rel='stylesheet' id='product-page-warranty-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/product-page-warranty/css/product-page-warranty-7d50f99458.css' type='text/css' media='all' />
+<link rel='stylesheet' id='sv-wc-payment-gateway-payment-form-v5_15_10-css' href='https://vigoshop.gr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/css/frontend/sv-wc-payment-gateway-payment-form.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-braintree-css' href='https://vigoshop.gr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/assets/css/frontend/wc-braintree.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='video-in-product-gallery-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/video-in-product-gallery/css/video-in-product-gallery-89309214b3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='abandoned-cart-restore-addons-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/abandoned-cart-restore-addons/css/abandoned-cart-restore-addons-740a577066.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cart-item-restore-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/cart-item-restore/css/cart-item-restore-b6a0f18b47.css' type='text/css' media='all' />
+<link rel='stylesheet' id='checkout-order-review-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/checkout-order-review/css/checkout-order-review-17423b66f5.css' type='text/css' media='all' />
+<link rel='stylesheet' id='checkout-timer-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/checkout-timer/css/checkout-timer-73c98a5995.css' type='text/css' media='all' />
+<link rel='stylesheet' id='checkout-upsell-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/checkout-upsell/css/checkout-upsell-49a595b20c.css' type='text/css' media='all' />
+<link rel='stylesheet' id='coupon-banner-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/coupon-banner/css/coupon-banner-d56e152358.css' type='text/css' media='all' />
+<link rel='stylesheet' id='custom-cta-settings-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/custom-cta-settings/css/custom-cta-settings-0fd450b106.css' type='text/css' media='all' />
+<link rel='stylesheet' id='email-checkbox-subscription-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/email-checkbox-subscription/css/email-checkbox-subscription-1def327263.css' type='text/css' media='all' />
+<link rel='stylesheet' id='free-shipping-above-quantity-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/free-shipping-above-quantity/css/free-shipping-above-quantity-02588a20ff.css' type='text/css' media='all' />
+<link rel='stylesheet' id='loader-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/loader/css/loader-c25fc35077.css' type='text/css' media='all' />
+<link rel='stylesheet' id='notice-test-product-only-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/notice-test-product-only/css/notice-test-product-only-21c486c451.css' type='text/css' media='all' />
+<link rel='stylesheet' id='order-received-popup-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/order-received-popup/css/order-received-popup-c97d38fd18.css' type='text/css' media='all' />
+<link rel='stylesheet' id='parcel-pickup-hr-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/parcel-pickup/css/parcel-pickup-hr-8754cf5c08.css' type='text/css' media='all' />
+<link rel='stylesheet' id='extra-shipping-method-buttons-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/parcel-pickup/css/extra-shipping-method-buttons-093d5c786e.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pdf-products-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/pdf-products/css/pdf-products-2009e19a3b.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pdf-special-offer-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/pdf-products/css/pdf-special-offer-545e3ee266.css' type='text/css' media='all' />
+<link rel='stylesheet' id='pdf-special-offer-homepage-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/pdf-products/css/pdf-special-offer-homepage-eca0ed3481.css' type='text/css' media='all' />
+<link rel='stylesheet' id='shipping-method-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/shipping-method/css/shipping-method-14ad2b0a1f.css' type='text/css' media='all' />
+<link rel='stylesheet' id='terms-and-conditions-link-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/terms-and-conditions-link/css/terms-and-conditions-link-4d809e8b6d.css' type='text/css' media='all' />
+<link rel='stylesheet' id='virtual-products-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/virtual-products/css/virtual-products-ff847d8762.css' type='text/css' media='all' />
+<link rel='stylesheet' id='quantity-discount-price-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/quantity-discount-price/css/quantity-discount-price-86d6e7d23e.css' type='text/css' media='all' />
+<link rel='stylesheet' id='hsplus-css' href='https://vigoshop.gr/app/plugins/mk-abandoned/public/css/hsplus-public.css' type='text/css' media='all' />
+<script type="text/javascript" src="https://vigoshop.gr/wp/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://vigoshop.gr/app/plugins/woocommerce/assets/js/selectWoo/selectWoo.full.min.js" id="selectWoo-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://vigoshop.gr/wp/wp-includes/js/dist/hooks.min.js" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://vigoshop.gr/wp/wp-includes/js/dist/i18n.min.js" id="wp-i18n-js"></script>
 <script type="text/javascript" id="wp-i18n-js-after">
 /* <![CDATA[ */
 wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://vigoshop.hr/app/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="wc-jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
-<script type="text/javascript" src="https://vigoshop.hr/app/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" id="wc-js-cookie-js" data-wp-strategy="defer"></script>
-<link rel="icon" href="https://vigoshop.hr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-32x32.png" sizes="32x32" />
-<link rel="icon" href="https://vigoshop.hr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-192x192.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://vigoshop.hr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://vigoshop.hr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-270x270.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-76x76.png">
+<script type="text/javascript" src="https://vigoshop.gr/app/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js" id="wc-jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://vigoshop.gr/app/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js" id="wc-js-cookie-js" data-wp-strategy="defer"></script>
+<link rel="icon" href="https://vigoshop.gr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://vigoshop.gr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://vigoshop.gr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://vigoshop.gr/app/uploads/2018/03/cropped-vigoshop-fb-profilna-puscica-1-270x270.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-76x76.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114"
-          href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-114x114.png">
+          href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-114x114.png">
     <link rel="apple-touch-icon-precomposed" sizes="120x120"
-          href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-120x120.png">
+          href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-120x120.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144"
-          href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-144x144.png">
+          href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-144x144.png">
     <link rel="apple-touch-icon-precomposed" sizes="152x152"
-          href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-152x152.png">
-    <link rel="icon" type="image/png" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/favicon-16x16.png" sizes="16x16"/>
-    <link rel="icon" type="image/png" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/favicon-32x32.png" sizes="32x32"/>
-    <link rel="icon" type="image/png" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/favicon-96x96.png" sizes="96x96"/>
-    <link rel="icon" type="image/png" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/favicon-128.png" sizes="128x128"/>
-    <link rel="icon" type="image/png" href="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/favicon-196x196.png" sizes="196x196"/>
+          href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/favicon-128.png" sizes="128x128"/>
+    <link rel="icon" type="image/png" href="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/favicon-196x196.png" sizes="196x196"/>
     <meta name="application-name" content="vigoshop"/>
     <meta name="msapplication-TileColor" content="#FFFFFF"/>
-    <meta name="msapplication-TileImage" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-144x144.png"/>
-    <meta name="msapplication-square70x70logo" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-70x70.png"/>
-    <meta name="msapplication-square150x150logo" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-150x150.png"/>
-    <meta name="msapplication-wide310x150logo" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x150.png"/>
-    <meta name="msapplication-square310x310logo" content="https://vigoshop.hr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png"/>
+    <meta name="msapplication-TileImage" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="https://vigoshop.gr/app/themes/hsplus/images/favicon/vigoshop/mstile-310x310.png"/>
     </head>
 <body class="wp-singular page-template-default page page-id-6 wp-theme-hsplus wp-child-theme-hsplus-child  theme-vigoshop theme-hsplus woocommerce-checkout woocommerce-page woocommerce-no-js brand-vigoshop" data-hswooplus="10.3.7"  >
 
@@ -187,8 +187,8 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <div class="woocommerce-billing-fields__field-wrapper">
     <p class="form-row form-row-first form-group col-xs-12 validate-required" id="billing_first_name_field" data-priority="30"><label for="billing_first_name" class="required_field">Όνομα&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_first_name" id="billing_first_name" placeholder="Όνομα"  value="" aria-required="true" maxlength="80" autocomplete="given-name" /></span></p><p class="form-row form-row-last form-group col-xs-12 validate-required" id="billing_last_name_field" data-priority="40"><label for="billing_last_name" class="required_field">Επώνυμο&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_last_name" id="billing_last_name" placeholder="Επώνυμο"  value="" aria-required="true" maxlength="80" autocomplete="family-name" /></span></p><div class="form-row form-row-wide col-xs-12">Εισαγάγετε τη διεύθυνση όπου θα βρίσκεστε <b>μεταξύ 8:00 και 16:00</b>.</div><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_1_field" data-priority="50"><label for="billing_address_1" class="required_field">Οδός&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_1" id="billing_address_1" placeholder="Οδός"  value="" aria-required="true" maxlength="80" autocomplete="address-line1" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required" id="billing_address_2_field" data-priority="60"><label for="billing_address_2" class="screen-reader-text required_field">Αριθμός&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="text" class="input-text form-input" name="billing_address_2" id="billing_address_2" placeholder="Αριθμός"  value="" autocomplete="address-line2" maxlength="80" aria-required="true" /></span></p><p class="form-row form-row-wide address-field form-group form-group col-xs-12 validate-required validate-postcode" id="billing_postcode_field" data-priority="70"><label for="billing_postcode" class="required_field">Ταχυδρομικός κώδικας&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_postcode" id="billing_postcode" placeholder="Ταχυδρομικός κώδικας"  value="" aria-required="true" maxlength="30" autocomplete="postal-code" /></span></p><p class="form-row form-row-wide dropdown form-group form-group col-xs-12 validate-required" id="billing_city_field" data-priority=""><label for="billing_city" class="required_field">Πόλη&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><select name="billing_city" id="billing_city" class="select form-input" aria-required="true" data-allow_clear="true" data-placeholder="Επιλέξτε πόλη">
 							<option value=""  selected='selected'>Επιλέξτε πόλη</option>
-						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Τηλέφωνο&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Αριθμός κινητού τηλεφώνου"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">Διεύθυνση email&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="Διεύθυνση email"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Περιφέρεια&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="placeholder_province"  data-input-classes="form-input" data-label="Περιφέρεια">
-						<option value="">Επιλέξτε επιλογή&hellip;</option><option value="GR-A" >Ανατολική Μακεδονία και Θράκη</option><option value="GR-B" >Κεντρική Μακεδονία</option><option value="GR-C" >Δυτική Μακεδονία</option><option value="GR-D" >Ήπειρος</option><option value="GR-E" >Θεσσαλία</option><option value="GR-F" >Ιόνια Νησιά</option><option value="GR-G" >Δυτική Ελλάδα</option><option value="GR-H" >Στερεά Ελλάδα</option><option value="GR-I" >Αττική</option><option value="GR-J" >Πελοπόννησος</option><option value="GR-K" >Βόρειο Αιγαίο</option><option value="GR-L" >Νότιο Αιγαίο</option><option value="GR-M" >Κρήτη</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Χώρα / Περιοχή&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Ελλάδα</strong><input type="hidden" name="billing_country" id="billing_country" value="GR" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Sign me up to receive email updates and news&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Sign up for exclusive offers and news via text messages&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p>  </div>
+						</select></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-required validate-phone" id="billing_phone_field" data-priority="10"><label for="billing_phone" class="required_field">Τηλέφωνο&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><input type="tel" class="input-text form-input" name="billing_phone" id="billing_phone" placeholder="Αριθμός κινητού τηλεφώνου"  value="" maxlength="17" aria-required="true" autocomplete="tel" /></span></p><p class="form-row form-row-wide form-group col-xs-12 validate-email" id="billing_email_field" data-priority="20"><label for="billing_email" class="">Διεύθυνση email&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><input type="email" class="input-text form-input" name="billing_email" id="billing_email" placeholder="Διεύθυνση email"  value="" maxlength="80" autocomplete="email" /></span></p><p class="form-row form-row-wide address-field form-group col-xs-12 validate-state" id="billing_state_field" data-priority="80"><label for="billing_state" class="">Περιφέρεια&nbsp;<span class="optional">(προαιρετικό)</span></label><span class="woocommerce-input-wrapper"><select name="billing_state" id="billing_state" class="state_select form-input" autocomplete="address-level1" data-placeholder="Επιλέξτε περιφέρεια"  data-input-classes="form-input" data-label="Περιφέρεια">
+						<option value="">Επιλέξτε επιλογή&hellip;</option><option value="GR-I">Αττική</option><option value="GR-B">Κεντρική Μακεδονία</option><option value="GR-A">Ανατολική Μακεδονία και Θράκη</option><option value="GR-C">Δυτική Μακεδονία</option><option value="GR-D">Ήπειρος</option><option value="GR-E">Θεσσαλία</option><option value="GR-F">Ιόνια Νησιά</option><option value="GR-G">Δυτική Ελλάδα</option><option value="GR-H">Στερεά Ελλάδα</option><option value="GR-J">Πελοπόννησος</option><option value="GR-K">Βόρειο Αιγαίο</option><option value="GR-L">Νότιο Αιγαίο</option><option value="GR-M">Κρήτη</option></select></span></p><p class="form-row form-row-wide address-field update_totals_on_change form-group col-xs-12 validate-required" id="billing_country_field" data-priority="90"><label for="billing_country" class="required_field">Χώρα / Περιοχή&nbsp;<span class="required" aria-hidden="true">*</span></label><span class="woocommerce-input-wrapper"><strong>Ελλάδα</strong><input type="hidden" name="billing_country" id="billing_country" value="GR" aria-required="true" autocomplete="do-not-autofill" class="country_to_state" readonly="readonly" /></span></p><p class="form-row kl_newsletter_checkbox_field form-group col-xs-12" id="kl_newsletter_checkbox_field" data-priority=""><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="kl_newsletter_checkbox" id="kl_newsletter_checkbox" value="1" class="input-checkbox form-input"  /> Sign me up to receive email updates and news&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p><p class="form-row form-row-wide hsplus-checkout-field hsplus-checkout-field--no-top-margin hsplus-checkout-field--hidden" id="hsplus_accepts_marketing_field" data-priority="11"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="hsplus_accepts_marketing" id="hsplus_accepts_marketing" value="1" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox hsplus-checkbox"  /> Sign up for exclusive offers and news via text messages&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p>  </div>
 
   </div>
 
@@ -201,7 +201,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 	
 	
 		
-			<h3>Επιπλέον πληροφορίες</h3>
+			<h3>Dodatne informacije</h3>
 
 		
 		<div class="woocommerce-additional-fields__field-wrapper">
@@ -222,7 +222,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <svg viewBox="0 0 19 14" fill="#3DBD00"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.5725 3.40179L8.14482 13.5874C7.5815 14.1375 6.66839 14.1375 6.1056 13.5874L0.422493 8.03956C-0.140831 7.48994 -0.140831 6.59748 0.422493 6.04707L1.44121 5.05126C2.00471 4.50094 2.91854 4.50094 3.48132 5.05126L7.12254 8.60835L15.5145 0.412609C16.078 -0.137536 16.9909 -0.137536 17.5537 0.412609L18.5733 1.40842C19.1424 1.95795 19.1424 2.8505 18.5725 3.40179Z" /></svg>                                        <div class="outer-wrapper">
                         <div class="inner-wrapper-dates">
                         <strong
-                            class="hs-custom-date">srijeda, 18.3. - četvrtak, 19.3.</strong>
+                            class="hs-custom-date">Τετάρτη, 18.3. - Πέμπτη, 19.3.</strong>
                         </div>
                         <div class="inner-wrapper-img">
                                                         <span class="shipping_method_delivery_price tag tag--red">
@@ -258,7 +258,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                                 <label for="surprise_item_upsell_0" class=""></label>
                                 <input id="surprise_item_upsell_0" type="checkbox" class="checkbox-simple checkbox-simple--green val--bottom"  disabled/>
                             </div>
-                            <div class="f--l f--bold surprise_title">Προϊόν-έκπληξη</div>
+                            <div class="f--l f--bold surprise_title">Προϊόν έκπληξη</div>
                             <div class="tag_wrapper">
                                 <div class="tag tag--red">
                                     <span class="woocommerce-Price-amount amount"><bdi>3,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>                                </div>
@@ -271,7 +271,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     </div>
                 </div>
                 <div class="c--darkgray remove_wrapper">
-                    <div class="remove_surprise vigo-checkout-total__trash hide"><svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 1.15398H15.4286C15.7429 1.15398 16 1.41215 16 1.7309V2.88474C16 3.20334 15.7442 3.46166 15.4286 3.46166H0.571429C0.255857 3.46166 0 3.20334 0 2.88474V1.7309C0 1.41222 0.255857 1.15398 0.571429 1.15398H4.57143L4.98536 0.318892C5.08214 0.123461 5.27996 0 5.49643 0H10.5039C10.7204 0 10.9183 0.123461 11.015 0.318892L11.4286 1.15398ZM1.14286 16.7308C1.14286 17.6863 1.91071 18.4615 2.85714 18.4615H13.1429C14.0893 18.4615 14.8571 17.6863 14.8571 16.7308V4.61549H1.14286V16.7308ZM10.8571 7.50009C10.8571 7.17917 11.1107 6.92317 11.4286 6.92317C11.7464 6.92317 12 7.18008 12 7.50009V15.5769C12 15.897 11.7455 16.1539 11.4286 16.1539C11.1116 16.1539 10.8571 15.897 10.8571 15.5769V7.50009ZM8 6.92317C7.68214 6.92317 7.42857 7.17917 7.42857 7.50009V15.5769C7.42857 15.897 7.68304 16.1539 8 16.1539C8.31696 16.1539 8.57143 15.897 8.57143 15.5769V7.50009C8.57143 7.18008 8.31786 6.92317 8 6.92317ZM4 7.50009C4 7.17917 4.25357 6.92317 4.57143 6.92317C4.88929 6.92317 5.14286 7.18008 5.14286 7.50009V15.5769C5.14286 15.8979 4.88929 16.1539 4.57143 16.1539C4.25357 16.1539 4 15.897 4 15.5769V7.50009Z" /></svg>                        <span>Αφαίρεση</span></div>
+                    <div class="remove_surprise vigo-checkout-total__trash hide"><svg viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.4286 1.15398H15.4286C15.7429 1.15398 16 1.41215 16 1.7309V2.88474C16 3.20334 15.7442 3.46166 15.4286 3.46166H0.571429C0.255857 3.46166 0 3.20334 0 2.88474V1.7309C0 1.41222 0.255857 1.15398 0.571429 1.15398H4.57143L4.98536 0.318892C5.08214 0.123461 5.27996 0 5.49643 0H10.5039C10.7204 0 10.9183 0.123461 11.015 0.318892L11.4286 1.15398ZM1.14286 16.7308C1.14286 17.6863 1.91071 18.4615 2.85714 18.4615H13.1429C14.0893 18.4615 14.8571 17.6863 14.8571 16.7308V4.61549H1.14286V16.7308ZM10.8571 7.50009C10.8571 7.17917 11.1107 6.92317 11.4286 6.92317C11.7464 6.92317 12 7.18008 12 7.50009V15.5769C12 15.897 11.7455 16.1539 11.4286 16.1539C11.1116 16.1539 10.8571 15.897 10.8571 15.5769V7.50009ZM8 6.92317C7.68214 6.92317 7.42857 7.17917 7.42857 7.50009V15.5769C7.42857 15.897 7.68304 16.1539 8 16.1539C8.31696 16.1539 8.57143 15.897 8.57143 15.5769V7.50009C8.57143 7.18008 8.31786 6.92317 8 6.92317ZM4 7.50009C4 7.17917 4.25357 6.92317 4.57143 6.92317C4.88929 6.92317 5.14286 7.18008 5.14286 7.50009V15.5769C5.14286 15.8979 4.88929 16.1539 4.57143 16.1539C4.25357 16.1539 4 15.897 4 15.5769V7.50009Z" /></svg>                        <span>Ukloni</span></div>
                 </div>
 
             </div>
@@ -294,7 +294,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
   <input id="payment_method_braintree_credit_card" type="radio" class="input-radio" name="payment_method" value="braintree_credit_card"  data-order_button_text="Παραγγελία" />
 
   <label for="payment_method_braintree_credit_card">
-    Πιστωτική κάρτα <span class="payment-fee-free">Δωρεάν</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.hr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
+    Πιστωτική κάρτα <span class="payment-fee-free">Δωρεάν</span><div class="sv-wc-payment-gateway-card-icons"><img decoding="async" src="https://vigoshop.gr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-visa.svg" alt="visa" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.gr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-mastercard.svg" alt="mastercard" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /><img decoding="async" src="https://vigoshop.gr/app/plugins/woocommerce-gateway-paypal-powered-by-braintree/vendor/skyverge/wc-plugin-framework/woocommerce/payment-gateway/assets/images/card-maestro.svg" alt="maestro" class="sv-wc-payment-gateway-icon wc-braintree-credit-card-payment-gateway-icon" width="40" height="25" style="width: 40px; height: 25px;" /></div>  </label>
       <div class="payment_box payment_method_braintree_credit_card" style="display:none;">
       <fieldset id="wc-braintree-credit-card-credit-card-form" aria-label="Πληροφορίες πληρωμής"><legend style="display:none;">Πληροφορίες πληρωμής</legend><div class="wc-braintree-credit-card-new-payment-method-form js-wc-braintree-credit-card-new-payment-method-form"><input type="hidden" name="wc-braintree-credit-card-card-type" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-enabled" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-verified" value="" /><input type="hidden" name="wc-braintree-credit-card-3d-secure-order-total" value="21.98" />		<input type="hidden" id="wc_braintree_credit_card_payment_nonce" name="wc_braintree_credit_card_payment_nonce" />
 		<input type="hidden" id="wc-braintree-credit-card-device-data" name="wc_braintree_device_data" />
@@ -303,11 +303,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 			<div id="wc-braintree-credit-card-context-hosted" class="" data-placeholder=""></div>
 		</div>
 				<div class="form-row form-row-wide wc-braintree-hosted-field-card-number-parent wc-braintree-hosted-field-parent">
-			<label for="wc-braintree-credit-card-account-number-hosted">Αριθμός κάρτας<abbr class="required" title="required">&nbsp;*</abbr></label>
+			<label for="wc-braintree-credit-card-account-number-hosted">Broj kartice<abbr class="required" title="required">&nbsp;*</abbr></label>
 			<div id="wc-braintree-credit-card-account-number-hosted" class="js-sv-wc-payment-gateway-credit-card-form-inputjs-sv-wc-payment-gateway-credit-card-form-account-number wc-braintree-hosted-field-card-number wc-braintree-hosted-field" data-placeholder="•••• •••• •••• ••••"></div>
 		</div>
 				<div class="form-row form-row-first wc-braintree-hosted-field-card-expiry-parent wc-braintree-hosted-field-parent">
-			<label for="wc-braintree-credit-card-expiry-hosted">Ημερομηνία λήξης<abbr class="required" title="required">&nbsp;*</abbr></label>
+			<label for="wc-braintree-credit-card-expiry-hosted">Datum isteka<abbr class="required" title="required">&nbsp;*</abbr></label>
 			<div id="wc-braintree-credit-card-expiry-hosted" class="js-sv-wc-payment-gateway-credit-card-form-inputjs-sv-wc-payment-gateway-credit-card-form-expiry wc-braintree-hosted-field-card-expiry wc-braintree-hosted-field" data-placeholder="MM/GG"></div>
 		</div>
 				<div class="form-row form-row-last wc-braintree-hosted-field-card-csc-parent wc-braintree-hosted-field-parent">
@@ -359,7 +359,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div id="pdf">
     <div class="pdf-title-container">
         <h3 class="pdf-title">
-            ΑΓΟΡΑΣΤΕ E-BOOK<!--            <span class="green-label">-->
+            KUPITE E-KNJIGU<!--            <span class="green-label">-->
 <!--                --><!--            </span>-->
         </h3>
     </div>
@@ -375,7 +375,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <!--                <div class="top-price-label">-->
 <!--                    <span>--><!--</span>-->
 <!--                </div>-->
-                <label for="ebook_true">E-book</label>
+                <label for="ebook_true">E-knjiga</label>
             </div>
             <div id="pdf-select-false" class="cell-grid column-selected top">
                 <input type="radio" id="ebook_false"  name="ebook_offer" value="false" checked>
@@ -383,7 +383,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             </div>
 
             <div class="cell-grid">
-                E-book:
+                E-knjiga:
             </div>
             <div class="cell-grid column-option">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
@@ -399,7 +399,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <div class="cell-grid column-selected">
                 <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>            </div>
                         <div class="cell-grid">
-                Σύνολο παραγγελίας:
+                Συνολική παραγγελία:
             </div>
             <div class="cell-grid totals column-option bottom">
                 <span class="totals"><span class="woocommerce-Price-amount amount"><bdi>21,98<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span></span>
@@ -413,7 +413,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <u>Περισσότερες πληροφορίες για το e-book</u>
     </p>
     <p class="pdf-more-info-description">
-        Επιλέξτε το e-book μας και αποκτήστε πρόσβαση σε κόλπα που αλλάζουν τη ζωή, συμβουλές εξοικονόμησης χρημάτων και κορυφαίες προσφορές. Εξοικονομείτε επίσης στα μεταφορικά. Επιλέξτε το e-book για ένα πιο έξυπνο, εύκολο και οικονομικό μέλλον!</p>
+        Επιλέξτε το e-book μας και αποκτήστε πρόσβαση σε κόλπα που αλλάζουν τη ζωή, συμβουλές εξοικονόμησης και κορυφαίες ευκαιρίες. Εξοικονομείτε επίσης στα μεταφορικά!</p>
 </div>
 
 
@@ -493,211 +493,211 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <div id="terms-conditions-popup" class="checkout-popup" style="display: none;">
     <div class="checkout-popup-wrapper">
         <div id="terms-conditions-content">
-            <h2 class="ql-align-justify"><strong>Opći uvjeti poslovanja</strong></h2>
+            <h2 class="ql-align-justify"><strong>Γενικοί Όροι Συναλλαγών</strong></h2>
 <p class="ql-align-justify"></p>
 <p class="ql-align-justify"><a class="button" href="https://images.hs-plus.com/legal/terms-conditions/terms-conditions_Vigoshop_hr.pdf" style="background-color: lightgray"> Spremite i ispišite</a></p>
-<p class="ql-align-justify">Dobro došli na web-mjesto <a href="https://vigoshop.hr">vigoshop.hr</a> kojim upravlja tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin (dalje u tekstu: tvrtka).</p>
-<p class="ql-align-justify">Ovi se Opći uvjeti poslovanja primjenjuju na sve aktivnosti omogućene u internetskoj trgovini koja je dostupna na&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a> (dalje u tekstu: web-mjesto). Opći uvjeti poslovanja obvezujući su za sve korisnike. Molimo vas da ih pažljivo pročitate. Ako se ne slažete s bilo kojim dijelom ovih Općih uvjeta poslovanja ili ako se u potpunosti ne slažete s njima, ne smijete upotrebljavati naše web-mjesto i naše usluge. Opći uvjeti poslovanja predstavljaju valjani ugovor sklopljen između vas i tvrtke.</p>
-<p class="ql-align-justify">Web-mjesto dostupno je „takvo kakvo jest”, a tvrtka ne pruža jamstva, ni neizravno ni izravno, koja se odnose na pravo vlasništva, marketing ili prikladnost za bilo koju svrhu proizvoda koji su predstavljeni na web-mjestu.</p>
-<p class="ql-align-justify">Vlasnik web-mjesta postupat će s dužnom pažnjom kako bi pokušao osigurati da podaci navedeni na web-mjestu budu detaljni i ažurni. Istodobno, vlasnik web-mjesta zadržava pravo izmijeniti sadržaj web-mjesta ili ga prestati dopunjavati u bilo kojem trenutku, bez prethodne najave. Osim toga, vlasnik web-mjesta može izmijeniti usluge, proizvode, cijene ili programe opisane na ovom web-mjestu u bilo kojem trenutku i bez najave.</p>
+<p class="ql-align-justify">Dobro došli na ιστότοπο <a href="https://vigoshop.gr">vigoshop.gr</a> kojim upravlja εταιρεία HS plus d.o.o., Gmajna 8, SI-1236 Trzin (dalje u tekstu: εταιρεία).</p>
+<p class="ql-align-justify">Ovi se Γενικοί Όροι συναλλαγών primjenjuju na sve aktivnosti omogućene u ηλεκτρονικoj κατάστημαi koja je dostupna na&nbsp;<a href="https://vigoshop.gr">vigoshop.gr</a> (dalje u tekstu: ιστότοπο). Γενικοί Όροι συναλλαγών υποχρέωσηjući su za sve χρήστηςe. Παρακαλούμε vas da ih διαβάσετε προσεκτικά. Ako se ne slažete s bilo kojim dijelom ovih Općih όρων συναλλαγών ili ako se u potpunosti ne slažete s njima, ne smijete upotrebljavati μας ιστότοπο i μας usluge. Γενικοί Όροι συναλλαγών predstavljaju valjani σύμβαση συνάπτεται μεταξύ vas i εταιρείας.</p>
+<p class="ql-align-justify">Ιστότοπος dostupno je „takvo kakvo jest”, a εταιρεία ne pruža εγγύησης, ni neizravno ni izravno, koja se odnose na pravo vlasništva, marketing ili prikladnost za bilo koju svrhu προϊόνa koji su predstavljeni na web-mjestu.</p>
+<p class="ql-align-justify">Vlasnik ιστότοπου postupat će s dužnom pažnjom kako bi pokušao osigurati da podaci navedeni na web-mjestu budu detaljni i ažurni. Istodobno, vlasnik ιστότοπου zadržava pravo izmijeniti sadržaj ιστότοπου ili ga prestati dopunjavati u bilo kojem στιγμή, bez prethodne najave. Osim toga, vlasnik ιστότοπου μπορεί izmijeniti usluge, προϊόνe, τιμές ili programe opisane na ovom web-mjestu u bilo kojem στιγμή i bez najave.</p>
 <h2 class="ql-align-justify"><strong>1 DEFINICIJE</strong></h2>
-<p class="ql-align-justify"><strong>Tvrtka</strong>&nbsp;je tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin koja je vlasnik web-mjesta&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a>&nbsp;i upravlja njime.</p>
-<p class="ql-align-justify"><strong>Web-mjesto&nbsp;</strong>je web-mjesto dostupno na&nbsp;<a href="https://vigoshop.hr">https://vigoshop.hr</a>, kojom upravlja tvrtka, i u okviru koje djeluje internetska trgovina.</p>
-<p class="ql-align-justify"><strong>Korisnik</strong>&nbsp;je svaka fizička osoba koja se koristi web-mjestom.</p>
-<p class="ql-align-justify"><strong>Kupac</strong>&nbsp;(ili&nbsp;<strong>„vi”</strong>&nbsp;) je svaka fizička osoba koja izvrši kupnju u internetskoj trgovini.</p>
-<p class="ql-align-justify"><strong>Potrošač</strong>&nbsp;je fizička osoba koja nabavlja ili upotrebljava robu i usluge u svrhe izvan opsega njegove profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka. Za potrebe ovih Općih uvjeta poslovanja svi kupci smatraju se i potrošačima.</p>
-<p class="ql-align-justify"><strong>Pravila o zaštiti privatnosti</strong>&nbsp;dokument je koji sadržava sve informacije o obradi osobnih podataka koja se odvija u okviru web-mjesta. Navedena Pravila o zaštiti privatnosti dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti">ovdje</a>.</p>
-<p class="ql-align-justify"><strong>Pravila o kolačićima</strong>&nbsp;dokument je koji sadržava sve informacije o upotrebi kolačića koja se odvija u okviru web-mjesta. Navedena Pravila o kolačićima dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-kolacicima">ovdje</a>.</p>
+<p class="ql-align-justify"><strong>Εταιρεία</strong>&nbsp;je εταιρεία HS plus d.o.o., Gmajna 8, SI-1236 Trzin koja je vlasnik ιστότοπου&nbsp;<a href="https://vigoshop.gr">vigoshop.gr</a>&nbsp;i upravlja njime.</p>
+<p class="ql-align-justify"><strong>Ιστότοπος&nbsp;</strong>je ιστότοπο dostupno na&nbsp;<a href="https://vigoshop.gr">https://vigoshop.gr</a>, kojom upravlja εταιρεία, i u okviru koje djeluje ηλεκτρονικa κατάστημαa.</p>
+<p class="ql-align-justify"><strong>Χρήστης</strong>&nbsp;je svaka φυσικό πρόσωπο koja se koristi ιστότοποm.</p>
+<p class="ql-align-justify"><strong>Αγοραστής</strong>&nbsp;(ili&nbsp;<strong>„vi”</strong>&nbsp;) je svaka φυσικό πρόσωπο koja εκτελέσει αγορά u ηλεκτρονικoj κατάστημαi.</p>
+<p class="ql-align-justify"><strong>Καταναλωτής</strong>&nbsp;je φυσικό πρόσωπο koja nabavlja ili upotrebljava robu i usluge u svrhe izvan opsega njegove profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka. Za potrebe ovih Općih όρων συναλλαγών svi αγοραστές smatraju se i καταναλωτήςima.</p>
+<p class="ql-align-justify"><strong>Πολιτική Απορρήτου</strong>&nbsp;έγγραφο je koji sadržava sve informacije o obradi προσωπικών δεδομένων koja se odvija u okviru ιστότοπου. Navedena Πολιτική Απορρήτου dostupna su&nbsp;<a href="https://vigoshop.gr/pravila-o-zastiti-privatnosti">ovdje</a>.</p>
+<p class="ql-align-justify"><strong>Πολιτική Cookies</strong>&nbsp;έγγραφο je koji sadržava sve informacije o upotrebi cookies koja se odvija u okviru ιστότοπου. Navedena Πολιτική Cookies dostupna su&nbsp;<a href="https://vigoshop.gr/pravila-o-kolacicima">ovdje</a>.</p>
 <h2 class="ql-align-justify"><strong>2. VIGOSHOP.HR INTERNETSKA TRGOVINA</strong></h2>
-<p class="ql-align-justify">Općim uvjetima poslovanja utvrđuje se rad internetske trgovine, definiraju prava i obveze korisnika i internetske trgovine te uređuje poslovni odnos između internetske trgovine i kupca.&nbsp;Opći uvjeti poslovanja koji vrijede u trenutku kupnje (u trenutku kada se vrši internetska narudžba) obvezujući su za kupca. Svaki put kada se izvrši narudžba, korisnik će biti obaviješten o Općim uvjetima poslovanja. Izvršavanjem narudžbe korisnik potvrđuje da je obaviješten o ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify">Potvrda Općih uvjeta poslovanja pri izvršavanju narudžbe u našoj internetskoj trgovini predstavlja obvezujući ugovor između vas i tvrtke. Molimo vas da&nbsp;<strong>pažljivo pročitate</strong>&nbsp;Opće uvjete poslovanja&nbsp;<strong>prije potvrde narudžbe</strong>. Ako se ne slažete s našim Općim uvjetima poslovanja, ne možete upotrebljavati usluge koje pruža naša internetska trgovina. Također, nije moguće djelomično se složiti s Općim uvjetima poslovanja. Da biste dovršili kupnju, morate prihvatiti&nbsp;<strong>cjelokupne</strong>&nbsp;Opće uvjete poslovanja koji su na snazi u trenutku kupnje.</p>
-<h3 class="ql-align-justify"><strong>i. Upotreba internetske trgovine</strong></h3>
-<p class="ql-align-justify">Tvrtka upravlja internetskom trgovinom u skladu s Općim uvjetima poslovanja. Internetska trgovina dostupna je kupcima u svakom trenutku, pri čemu tvrtka zadržava pravo privremeno onemogućiti ili obustaviti internetsku trgovinu bez prethodne najave.</p>
-<p class="ql-align-justify">Postoji mogućnost da će internetska trgovina biti privremeno nedostupna ili da privremeno neće biti moguće izvršiti plaćanja zbog održavanja i ažuriranja internetske trgovine. Tvrtka neće biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja internetske trgovine.</p>
-<h3 class="ql-align-justify"><strong>ii. Izvršavanje narudžbe u internetskoj trgovini</strong></h3>
-<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Παραγγελία potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
+<p class="ql-align-justify">Γενικοίς Όρους συναλλαγών utvrđuje se rad ηλεκτρονικe κατάστημαe, definiraju prava i obveze χρήστηςa i ηλεκτρονικe κατάστημαe te uređuje poslovni odnos μεταξύ ηλεκτρονικe κατάστημαe i αγοραστή.&nbsp;Γενικοί Όροι συναλλαγών koji vrijede u στιγμή αγοράς (u στιγμή kada se vrši ηλεκτρονικa παραγγελία) υποχρέωσηjući su za αγοραστή. Svaki put kada se εκτελέσει παραγγελία, χρήστης će biti ενημερωμένος o Γενικοίς Όρους συναλλαγών. Εκτέλεσηem παραγγελίας χρήστης επιβεβαιώνει da je ενημερωμένος o ovim Γενικοίς Όρους συναλλαγών.</p>
+<p class="ql-align-justify">Επιβεβαίωση Općih όρων συναλλαγών pri εκτέλεσηu παραγγελίας u μας ηλεκτρονικoj κατάστημαi predstavlja υποχρέωσηjući σύμβαση μεταξύ vas i εταιρείας. Παρακαλούμε vas da&nbsp;<strong>διαβάσετε προσεκτικά</strong>&nbsp;Γενικούς Όρους συναλλαγών&nbsp;<strong>πριν από την επιβεβαίωση παραγγελίας</strong>. Ako se ne slažete s našim Γενικοίς Όρους συναλλαγών, ne μπορείte upotrebljavati usluge koje pruža μας ηλεκτρονικa κατάστημαa. Επίσης, nije moguće djelomično se složiti s Γενικοίς Όρους συναλλαγών. Da biste dovršili αγορά, morate prihvatiti&nbsp;<strong>cjelokupne</strong>&nbsp;Γενικούς Όρους συναλλαγών koji su na snazi u στιγμή αγοράς.</p>
+<h3 class="ql-align-justify"><strong>i. Upotreba ηλεκτρονικe κατάστημαe</strong></h3>
+<p class="ql-align-justify">Εταιρεία upravlja ηλεκτρονικom κατάστημαom u skladu s Γενικοίς Όρους συναλλαγών. Internetska κατάστημαa dostupna je αγοραστέςma u svakom στιγμή, pri čemu εταιρεία zadržava pravo privremeno onemogućiti ili obustaviti ηλεκτρονικu κατάστημαu bez prethodne najave.</p>
+<p class="ql-align-justify">Postoji mogućnost da će ηλεκτρονικa κατάστημαa biti privremeno nedostupna ili da privremeno δεν θα biti moguće εκτελέσειti πληρωμής zbog održavanja i ažuriranja ηλεκτρονικe κατάστημαe. Εταιρεία δεν θα biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja ηλεκτρονικe κατάστημαe.</p>
+<h3 class="ql-align-justify"><strong>ii. Εκτέλεσηe παραγγελίας u ηλεκτρονικoj κατάστημαi</strong></h3>
+<p class="ql-align-justify">Smatra se da je kupoprodajni σύμβαση μεταξύ dobavljača i αγοραστή συνάπτεται kad αγοραστής επιβεβαιώσει παραγγελία (αγοραστής dobiva poruku e-pošte s potvrdom statusa „Παραγγελία επιβεβαιωμένη”). Od tog su στιγμa sve τιμές i ostali όροι αγοράς fiksni i primjenjivi i za pružatelja usluge i za αγοραστή. Kupoprodajni σύμβαση učitava se na poslužitelj εταιρείας u elektroničkom obliku.</p>
 <p class="ql-align-justify">
-<p class="ql-align-justify">Postupak kupnje:</p>
+<p class="ql-align-justify">Postupak αγοράς:</p>
 <ol>
-<li class="ql-align-justify">korak: U ponudi dostupnoj u internetskoj trgovini kupac odabire željeni artikl i željenu količinu te potvrđuje svoj izbor pritiskom gumba „Dodaj u košaricu”. Ako kupac želi kupiti nekoliko različitih artikala, postupak treba ponoviti za svaki pojedinačni artikl. Nakon što kupac završi postupak odabira proizvoda, može nastaviti s postupkom kupnje pritiskom gumba „Kreni na plaćanje”.</li>
-<li class="ql-align-justify">korak: U ovom koraku kupac ispunjava obrazac sa svojim osobnim podacima potrebnima za isporuku željene narudžbe. Nakon ispunjavanja obrasca, kupac u određenim slučajevima može odabrati između nekoliko mogućnosti dostave i dodati druge proizvode ili usluge svojoj narudžbi. U ovom koraku kupac je obaviješten i o planiranom datumu isporuke. Prije dovršenja narudžbe, kupac ima mogućnost izbora između različitih načina plaćanja. Uzimajući u obzir odabrani izbor, konačni iznos koji treba platiti za narudžbu izračunava se još jednom prije završetka kupnje. Kupac potvrđuje postupak kupnje pritiskom gumba „Završi kupnju”. </li>
-<li class="ql-align-justify">korak: Nakon završetka kupnje, kupcu se na web-mjestu prikazuje poruka potvrde u kojoj se navodi da je narudžba uspješno poslana i prikazuju pojedinosti poslane narudžbe. Uz to, kupac prima i potvrdnu poruku e-pošte na adresu e-pošte navedenu u 2. točki, pri čemu se u navedenoj potvrdnoj poruci e-pošte nalaze pregled narudžbe, upute za upotrebu naručenih proizvoda i upute za odustajanje od kupnje ili podnošenje reklamacije ako kupac nije zadovoljan proizvodom ili ga više ne želi.</li>
+<li class="ql-align-justify">korak: U ponudi dostupnoj u ηλεκτρονικoj κατάστημαi αγοραστής odabire željeni artikl i željenu količinu te επιβεβαιώνει svoj izbor pritiskom gumba „Προσθήκη u καλάθι”. Ako αγοραστής želi kupiti nekoliko διαφορετικih artikala, postupak treba ponoviti za svaki pojedinačni artikl. Nakon što αγοραστής završi postupak odabira προϊόνa, μπορεί nastaviti s postupkom αγοράς pritiskom gumba „Kreni na πληρωμή”.</li>
+<li class="ql-align-justify">korak: U ovom koraku αγοραστής ispunjava obrazac sa svojim osobnim podacima potrebnima za παράδοσηu željene παραγγελίας. Nakon ispunjavanja obrasca, αγοραστής u ορισμένim slučajevima μπορεί odabrati μεταξύ nekoliko mogućnosti αποστολής i dodati druge προϊόνe ili usluge svojoj narudžbi. U ovom koraku αγοραστής je ενημερωμένος i o planiranom datumu παράδοσηe. Prije dovršenja παραγγελίας, αγοραστής ima mogućnost izbora μεταξύ διαφορετικih načina πληρωμής. Uzimajući u obzir odabrani izbor, konačni iznos koji treba platiti za παραγγελία izτιμολόγιοava se još jednom prije završetka αγοράς. Αγοραστής επιβεβαιώνει postupak αγοράς pritiskom gumba „Završi αγορά”. </li>
+<li class="ql-align-justify">korak: Nakon završetka αγοράς, kupcu se na web-mjestu prikazuje poruka potvrde u kojoj se navodi da je παραγγελία uspješno poslana i prikazuju pojedinosti poslane παραγγελίας. Uz to, αγοραστής prima i potvrdnu poruku e-pošte na adresu e-pošte navedenu u 2. točki, pri čemu se u navedenoj potvrdnoj poruci e-pošte nalaze pregled παραγγελίας, upute za upotrebu naručenih προϊόνa i upute za υπαναχώρησηe od αγοράς ili podnošenje παράποναe ako αγοραστής nije zadovoljan προϊόνom ili ga više ne želi.</li>
 </ol>
-<p class="ql-align-justify">Svi podaci koje nam dostavite tijekom slanja narudžbe bit će obrađeni u skladu s Pravilima o zaštiti privatnosti koje možete pronaći na dnu web-mjesta.</p>
-<p class="ql-align-justify">Obavještavamo vas da će se vrijednost cjelokupne kupnje, uključujući isporuku ili druge troškove koji vrijede za kupnju, naplatiti nakon potvrde vaše narudžbe. Obavijestit ćemo vas o svim dodatnim troškovima prije nego što izvršite kupnju. S odabranim načinom plaćanja mogu biti povezati i dodatni troškovi.</p>
-<p class="ql-align-justify">Možete pratiti i upravljati svojom narudžbom u RMA aplikaciji na ovoj poveznici <a href="https://rma.hs-plus.com/language/hr_HR/" rel="noopener noreferrer" target="_blank" style="background-color: rgb(248, 248, 248); color: rgba(var(--sk_highlight,18,100,163),1);">https://rma.hs-plus.com/language/hr_HR/</a>. Za pristup Vam je potreban broj narudžbe ili kod za praćenje te e-mail ili broj telefona koje ste unijeli u narudžbenicu prilikom kupnje. U ovoj aplikaciji (ako narudžba još nije u pripremi) također možete otkazati narudžbu, promijeniti sadržaj narudžbe, adresu, broj telefona, pratiti narudžbu te također pristupiti potvrdi o plaćanju.</p>
-<h3 class="ql-align-justify"><strong>iii. Cijene, načini plaćanja i promocije</strong></h3>
-<p class="ql-align-justify"><strong>Cijene</strong></p>
-<p class="ql-align-justify">Sve cijene navedene na web-mjestu izražene su u EUR i uključuju PDV.&nbsp;Cijene se primjenjuju od trenutka kada je narudžba izvršena. Ponuda vrijedi do opoziva.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE:&nbsp;</strong>Ovo je maloprodajna internetska trgovina čija su ciljana publika isključivo krajnji kupci (B2C). Iz tog razloga na ovom web-mjestu ne omogućujemo B2B prodaju, a ne možemo ponuditi ni mogućnost izdavanja računa pravnim subjektima. To znači i da naknadne korekcije računa (s fizičke na pravnu osobu) nisu moguće zato što se prodajna transakcija zaključuje isključivo s fizičkom osobom.</p>
-<p class="ql-align-justify">Ako želite uspostaviti B2B odnos s našom tvrtkom i kupiti veće količine naših proizvoda (cijelo pakiranje / karton), možete se obratiti našoj trgovini na veliko na&nbsp;<a href="/cdn-cgi/l/email-protection#51336333113922213d24227f2238"><span class="__cf_email__" data-cfemail="b2d080d0f2dac1c2dec7c19cc1db">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify"><strong>Načini plaćanja</strong></p>
-<p class="ql-align-justify">U našoj internetskoj trgovini možete upotrebljavati sljedeće načine plaćanja:</p>
+<p class="ql-align-justify">Svi podaci koje nam dostavite tijekom slanja παραγγελίας bit će obrađeni u skladu s Pravilima o zaštiti privatnosti koje μπορείte pronaći na dnu ιστότοπου.</p>
+<p class="ql-align-justify">Σας ενημερώνουμε vas da će se vrijednost cjelokupne αγοράς, uključujući παράδοσηu ili druge troškove koji vrijede za αγορά, naplatiti nakon potvrde σαςe παραγγελίας. Ειδοποίησηit ćemo vas o svim dodatnim troškovima prije nego što εκτελέσειte αγορά. S odabranim načinom πληρωμής mogu biti povezati i dodatni troškovi.</p>
+<p class="ql-align-justify">Μπορείte pratiti i upravljati svojom παραγγελία u RMA aplikaciji na ovoj poveznici <a href="https://rma.hs-plus.com/language/el/" rel="noopener noreferrer" target="_blank" style="background-color: rgb(248, 248, 248); color: rgba(var(--sk_highlight,18,100,163),1);">https://rma.hs-plus.com/language/el/</a>. Za pristup Vam je potreban broj παραγγελίας ili kod za praćenje te e-mail ili broj telefona koje ste unijeli u παραγγελίαςnicu prilikom αγοράς. U ovoj aplikaciji (ako παραγγελία još nije u pripremi) επίσης μπορείte otkazati παραγγελία, promijeniti sadržaj παραγγελίας, adresu, broj telefona, pratiti παραγγελία te επίσης pristupiti επιβεβαιώσει o plaćanju.</p>
+<h3 class="ql-align-justify"><strong>iii. Τιμές, načini πληρωμής i promocije</strong></h3>
+<p class="ql-align-justify"><strong>Τιμές</strong></p>
+<p class="ql-align-justify">Sve τιμές navedene na web-mjestu izražene su u EUR i uključuju PDV.&nbsp;Τιμές se primjenjuju od στιγμa kada je παραγγελία izvršena. Ponuda vrijedi do opoziva.</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ:&nbsp;</strong>Ovo je λιανικa ηλεκτρονικa κατάστημαa čija su ciljana publika isključivo τελικ αγοραστές (B2C). Iz tog razloga na ovom web-mjestu ne omogućujemo B2B prodaju, a ne μπορείmo ponuditi ni mogućnost izdavanja τιμολόγιοa pravnim subjektima. To znači i da naknadne korekcije τιμολόγιοa (s fizičke na pravnu osobu) nisu moguće zato što se prodajna transakcija zaključuje isključivo s fizičkom osobom.</p>
+<p class="ql-align-justify">Ako želite uspostaviti B2B odnos s našom tvrtkom i kupiti veće količine naših προϊόνa (cijelo pakiranje / karton), μπορείte se obratiti μας κατάστημαi na veliko na&nbsp;<a href="/cdn-cgi/l/email-protection#51336333113922213d24227f2238"><span class="__cf_email__" data-cfemail="b2d080d0f2dac1c2dec7c19cc1db">[email&#160;protected]</span></a>.</p>
+<p class="ql-align-justify"><strong>Načini πληρωμής</strong></p>
+<p class="ql-align-justify">U μας ηλεκτρονικoj κατάστημαi μπορείte upotrebljavati επόμενe načine πληρωμής:</p>
 <ul>
-<li class="ql-align-justify">Πληρωμή pouzećem – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
+<li class="ql-align-justify">Πληρωμή pouzećem – αγοραστής plaća τιμολόγιο gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu αγοραστή;</li>
 <li class="ql-align-justify">Πληρωμή kreditnom karticom;</li>
 <li class="ql-align-justify">Πληρωμή preko PayPala.</li>
 </ul>
-<p class="ql-align-justify">Tvrtka zadržava pravo provjere odabranog načina plaćanja s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina plaćanja tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
-<p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos narudžbe (uključujući sve troškove povezane s transakcijom i isporukom) u skladu s odabranim načinom plaćanja. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina plaćanja.</p>
+<p class="ql-align-justify">Εταιρεία zadržava pravo provjere odabranog načina πληρωμής s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina πληρωμής tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
+<p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos παραγγελίας (uključujući sve troškove povezane s transakcijom i παράδοσηom) u skladu s odabranim načinom πληρωμής. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina πληρωμής.</p>
 <p class="ql-align-justify"><strong>Promocije</strong></p>
-<p class="ql-align-justify">Web-mjesto nudi i popuste i druge promocije kojima se snižavaju cijene proizvoda (dalje u tekstu: promocije). Svaka promocija nudi se po sniženoj cijeni za određeno (ograničeno) razdoblje utvrđeno za svaku pojedinačnu promociju. Snižena cijena odnosi se na sve kupnje izvršene tijekom trajanja promocije.</p>
-<p class="ql-align-justify">Želimo vas upozoriti da su određene promocije ograničene samo na nove korisnike koji još uvijek nisu izvršili kupnju u našoj internetskoj trgovini. U tom se slučaju navedena promocija ne odnosi na postojeće korisnike. Svaki pokušaj upotrebe takvih promocija bit će odmah blokiran, a adrese e-pošte upotrebljavane za izvršenje spomenute zlouporabe bit će izbrisane bez prethodne najave. Popusti i druge promocije obično nisu kumulativni, osim ako se u okviru svake pojedinačne promocije izričito ne navodi drugačije.</p>
+<p class="ql-align-justify">Ιστότοπος nudi i popuste i druge promocije kojima se snižavaju τιμές προϊόνa (dalje u tekstu: promocije). Svaka promocija nudi se po sniženoj cijeni za ορισμένo (ograničeno) razdoblje utvrđeno za svaku pojedinačnu promociju. Snižena τιμή odnosi se na sve αγοράς izvršene tijekom trajanja promocije.</p>
+<p class="ql-align-justify">Želimo vas upozoriti da su ορισμένe promocije ograničene samo na nove χρήστηςe koji još uvijek nisu εκτελέσειli αγορά u μας ηλεκτρονικoj κατάστημαi. U tom se slučaju navedena promocija ne odnosi na postojeće χρήστηςe. Svaki pokušaj upotrebe takvih promocija bit će odmah blokiran, a adrese e-pošte upotrebljavane za izvršenje spomenute zlouporabe bit će izbrisane bez prethodne najave. Popusti i druge promocije obično nisu kumulativni, osim ako se u okviru svake pojedinačne promocije izričito ne navodi drugačije.</p>
 <h3 class="ql-align-justify"><strong>iv. Troškovi i dostava robe</strong></h3>
-<p class="ql-align-justify">U cijene nisu uključeni troškovi dostave. Troškove dostave možete pronaći u internetskoj trgovini, gdje također imate mogućnost odabira načina dostave. Naša tvrtka nudi dva načina dostave: standardna i brza. Ključna razlika između ove dvije metode dostave jest u tome što se s narudžbama za ekspresnu dostavu postupa, i one se pakiraju, s većim prioritetom.&nbsp;&nbsp;Prije odabira željenog načina dostave, provjerite cijenu navedenu pored svakog pojedinačnog izbora. Tijekom podnošenja narudžbe vidjet ćete pregled cijena koji se sastoji od troškova kupnje, troškova dostave i ukupnih troškova.</p>
-<p class="ql-align-justify">Ako odaberete plaćanje pouzećem, kurirska služba naplatit će naknadu za dostavu paketa izračunatu tijekom podnošenja narudžbe.&nbsp;Ako odlučite platiti kreditnom karticom ili putem PayPala, navedeni trošak neće vam biti naplaćen.</p>
-<p class="ql-align-justify">Proizvodi koje ste naručili dostavit će se na adresu koju ste unijeli kao adresu za dostavu na našem web-mjestu.</p>
-<p class="ql-align-justify">Predviđeni rok dostave dostupan je kupcu nakon predaje narudžbe. Tvrtka zadržava pravo produžiti rok dostave u slučaju povećane potražnje ili kašnjenja usluge dostave. Dostave se uglavnom izvršavaju prije podneva. Ako tijekom dostave ne možete prihvatiti paket, kurirska služba pokušat će se dogovoriti s kupcem o novom načinu i mjestu dostave.</p>
-<p class="ql-align-justify">Ako kurir za dostavu ne uspije kontaktirati kupca, slijedi drugi pokušaj dostave paketa sljedeći radni dan. Ako i drugi pokušaj dostave ne uspije, paket i njegov sadržaj vraćaju se pošiljatelju.</p>
-<p class="ql-align-justify">Iznos plaćen za neuspješno isporučene i unaprijed plaćene narudžbe automatski se vraća u roku od 8 (osam) radnih dana skladišta koje bilježi povrat paketa ili tvrtke koja utvrdi da paket nije uspješno isporučen.</p>
-<p class="ql-align-justify"><strong>Sigurnosna upozorenja za upotrebu svih proizvoda</strong></p>
-<p class="ql-align-justify">Η χρήση προϊόντων από το ηλεκτρονικό μας κατάστημα μπορεί να ενέχει ορισμένο κίνδυνο για τη ζωή και την υγεία. Πρέπει ρητά να επιβεβαιώσετε ότι κατανοείτε ότι η χρήση των εν λόγω προϊόντων ενέχει τέτοιο κίνδυνο τον οποίο αποδέχεστε πλήρως. Παραγγέλνοντας και/ή χρησιμοποιώντας τα εν λόγω προϊόντα, επιβεβαιώνετε ότι γνωρίζετε τους κινδύνους που μπορεί να περιλαμβάνουν κίνδυνο ασθένειας, τραυματισμού, αναπηρίας ή θανάτου. Πρέπει να αναλάβετε πλήρη ευθύνη για όλες τις συνέπειες που μπορεί να προκύψουν από την παραγγελία και/ή τη χρήση των προϊόντων.</p>
-<p class="ql-align-justify">Prije upotrebe bilo kojeg proizvoda morate pročitati upute za upotrebu.</p>
-<p class="ql-align-justify">Prije upotrebe svaki proizvod mora biti testiran na siguran način. Ako niste potpuno sigurni kako testirati proizvod, ljubazno vas molimo da ga ne upotrebljavate, da nas o tome obavijestite ili ga vratite.</p>
-<p class="ql-align-justify">Tvrtka ne preuzima nikakvu odgovornost za neizravnu ili izravnu štetu nastalu upotrebom proizvoda naručenih na web-mjestu, bez obzira je li kupac ili treća strana proizvode upotrebljavao ispravno ili neispravno. Ovo izuzeće primjenjuje se u najvećoj mogućoj mjeri dopuštenoj zakonodavstvom.</p>
-<p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv tvrtke, tvrtka ograničava svoju odgovornost za štete na trostruku tržišnu cijenu proizvoda.</p>
-<p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise proizvoda i fotografije. Ipak, ne možemo jamčiti da su svi podaci o proizvodu i njihove fotografije potpuno točni. Budući da se određeni proizvodi mogu nabaviti kod različitih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu proizvoda. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost proizvoda.&nbsp;&nbsp;</p>
-<h3 class="ql-align-justify"><strong>v. Pravo na odustajanje od Ugovora</strong></h3>
-<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke narudžbe, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno το δικαίωμα υπαναχώρησης od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
-<p class="ql-align-justify">Smatra se da je izjava o odustajanju izdana pravodobno ako je podnesena u roku za odustajanje od Ugovora. Izjavu o odustajanju možete dostaviti na unaprijed dogovorenom obrascu ili nam je možete poslati e-poštom.&nbsp;Obrazac možete pronaći na kartici „Pravo na odustajanje od kupnje” pri dnu web-mjesta. Teret dokazivanja koji se odnosi na ostvarivanje prava na odustajanje iz ovog članka snosi potrošač.</p>
-<p class="ql-align-justify"><strong>Odustajanjem od Ugovora kupac može steći povrat novca ili zamijeniti proizvod, ali ne može iskoristiti kredit!</strong></p>
-<p class="ql-align-justify">Nakon predaje izjave o odustajanju, svoje proizvode morate vratiti u roku od 14 dana od datuma izjave o odustajanju. Robu pošaljite na našu adresu: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za povrat u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih proizvoda, zapakiranih u originalno pakiranje ili ambalažu koja proizvode štiti na isti način kao i originalna ambalaža. Ne možete vratiti oštećene proizvode, proizvode u izmijenjenoj količini ili proizvode upakirane u neprikladnu ambalažu. Molimo vratite artikle kao paketnu pošiljku, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od kupnje, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od kupnje), to može značajno produžiti vrijeme potrebno za obradu vašeg zahtjeva. U slučaju odustajanja od ugovora, podmirit ćete samo troškove povrata robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
-<p class="ql-align-justify">Ako ste već platili naručenu robu, odmah ćemo, ili najkasnije u roku od 8 radnih dana od slanja paketa na našu adresu, nadoknaditi sve zaprimljene uplate i uplate koje ste izvršili u vezi s narudžbom. Smatra se da je paket poslan na našu adresu kada ga naše skladište evidentira kao vraćeni paket. Zadržavamo pravo zadržati primljenu uplatu do povrata proizvoda koji su predmet odustajanja od ugovora.</p>
-<p class="ql-align-justify">Zaprimljene uplate nadoknadit ćemo istim sredstvima plaćanja koja ste upotrebljavali tijekom kupnje. U slučaju plaćanja pouzećem nabavna cijena vratit će na broj tekućeg računa koji ste naveli u svom obrascu.</p>
-<p class="ql-align-justify">Izuzetak od prava na povlačenje</p>
-<p class="ql-align-justify">Iskorištavanje prava na odustajanje isključeno je za sljedeće ugovore:</p>
+<p class="ql-align-justify">U τιμές nisu uključeni troškovi αποστολής. Troškove αποστολής μπορείte pronaći u ηλεκτρονικoj κατάστημαi, gdje επίσης imate mogućnost odabira načina αποστολής. Naša εταιρεία nudi dva načina αποστολής: standardna i brza. Ključna razlika μεταξύ ove dvije metode αποστολής jest u tome što se s παραγγελίαma za ekspresnu αποστολή postupa, i one se pakiraju, s većim prioritetom.&nbsp;&nbsp;Prije odabira željenog načina αποστολής, provjerite τιμή navedenu pored svakog pojedinačnog izbora. Tijekom podnošenja παραγγελίας vidjet ćete pregled τιμή koji se sastoji od troškova αγοράς, troškova αποστολής i ukupnih troškova.</p>
+<p class="ql-align-justify">Ako odaberete πληρωμή pouzećem, kurirska služba naplatit će naknadu za αποστολή paketa izτιμολόγιοatu tijekom podnošenja παραγγελίας.&nbsp;Ako odlučite platiti kreditnom karticom ili putem PayPala, navedeni trošak δεν θα vam biti naplaćen.</p>
+<p class="ql-align-justify">Προϊόνi koje ste naručili dostavit će se na adresu koju ste unijeli kao adresu za αποστολή na μαςm web-mjestu.</p>
+<p class="ql-align-justify">Predviđeni rok αποστολής dostupan je kupcu nakon predaje παραγγελίας. Εταιρεία zadržava pravo produžiti rok αποστολής u slučaju povećane potražnje ili kašnjenja usluge αποστολής. Dostave se uglavnom izvršavaju prije podneva. Ako tijekom αποστολής ne μπορείte prihvatiti paket, kurirska služba pokušat će se dogovoriti s kupcem o novom načinu i mjestu αποστολής.</p>
+<p class="ql-align-justify">Ako kurir za αποστολή ne uspije kontaktirati αγοραστή, slijedi drugi pokušaj αποστολής paketa επόμενi radni dan. Ako i drugi pokušaj αποστολής ne uspije, paket i njegov sadržaj vraćaju se pošiljatelju.</p>
+<p class="ql-align-justify">Iznos plaćen za neuspješno isporučene i unaprijed plaćene παραγγελίας automatski se vraća u roku od 8 (osam) radnih dana skladišta koje bilježi επιστροφή paketa ili εταιρείας koja utvrdi da paket nije uspješno isporučen.</p>
+<p class="ql-align-justify"><strong>Sigurnosna upozorenja za upotrebu svih προϊόνa</strong></p>
+<p class="ql-align-justify">Upotreba προϊόνa iz μας ηλεκτρονικe κατάστημαe μπορεί predstavljati ορισμένi κίνδυνο για τη ζωή και την υγεία. Morate izričito επιβεβαιώσειti da razumijete da uporaba navedenih προϊόνa predstavlja takav rizik koji u potpunosti prihvaćate. Παραγγελίαvanjem i/ili upotrebom spomenutih προϊόνa επιβεβαιώνειte da ste upoznati s navedenim rizicima koji mogu uključivati rizik od bolesti, ozljeda, invaliditeta ili smrti. Morate preuzeti punu odgovornost za sve posljedice koje bi mogle nastati naručivanjem i/ili upotrebom προϊόνa.</p>
+<p class="ql-align-justify">Prije upotrebe bilo kojeg προϊόνa morate pročitati upute za upotrebu.</p>
+<p class="ql-align-justify">Prije upotrebe svaki προϊόν mora biti testiran na siguran način. Ako niste potpuno sigurni kako testirati προϊόν, ljubazno vas παρακαλούμε da ga ne upotrebljavate, da nas o tome ειδοποίησηite ili ga vratite.</p>
+<p class="ql-align-justify">Εταιρεία ne preuzima nikakvu odgovornost za neizravnu ili izravnu štetu nastalu upotrebom προϊόνa naručenih na web-mjestu, bez obzira je li αγοραστής ili treća strana προϊόνe upotrebljavao ispravno ili neispravno. Ovo izuzeće primjenjuje se u najvećoj mogućoj mjeri dopuštenoj zakonodavstvom.</p>
+<p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv εταιρείας, εταιρεία ograničava svoju odgovornost za štete na trostruku tržišnu τιμή προϊόνa.</p>
+<p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise προϊόνa i fotografije. Ipak, ne μπορείmo jamčiti da su svi podaci o προϊόνu i njihove fotografije potpuno točni. Budući da se ορισμένi προϊόνi mogu nabaviti kod διαφορετικih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu προϊόνa. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost προϊόνa.&nbsp;&nbsp;</p>
+<h3 class="ql-align-justify"><strong>v. Pravo na υπαναχώρησηe od Ugovora</strong></h3>
+<p class="ql-align-justify">Αγοραστής koji εκτελέσει αγορά u μας ηλεκτρονικoj κατάστημαi ima pravo odustati od Ugovora. Navedeno υπαναχώρησηe od Ugovora μπορεί se izjaviti εντός 90 ημερών od datuma παράδοσηe παραγγελίας, a tvrtku o tome obavještava dostavna služba.&nbsp;Αγοραστής ne mora navesti razlog svoje odluke. Navedeno το δικαίωμα υπαναχώρησης od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
+<p class="ql-align-justify">Smatra se da je izjava o υπαναχώρησηu izdana pravodobno ako je podnesena u roku za υπαναχώρησηe od Ugovora. Izjavu o υπαναχώρησηu μπορείte dostaviti na unaprijed dogovorenom obrascu ili nam je μπορείte poslati e-poštom.&nbsp;Obrazac μπορείte pronaći na kartici „Pravo na υπαναχώρησηe od αγοράς” pri dnu ιστότοπου. Teret dokazivanja koji se odnosi na ostvarivanje prava na υπαναχώρησηe iz ovog članka snosi καταναλωτής.</p>
+<p class="ql-align-justify"><strong>Odustajanjem od Ugovora αγοραστής μπορεί steći επιστροφή novca ili zamijeniti προϊόν, ali ne μπορεί iskoristiti kredit!</strong></p>
+<p class="ql-align-justify">Nakon predaje izjave o υπαναχώρησηu, svoje προϊόνe morate vratiti εντός 14 ημερών od datuma izjave o υπαναχώρησηu. Στείλτε τα εμπορεύματα στη διεύθυνσή μας: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za επιστροφή u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih προϊόνa, zapakiranih u αρχική συσκευασία ili ambalažu koja προϊόνe štiti na isti način kao i originalna ambalaža. Ne μπορείte vratiti oštećene προϊόνe, προϊόνe u izmijenjenoj količini ili προϊόνe upakirane u neprikladnu ambalažu. Παρακαλούμε vratite artikle kao paketnu αποστολήu, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od αγοράς, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od αγοράς), to μπορεί značajno produžiti vrijeme potrebno za obradu σαςeg zahtjeva. U slučaju υπαναχώρησηa od σύμβασηa, podmirit ćete samo troškove επιστροφήa robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
+<p class="ql-align-justify">Ako ste već platili naručenu robu, odmah ćemo, ili najkasnije u roku od 8 radnih dana od slanja paketa na μας adresu, nadoknaditi sve zaprimljene uplate i uplate koje ste εκτελέσειli u vezi s παραγγελία. Smatra se da je paket poslan na μας adresu kada ga μας skladište evidentira kao vraćeni paket. Zadržavamo pravo zadržati primljenu uplatu do επιστροφήa προϊόνa koji su predmet υπαναχώρησηa od σύμβασηa.</p>
+<p class="ql-align-justify">Zaprimljene uplate nadoknadit ćemo istim sredstvima πληρωμής koja ste upotrebljavali tijekom αγοράς. U slučaju πληρωμής pouzećem nabavna τιμή vratit će na broj tekućeg τιμολόγιοa koji ste naveli u svom obrascu.</p>
+<p class="ql-align-justify">Εξαίρεση od prava na υπαναχώρηση</p>
+<p class="ql-align-justify">Iskorištavanje prava na υπαναχώρησηe isključeno je za επόμενe σύμβασηe:</p>
 <ul>
-<li class="ql-align-justify">ugovori o isporuci robe izrađeni prema specifikacijama potrošača ili jasno personalizirani;</li>
-<li class="ql-align-justify">ugovori o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
-<li class="ql-align-justify">ugovori o nabavi novina, periodike ili časopisa, osim ugovora o pretplati na ove publikacije;</li>
-<li class="ql-align-justify">ugovori o isporuci robe koju je potrošač otpečatio nakon isporuke i koja se ne može vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
-<li class="ql-align-justify">ugovori o isporuci robe koja se nakon isporuke i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi proizvodi iz Mystery box -a, oba proizvoda iz ponude 1+1 besplatno, bilo koji POKLON);</li>
-<li class="ql-align-justify">ugovori o isporuci audio ili video zapisa ili računalnog softvera ako ih je potrošač otpečatio nakon isporuke;</li>
-<li class="ql-align-justify">ugovori o opskrbi alkoholnim pićima čija se isporuka odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju ugovora ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
-<li class="ql-align-justify">ugovori o isporuci robe ili usluga, čija cijena ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja odustajanja;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga u potpunosti izvršeni prije isteka roka za odustajanje i čije je izvršavanje započelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje; (na primjer: provizija za plaćanje po pouzeću, brza dostava, osiguranje paketa);</li>
-<li class="ql-align-justify">ugovori o radovima na održavanju ili popravcima koji se moraju hitno izvršiti u potrošačevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati određenog datuma ili s određenom učestalošću;</li>
-<li class="ql-align-justify">ugovori o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je izvršavanje počelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje (na primjer: preuzeti digitalni sadržaji, e-knjige).</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe izrađeni prema specifikacijama καταναλωτήςa ili jasno personalizirani;</li>
+<li class="ql-align-justify">σύμβασηi o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
+<li class="ql-align-justify">σύμβασηi o nabavi novina, periodike ili časopisa, osim σύμβασηa o pretplati na ove publikacije;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe koju je καταναλωτής otpečatio nakon παράδοσηe i koja se ne μπορεί vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe koja se nakon παράδοσηe i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi προϊόνi iz Mystery box -a, oba προϊόνa iz ponude 1+1 besplatno, bilo koji POKLON);</li>
+<li class="ql-align-justify">σύμβασηi o isporuci audio ili video zapisa ili τιμολόγιοalnog softvera ako ih je καταναλωτής otpečatio nakon παράδοσηe;</li>
+<li class="ql-align-justify">σύμβασηi o opskrbi alkoholnim pićima čija se παράδοσηa odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju σύμβασηa ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe ili usluga, čija τιμή ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja υπαναχώρησηa;</li>
+<li class="ql-align-justify">σύμβασηi o pružanju usluga u potpunosti izvršeni prije isteka roka za υπαναχώρησηe i čije je εκτέλεσηe započelo nakon izričitog prethodnog pristanka καταναλωτήςa i izričitog odricanja od prava na υπαναχώρησηe; (na primjer: provizija za πληρωμή po pouzeću, brza dostava, osiguranje paketa);</li>
+<li class="ql-align-justify">σύμβασηi o radovima na održavanju ili popravcima koji se moraju hitno εκτελέσειti u καταναλωτήςevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
+<li class="ql-align-justify">σύμβασηi o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati ορισμένog datuma ili s ορισμένom učestalošću;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je εκτέλεσηe počelo nakon izričitog prethodnog pristanka καταναλωτήςa i izričitog odricanja od prava na υπαναχώρησηe (na primjer: preuzeti digitalni sadržaji, e-knjige).</li>
 </ul>
-<p class="ql-align-justify"><strong>UPOZORENJE: </strong>Ako dobrovoljno vratite proizvod za koji nije moguće odstupanje od kupnje,&nbsp;nakon perioda za povrat od 90 dana, nakon 14 dana od obavijesti o odstupanju od kupnje, koji nije kupljen u našoj trgovini Takav Vam proizvod možemo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane reklamacije. Proizvod koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
-<h3 class="ql-align-justify"><strong>vi. Reklamacije</strong></h3>
-<p class="ql-align-justify">Ako otkrijete da vaš proizvod ne radi ispravno ili ste dobili neprimjeren ili oštećen proizvod, na raspolaganju su vam sljedeće mogućnosti:</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: </strong>Ako dobrovoljno vratite προϊόν za koji nije moguće odstupanje od αγοράς,&nbsp;nakon perioda za επιστροφή od 90 dana, nakon 14 dana od ειδοποίησηi o odstupanju od αγοράς, koji nije kupljen u μας κατάστημαi Takav Vam προϊόν μπορείmo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane παράποναe. Προϊόν koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
+<h3 class="ql-align-justify"><strong>vi. Παράποναe</strong></h3>
+<p class="ql-align-justify">Ako otkrijete da σας προϊόν ne radi ispravno ili ste dobili neprimjeren ili oštećen προϊόν, na raspolaganju su vam επόμενe mogućnosti:</p>
 <ul>
-<li class="ql-align-justify">provedba jamstva dostave,</li>
-<li class="ql-align-justify">provedba jamstva na tehničke proizvode i</li>
-<li class="ql-align-justify">podnošenje reklamacije proizvoda.</li>
+<li class="ql-align-justify">provedba εγγύησης αποστολής,</li>
+<li class="ql-align-justify">provedba εγγύησης na tehničke προϊόνe i</li>
+<li class="ql-align-justify">podnošenje παράποναe προϊόνa.</li>
 </ul>
-<p class="ql-align-justify"><strong>a) Jamstvo isporuke</strong></p>
+<p class="ql-align-justify"><strong>a) Εγγύηση παράδοσηe</strong></p>
 <ol>
-<li class="ql-align-justify">Dajemo dodatno jamstvo za besprijekornu isporuku koje se može primijeniti&nbsp;<strong>u roku od 48 sati nakon primitka proizvoda</strong>.</li>
-<li class="ql-align-justify">Ako su vaši proizvodi oštećeni tijekom transporta ili nisu u skladu s vašom narudžbom, ljubazno vas molimo da nam prijavite grešku u roku od 48 sati od isporuke. Pošaljite nam poruku e-pošte koja sadrži fotografiju pakiranja (naljepnica mora biti jasno istaknuta na fotografiji) i primljenog proizvoda koji jasno ukazuje na oštećeno područje.</li>
-<li class="ql-align-justify">Dat ćemo prednost rješavanju vašeg zahtjeva u najkraćem mogućem roku i pružit ćemo vam zamjenski proizvod.</li>
-<li class="ql-align-justify">Ako je zahtjev poslan prekasno, riješit će se kao reklamacija proizvoda.</li>
+<li class="ql-align-justify">Dajemo dodatno εγγύηση za besprijekornu παράδοσηu koje se μπορεί primijeniti&nbsp;<strong>u roku od 48 sati nakon primitka προϊόνa</strong>.</li>
+<li class="ql-align-justify">Ako su σαςi προϊόνi oštećeni tijekom transporta ili nisu u skladu s σαςom παραγγελία, ljubazno vas παρακαλούμε da nam prijavite grešku u roku od 48 sati od παράδοσηe. Pošaljite nam poruku e-pošte koja sadrži fotografiju pakiranja (naljepnica mora biti jasno istaknuta na fotografiji) i primljenog προϊόνa koji jasno ukazuje na oštećeno područje.</li>
+<li class="ql-align-justify">Dat ćemo prednost rješavanju σαςeg zahtjeva u najkraćem mogućem roku i pružit ćemo vam zamjenski προϊόν.</li>
+<li class="ql-align-justify">Ako je zahtjev poslan prekasno, riješit će se kao παράποναa προϊόνa.</li>
 </ol>
 <p class="ql-align-justify"></p>
-<p class="ql-align-justify"><strong>b) Jamstvo na tehničke proizvode</strong></p>
-<p class="ql-align-justify">Za određene proizvode u našoj ponudi primjenjuje se jamstveno razdoblje od 24 mjeseci. Jamstvo se može primijeniti samo za tehničke proizvode i električne uređaje iz naše ponude. Jamstveno razdoblje od 24 mjeseci započinje na dan primitka robe. Svoje jamstvo možete ostvariti u skladu Zakonom o zaštiti potrošača, na temelju računa koji predstavlja potvrdu o jamstvu.</p>
-<p class="ql-align-justify">Tvrtka zadržava pravo odbiti jamstvo ako uz zahtjev nije priložen račun ili ako račun nije čitljiv ili na drugi način nedostaje.</p>
-<p class="ql-align-justify">Jamstvo se ne primjenjuje ako:</p>
+<p class="ql-align-justify"><strong>b) Εγγύηση na tehničke προϊόνe</strong></p>
+<p class="ql-align-justify">Za ορισμένe προϊόνe u μας ponudi primjenjuje se jamstveno razdoblje od 24 mjeseci. Εγγύηση se μπορεί primijeniti samo za tehničke προϊόνe i električne uređaje iz μας ponude. Jamstveno razdoblje od 24 mjeseci započinje na dan primitka robe. Svoje εγγύηση μπορείte ostvariti u skladu Zakonom o zaštiti καταναλωτήςa, na temelju τιμολόγιοa koji predstavlja επιβεβαίωση o jamstvu.</p>
+<p class="ql-align-justify">Εταιρεία zadržava pravo odbiti εγγύηση ako uz zahtjev nije priložen τιμολόγιο ili ako τιμολόγιο nije čitljiv ili na drugi način nedostaje.</p>
+<p class="ql-align-justify">Εγγύηση se ne primjenjuje ako:</p>
 <ul>
-<li class="ql-align-justify">je proizvod fizički oštećen;</li>
-<li class="ql-align-justify">proizvod pokazuje znakove trošenja zbog uobičajene upotrebe;</li>
-<li class="ql-align-justify">proizvod predstavlja nedostatke koji su nastali kao rezultat nepravilne, neprikladne ili neoprezne upotrebe proizvoda.</li>
+<li class="ql-align-justify">je προϊόν fizički oštećen;</li>
+<li class="ql-align-justify">προϊόν pokazuje znakove trošenja zbog uobičajene upotrebe;</li>
+<li class="ql-align-justify">προϊόν predstavlja nedostatke koji su nastali kao rezultat nepravilne, neprikladne ili neoprezne upotrebe προϊόνa.</li>
 </ul>
-<p class="ql-align-justify">Proizvodi za koje želite iskoristiti jamstvo moraju se ispitati, zbog čega vas molimo da svome zahtjevu za jamstvom priložite fotografije ili video isječke koji prikazuju nedostatak. Ako je potrebno, zamolit ćemo vas da nam vratite proizvod kako bismo ga mogli ispitati.</p>
-<p class="ql-align-justify">Ako odobrimo vaš zahtjev za jamstvom, pružit ćemo vam novi proizvod. Imate pravo zatražiti i popravak svojeg proizvoda, ali morate biti svjesni činjenice da je razdoblje popravka duže od razdoblja isporuke novog proizvoda. Ako popravak traje više od 45 dana, vaš će proizvod biti zamijenjen novim. Ako se novi proizvod ne može dostaviti, vratit ćemo vam cijenu proizvoda u cijelosti.</p>
-<p class="ql-align-justify">Μπορείτε να βρείτε τη σύνοψη της διαδικασίας στην καρτέλα «Αντικατάσταση εντός εγγύησης» στο κάτω μέρος του ιστότοπου.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE: Tvrtka HS Plus prihvatit će povrat samo onih paketa koji sadržavaju proizvode kupljene na web-mjestu. Svi paketi koje pošalje pojedinac, a koji ne sadržavaju proizvode kupljene u našoj tvrtki, vratit će se pošiljatelju o njegovom trošku.</strong></p>
+<p class="ql-align-justify">Προϊόνi za koje želite iskoristiti εγγύηση moraju se ispitati, zbog čega vas παρακαλούμε da svome zahtjevu za εγγύησηm priložite fotografije ili video isječke koji prikazuju nedostatak. Ako je potrebno, zamolit ćemo vas da nam vratite προϊόν kako bismo ga mogli ispitati.</p>
+<p class="ql-align-justify">Ako odobrimo σας zahtjev za εγγύησηm, pružit ćemo vam novi προϊόν. Imate pravo zatražiti i popravak svojeg προϊόνa, ali morate biti svjesni činjenice da je razdoblje popravka duže od razdoblja παράδοσηe novog προϊόνa. Ako popravak traje više od 45 dana, σας će προϊόν biti zamijenjen novim. Ako se novi προϊόν ne μπορεί dostaviti, vratit ćemo vam τιμή προϊόνa u cijelosti.</p>
+<p class="ql-align-justify">Sažetak postupka μπορείte pronaći na kartici „Zamjena u jamstvu” pri dnu ιστότοπου.</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Εταιρεία HS Plus prihvatit će επιστροφή samo onih paketa koji sadržavaju προϊόνe kupljene na web-mjestu. Svi paketi koje pošalje pojedinac, a koji ne sadržavaju προϊόνe kupljene u μας εταιρεία, vratit će se pošiljatelju o njegovom trošku.</strong></p>
 <p class="ql-align-justify">&nbsp;</p>
-<p class="ql-align-justify"><strong>c) Reklamacija proizvoda zbog materijalnih nedostataka</strong></p>
+<p class="ql-align-justify"><strong>c) Παράποναa προϊόνa zbog materijalnih nedostataka</strong></p>
 <ol>
-<li class="ql-align-justify">Ako proizvod ne radi ispravno, pošaljite nam poruku e-pošte na <a href="/cdn-cgi/l/email-protection#c0a9aea6af80b6a9a7afb3a8afb0eea8b2"><span class="__cf_email__" data-cfemail="a9c0c7cfc6e9dfc0cec6dac1c6d987c1db">[email&#160;protected]</span></a> i pomoći ćemo pružanjem potrebnog objašnjenja. Na taj ćete način spriječiti bilo kakvu potencijalnu zlouporabu proizvoda i štetu na samom proizvodu, kao i bilo kakve ozljede sebe ili drugih.</li>
-<li class="ql-align-justify">Ako vaš proizvod ne radi, možete podnijeti reklamaciju navodeći materijalne nedostatke na proizvodu. Slučajevi koji se smatraju materijalnim nedostacima na proizvodu navedeni su u odjeljku vii. ovih Općih uvjeta poslovanja. Materijalne nedostatke možete primijeniti samo ako su navedeni nedostaci već postojali u trenutku kupnje, ali su otkriveni kasnije.</li>
-<li class="ql-align-justify">Ako vaš proizvod ne radi zbog materijalnog nedostatka, molimo vas da nedostatak prijavite odmah nakon što ga otkrijete, ali ni u kojem slučaju kasnije od dva mjeseca od dana kada ste taj nedostatak otkrili. Pošaljite nam poruku e-pošte s fotografijom ili video isječkom s prikazom neispravnog proizvoda, na temelju kojeg se nedvosmisleno može utvrditi da proizvod ne radi. Ako je potrebno, zamolit ćemo vas da nam vratite predmetni proizvod kako bismo ga mogli ispitati i utvrditi nedostatak proizvoda.</li>
-<li class="ql-align-justify">Nećemo moći razmotriti vašu reklamaciju za proizvode koji su oštećeni zbog nepravilne ili neprikladne upotrebe ili ponašanja koje nije strogo neophodno za utvrđivanje prirode, svojstva i funkcioniranja robe. Ako želite povrat predmetnog proizvoda nakon odbijanja vaše reklamacije, poslat ćemo vam ga zajedno s računom za troškove povezane s isporukom navedenog proizvoda.</li>
-<li class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi proizvoda koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</li>
-<li class="ql-align-justify">Ako izvršavate nalog o materijalnom nedostatku, dostupne su vam sljedeće mogućnosti:</li>
+<li class="ql-align-justify">Ako προϊόν ne radi ispravno, pošaljite nam poruku e-pošte na <a href="/cdn-cgi/l/email-protection#c0a9aea6af80b6a9a7afb3a8afb0eea8b2"><span class="__cf_email__" data-cfemail="a9c0c7cfc6e9dfc0cec6dac1c6d987c1db">[email&#160;protected]</span></a> i pomoći ćemo pružanjem potrebnog objašnjenja. Na taj ćete način spriječiti bilo kakvu potencijalnu zlouporabu προϊόνa i štetu na samom προϊόνu, kao i bilo kakve ozljede sebe ili drugih.</li>
+<li class="ql-align-justify">Ako σας προϊόν ne radi, μπορείte podnijeti παράποναu navodeći materijalne nedostatke na προϊόνu. Slučajevi koji se smatraju materijalnim nedostacima na προϊόνu navedeni su u odjeljku vii. ovih Općih όρων συναλλαγών. Materijalne nedostatke μπορείte primijeniti samo ako su navedeni nedostaci već postojali u στιγμή αγοράς, ali su otkriveni kasnije.</li>
+<li class="ql-align-justify">Ako σας προϊόν ne radi zbog materijalnog nedostatka, παρακαλούμε vas da nedostatak prijavite odmah nakon što ga otkrijete, ali ni u kojem slučaju kasnije od dva mjeseca od dana kada ste taj nedostatak otkrili. Pošaljite nam poruku e-pošte s fotografijom ili video isječkom s prikazom neispravnog προϊόνa, na temelju kojeg se nedvosmisleno μπορεί utvrditi da προϊόν ne radi. Ako je potrebno, zamolit ćemo vas da nam vratite predmetni προϊόν kako bismo ga mogli ispitati i utvrditi nedostatak προϊόνa.</li>
+<li class="ql-align-justify">Nećemo moći razmotriti σαςu παράποναu za προϊόνe koji su oštećeni zbog nepravilne ili neprikladne upotrebe ili poμαςnja koje nije strogo neophodno za utvrđivanje prirode, svojstva i funkcioniranja robe. Ako želite επιστροφή predmetnog προϊόνa nakon odbijanja σαςe παράποναe, poslat ćemo vam ga zajedno s τιμολόγιοom za troškove povezane s παράδοσηom navedenog προϊόνa.</li>
+<li class="ql-align-justify">Εταιρεία je odgovorna za nedostatke u izradi προϊόνa koji se pojave kroz 2 godine nakon παράδοσηe. Εταιρεία je dužna odgovoriti na prigovor u roku od 3 radna dana.</li>
+<li class="ql-align-justify">Ako izvršavate nalog o materijalnom nedostatku, dostupne su vam επόμενe mogućnosti:</li>
 </ol>
 <ul>
-<li class="ql-align-justify">zamjena proizvoda,</li>
-<li class="ql-align-justify">povrat kupoprodajne cijene,</li>
-<li class="ql-align-justify">otklanjanje nedostatka proizvoda ili</li>
-<li class="ql-align-justify">proporcionalni povrat kupoprodajne cijene.</li>
+<li class="ql-align-justify">zamjena προϊόνa,</li>
+<li class="ql-align-justify">επιστροφή kupoprodajne τιμές,</li>
+<li class="ql-align-justify">otklanjanje nedostatka προϊόνa ili</li>
+<li class="ql-align-justify">proporcionalni επιστροφή kupoprodajne τιμές.</li>
 </ul>
-<p class="ql-align-justify">Μπορείτε να βρείτε τη σύνοψη της διαδικασίας στην καρτέλα «Παράπονα και διαφορές» στο κάτω μέρος του ιστότοπου.</p>
+<p class="ql-align-justify">Sažetak postupka μπορείte pronaći u kartici „Pritužbe i sporovi” na dnu ιστότοπου.</p>
 <h3 class="ql-align-justify"><strong>vii. Materijalni nedostatak</strong></h3>
-<p class="ql-align-justify">Materijalni nedostatak može se primijeniti u sljedećim slučajevima:</p>
+<p class="ql-align-justify">Materijalni nedostatak μπορεί se primijeniti u επόμενim slučajevima:</p>
 <ul>
-<li class="ql-align-justify">ako proizvod ne sadrži karakteristike potrebne za njegovu uobičajenu upotrebu ili za stavljanje na tržište;</li>
-<li class="ql-align-justify">ako proizvod ne sadrži karakteristike potrebne za određenu upotrebu za koju je kupac kupio proizvod, a koje su prodavatelju bile poznate ili su prodavatelju trebale biti poznate;</li>
-<li class="ql-align-justify">ako proizvod ne sadrži karakteristike i kvalitete koje su izričito ili implicitno dogovorene ili propisane;</li>
-<li class="ql-align-justify">ako je prodavatelj kupcu dostavio proizvod koji nije u skladu s uzorkom ili modelom proizvoda, osim ako uzorak ili model proizvoda nisu prikazani samo u informativne svrhe.</li>
+<li class="ql-align-justify">ako προϊόν ne sadrži karakteristike potrebne za njegovu uobičajenu upotrebu ili za stavljanje na tržište;</li>
+<li class="ql-align-justify">ako προϊόν ne sadrži karakteristike potrebne za ορισμένu upotrebu za koju je αγοραστής kupio προϊόν, a koje su prodavatelju bile poznate ili su prodavatelju trebale biti poznate;</li>
+<li class="ql-align-justify">ako προϊόν ne sadrži karakteristike i kvalitete koje su izričito ili implicitno dogovorene ili propisane;</li>
+<li class="ql-align-justify">ako je prodavatelj kupcu dostavio προϊόν koji nije u skladu s uzorkom ili modelom προϊόνa, osim ako uzorak ili model προϊόνa nisu prikazani samo u informativne svrhe.</li>
 </ul>
-<p class="ql-align-justify">Μπορείτε να βρείτε τη σύνοψη της διαδικασίας στην καρτέλα «Παράπονα και διαφορές» στο κάτω μέρος του ιστότοπου.</p>
-<p class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi proizvoda koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</p>
+<p class="ql-align-justify">Sažetak postupka μπορείte pronaći u kartici „Pritužbe i sporovi” na dnu ιστότοπου.</p>
+<p class="ql-align-justify">Εταιρεία je odgovorna za nedostatke u izradi προϊόνa koji se pojave kroz 2 godine nakon παράδοσηe. Εταιρεία je dužna odgovoriti na prigovor u roku od 3 radna dana.</p>
 <h3 class="ql-align-justify"><strong>viii. Dostupnost informacija</strong></h3>
-<p class="ql-align-justify">Pružatelj se obvezuje da će kupcu uvijek pružiti sljedeće informacije:</p>
+<p class="ql-align-justify">Pružatelj se υποχρέωσηje da će kupcu uvijek pružiti επόμενe informacije:</p>
 <ul>
-<li class="ql-align-justify">identitet tvrtke (naziv i registrirana adresa tvrtke, matični broj),</li>
-<li class="ql-align-justify">podatke za kontakt koji korisniku omogućuju brzu i učinkovitu komunikaciju s pružateljem (e-pošta, automatska sekretarica),</li>
-<li class="ql-align-justify">bitne karakteristike robe ili usluga (uključujući usluge nakon prodaje i jamstva),</li>
-<li class="ql-align-justify">konačnu cijenu robe ili usluga, uključujući poreze, ili način izračuna cijene ako se zbog prirode robe ili usluge konačna cijena ne može izračunati unaprijed,</li>
-<li class="ql-align-justify">dostupnost proizvoda (svi proizvodi ili usluge ponuđeni na web-mjestu trebali bi biti dostupni u razumnom roku),</li>
-<li class="ql-align-justify">uvjete plaćanja, uvjete isporuke proizvoda ili uvjete za izvršenje usluge (način dostave, lokacija i rok),</li>
-<li class="ql-align-justify">informacije o svim potencijalnim troškovima prijevoza, dostave ili slanja, ili upozorenje da takvi troškovi mogu nastati ako se ne mogu izračunati unaprijed,</li>
+<li class="ql-align-justify">identitet εταιρείας (naziv i registrirana adresa εταιρείας, matični broj),</li>
+<li class="ql-align-justify">podatke za kontakt koji χρήστηςu omogućuju brzu i učinkovitu komunikaciju s pružateljem (e-pošta, automatska sekretarica),</li>
+<li class="ql-align-justify">bitne karakteristike robe ili usluga (uključujući usluge nakon prodaje i εγγύησης),</li>
+<li class="ql-align-justify">konačnu τιμή robe ili usluga, uključujući poreze, ili način izτιμολόγιοa τιμές ako se zbog prirode robe ili usluge konačna τιμή ne μπορεί izτιμολόγιοati unaprijed,</li>
+<li class="ql-align-justify">dostupnost προϊόνa (svi προϊόνi ili usluge ponuđeni na web-mjestu trebali bi biti dostupni u razumnom roku),</li>
+<li class="ql-align-justify">όρους πληρωμής, όρους παράδοσηe προϊόνa ili όρους za izvršenje usluge (način αποστολής, lokacija i rok),</li>
+<li class="ql-align-justify">informacije o svim potencijalnim troškovima prijevoza, αποστολής ili slanja, ili upozorenje da takvi troškovi mogu nastati ako se ne mogu izτιμολόγιοati unaprijed,</li>
 <li class="ql-align-justify">vremenski rok ponude,</li>
-<li class="ql-align-justify">uvjete, rokove i postupke u slučaju odustajanja od Ugovora i podatke o troškovima povrata robe (ako postoje),</li>
-<li class="ql-align-justify">objašnjenje postupka koji treba poduzeti u slučaju reklamacije, uključujući sve podatke o kontaktnoj osobi ili korisničkoj službi,</li>
+<li class="ql-align-justify">όρους, rokove i postupke u slučaju υπαναχώρησηa od Ugovora i podatke o troškovima επιστροφήa robe (ako postoje),</li>
+<li class="ql-align-justify">objašnjenje postupka koji treba poduzeti u slučaju παράποναe, uključujući sve podatke o kontaktnoj osobi ili korisničkoj službi,</li>
 <li class="ql-align-justify">svijest o odgovornosti u slučaju materijalnih nedostataka,</li>
-<li class="ql-align-justify">mogućnost i uvjete usluga nakon prodaje i dobrovoljnog jamstva, ako je potrebno.</li>
-<li class="ql-align-justify">Pri pripremi web-mjesta može doći do određenih pogrešaka. Budući da ne možemo utjecati na te pogreške, ne snosimo odgovornost za njih. U slučaju većih odstupanja u pogledu cijena ili tehničkih svojstava proizvoda, obavijestit ćemo vas o tome kada izvršite narudžbu.</li>
+<li class="ql-align-justify">mogućnost i όρους usluga nakon prodaje i dobrovoljnog εγγύησης, ako je potrebno.</li>
+<li class="ql-align-justify">Pri pripremi ιστότοπου μπορεί doći do ορισμένih pogrešaka. Budući da ne μπορείmo utjecati na te pogreške, ne snosimo odgovornost za njih. U slučaju većih odstupanja u pogledu τιμή ili tehničkih svojstava προϊόνa, ειδοποίησηit ćemo vas o tome kada εκτελέσειte παραγγελία.</li>
 </ul>
 <h3 class="ql-align-justify"><strong>ix. Podaci o registraciji, naziv registra, registarski broj:</strong></h3>
-<p class="ql-align-justify">Naziv tvrtke: HS PLUS, trgovina in storitve d.o.o.</p>
+<p class="ql-align-justify">Naziv εταιρείας: HS PLUS, κατάστημαa in storitve d.o.o.</p>
 <p class="ql-align-justify">Sjedište: Gmajna 8, Trzin, SI-1236 Trzin</p>
-<p class="ql-align-justify">Matični broj tvrtke: 6579639000</p>
+<p class="ql-align-justify">Αριθμός μητρώου εταιρείας: 6579639000</p>
 <p class="ql-align-justify">PDV ID: SI15553442</p>
 <p class="ql-align-justify">Porezni obveznik: DA</p>
 <p class="ql-align-justify">Datum upisa u registar: 28/03/2014</p>
 <p class="ql-align-justify">Standardna klasifikacija djelatnosti G47.910 – Trgovina na malo preko pošte ili interneta</p>
 <h3 class="ql-align-justify"><strong>x. Izvansudsko rješavanje sporova i drugi pravni lijekovi</strong></h3>
-<p class="ql-align-justify">Tvrtka se trudi sve sporove riješiti na sporazuman način. Ako takvo rješavanje sporova nije moguće, sud u Ljubljani bit će nadležan za rješavanje navedenih sporova.</p>
+<p class="ql-align-justify">Εταιρεία se trudi sve sporove riješiti na sporazuman način. Ako takvo rješavanje sporova nije moguće, sud u Ljubljani bit će nadležan za rješavanje navedenih sporova.</p>
 <h3 class="ql-align-justify"><strong>xi. Platforma za rješavanje sporova</strong></h3>
-<p class="ql-align-justify">U skladu s pravnim standardima, tvrtka HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja potrošačkih sporova kao pružatelja koji je ovlašten rješavati potrošačke sporove koje potrošači mogu pokrenuti na temelju izvansudske nagodbe Zakona o potrošačkim sporovima.</p>
+<p class="ql-align-justify">U skladu s pravnim standardima, εταιρεία HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja καταναλωτήςkih sporova kao pružatelja koji je ovlašten rješavati καταναλωτήςke sporove koje καταναλωτήςi mogu pokrenuti na temelju izvansudske nagodbe Zakona o καταναλωτήςkim sporovima.</p>
 <p class="ql-align-justify">Platforma za rješavanje sporova dostupna je na stranici&nbsp;<a href="https://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
-<p class="ql-align-justify">Περισσότερες πληροφορίες o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/gr/MEMO_13_193">ec.europa.eu</a>.</p>
+<p class="ql-align-justify">Više informacija o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/hr/MEMO_13_193">ec.europa.eu</a>.</p>
 <p class="ql-align-justify">
 <h2 class="ql-align-justify"><strong>3. KOMUNIKACIJA</strong></h2>
-<p class="ql-align-justify">Tvrtka će se obratiti korisniku samo s pomoću daljinske komunikacije ako je to potrebno za izvršavanje narudžbe.</p>
-<p class="ql-align-justify">Tvrtka pruža usluge podrške svojim korisnicima na <a href="/cdn-cgi/l/email-protection#ff96919990bf899698908c97908fd1978d"><span class="__cf_email__" data-cfemail="4f262129200f392628203c27203f61273d">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify">Međutim, korisnicima se možemo obratiti i u komercijalne svrhe ako nam za to daju svoju privolu ili ako su već obavili kupnju u našoj internetskoj trgovini, pri čemu će navedena komunikacija:</p>
+<p class="ql-align-justify">Εταιρεία će se obratiti χρήστηςu samo s pomoću daljinske komunikacije ako je to potrebno za εκτέλεσηe παραγγελίας.</p>
+<p class="ql-align-justify">Εταιρεία pruža usluge podrške svojim korisnicima na <a href="/cdn-cgi/l/email-protection#ff96919990bf899698908c97908fd1978d"><span class="__cf_email__" data-cfemail="4f262129200f392628203c27203f61273d">[email&#160;protected]</span></a>.</p>
+<p class="ql-align-justify">Međutim, korisnicima se μπορείmo obratiti i u komercijalne svrhe ako nam za to daju svoju privolu ili ako su već obavili αγορά u μας ηλεκτρονικoj κατάστημαi, pri čemu će navedena komunikacija:</p>
 <ul>
 <li class="ql-align-justify">biti jasno i nedvosmisleno označena kao reklamna poruka,</li>
 <li class="ql-align-justify">jasno prikazivati pošiljatelja,</li>
 <li class="ql-align-justify">jasno označiti razne promocije i druge tehnike marketinga kao takve.</li>
 </ul>
-<p class="ql-align-justify">Περισσότερες πληροφορίες u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
+<p class="ql-align-justify">Više informacija u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o cookieima.</p>
 <h2 class="ql-align-justify"><strong>4. INTELEKTUALNO VLASNIŠTVO</strong></h2>
-<p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na našem web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
-<p class="ql-align-justify">Kupnjom proizvoda ili upotrebom web-mjesta, korisnik neće steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za proizvode i/ili web-mjesto. Korisnik može upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
+<p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na μαςm web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
+<p class="ql-align-justify">Kupnjom προϊόνa ili upotrebom ιστότοπου, χρήστης δεν θα steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za προϊόνe i/ili ιστότοπο. Χρήστης μπορεί upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
 <h2 class="ql-align-justify"><strong>5. IZJAVA O ODRICANJU ODGOVORNOSTI</strong></h2>
-<p class="ql-align-justify">Imajući na umu izjave o odricanju odgovornosti navedene u ovim Općim uvjetima poslovanja, tvrtka pruža sljedeća ograničenja:</p>
-<p class="ql-align-justify">Ako odlučite upotrebljavati našu internetsku trgovinu i/ili naše web-mjesto, pristajete na to dobrovoljno i stoga preuzimate sve rizike. Web-mjesto i trgovina pružaju se „takvi kakvi jesu”, bez ikakvih neizravnih ili izravnih jamstava. Sve izjave o odricanju odgovornosti navedene u ovom poglavlju ili na drugim mjestima u ovim Općim uvjetima poslovanja vrijede u najvećoj mjeri dopuštenoj zakonom.</p>
-<p class="ql-align-justify">Tvrtka ne jamči rad web-mjesta i njegovih funkcija te ne jamči da će web-mjesto raditi bez pogrešaka, virusa ili zlonamjernog softvera sličnog virusu. Uz to, tvrtka ne jamči da su podaci objavljeni na web-mjestu točni i sveobuhvatni. Tvrtka neće biti odgovorna za bilo kakvu štetu, uključujući, ali ne ograničavajući se na: izravnu, neizravnu ili posljedičnu štetu koja nastane ili se pojavi uslijed upotrebe web-mjesta.&nbsp;</p>
-<p class="ql-align-justify">Ako se odlučite za upotrebu internetske trgovine i izvršite plaćanje u našoj internetskoj trgovini, izričito se slažete da je upotrebljavate na vlastitu odgovornost i da ćete sami snositi sve rizike koji se odnose na plaćanje u našoj internetskoj trgovini, uključujući, ali ne ograničavajući se na neuspjela plaćanja od strane korisnika, pogreške u plaćanju i pogreške povrata u slučaju reklamacije. Ova se izjava o odricanju odgovornosti primjenjuje u najvećoj mjeri dopuštenoj zakonom. Tvrtka neće biti odgovorna za bilo kakvu štetu koja bi mogla nastati u vezi s upotrebom web-mjesta i/ili proizvoda dostupnih u našoj internetskoj trgovini.</p>
+<p class="ql-align-justify">Imajući na umu izjave o odricanju odgovornosti navedene u ovim Γενικοίς Όρους συναλλαγών, εταιρεία pruža επόμενa ograničenja:</p>
+<p class="ql-align-justify">Ako odlučite upotrebljavati μας ηλεκτρονικu κατάστημαu i/ili μας ιστότοπο, pristajete na to dobrovoljno i stoga preuzimate sve rizike. Ιστότοπος i κατάστημαa pružaju se „takvi kakvi jesu”, bez ikakvih neizravnih ili izravnih jamstava. Sve izjave o odricanju odgovornosti navedene u ovom poglavlju ili na drugim mjestima u ovim Γενικοίς Όρους συναλλαγών vrijede u najvećoj mjeri dopuštenoj zakonom.</p>
+<p class="ql-align-justify">Εταιρεία ne jamči rad ιστότοπου i njegovih funkcija te ne jamči da će ιστότοπο raditi bez pogrešaka, virusa ili zlonamjernog softvera sličnog virusu. Uz to, εταιρεία ne jamči da su podaci objavljeni na web-mjestu točni i sveobuhvatni. Εταιρεία δεν θα biti odgovorna za bilo kakvu štetu, uključujući, ali ne ograničavajući se na: izravnu, neizravnu ili posljedičnu štetu koja nastane ili se pojavi uslijed upotrebe ιστότοπου.&nbsp;</p>
+<p class="ql-align-justify">Ako se odlučite za upotrebu ηλεκτρονικe κατάστημαe i εκτελέσειte πληρωμή u μας ηλεκτρονικoj κατάστημαi, izričito se slažete da je upotrebljavate na vlastitu odgovornost i da ćete sami snositi sve rizike koji se odnose na πληρωμή u μας ηλεκτρονικoj κατάστημαi, uključujući, ali ne ograničavajući se na neuspjela πληρωμής od strane χρήστηςa, pogreške u plaćanju i pogreške επιστροφήa u slučaju παράποναe. Ova se izjava o odricanju odgovornosti primjenjuje u najvećoj mjeri dopuštenoj zakonom. Εταιρεία δεν θα biti odgovorna za bilo kakvu štetu koja bi mogla nastati u vezi s upotrebom ιστότοπου i/ili προϊόνa dostupnih u μας ηλεκτρονικoj κατάστημαi.</p>
 <h2 class="ql-align-justify"><strong>6. ZAVRŠNE ODREDBE</strong></h2>
-<p class="ql-align-justify"><strong>Sklapanje ugovora</strong>&nbsp;Zajedno s naručivanjem usluga na web-mjestu, kao i na svim podstranicama ovog web-mjesta, ovi Opći uvjeti poslovanja imaju karakter ugovora sklopljenog između kupca i tvrtke.</p>
-<p class="ql-align-justify"><strong>Odvojivost odredbi</strong>&nbsp;Ako se bilo koja od odredbi ovih Općih uvjeta poslovanja pokaže (u cijelosti ili djelomično) nezakonitom ili ništavnom na bilo koji drugi način, navedena će se odredba smatrati (u cijelosti ili djelomično) izbrisanom, dok se preostali Opći uvjeti poslovanja i dalje primjenjuju.</p>
-<p class="ql-align-justify"><strong>Puna pravna sposobnost</strong>&nbsp;Korisnik jamči da ima potpunu sposobnost za preuzimanje prava i obveza koje proizlaze iz ovih Općih uvjeta poslovanja. Time jamčite da vam nije potreban pristanak ili odobrenje bilo koje treće strane da biste ispunili svoje obveze koje proizlaze iz ovih Općih uvjeta poslovanja.</p>
-<p class="ql-align-justify"><strong>Poznavanje Općih uvjeta poslovanja</strong>&nbsp;Ovime jamčite da ste pročitali i da ste u potpunosti upoznati s ovim Općim uvjetima poslovanja prije nego što ih prihvatite, osobito kada je riječ o utvrđenim izjavama o odricanju odgovornosti.</p>
-<p class="ql-align-justify"><strong>Zakon koji se primjenjuje na ove Opće uvjete poslovanja</strong>&nbsp;Na ove se Opće uvjete poslovanja primjenjuje zakonodavstvo Republike Slovenije. Svi sporovi koji proizlaze iz ovih Općih uvjeta poslovanja u nadležnosti su sudova u Republici Sloveniji.</p>
-<p class="ql-align-justify"><strong>Izmjene ovih Općih uvjeta poslovanja</strong>&nbsp;Nemate pravo mijenjati bilo koju odredbu navedenu u ovim Općim uvjetima poslovanja ili se odricati (u cijelosti ili djelomično) valjanosti bilo koje od navedenih odredbi. Tvrtka ima pravo izmijeniti ove Opće uvjete poslovanja u bilo kojem trenutku. Sve izmjene bit će objavljene na web-mjestu. Ako i dalje upotrebljavate web-mjesto, smatrat će se da se slažete s izmjenama na snazi u relevantno vrijeme. Ako se ne slažete s izmjenama, imate pravo odustati od Ugovora.</p>
-<p class="ql-align-justify"><strong>Cjelokupnost ugovora</strong>&nbsp;Ovi Opći uvjeti poslovanja predstavljaju cjelokupnost sporazuma koji se primjenjuje između ugovornih strana. Svi potencijalni prethodni pisani ili usmeni sporazumi ili pregovori bit će u potpunosti zamijenjeni ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify"><strong>Jezične verzije&nbsp;</strong>Ovi su Opći uvjeti poslovanja bili izrađeni na slovenskom jeziku. Svaka izmjena ovih Općih uvjeta poslovanja na bilo kojem drugom jeziku pripremljena je kako bi se omogućio lakši pristup Općim uvjetima poslovanja. Ovim se slažete i u potpunosti razumijete da će slovenska verzija imati prednost u slučaju bilo kakvih sporova.</p>
-<p class="ql-align-justify"><strong>Značenje pojmova</strong>&nbsp;Definicije pojmova upotrebljavanih u ovim Općim uvjetima poslovanja navedene su na početku ovih Općih uvjeta poslovanja.</p>
+<p class="ql-align-justify"><strong>Sklapanje σύμβασηa</strong>&nbsp;Zajedno s naručivanjem usluga na web-mjestu, kao i na svim podstranicama ovog ιστότοπου, ovi Γενικοί Όροι συναλλαγών imaju karakter σύμβασηa συνάπτεταιog μεταξύ αγοραστή i εταιρείας.</p>
+<p class="ql-align-justify"><strong>Odvojivost odredbi</strong>&nbsp;Ako se bilo koja od odredbi ovih Općih όρων συναλλαγών pokaže (u cijelosti ili djelomično) nezakonitom ili ništavnom na bilo koji drugi način, navedena će se odredba smatrati (u cijelosti ili djelomično) izbrisanom, dok se preostali Γενικοί Όροι συναλλαγών i dalje primjenjuju.</p>
+<p class="ql-align-justify"><strong>Puna pravna sposobnost</strong>&nbsp;Χρήστης jamči da ima potpunu sposobnost za preuzimanje prava i υποχρέωση koje proizlaze iz ovih Općih όρων συναλλαγών. Time jamčite da vam nije potreban pristanak ili odobrenje bilo koje treće strane da biste ispunili svoje obveze koje proizlaze iz ovih Općih όρων συναλλαγών.</p>
+<p class="ql-align-justify"><strong>Poznavanje Općih όρων συναλλαγών</strong>&nbsp;Ovime jamčite da ste pročitali i da ste u potpunosti upoznati s ovim Γενικοίς Όρους συναλλαγών prije nego što ih prihvatite, osobito kada je riječ o utvrđenim izjavama o odricanju odgovornosti.</p>
+<p class="ql-align-justify"><strong>Zakon koji se primjenjuje na ove Γενικούς Όρους συναλλαγών</strong>&nbsp;Na ove se Γενικούς Όρους συναλλαγών primjenjuje zakonodavstvo Republike Slovenije. Svi sporovi koji proizlaze iz ovih Općih όρων συναλλαγών u nadležnosti su sudova u Republici Sloveniji.</p>
+<p class="ql-align-justify"><strong>Izmjene ovih Općih όρων συναλλαγών</strong>&nbsp;Nemate pravo mijenjati bilo koju odredbu navedenu u ovim Γενικοίς Όρους συναλλαγών ili se odricati (u cijelosti ili djelomično) valjanosti bilo koje od navedenih odredbi. Εταιρεία ima pravo izmijeniti ove Γενικούς Όρους συναλλαγών u bilo kojem στιγμή. Sve izmjene bit će objavljene na web-mjestu. Ako i dalje upotrebljavate ιστότοπο, smatrat će se da se slažete s izmjenama na snazi u relevantno vrijeme. Ako se ne slažete s izmjenama, imate pravo odustati od Ugovora.</p>
+<p class="ql-align-justify"><strong>Cjelokupnost σύμβασηa</strong>&nbsp;Ovi Γενικοί Όροι συναλλαγών predstavljaju cjelokupnost sporazuma koji se primjenjuje μεταξύ σύμβασηnih strana. Svi potencijalni prethodni pisani ili usmeni sporazumi ili pregovori bit će u potpunosti zamijenjeni ovim Γενικοίς Όρους συναλλαγών.</p>
+<p class="ql-align-justify"><strong>Γλωσσικές εκδόσεις&nbsp;</strong>Ovi su Γενικοί Όροι συναλλαγών bili izrađeni na slovenskom jeziku. Svaka izmjena ovih Općih όρων συναλλαγών na bilo kojem drugom jeziku pripremljena je kako bi se omogućio lakši pristup Γενικοίς Όρους συναλλαγών. Ovim se slažete i u potpunosti razumijete da će slovenska verzija imati prednost u slučaju bilo kakvih sporova.</p>
+<p class="ql-align-justify"><strong>Ερμηνεία όρων</strong>&nbsp;Definicije pojmova upotrebljavanih u ovim Γενικοίς Όρους συναλλαγών navedene su na početku ovih Općih όρων συναλλαγών.</p>
 <p class="ql-align-justify"><strong>HS PLUS&nbsp;d.o.o.&nbsp;&nbsp;</strong>Gmajna 8&nbsp;/&nbsp;SI-1236 Trzin&nbsp;/&nbsp;Slovenija&nbsp;/&nbsp;&nbsp;<a href="/cdn-cgi/l/email-protection#89e0e7efe6c9ffe0eee6fae1e6f9a7e1fb"><span class="__cf_email__" data-cfemail="f1989f979eb18798969e82999e81df9983">[email&#160;protected]</span></a></p>
-<p class="ql-align-justify">Tijelo za registraciju: Okružni sud u Ljubljani&nbsp;/&nbsp;Temeljni kapital: 7 500 EUR&nbsp;/&nbsp;IBAN SI56 2900&nbsp;0005&nbsp;2694&nbsp;428&nbsp;/&nbsp;PDV ID: 15553442&nbsp;/&nbsp;Matični broj tvrtke: 6579639000</p>
+<p class="ql-align-justify">Tijelo za registraciju: Okružni sud u Ljubljani&nbsp;/&nbsp;Temeljni kapital: 7 500 EUR&nbsp;/&nbsp;IBAN SI56 2900&nbsp;0005&nbsp;2694&nbsp;428&nbsp;/&nbsp;PDV ID: 15553442&nbsp;/&nbsp;Αριθμός μητρώου εταιρείας: 6579639000</p>
 </div>
         <img decoding="async" id="close_terms_conditions" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
     </div>
@@ -707,258 +707,258 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
     <div class="checkout-popup-wrapper">
         <div id="withdrawal-policy-content">
             <h2 class="ql-align-justify"><strong>PRAVO NA ODUSTAJANJE OD KUPNJE</strong></h2>
-<p class="ql-align-justify">Od kupnje možete odustati u roku&nbsp;<strong>od 90 dana od isporuke, </strong>bez navođenja razloga. Morate vratiti proizvod na našu adresu da biste mogli zatražiti zamjenu za drugi proizvod ili povrat novca za proizvod. Rok za odustajanje od kupnje istječe 90 dana nakon kada vi ili treća strana koju ste odredili, a koja nije prevoznik, fizički preuzmu robu.</p>
-<p class="ql-align-justify"><strong>Proizvod koji želite vratiti mora biti neoštećen, ako je razumno moguće u originalnoj i neoštećenoj ambalaži sa svom isporučenom opremom. </strong>U slučaju da se proizvod ili originalno pakiranje oštete ili pretjerano koriste, trgovina ima pravo naplatiti odbitak pri povratu kupovne vrijednosti proizvoda.</p>
-<p class="ql-align-justify"><strong>U roku 90 dana od isporuke možete ispuniti</strong>&nbsp;obrazac na poveznici za zamjenu proizvoda&nbsp;ili&nbsp;povrat novca<strong>&nbsp;ILI&nbsp;</strong>možete nas obavijestiti e-poštom o namjeri da odustajete od kupnje.</p>
-<p class="ql-align-justify">U slučaju zamjene proizvoda ili povrata novca ispunite: <a href="https://rma.hs-plus.com/language/hr_HR/">LINK</a></p>
-<p>Odmah nakon podnošenja obrasca, primit ćete kod za otkazivanje putem e-pošte kako biste potvrdili svoj zahtjev. Ovaj kod mora biti napisan na paketu zajedno s vašim podacima.</p>
-<p class="ql-align-justify">Ako ne primite kod za otkazivanje nakon podnošenja obrasca, molimo kontaktirajte nas putem e-pošte.</p>
-<p class="ql-align-justify">Također možete koristiti obrazac eurposkog modela za odstupanje od kupnje, kojem možete pristupiti na sljedećem linku <strong><a href="https://images.hs-plus.com/shared/pdf/0ccf93b329048_HR_UNIVERSAL_FORM.pdf">OBRAZAC</a></strong>. U tom slučaju isprintajte obrazac, ispunite podatke koji nedostaju i stavite potpisan dokument u paket koji se vraća. OPREZ: Korištenje ovog obrazca ipak nije obavezno i može produžiti vrijeme obrade vašeg zahtjeva jer će se paket vratiti bez reklamacijskog koda što će zahtjevati ručnu obradu.</p>
-<p class="ql-align-justify"><strong>Prije slanja paketa, provjerite potvrdu narudžbe ili račun koji ste dobili e-poštom u vrijeme narudžbe, da budete sigurni da ste kupili proizvod na našoj internetskoj stranici i provjerite naš spisak proizvoda za koje nije moguća reklamacija.</strong>&nbsp;U slučaju da isporučite proizvod koji nije naš ili<strong>&nbsp;nije legitiman za povlačenje,</strong> ne odgovaramo za Vašu grešku i nećemo vratiti proizvod, odnosno nećemo računati troškove.</p>
-<p class="ql-align-justify">Imate <strong>14 dana</strong> od podnošenja zahtjeva da nam pošaljete paket s Hrvatskom poštom na našu adresu:</p>
+<p class="ql-align-justify">Od αγοράς μπορείte odustati u roku&nbsp;<strong>od 90 dana od παράδοσηe, </strong>bez navođenja razloga. Morate vratiti προϊόν na μας adresu da biste mogli zatražiti zamjenu za drugi προϊόν ili επιστροφή novca za προϊόν. Rok za υπαναχώρησηe od αγοράς istječe 90 dana nakon kada vi ili treća strana koju ste odredili, a koja nije prevoznik, fizički preuzmu robu.</p>
+<p class="ql-align-justify"><strong>Προϊόν koji želite vratiti mora biti neoštećen, ako je razumno moguće u originalnoj i neoštećenoj ambalaži sa svom isporučenom opremom. </strong>U slučaju da se προϊόν ili αρχική συσκευασία oštete ili pretjerano koriste, κατάστημαa ima pravo naplatiti odbitak pri επιστροφήu kupovne vrijednosti προϊόνa.</p>
+<p class="ql-align-justify"><strong>U roku 90 dana od παράδοσηe μπορείte ispuniti</strong>&nbsp;obrazac na poveznici za zamjenu προϊόνa&nbsp;ili&nbsp;επιστροφή novca<strong>&nbsp;ILI&nbsp;</strong>μπορείte nas ειδοποίησηiti e-poštom o namjeri da odustajete od αγοράς.</p>
+<p class="ql-align-justify">U slučaju zamjene προϊόνa ili επιστροφήa novca ispunite: <a href="https://rma.hs-plus.com/language/el/">LINK</a></p>
+<p>Odmah nakon podnošenja obrasca, primit ćete kod za otkazivanje putem e-pošte kako biste επιβεβαιώσειli svoj zahtjev. Ovaj kod mora biti napisan na paketu zajedno s σαςim podacima.</p>
+<p class="ql-align-justify">Ako ne primite kod za otkazivanje nakon podnošenja obrasca, παρακαλούμε kontaktirajte nas putem e-pošte.</p>
+<p class="ql-align-justify">Επίσης μπορείte koristiti obrazac eurposkog modela za odstupanje od αγοράς, kojem μπορείte pristupiti na επόμενem linku <strong><a href="https://images.hs-plus.com/shared/pdf/0ccf93b329048_HR_UNIVERSAL_FORM.pdf">OBRAZAC</a></strong>. U tom slučaju isprintajte obrazac, ispunite podatke koji nedostaju i stavite potpisan έγγραφο u paket koji se vraća. OPREZ: Korištenje ovog obrazca ipak nije obavezno i μπορεί produžiti vrijeme obrade σαςeg zahtjeva jer će se paket vratiti bez παράποναskog koda što će zahtjevati ručnu obradu.</p>
+<p class="ql-align-justify"><strong>Prije slanja paketa, provjerite επιβεβαίωση παραγγελίας ili τιμολόγιο koji ste dobili e-poštom u vrijeme παραγγελίας, da budete sigurni da ste kupili προϊόν na μας ηλεκτρονικoj stranici i provjerite naš spisak προϊόνa za koje nije moguća παράποναa.</strong>&nbsp;U slučaju da isporučite προϊόν koji nije naš ili<strong>&nbsp;nije legitiman za υπαναχώρηση,</strong> ne odgovaramo za Σαςu grešku i δεν θαmo vratiti προϊόν, odnosno δεν θαmo τιμολόγιοati troškove.</p>
+<p class="ql-align-justify">Imate <strong>14 dana</strong> od podnošenja zahtjeva da nam pošaljete paket s Hrvatskom poštom na μας adresu:</p>
 <p class="ql-align-justify"><strong>HS PLUS d.o.o.,</strong></p>
 <p class="ql-align-justify"><strong>Poštanska ulica 25,</strong></p>
 <p class="ql-align-justify"><strong>10410 Velika Gorica</strong></p>
 <p class="ql-align-justify"><strong>Ελλάδα</strong></p>
-<p class="ql-align-justify">Savjetujemo vam da paket pošaljete preporučenom poštom s potvrdom pošiljke, kako bi bilo moguće riješiti vaš prigovor čak i u slučaju gubitka paketa na temelju potvrde o isporuci putem broja za praćenje.</p>
-<p class="ql-align-justify"><strong>Trošak dostave je na strani pošiljatelja, ne prihvaćamo pošiljke sa otkupninom.</strong></p>
-<p class="ql-align-justify"><strong>Čim reklamacijska služba primi Vaš paket</strong>, novi proizvod šalje se u zamjenu ili se otkupnina vraća na Vaš tekući račun u roku od 8 radnih dana. Vratit ćemo iznos za vraćene proizvode i troškove najjeftinijeg rješenja dostave (standardna naknada za dostavu). Prioritetno rukovanje, osiguranje paketa i plaćanje pouzećem predstavljaju dodatni trošak koji se može izbjeći, a usluga se izvršava samo na poseban zahtjev klijenta. Prilagođeni troškovi neće biti vraćeni. U slučaju odustajanja od kupnje, kupac snosi troškove povratne dostave, tako da se također ne vraćaju troškovi povratne dostave proizvoda.</p>
-<p class="ql-align-justify"><strong>Izuzetak od prava na povlačenje</strong></p>
-<p class="ql-align-justify">Iskorištavanje prava na odustajanje isključeno je za sljedeće ugovore:</p>
+<p class="ql-align-justify">Σας συμβουλεύουμε vam da paket pošaljete συστημένom poštom s potvrdom αποστολήe, kako bi bilo moguće riješiti σας prigovor čak i u slučaju gubitka paketa na temelju potvrde o isporuci putem broja za praćenje.</p>
+<p class="ql-align-justify"><strong>Trošak αποστολής je na strani pošiljatelja, ne prihvaćamo αποστολήe sa otkupninom.</strong></p>
+<p class="ql-align-justify"><strong>Čim παράποναska služba primi Σας paket</strong>, novi προϊόν šalje se u zamjenu ili se otkupnina vraća na Σας tekući τιμολόγιο u roku od 8 radnih dana. Vratit ćemo iznos za vraćene προϊόνe i troškove najjeftinijeg rješenja αποστολής (standardna naknada za αποστολή). Prioritetno rukovanje, osiguranje paketa i πληρωμή pouzećem predstavljaju dodatni trošak koji se μπορεί izbjeći, a usluga se izvršava samo na poseban zahtjev klijenta. Prilagođeni troškovi δεν θα biti vraćeni. U slučaju υπαναχώρησηa od αγοράς, αγοραστής snosi troškove επιστροφήne αποστολής, tako da se επίσης ne vraćaju troškovi επιστροφήne αποστολής προϊόνa.</p>
+<p class="ql-align-justify"><strong>Εξαίρεση od prava na υπαναχώρηση</strong></p>
+<p class="ql-align-justify">Iskorištavanje prava na υπαναχώρησηe isključeno je za επόμενe σύμβασηe:</p>
 <ul>
-<li class="ql-align-justify">ugovori o isporuci robe izrađeni prema specifikacijama potrošača ili jasno personalizirani;</li>
-<li class="ql-align-justify">ugovori o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
-<li class="ql-align-justify">ugovori o nabavi novina, periodike ili časopisa, osim ugovora o pretplati na ove publikacije;</li>
-<li class="ql-align-justify">ugovori o isporuci robe koju je potrošač otpečatio nakon isporuke i koja se ne može vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
-<li class="ql-align-justify">ugovori o isporuci robe koja se nakon isporuke i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi proizvodi iz Mystery box -a, oba proizvoda iz ponude 1+1 besplatno, bilo koji POKLON)</li>
-<li class="ql-align-justify">ugovori o isporuci audio ili video zapisa ili računalnog softvera ako ih je potrošač otpečatio nakon isporuke;</li>
-<li class="ql-align-justify">ugovori o opskrbi alkoholnim pićima čija se isporuka odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju ugovora ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
-<li class="ql-align-justify">ugovori o isporuci robe ili usluga, čija cijena ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja odustajanja;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga u potpunosti izvršeni prije isteka roka za odustajanje i čije je izvršavanje započelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje; (na primjer: provizija za plaćanje po pouzeću, brza dostava, osiguranje paketa)</li>
-<li class="ql-align-justify">ugovori o radovima na održavanju ili popravcima koji se moraju hitno izvršiti u potrošačevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati određenog datuma ili s određenom učestalošću;</li>
-<li class="ql-align-justify">ugovori o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je izvršavanje počelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje. (na primjer: preuzeti digitalni sadržaji, e-knjige)</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe izrađeni prema specifikacijama καταναλωτήςa ili jasno personalizirani;</li>
+<li class="ql-align-justify">σύμβασηi o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
+<li class="ql-align-justify">σύμβασηi o nabavi novina, periodike ili časopisa, osim σύμβασηa o pretplati na ove publikacije;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe koju je καταναλωτής otpečatio nakon παράδοσηe i koja se ne μπορεί vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe koja se nakon παράδοσηe i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi προϊόνi iz Mystery box -a, oba προϊόνa iz ponude 1+1 besplatno, bilo koji POKLON)</li>
+<li class="ql-align-justify">σύμβασηi o isporuci audio ili video zapisa ili τιμολόγιοalnog softvera ako ih je καταναλωτής otpečatio nakon παράδοσηe;</li>
+<li class="ql-align-justify">σύμβασηi o opskrbi alkoholnim pićima čija se παράδοσηa odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju σύμβασηa ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe ili usluga, čija τιμή ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja υπαναχώρησηa;</li>
+<li class="ql-align-justify">σύμβασηi o pružanju usluga u potpunosti izvršeni prije isteka roka za υπαναχώρησηe i čije je εκτέλεσηe započelo nakon izričitog prethodnog pristanka καταναλωτήςa i izričitog odricanja od prava na υπαναχώρησηe; (na primjer: provizija za πληρωμή po pouzeću, brza dostava, osiguranje paketa)</li>
+<li class="ql-align-justify">σύμβασηi o radovima na održavanju ili popravcima koji se moraju hitno εκτελέσειti u καταναλωτήςevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
+<li class="ql-align-justify">σύμβασηi o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati ορισμένog datuma ili s ορισμένom učestalošću;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je εκτέλεσηe počelo nakon izričitog prethodnog pristanka καταναλωτήςa i izričitog odricanja od prava na υπαναχώρησηe. (na primjer: preuzeti digitalni sadržaji, e-knjige)</li>
 </ul>
-<p class="ql-align-justify"><strong>UPOZORENJE: </strong>Ako dobrovoljno vratite proizvod za koji nije moguće odstupanje od kupnje,&nbsp;nakon perioda za povrat od 90 dana, nakon 14 dana od obavijesti o odstupanju od kupnje, koji nije kupljen u našoj trgovini Takav Vam proizvod možemo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane reklamacije. Proizvod koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: </strong>Ako dobrovoljno vratite προϊόν za koji nije moguće odstupanje od αγοράς,&nbsp;nakon perioda za επιστροφή od 90 dana, nakon 14 dana od ειδοποίησηi o odstupanju od αγοράς, koji nije kupljen u μας κατάστημαi Takav Vam προϊόν μπορείmo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane παράποναe. Προϊόν koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
 <p class="ql-align-justify"><strong>POZITIVNO ĆE BITI RJEŠENI SAMO ZAHTJEVI KOJI ISPUNJAVAJU SVE NAVEDENE UVJETE.</strong></p>
-<p class="ql-align-justify">Više o Općim uvjetima i politici kolačića možete pročitati na poveznicama pri dnu stranice.</p>
+<p class="ql-align-justify">Više o Γενικοίς Όρους i politici cookies μπορείte pročitati na poveznicama pri dnu stranice.</p>
 </div>
         <img decoding="async" id="close_withdrawal_policy" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
     </div>
 </div>
         <div id="custom_mailing_checkout_field">
-            <p class="form-row email_opt_in" id="email_opt_in_field" data-priority="15"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="email_opt_in" id="email_opt_in" value="1" class="input-checkbox "  /> Ναι, θέλω να μαθαίνω πρώτος/η για τις τρέχουσες προσφορές. <span id="mailing_read_more_link" style="text-decoration: underline">Περισσότερες πληροφορίες</span>&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p>        </div>
+            <p class="form-row email_opt_in" id="email_opt_in_field" data-priority="15"><span class="woocommerce-input-wrapper"><label class="checkbox " ><input type="checkbox" name="email_opt_in" id="email_opt_in" value="1" class="input-checkbox "  /> Da, želim prvi/a saznati za trenutne akcije. <span id="mailing_read_more_link" style="text-decoration: underline">Više informacija</span>&nbsp;<span class="optional">(προαιρετικό)</span></label></span></p>        </div>
         <div id="checkout-popup">
             <div class="checkout-popup-wrapper">
                 <img decoding="async" class="img-info" src="https://images.vigo-shop.com/general/vigoshop_info.svg">
-                <span>HSplus d.o.o. može UPOTREBLJAVATI osobne podatke koji su poslani (uključujući povijest kupnje i vaše postavke) za prilagođenu komunikaciju putem SMS poruka, telefonskih poziva, tiskanih kataloga i/ili e-pošte u vezi s proizvodima, posebnim ponudama, istraživanjima, promocijama, događajima i ostalim komunikacijama. U svakom trenutku možete povući svoju suglasnost za primanje e-pošte pritiskanjem veze za odjavu pretplate u svakoj poruci e-pošte. Επιπλέον πληροφορίες, uključujući informacije o ostvarivanju vaših prava u vezi s osobnim podacima koje smo prikupili, potražite u                     <span id="terms-conditions-content_email-checkbox">
+                <span>HSplus d.o.o. μπορεί UPOTREBLJAVATI osobne podatke koji su poslani (uključujući povijest αγοράς i σαςe postavke) za prilagođenu komunikaciju putem SMS poruka, telefonskih poziva, tiskanih kataloga i/ili e-pošte u vezi s προϊόνima, posebnim ponudama, istraživanjima, promocijama, događajima i ostalim komunikacijama. U svakom στιγμή μπορείte povući svoju suglasnost za primanje e-pošte pritiskanjem veze za odjavu pretplate u svakoj poruci e-pošte. Dodatne informacije, uključujući informacije o ostvarivanju σαςih prava u vezi s osobnim podacima koje smo prikupili, potražite u                     <span id="terms-conditions-content_email-checkbox">
                         UVJETIMA I ODREDBAMA                    </span>.
                         <div class="terms-conditions-content_email" style="display: none;">
-                            <h2 class="ql-align-justify"><strong>Opći uvjeti poslovanja</strong></h2>
+                            <h2 class="ql-align-justify"><strong>Γενικοί Όροι Συναλλαγών</strong></h2>
 <p class="ql-align-justify"></p>
 <p class="ql-align-justify"><a class="button" href="https://images.hs-plus.com/legal/terms-conditions/terms-conditions_Vigoshop_hr.pdf" style="background-color: lightgray"> Spremite i ispišite</a></p>
-<p class="ql-align-justify">Dobro došli na web-mjesto <a href="https://vigoshop.hr">vigoshop.hr</a> kojim upravlja tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin (dalje u tekstu: tvrtka).</p>
-<p class="ql-align-justify">Ovi se Opći uvjeti poslovanja primjenjuju na sve aktivnosti omogućene u internetskoj trgovini koja je dostupna na&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a> (dalje u tekstu: web-mjesto). Opći uvjeti poslovanja obvezujući su za sve korisnike. Molimo vas da ih pažljivo pročitate. Ako se ne slažete s bilo kojim dijelom ovih Općih uvjeta poslovanja ili ako se u potpunosti ne slažete s njima, ne smijete upotrebljavati naše web-mjesto i naše usluge. Opći uvjeti poslovanja predstavljaju valjani ugovor sklopljen između vas i tvrtke.</p>
-<p class="ql-align-justify">Web-mjesto dostupno je „takvo kakvo jest”, a tvrtka ne pruža jamstva, ni neizravno ni izravno, koja se odnose na pravo vlasništva, marketing ili prikladnost za bilo koju svrhu proizvoda koji su predstavljeni na web-mjestu.</p>
-<p class="ql-align-justify">Vlasnik web-mjesta postupat će s dužnom pažnjom kako bi pokušao osigurati da podaci navedeni na web-mjestu budu detaljni i ažurni. Istodobno, vlasnik web-mjesta zadržava pravo izmijeniti sadržaj web-mjesta ili ga prestati dopunjavati u bilo kojem trenutku, bez prethodne najave. Osim toga, vlasnik web-mjesta može izmijeniti usluge, proizvode, cijene ili programe opisane na ovom web-mjestu u bilo kojem trenutku i bez najave.</p>
+<p class="ql-align-justify">Dobro došli na ιστότοπο <a href="https://vigoshop.gr">vigoshop.gr</a> kojim upravlja εταιρεία HS plus d.o.o., Gmajna 8, SI-1236 Trzin (dalje u tekstu: εταιρεία).</p>
+<p class="ql-align-justify">Ovi se Γενικοί Όροι συναλλαγών primjenjuju na sve aktivnosti omogućene u ηλεκτρονικoj κατάστημαi koja je dostupna na&nbsp;<a href="https://vigoshop.gr">vigoshop.gr</a> (dalje u tekstu: ιστότοπο). Γενικοί Όροι συναλλαγών υποχρέωσηjući su za sve χρήστηςe. Παρακαλούμε vas da ih διαβάσετε προσεκτικά. Ako se ne slažete s bilo kojim dijelom ovih Općih όρων συναλλαγών ili ako se u potpunosti ne slažete s njima, ne smijete upotrebljavati μας ιστότοπο i μας usluge. Γενικοί Όροι συναλλαγών predstavljaju valjani σύμβαση συνάπτεται μεταξύ vas i εταιρείας.</p>
+<p class="ql-align-justify">Ιστότοπος dostupno je „takvo kakvo jest”, a εταιρεία ne pruža εγγύησης, ni neizravno ni izravno, koja se odnose na pravo vlasništva, marketing ili prikladnost za bilo koju svrhu προϊόνa koji su predstavljeni na web-mjestu.</p>
+<p class="ql-align-justify">Vlasnik ιστότοπου postupat će s dužnom pažnjom kako bi pokušao osigurati da podaci navedeni na web-mjestu budu detaljni i ažurni. Istodobno, vlasnik ιστότοπου zadržava pravo izmijeniti sadržaj ιστότοπου ili ga prestati dopunjavati u bilo kojem στιγμή, bez prethodne najave. Osim toga, vlasnik ιστότοπου μπορεί izmijeniti usluge, προϊόνe, τιμές ili programe opisane na ovom web-mjestu u bilo kojem στιγμή i bez najave.</p>
 <h2 class="ql-align-justify"><strong>1 DEFINICIJE</strong></h2>
-<p class="ql-align-justify"><strong>Tvrtka</strong>&nbsp;je tvrtka HS plus d.o.o., Gmajna 8, SI-1236 Trzin koja je vlasnik web-mjesta&nbsp;<a href="https://vigoshop.hr">vigoshop.hr</a>&nbsp;i upravlja njime.</p>
-<p class="ql-align-justify"><strong>Web-mjesto&nbsp;</strong>je web-mjesto dostupno na&nbsp;<a href="https://vigoshop.hr">https://vigoshop.hr</a>, kojom upravlja tvrtka, i u okviru koje djeluje internetska trgovina.</p>
-<p class="ql-align-justify"><strong>Korisnik</strong>&nbsp;je svaka fizička osoba koja se koristi web-mjestom.</p>
-<p class="ql-align-justify"><strong>Kupac</strong>&nbsp;(ili&nbsp;<strong>„vi”</strong>&nbsp;) je svaka fizička osoba koja izvrši kupnju u internetskoj trgovini.</p>
-<p class="ql-align-justify"><strong>Potrošač</strong>&nbsp;je fizička osoba koja nabavlja ili upotrebljava robu i usluge u svrhe izvan opsega njegove profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka. Za potrebe ovih Općih uvjeta poslovanja svi kupci smatraju se i potrošačima.</p>
-<p class="ql-align-justify"><strong>Pravila o zaštiti privatnosti</strong>&nbsp;dokument je koji sadržava sve informacije o obradi osobnih podataka koja se odvija u okviru web-mjesta. Navedena Pravila o zaštiti privatnosti dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti">ovdje</a>.</p>
-<p class="ql-align-justify"><strong>Pravila o kolačićima</strong>&nbsp;dokument je koji sadržava sve informacije o upotrebi kolačića koja se odvija u okviru web-mjesta. Navedena Pravila o kolačićima dostupna su&nbsp;<a href="https://vigoshop.hr/pravila-o-kolacicima">ovdje</a>.</p>
+<p class="ql-align-justify"><strong>Εταιρεία</strong>&nbsp;je εταιρεία HS plus d.o.o., Gmajna 8, SI-1236 Trzin koja je vlasnik ιστότοπου&nbsp;<a href="https://vigoshop.gr">vigoshop.gr</a>&nbsp;i upravlja njime.</p>
+<p class="ql-align-justify"><strong>Ιστότοπος&nbsp;</strong>je ιστότοπο dostupno na&nbsp;<a href="https://vigoshop.gr">https://vigoshop.gr</a>, kojom upravlja εταιρεία, i u okviru koje djeluje ηλεκτρονικa κατάστημαa.</p>
+<p class="ql-align-justify"><strong>Χρήστης</strong>&nbsp;je svaka φυσικό πρόσωπο koja se koristi ιστότοποm.</p>
+<p class="ql-align-justify"><strong>Αγοραστής</strong>&nbsp;(ili&nbsp;<strong>„vi”</strong>&nbsp;) je svaka φυσικό πρόσωπο koja εκτελέσει αγορά u ηλεκτρονικoj κατάστημαi.</p>
+<p class="ql-align-justify"><strong>Καταναλωτής</strong>&nbsp;je φυσικό πρόσωπο koja nabavlja ili upotrebljava robu i usluge u svrhe izvan opsega njegove profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka. Za potrebe ovih Općih όρων συναλλαγών svi αγοραστές smatraju se i καταναλωτήςima.</p>
+<p class="ql-align-justify"><strong>Πολιτική Απορρήτου</strong>&nbsp;έγγραφο je koji sadržava sve informacije o obradi προσωπικών δεδομένων koja se odvija u okviru ιστότοπου. Navedena Πολιτική Απορρήτου dostupna su&nbsp;<a href="https://vigoshop.gr/pravila-o-zastiti-privatnosti">ovdje</a>.</p>
+<p class="ql-align-justify"><strong>Πολιτική Cookies</strong>&nbsp;έγγραφο je koji sadržava sve informacije o upotrebi cookies koja se odvija u okviru ιστότοπου. Navedena Πολιτική Cookies dostupna su&nbsp;<a href="https://vigoshop.gr/pravila-o-kolacicima">ovdje</a>.</p>
 <h2 class="ql-align-justify"><strong>2. VIGOSHOP.HR INTERNETSKA TRGOVINA</strong></h2>
-<p class="ql-align-justify">Općim uvjetima poslovanja utvrđuje se rad internetske trgovine, definiraju prava i obveze korisnika i internetske trgovine te uređuje poslovni odnos između internetske trgovine i kupca.&nbsp;Opći uvjeti poslovanja koji vrijede u trenutku kupnje (u trenutku kada se vrši internetska narudžba) obvezujući su za kupca. Svaki put kada se izvrši narudžba, korisnik će biti obaviješten o Općim uvjetima poslovanja. Izvršavanjem narudžbe korisnik potvrđuje da je obaviješten o ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify">Potvrda Općih uvjeta poslovanja pri izvršavanju narudžbe u našoj internetskoj trgovini predstavlja obvezujući ugovor između vas i tvrtke. Molimo vas da&nbsp;<strong>pažljivo pročitate</strong>&nbsp;Opće uvjete poslovanja&nbsp;<strong>prije potvrde narudžbe</strong>. Ako se ne slažete s našim Općim uvjetima poslovanja, ne možete upotrebljavati usluge koje pruža naša internetska trgovina. Također, nije moguće djelomično se složiti s Općim uvjetima poslovanja. Da biste dovršili kupnju, morate prihvatiti&nbsp;<strong>cjelokupne</strong>&nbsp;Opće uvjete poslovanja koji su na snazi u trenutku kupnje.</p>
-<h3 class="ql-align-justify"><strong>i. Upotreba internetske trgovine</strong></h3>
-<p class="ql-align-justify">Tvrtka upravlja internetskom trgovinom u skladu s Općim uvjetima poslovanja. Internetska trgovina dostupna je kupcima u svakom trenutku, pri čemu tvrtka zadržava pravo privremeno onemogućiti ili obustaviti internetsku trgovinu bez prethodne najave.</p>
-<p class="ql-align-justify">Postoji mogućnost da će internetska trgovina biti privremeno nedostupna ili da privremeno neće biti moguće izvršiti plaćanja zbog održavanja i ažuriranja internetske trgovine. Tvrtka neće biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja internetske trgovine.</p>
-<h3 class="ql-align-justify"><strong>ii. Izvršavanje narudžbe u internetskoj trgovini</strong></h3>
-<p class="ql-align-justify">Smatra se da je kupoprodajni ugovor između dobavljača i kupca sklopljen kad kupac potvrdi narudžbu (kupac dobiva poruku e-pošte s potvrdom statusa „Παραγγελία potvrđena”). Od tog su trenutka sve cijene i ostali uvjeti kupnje fiksni i primjenjivi i za pružatelja usluge i za kupca. Kupoprodajni ugovor učitava se na poslužitelj tvrtke u elektroničkom obliku.</p>
+<p class="ql-align-justify">Γενικοίς Όρους συναλλαγών utvrđuje se rad ηλεκτρονικe κατάστημαe, definiraju prava i obveze χρήστηςa i ηλεκτρονικe κατάστημαe te uređuje poslovni odnos μεταξύ ηλεκτρονικe κατάστημαe i αγοραστή.&nbsp;Γενικοί Όροι συναλλαγών koji vrijede u στιγμή αγοράς (u στιγμή kada se vrši ηλεκτρονικa παραγγελία) υποχρέωσηjući su za αγοραστή. Svaki put kada se εκτελέσει παραγγελία, χρήστης će biti ενημερωμένος o Γενικοίς Όρους συναλλαγών. Εκτέλεσηem παραγγελίας χρήστης επιβεβαιώνει da je ενημερωμένος o ovim Γενικοίς Όρους συναλλαγών.</p>
+<p class="ql-align-justify">Επιβεβαίωση Općih όρων συναλλαγών pri εκτέλεσηu παραγγελίας u μας ηλεκτρονικoj κατάστημαi predstavlja υποχρέωσηjući σύμβαση μεταξύ vas i εταιρείας. Παρακαλούμε vas da&nbsp;<strong>διαβάσετε προσεκτικά</strong>&nbsp;Γενικούς Όρους συναλλαγών&nbsp;<strong>πριν από την επιβεβαίωση παραγγελίας</strong>. Ako se ne slažete s našim Γενικοίς Όρους συναλλαγών, ne μπορείte upotrebljavati usluge koje pruža μας ηλεκτρονικa κατάστημαa. Επίσης, nije moguće djelomično se složiti s Γενικοίς Όρους συναλλαγών. Da biste dovršili αγορά, morate prihvatiti&nbsp;<strong>cjelokupne</strong>&nbsp;Γενικούς Όρους συναλλαγών koji su na snazi u στιγμή αγοράς.</p>
+<h3 class="ql-align-justify"><strong>i. Upotreba ηλεκτρονικe κατάστημαe</strong></h3>
+<p class="ql-align-justify">Εταιρεία upravlja ηλεκτρονικom κατάστημαom u skladu s Γενικοίς Όρους συναλλαγών. Internetska κατάστημαa dostupna je αγοραστέςma u svakom στιγμή, pri čemu εταιρεία zadržava pravo privremeno onemogućiti ili obustaviti ηλεκτρονικu κατάστημαu bez prethodne najave.</p>
+<p class="ql-align-justify">Postoji mogućnost da će ηλεκτρονικa κατάστημαa biti privremeno nedostupna ili da privremeno δεν θα biti moguće εκτελέσειti πληρωμής zbog održavanja i ažuriranja ηλεκτρονικe κατάστημαe. Εταιρεία δεν θα biti odgovorna za štetu koju biste mogli pretrpjeti tijekom održavanja i/ili ažuriranja ηλεκτρονικe κατάστημαe.</p>
+<h3 class="ql-align-justify"><strong>ii. Εκτέλεσηe παραγγελίας u ηλεκτρονικoj κατάστημαi</strong></h3>
+<p class="ql-align-justify">Smatra se da je kupoprodajni σύμβαση μεταξύ dobavljača i αγοραστή συνάπτεται kad αγοραστής επιβεβαιώσει παραγγελία (αγοραστής dobiva poruku e-pošte s potvrdom statusa „Παραγγελία επιβεβαιωμένη”). Od tog su στιγμa sve τιμές i ostali όροι αγοράς fiksni i primjenjivi i za pružatelja usluge i za αγοραστή. Kupoprodajni σύμβαση učitava se na poslužitelj εταιρείας u elektroničkom obliku.</p>
 <p class="ql-align-justify">
-<p class="ql-align-justify">Postupak kupnje:</p>
+<p class="ql-align-justify">Postupak αγοράς:</p>
 <ol>
-<li class="ql-align-justify">korak: U ponudi dostupnoj u internetskoj trgovini kupac odabire željeni artikl i željenu količinu te potvrđuje svoj izbor pritiskom gumba „Dodaj u košaricu”. Ako kupac želi kupiti nekoliko različitih artikala, postupak treba ponoviti za svaki pojedinačni artikl. Nakon što kupac završi postupak odabira proizvoda, može nastaviti s postupkom kupnje pritiskom gumba „Kreni na plaćanje”.</li>
-<li class="ql-align-justify">korak: U ovom koraku kupac ispunjava obrazac sa svojim osobnim podacima potrebnima za isporuku željene narudžbe. Nakon ispunjavanja obrasca, kupac u određenim slučajevima može odabrati između nekoliko mogućnosti dostave i dodati druge proizvode ili usluge svojoj narudžbi. U ovom koraku kupac je obaviješten i o planiranom datumu isporuke. Prije dovršenja narudžbe, kupac ima mogućnost izbora između različitih načina plaćanja. Uzimajući u obzir odabrani izbor, konačni iznos koji treba platiti za narudžbu izračunava se još jednom prije završetka kupnje. Kupac potvrđuje postupak kupnje pritiskom gumba „Završi kupnju”. </li>
-<li class="ql-align-justify">korak: Nakon završetka kupnje, kupcu se na web-mjestu prikazuje poruka potvrde u kojoj se navodi da je narudžba uspješno poslana i prikazuju pojedinosti poslane narudžbe. Uz to, kupac prima i potvrdnu poruku e-pošte na adresu e-pošte navedenu u 2. točki, pri čemu se u navedenoj potvrdnoj poruci e-pošte nalaze pregled narudžbe, upute za upotrebu naručenih proizvoda i upute za odustajanje od kupnje ili podnošenje reklamacije ako kupac nije zadovoljan proizvodom ili ga više ne želi.</li>
+<li class="ql-align-justify">korak: U ponudi dostupnoj u ηλεκτρονικoj κατάστημαi αγοραστής odabire željeni artikl i željenu količinu te επιβεβαιώνει svoj izbor pritiskom gumba „Προσθήκη u καλάθι”. Ako αγοραστής želi kupiti nekoliko διαφορετικih artikala, postupak treba ponoviti za svaki pojedinačni artikl. Nakon što αγοραστής završi postupak odabira προϊόνa, μπορεί nastaviti s postupkom αγοράς pritiskom gumba „Kreni na πληρωμή”.</li>
+<li class="ql-align-justify">korak: U ovom koraku αγοραστής ispunjava obrazac sa svojim osobnim podacima potrebnima za παράδοσηu željene παραγγελίας. Nakon ispunjavanja obrasca, αγοραστής u ορισμένim slučajevima μπορεί odabrati μεταξύ nekoliko mogućnosti αποστολής i dodati druge προϊόνe ili usluge svojoj narudžbi. U ovom koraku αγοραστής je ενημερωμένος i o planiranom datumu παράδοσηe. Prije dovršenja παραγγελίας, αγοραστής ima mogućnost izbora μεταξύ διαφορετικih načina πληρωμής. Uzimajući u obzir odabrani izbor, konačni iznos koji treba platiti za παραγγελία izτιμολόγιοava se još jednom prije završetka αγοράς. Αγοραστής επιβεβαιώνει postupak αγοράς pritiskom gumba „Završi αγορά”. </li>
+<li class="ql-align-justify">korak: Nakon završetka αγοράς, kupcu se na web-mjestu prikazuje poruka potvrde u kojoj se navodi da je παραγγελία uspješno poslana i prikazuju pojedinosti poslane παραγγελίας. Uz to, αγοραστής prima i potvrdnu poruku e-pošte na adresu e-pošte navedenu u 2. točki, pri čemu se u navedenoj potvrdnoj poruci e-pošte nalaze pregled παραγγελίας, upute za upotrebu naručenih προϊόνa i upute za υπαναχώρησηe od αγοράς ili podnošenje παράποναe ako αγοραστής nije zadovoljan προϊόνom ili ga više ne želi.</li>
 </ol>
-<p class="ql-align-justify">Svi podaci koje nam dostavite tijekom slanja narudžbe bit će obrađeni u skladu s Pravilima o zaštiti privatnosti koje možete pronaći na dnu web-mjesta.</p>
-<p class="ql-align-justify">Obavještavamo vas da će se vrijednost cjelokupne kupnje, uključujući isporuku ili druge troškove koji vrijede za kupnju, naplatiti nakon potvrde vaše narudžbe. Obavijestit ćemo vas o svim dodatnim troškovima prije nego što izvršite kupnju. S odabranim načinom plaćanja mogu biti povezati i dodatni troškovi.</p>
-<p class="ql-align-justify">Možete pratiti i upravljati svojom narudžbom u RMA aplikaciji na ovoj poveznici <a href="https://rma.hs-plus.com/language/hr_HR/" rel="noopener noreferrer" target="_blank" style="background-color: rgb(248, 248, 248); color: rgba(var(--sk_highlight,18,100,163),1);">https://rma.hs-plus.com/language/hr_HR/</a>. Za pristup Vam je potreban broj narudžbe ili kod za praćenje te e-mail ili broj telefona koje ste unijeli u narudžbenicu prilikom kupnje. U ovoj aplikaciji (ako narudžba još nije u pripremi) također možete otkazati narudžbu, promijeniti sadržaj narudžbe, adresu, broj telefona, pratiti narudžbu te također pristupiti potvrdi o plaćanju.</p>
-<h3 class="ql-align-justify"><strong>iii. Cijene, načini plaćanja i promocije</strong></h3>
-<p class="ql-align-justify"><strong>Cijene</strong></p>
-<p class="ql-align-justify">Sve cijene navedene na web-mjestu izražene su u EUR i uključuju PDV.&nbsp;Cijene se primjenjuju od trenutka kada je narudžba izvršena. Ponuda vrijedi do opoziva.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE:&nbsp;</strong>Ovo je maloprodajna internetska trgovina čija su ciljana publika isključivo krajnji kupci (B2C). Iz tog razloga na ovom web-mjestu ne omogućujemo B2B prodaju, a ne možemo ponuditi ni mogućnost izdavanja računa pravnim subjektima. To znači i da naknadne korekcije računa (s fizičke na pravnu osobu) nisu moguće zato što se prodajna transakcija zaključuje isključivo s fizičkom osobom.</p>
-<p class="ql-align-justify">Ako želite uspostaviti B2B odnos s našom tvrtkom i kupiti veće količine naših proizvoda (cijelo pakiranje / karton), možete se obratiti našoj trgovini na veliko na&nbsp;<a href="/cdn-cgi/l/email-protection#2a4818486a42595a465f59045943"><span class="__cf_email__" data-cfemail="27451545674f54574b525409544e">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify"><strong>Načini plaćanja</strong></p>
-<p class="ql-align-justify">U našoj internetskoj trgovini možete upotrebljavati sljedeće načine plaćanja:</p>
+<p class="ql-align-justify">Svi podaci koje nam dostavite tijekom slanja παραγγελίας bit će obrađeni u skladu s Pravilima o zaštiti privatnosti koje μπορείte pronaći na dnu ιστότοπου.</p>
+<p class="ql-align-justify">Σας ενημερώνουμε vas da će se vrijednost cjelokupne αγοράς, uključujući παράδοσηu ili druge troškove koji vrijede za αγορά, naplatiti nakon potvrde σαςe παραγγελίας. Ειδοποίησηit ćemo vas o svim dodatnim troškovima prije nego što εκτελέσειte αγορά. S odabranim načinom πληρωμής mogu biti povezati i dodatni troškovi.</p>
+<p class="ql-align-justify">Μπορείte pratiti i upravljati svojom παραγγελία u RMA aplikaciji na ovoj poveznici <a href="https://rma.hs-plus.com/language/el/" rel="noopener noreferrer" target="_blank" style="background-color: rgb(248, 248, 248); color: rgba(var(--sk_highlight,18,100,163),1);">https://rma.hs-plus.com/language/el/</a>. Za pristup Vam je potreban broj παραγγελίας ili kod za praćenje te e-mail ili broj telefona koje ste unijeli u παραγγελίαςnicu prilikom αγοράς. U ovoj aplikaciji (ako παραγγελία još nije u pripremi) επίσης μπορείte otkazati παραγγελία, promijeniti sadržaj παραγγελίας, adresu, broj telefona, pratiti παραγγελία te επίσης pristupiti επιβεβαιώσει o plaćanju.</p>
+<h3 class="ql-align-justify"><strong>iii. Τιμές, načini πληρωμής i promocije</strong></h3>
+<p class="ql-align-justify"><strong>Τιμές</strong></p>
+<p class="ql-align-justify">Sve τιμές navedene na web-mjestu izražene su u EUR i uključuju PDV.&nbsp;Τιμές se primjenjuju od στιγμa kada je παραγγελία izvršena. Ponuda vrijedi do opoziva.</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ:&nbsp;</strong>Ovo je λιανικa ηλεκτρονικa κατάστημαa čija su ciljana publika isključivo τελικ αγοραστές (B2C). Iz tog razloga na ovom web-mjestu ne omogućujemo B2B prodaju, a ne μπορείmo ponuditi ni mogućnost izdavanja τιμολόγιοa pravnim subjektima. To znači i da naknadne korekcije τιμολόγιοa (s fizičke na pravnu osobu) nisu moguće zato što se prodajna transakcija zaključuje isključivo s fizičkom osobom.</p>
+<p class="ql-align-justify">Ako želite uspostaviti B2B odnos s našom tvrtkom i kupiti veće količine naših προϊόνa (cijelo pakiranje / karton), μπορείte se obratiti μας κατάστημαi na veliko na&nbsp;<a href="/cdn-cgi/l/email-protection#2a4818486a42595a465f59045943"><span class="__cf_email__" data-cfemail="27451545674f54574b525409544e">[email&#160;protected]</span></a>.</p>
+<p class="ql-align-justify"><strong>Načini πληρωμής</strong></p>
+<p class="ql-align-justify">U μας ηλεκτρονικoj κατάστημαi μπορείte upotrebljavati επόμενe načine πληρωμής:</p>
 <ul>
-<li class="ql-align-justify">Πληρωμή pouzećem – kupac plaća račun gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu kupca;</li>
+<li class="ql-align-justify">Πληρωμή pouzećem – αγοραστής plaća τιμολόγιο gotovinom ili kreditnom karticom dostavnom kuriru koji robu isporučuje na adresu αγοραστή;</li>
 <li class="ql-align-justify">Πληρωμή kreditnom karticom;</li>
 <li class="ql-align-justify">Πληρωμή preko PayPala.</li>
 </ul>
-<p class="ql-align-justify">Tvrtka zadržava pravo provjere odabranog načina plaćanja s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina plaćanja tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
-<p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos narudžbe (uključujući sve troškove povezane s transakcijom i isporukom) u skladu s odabranim načinom plaćanja. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina plaćanja.</p>
+<p class="ql-align-justify">Εταιρεία zadržava pravo provjere odabranog načina πληρωμής s pomoću provjere autentičnosti. Nadalje, zadržavamo pravo daljnje provjere odabranog načina πληρωμής tražeći da nam pošaljete dokaz o uplati.&nbsp;</p>
+<p class="ql-align-justify">Upoznati ste s činjenicom da morate platiti cjelokupan iznos παραγγελίας (uključujući sve troškove povezane s transakcijom i παράδοσηom) u skladu s odabranim načinom πληρωμής. Jamčite da imate sposobnost i pravo izvršavati transakcije s pomoću kreditne kartice ili bilo kojeg drugog odabranog načina πληρωμής.</p>
 <p class="ql-align-justify"><strong>Promocije</strong></p>
-<p class="ql-align-justify">Web-mjesto nudi i popuste i druge promocije kojima se snižavaju cijene proizvoda (dalje u tekstu: promocije). Svaka promocija nudi se po sniženoj cijeni za određeno (ograničeno) razdoblje utvrđeno za svaku pojedinačnu promociju. Snižena cijena odnosi se na sve kupnje izvršene tijekom trajanja promocije.</p>
-<p class="ql-align-justify">Želimo vas upozoriti da su određene promocije ograničene samo na nove korisnike koji još uvijek nisu izvršili kupnju u našoj internetskoj trgovini. U tom se slučaju navedena promocija ne odnosi na postojeće korisnike. Svaki pokušaj upotrebe takvih promocija bit će odmah blokiran, a adrese e-pošte upotrebljavane za izvršenje spomenute zlouporabe bit će izbrisane bez prethodne najave. Popusti i druge promocije obično nisu kumulativni, osim ako se u okviru svake pojedinačne promocije izričito ne navodi drugačije.</p>
+<p class="ql-align-justify">Ιστότοπος nudi i popuste i druge promocije kojima se snižavaju τιμές προϊόνa (dalje u tekstu: promocije). Svaka promocija nudi se po sniženoj cijeni za ορισμένo (ograničeno) razdoblje utvrđeno za svaku pojedinačnu promociju. Snižena τιμή odnosi se na sve αγοράς izvršene tijekom trajanja promocije.</p>
+<p class="ql-align-justify">Želimo vas upozoriti da su ορισμένe promocije ograničene samo na nove χρήστηςe koji još uvijek nisu εκτελέσειli αγορά u μας ηλεκτρονικoj κατάστημαi. U tom se slučaju navedena promocija ne odnosi na postojeće χρήστηςe. Svaki pokušaj upotrebe takvih promocija bit će odmah blokiran, a adrese e-pošte upotrebljavane za izvršenje spomenute zlouporabe bit će izbrisane bez prethodne najave. Popusti i druge promocije obično nisu kumulativni, osim ako se u okviru svake pojedinačne promocije izričito ne navodi drugačije.</p>
 <h3 class="ql-align-justify"><strong>iv. Troškovi i dostava robe</strong></h3>
-<p class="ql-align-justify">U cijene nisu uključeni troškovi dostave. Troškove dostave možete pronaći u internetskoj trgovini, gdje također imate mogućnost odabira načina dostave. Naša tvrtka nudi dva načina dostave: standardna i brza. Ključna razlika između ove dvije metode dostave jest u tome što se s narudžbama za ekspresnu dostavu postupa, i one se pakiraju, s većim prioritetom.&nbsp;&nbsp;Prije odabira željenog načina dostave, provjerite cijenu navedenu pored svakog pojedinačnog izbora. Tijekom podnošenja narudžbe vidjet ćete pregled cijena koji se sastoji od troškova kupnje, troškova dostave i ukupnih troškova.</p>
-<p class="ql-align-justify">Ako odaberete plaćanje pouzećem, kurirska služba naplatit će naknadu za dostavu paketa izračunatu tijekom podnošenja narudžbe.&nbsp;Ako odlučite platiti kreditnom karticom ili putem PayPala, navedeni trošak neće vam biti naplaćen.</p>
-<p class="ql-align-justify">Proizvodi koje ste naručili dostavit će se na adresu koju ste unijeli kao adresu za dostavu na našem web-mjestu.</p>
-<p class="ql-align-justify">Predviđeni rok dostave dostupan je kupcu nakon predaje narudžbe. Tvrtka zadržava pravo produžiti rok dostave u slučaju povećane potražnje ili kašnjenja usluge dostave. Dostave se uglavnom izvršavaju prije podneva. Ako tijekom dostave ne možete prihvatiti paket, kurirska služba pokušat će se dogovoriti s kupcem o novom načinu i mjestu dostave.</p>
-<p class="ql-align-justify">Ako kurir za dostavu ne uspije kontaktirati kupca, slijedi drugi pokušaj dostave paketa sljedeći radni dan. Ako i drugi pokušaj dostave ne uspije, paket i njegov sadržaj vraćaju se pošiljatelju.</p>
-<p class="ql-align-justify">Iznos plaćen za neuspješno isporučene i unaprijed plaćene narudžbe automatski se vraća u roku od 8 (osam) radnih dana skladišta koje bilježi povrat paketa ili tvrtke koja utvrdi da paket nije uspješno isporučen.</p>
-<p class="ql-align-justify"><strong>Sigurnosna upozorenja za upotrebu svih proizvoda</strong></p>
-<p class="ql-align-justify">Η χρήση προϊόντων από το ηλεκτρονικό μας κατάστημα μπορεί να ενέχει ορισμένο κίνδυνο για τη ζωή και την υγεία. Πρέπει ρητά να επιβεβαιώσετε ότι κατανοείτε ότι η χρήση των εν λόγω προϊόντων ενέχει τέτοιο κίνδυνο τον οποίο αποδέχεστε πλήρως. Παραγγέλνοντας και/ή χρησιμοποιώντας τα εν λόγω προϊόντα, επιβεβαιώνετε ότι γνωρίζετε τους κινδύνους που μπορεί να περιλαμβάνουν κίνδυνο ασθένειας, τραυματισμού, αναπηρίας ή θανάτου. Πρέπει να αναλάβετε πλήρη ευθύνη για όλες τις συνέπειες που μπορεί να προκύψουν από την παραγγελία και/ή τη χρήση των προϊόντων.</p>
-<p class="ql-align-justify">Prije upotrebe bilo kojeg proizvoda morate pročitati upute za upotrebu.</p>
-<p class="ql-align-justify">Prije upotrebe svaki proizvod mora biti testiran na siguran način. Ako niste potpuno sigurni kako testirati proizvod, ljubazno vas molimo da ga ne upotrebljavate, da nas o tome obavijestite ili ga vratite.</p>
-<p class="ql-align-justify">Tvrtka ne preuzima nikakvu odgovornost za neizravnu ili izravnu štetu nastalu upotrebom proizvoda naručenih na web-mjestu, bez obzira je li kupac ili treća strana proizvode upotrebljavao ispravno ili neispravno. Ovo izuzeće primjenjuje se u najvećoj mogućoj mjeri dopuštenoj zakonodavstvom.</p>
-<p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv tvrtke, tvrtka ograničava svoju odgovornost za štete na trostruku tržišnu cijenu proizvoda.</p>
-<p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise proizvoda i fotografije. Ipak, ne možemo jamčiti da su svi podaci o proizvodu i njihove fotografije potpuno točni. Budući da se određeni proizvodi mogu nabaviti kod različitih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu proizvoda. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost proizvoda.&nbsp;&nbsp;</p>
-<h3 class="ql-align-justify"><strong>v. Pravo na odustajanje od Ugovora</strong></h3>
-<p class="ql-align-justify">Kupac koji izvrši kupnju u našoj internetskoj trgovini ima pravo odustati od Ugovora. Navedeno odustajanje od Ugovora može se izjaviti u roku od 90 dana od datuma isporuke narudžbe, a tvrtku o tome obavještava dostavna služba.&nbsp;Kupac ne mora navesti razlog svoje odluke. Navedeno το δικαίωμα υπαναχώρησης od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
-<p class="ql-align-justify">Smatra se da je izjava o odustajanju izdana pravodobno ako je podnesena u roku za odustajanje od Ugovora. Izjavu o odustajanju možete dostaviti na unaprijed dogovorenom obrascu ili nam je možete poslati e-poštom.&nbsp;Obrazac možete pronaći na kartici „Pravo na odustajanje od kupnje” pri dnu web-mjesta. Teret dokazivanja koji se odnosi na ostvarivanje prava na odustajanje iz ovog članka snosi potrošač.</p>
-<p class="ql-align-justify"><strong>Odustajanjem od Ugovora kupac može steći povrat novca ili zamijeniti proizvod, ali ne može iskoristiti kredit!</strong></p>
-<p class="ql-align-justify">Nakon predaje izjave o odustajanju, svoje proizvode morate vratiti u roku od 14 dana od datuma izjave o odustajanju. Robu pošaljite na našu adresu: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za povrat u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih proizvoda, zapakiranih u originalno pakiranje ili ambalažu koja proizvode štiti na isti način kao i originalna ambalaža. Ne možete vratiti oštećene proizvode, proizvode u izmijenjenoj količini ili proizvode upakirane u neprikladnu ambalažu. Molimo vratite artikle kao paketnu pošiljku, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od kupnje, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od kupnje), to može značajno produžiti vrijeme potrebno za obradu vašeg zahtjeva. U slučaju odustajanja od ugovora, podmirit ćete samo troškove povrata robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
-<p class="ql-align-justify">Ako ste već platili naručenu robu, odmah ćemo, ili najkasnije u roku od 8 radnih dana od slanja paketa na našu adresu, nadoknaditi sve zaprimljene uplate i uplate koje ste izvršili u vezi s narudžbom. Smatra se da je paket poslan na našu adresu kada ga naše skladište evidentira kao vraćeni paket. Zadržavamo pravo zadržati primljenu uplatu do povrata proizvoda koji su predmet odustajanja od ugovora.</p>
-<p class="ql-align-justify">Zaprimljene uplate nadoknadit ćemo istim sredstvima plaćanja koja ste upotrebljavali tijekom kupnje. U slučaju plaćanja pouzećem nabavna cijena vratit će na broj tekućeg računa koji ste naveli u svom obrascu.</p>
-<p class="ql-align-justify">Izuzetak od prava na povlačenje</p>
-<p class="ql-align-justify">Iskorištavanje prava na odustajanje isključeno je za sljedeće ugovore:</p>
+<p class="ql-align-justify">U τιμές nisu uključeni troškovi αποστολής. Troškove αποστολής μπορείte pronaći u ηλεκτρονικoj κατάστημαi, gdje επίσης imate mogućnost odabira načina αποστολής. Naša εταιρεία nudi dva načina αποστολής: standardna i brza. Ključna razlika μεταξύ ove dvije metode αποστολής jest u tome što se s παραγγελίαma za ekspresnu αποστολή postupa, i one se pakiraju, s većim prioritetom.&nbsp;&nbsp;Prije odabira željenog načina αποστολής, provjerite τιμή navedenu pored svakog pojedinačnog izbora. Tijekom podnošenja παραγγελίας vidjet ćete pregled τιμή koji se sastoji od troškova αγοράς, troškova αποστολής i ukupnih troškova.</p>
+<p class="ql-align-justify">Ako odaberete πληρωμή pouzećem, kurirska služba naplatit će naknadu za αποστολή paketa izτιμολόγιοatu tijekom podnošenja παραγγελίας.&nbsp;Ako odlučite platiti kreditnom karticom ili putem PayPala, navedeni trošak δεν θα vam biti naplaćen.</p>
+<p class="ql-align-justify">Προϊόνi koje ste naručili dostavit će se na adresu koju ste unijeli kao adresu za αποστολή na μαςm web-mjestu.</p>
+<p class="ql-align-justify">Predviđeni rok αποστολής dostupan je kupcu nakon predaje παραγγελίας. Εταιρεία zadržava pravo produžiti rok αποστολής u slučaju povećane potražnje ili kašnjenja usluge αποστολής. Dostave se uglavnom izvršavaju prije podneva. Ako tijekom αποστολής ne μπορείte prihvatiti paket, kurirska služba pokušat će se dogovoriti s kupcem o novom načinu i mjestu αποστολής.</p>
+<p class="ql-align-justify">Ako kurir za αποστολή ne uspije kontaktirati αγοραστή, slijedi drugi pokušaj αποστολής paketa επόμενi radni dan. Ako i drugi pokušaj αποστολής ne uspije, paket i njegov sadržaj vraćaju se pošiljatelju.</p>
+<p class="ql-align-justify">Iznos plaćen za neuspješno isporučene i unaprijed plaćene παραγγελίας automatski se vraća u roku od 8 (osam) radnih dana skladišta koje bilježi επιστροφή paketa ili εταιρείας koja utvrdi da paket nije uspješno isporučen.</p>
+<p class="ql-align-justify"><strong>Sigurnosna upozorenja za upotrebu svih προϊόνa</strong></p>
+<p class="ql-align-justify">Upotreba προϊόνa iz μας ηλεκτρονικe κατάστημαe μπορεί predstavljati ορισμένi κίνδυνο για τη ζωή και την υγεία. Morate izričito επιβεβαιώσειti da razumijete da uporaba navedenih προϊόνa predstavlja takav rizik koji u potpunosti prihvaćate. Παραγγελίαvanjem i/ili upotrebom spomenutih προϊόνa επιβεβαιώνειte da ste upoznati s navedenim rizicima koji mogu uključivati rizik od bolesti, ozljeda, invaliditeta ili smrti. Morate preuzeti punu odgovornost za sve posljedice koje bi mogle nastati naručivanjem i/ili upotrebom προϊόνa.</p>
+<p class="ql-align-justify">Prije upotrebe bilo kojeg προϊόνa morate pročitati upute za upotrebu.</p>
+<p class="ql-align-justify">Prije upotrebe svaki προϊόν mora biti testiran na siguran način. Ako niste potpuno sigurni kako testirati προϊόν, ljubazno vas παρακαλούμε da ga ne upotrebljavate, da nas o tome ειδοποίησηite ili ga vratite.</p>
+<p class="ql-align-justify">Εταιρεία ne preuzima nikakvu odgovornost za neizravnu ili izravnu štetu nastalu upotrebom προϊόνa naručenih na web-mjestu, bez obzira je li αγοραστής ili treća strana προϊόνe upotrebljavao ispravno ili neispravno. Ovo izuzeće primjenjuje se u najvećoj mogućoj mjeri dopuštenoj zakonodavstvom.</p>
+<p class="ql-align-justify">U slučaju zahtjeva za naknadu štete podnesenog protiv εταιρείας, εταιρεία ograničava svoju odgovornost za štete na trostruku tržišnu τιμή προϊόνa.</p>
+<p class="ql-align-justify">Nastojimo pružiti što detaljnije i preciznije opise προϊόνa i fotografije. Ipak, ne μπορείmo jamčiti da su svi podaci o προϊόνu i njihove fotografije potpuno točni. Budući da se ορισμένi προϊόνi mogu nabaviti kod διαφορετικih dobavljača, moguća su manja odstupanja u pakiranju ili izgledu προϊόνa. Spomenuta odstupanja ni na koji način ne utječu na kvalitetu ili funkcionalnost προϊόνa.&nbsp;&nbsp;</p>
+<h3 class="ql-align-justify"><strong>v. Pravo na υπαναχώρησηe od Ugovora</strong></h3>
+<p class="ql-align-justify">Αγοραστής koji εκτελέσει αγορά u μας ηλεκτρονικoj κατάστημαi ima pravo odustati od Ugovora. Navedeno υπαναχώρησηe od Ugovora μπορεί se izjaviti εντός 90 ημερών od datuma παράδοσηe παραγγελίας, a tvrtku o tome obavještava dostavna služba.&nbsp;Αγοραστής ne mora navesti razlog svoje odluke. Navedeno το δικαίωμα υπαναχώρησης od Ugovora primjenjuje se samo na kupce koji su fizičke osobe i koji robu i usluge stječu ili upotrebljavaju izvan svoje profesionalne djelatnosti ili djelatnosti s ciljem ostvarenja dohotka.&nbsp;</p>
+<p class="ql-align-justify">Smatra se da je izjava o υπαναχώρησηu izdana pravodobno ako je podnesena u roku za υπαναχώρησηe od Ugovora. Izjavu o υπαναχώρησηu μπορείte dostaviti na unaprijed dogovorenom obrascu ili nam je μπορείte poslati e-poštom.&nbsp;Obrazac μπορείte pronaći na kartici „Pravo na υπαναχώρησηe od αγοράς” pri dnu ιστότοπου. Teret dokazivanja koji se odnosi na ostvarivanje prava na υπαναχώρησηe iz ovog članka snosi καταναλωτής.</p>
+<p class="ql-align-justify"><strong>Odustajanjem od Ugovora αγοραστής μπορεί steći επιστροφή novca ili zamijeniti προϊόν, ali ne μπορεί iskoristiti kredit!</strong></p>
+<p class="ql-align-justify">Nakon predaje izjave o υπαναχώρησηu, svoje προϊόνe morate vratiti εντός 14 ημερών od datuma izjave o υπαναχώρησηu. Στείλτε τα εμπορεύματα στη διεύθυνσή μας: <strong>HS PLUS d.o.o., Poštanska ulica 25, 10410 Velika Gorica</strong>.&nbsp;Smatra se da je roba pravovremeno vraćena ako je pošaljete prije isteka roka za επιστροφή u trajanju od 90 dana.&nbsp;Morate vratiti neizmijenjenu količinu neoštećenih προϊόνa, zapakiranih u αρχική συσκευασία ili ambalažu koja προϊόνe štiti na isti način kao i originalna ambalaža. Ne μπορείte vratiti oštećene προϊόνe, προϊόνe u izmijenjenoj količini ili προϊόνe upakirane u neprikladnu ambalažu. Παρακαλούμε vratite artikle kao paketnu αποστολήu, a ne kao pismo, osiguravajući da je paket označen kodom za odustanak od αγοράς, koji ćete dobiti tijekom postupka.Ako paket nije pravilno označen (poslan bez koda za odustanak od αγοράς), to μπορεί značajno produžiti vrijeme potrebno za obradu σαςeg zahtjeva. U slučaju υπαναχώρησηa od σύμβασηa, podmirit ćete samo troškove επιστροφήa robe, s tim da se navedeni troškovi ne mogu nadoknaditi.</p>
+<p class="ql-align-justify">Ako ste već platili naručenu robu, odmah ćemo, ili najkasnije u roku od 8 radnih dana od slanja paketa na μας adresu, nadoknaditi sve zaprimljene uplate i uplate koje ste εκτελέσειli u vezi s παραγγελία. Smatra se da je paket poslan na μας adresu kada ga μας skladište evidentira kao vraćeni paket. Zadržavamo pravo zadržati primljenu uplatu do επιστροφήa προϊόνa koji su predmet υπαναχώρησηa od σύμβασηa.</p>
+<p class="ql-align-justify">Zaprimljene uplate nadoknadit ćemo istim sredstvima πληρωμής koja ste upotrebljavali tijekom αγοράς. U slučaju πληρωμής pouzećem nabavna τιμή vratit će na broj tekućeg τιμολόγιοa koji ste naveli u svom obrascu.</p>
+<p class="ql-align-justify">Εξαίρεση od prava na υπαναχώρηση</p>
+<p class="ql-align-justify">Iskorištavanje prava na υπαναχώρησηe isključeno je za επόμενe σύμβασηe:</p>
 <ul>
-<li class="ql-align-justify">ugovori o isporuci robe izrađeni prema specifikacijama potrošača ili jasno personalizirani;</li>
-<li class="ql-align-justify">ugovori o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
-<li class="ql-align-justify">ugovori o nabavi novina, periodike ili časopisa, osim ugovora o pretplati na ove publikacije;</li>
-<li class="ql-align-justify">ugovori o isporuci robe koju je potrošač otpečatio nakon isporuke i koja se ne može vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
-<li class="ql-align-justify">ugovori o isporuci robe koja se nakon isporuke i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi proizvodi iz Mystery box -a, oba proizvoda iz ponude 1+1 besplatno, bilo koji POKLON);</li>
-<li class="ql-align-justify">ugovori o isporuci audio ili video zapisa ili računalnog softvera ako ih je potrošač otpečatio nakon isporuke;</li>
-<li class="ql-align-justify">ugovori o opskrbi alkoholnim pićima čija se isporuka odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju ugovora ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
-<li class="ql-align-justify">ugovori o isporuci robe ili usluga, čija cijena ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja odustajanja;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga u potpunosti izvršeni prije isteka roka za odustajanje i čije je izvršavanje započelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje; (na primjer: provizija za plaćanje po pouzeću, brza dostava, osiguranje paketa);</li>
-<li class="ql-align-justify">ugovori o radovima na održavanju ili popravcima koji se moraju hitno izvršiti u potrošačevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
-<li class="ql-align-justify">ugovori o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati određenog datuma ili s određenom učestalošću;</li>
-<li class="ql-align-justify">ugovori o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je izvršavanje počelo nakon izričitog prethodnog pristanka potrošača i izričitog odricanja od prava na odustajanje (na primjer: preuzeti digitalni sadržaji, e-knjige).</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe izrađeni prema specifikacijama καταναλωτήςa ili jasno personalizirani;</li>
+<li class="ql-align-justify">σύμβασηi o opskrbi robom koji se mogu pogoršati ili brzo isteći;</li>
+<li class="ql-align-justify">σύμβασηi o nabavi novina, periodike ili časopisa, osim σύμβασηa o pretplati na ove publikacije;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe koju je καταναλωτής otpečatio nakon παράδοσηe i koja se ne μπορεί vratiti iz higijenskih ili zdravstvenih razloga (na primjer: kozmetika, sredstva za čišćenje, paste za poliranje i kupaći kostim, donje rublje, čarape)</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe koja se nakon παράδοσηe i po svojoj prirodi nerazdvojno miješaju s drugim artiklima; (na primjer: set/kit, svi προϊόνi iz Mystery box -a, oba προϊόνa iz ponude 1+1 besplatno, bilo koji POKLON);</li>
+<li class="ql-align-justify">σύμβασηi o isporuci audio ili video zapisa ili τιμολόγιοalnog softvera ako ih je καταναλωτής otpečatio nakon παράδοσηe;</li>
+<li class="ql-align-justify">σύμβασηi o opskrbi alkoholnim pićima čija se παράδοσηa odgađa nakon trideset dana i čija vrijednost dogovorena pri sklapanju σύμβασηa ovisi o fluktuacijama na tržištu na koje profesionalci ne mogu utjecati;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci robe ili usluga, čija τιμή ovisi o fluktuacijama na financijskom tržištu na koje profesionalci ne mogu utjecati i do kojih će vjerojatno doći tijekom razdoblja υπαναχώρησηa;</li>
+<li class="ql-align-justify">σύμβασηi o pružanju usluga u potpunosti izvršeni prije isteka roka za υπαναχώρησηe i čije je εκτέλεσηe započelo nakon izričitog prethodnog pristanka καταναλωτήςa i izričitog odricanja od prava na υπαναχώρησηe; (na primjer: provizija za πληρωμή po pouzeću, brza dostava, osiguranje paketa);</li>
+<li class="ql-align-justify">σύμβασηi o radovima na održavanju ili popravcima koji se moraju hitno εκτελέσειti u καταναλωτήςevoj kući i izričito to zatražiti, u granicama rezervnih dijelova i radova koji su strogo potrebni za reagiranje u hitnim slučajevima;</li>
+<li class="ql-align-justify">σύμβασηi o pružanju usluga smještaja, prijevoza, ugostiteljstva i razonode, koji se moraju pružati ορισμένog datuma ili s ορισμένom učestalošću;</li>
+<li class="ql-align-justify">σύμβασηi o isporuci digitalnog sadržaja koji nisu isporučeni na materijalnom mediju, čije je εκτέλεσηe počelo nakon izričitog prethodnog pristanka καταναλωτήςa i izričitog odricanja od prava na υπαναχώρησηe (na primjer: preuzeti digitalni sadržaji, e-knjige).</li>
 </ul>
-<p class="ql-align-justify"><strong>UPOZORENJE: </strong>Ako dobrovoljno vratite proizvod za koji nije moguće odstupanje od kupnje,&nbsp;nakon perioda za povrat od 90 dana, nakon 14 dana od obavijesti o odstupanju od kupnje, koji nije kupljen u našoj trgovini Takav Vam proizvod možemo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane reklamacije. Proizvod koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
-<h3 class="ql-align-justify"><strong>vi. Reklamacije</strong></h3>
-<p class="ql-align-justify">Ako otkrijete da vaš proizvod ne radi ispravno ili ste dobili neprimjeren ili oštećen proizvod, na raspolaganju su vam sljedeće mogućnosti:</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: </strong>Ako dobrovoljno vratite προϊόν za koji nije moguće odstupanje od αγοράς,&nbsp;nakon perioda za επιστροφή od 90 dana, nakon 14 dana od ειδοποίησηi o odstupanju od αγοράς, koji nije kupljen u μας κατάστημαi Takav Vam προϊόν μπορείmo vratiti natrag isključivo uz naplatu 10 EUR što predstavlja trošak obrade neopravdane παράποναe. Προϊόν koji nije preuzet bit će uništen nakon 2 mjeseca.</p>
+<h3 class="ql-align-justify"><strong>vi. Παράποναe</strong></h3>
+<p class="ql-align-justify">Ako otkrijete da σας προϊόν ne radi ispravno ili ste dobili neprimjeren ili oštećen προϊόν, na raspolaganju su vam επόμενe mogućnosti:</p>
 <ul>
-<li class="ql-align-justify">provedba jamstva dostave,</li>
-<li class="ql-align-justify">provedba jamstva na tehničke proizvode i</li>
-<li class="ql-align-justify">podnošenje reklamacije proizvoda.</li>
+<li class="ql-align-justify">provedba εγγύησης αποστολής,</li>
+<li class="ql-align-justify">provedba εγγύησης na tehničke προϊόνe i</li>
+<li class="ql-align-justify">podnošenje παράποναe προϊόνa.</li>
 </ul>
-<p class="ql-align-justify"><strong>a) Jamstvo isporuke</strong></p>
+<p class="ql-align-justify"><strong>a) Εγγύηση παράδοσηe</strong></p>
 <ol>
-<li class="ql-align-justify">Dajemo dodatno jamstvo za besprijekornu isporuku koje se može primijeniti&nbsp;<strong>u roku od 48 sati nakon primitka proizvoda</strong>.</li>
-<li class="ql-align-justify">Ako su vaši proizvodi oštećeni tijekom transporta ili nisu u skladu s vašom narudžbom, ljubazno vas molimo da nam prijavite grešku u roku od 48 sati od isporuke. Pošaljite nam poruku e-pošte koja sadrži fotografiju pakiranja (naljepnica mora biti jasno istaknuta na fotografiji) i primljenog proizvoda koji jasno ukazuje na oštećeno područje.</li>
-<li class="ql-align-justify">Dat ćemo prednost rješavanju vašeg zahtjeva u najkraćem mogućem roku i pružit ćemo vam zamjenski proizvod.</li>
-<li class="ql-align-justify">Ako je zahtjev poslan prekasno, riješit će se kao reklamacija proizvoda.</li>
+<li class="ql-align-justify">Dajemo dodatno εγγύηση za besprijekornu παράδοσηu koje se μπορεί primijeniti&nbsp;<strong>u roku od 48 sati nakon primitka προϊόνa</strong>.</li>
+<li class="ql-align-justify">Ako su σαςi προϊόνi oštećeni tijekom transporta ili nisu u skladu s σαςom παραγγελία, ljubazno vas παρακαλούμε da nam prijavite grešku u roku od 48 sati od παράδοσηe. Pošaljite nam poruku e-pošte koja sadrži fotografiju pakiranja (naljepnica mora biti jasno istaknuta na fotografiji) i primljenog προϊόνa koji jasno ukazuje na oštećeno područje.</li>
+<li class="ql-align-justify">Dat ćemo prednost rješavanju σαςeg zahtjeva u najkraćem mogućem roku i pružit ćemo vam zamjenski προϊόν.</li>
+<li class="ql-align-justify">Ako je zahtjev poslan prekasno, riješit će se kao παράποναa προϊόνa.</li>
 </ol>
 <p class="ql-align-justify"></p>
-<p class="ql-align-justify"><strong>b) Jamstvo na tehničke proizvode</strong></p>
-<p class="ql-align-justify">Za određene proizvode u našoj ponudi primjenjuje se jamstveno razdoblje od 24 mjeseci. Jamstvo se može primijeniti samo za tehničke proizvode i električne uređaje iz naše ponude. Jamstveno razdoblje od 24 mjeseci započinje na dan primitka robe. Svoje jamstvo možete ostvariti u skladu Zakonom o zaštiti potrošača, na temelju računa koji predstavlja potvrdu o jamstvu.</p>
-<p class="ql-align-justify">Tvrtka zadržava pravo odbiti jamstvo ako uz zahtjev nije priložen račun ili ako račun nije čitljiv ili na drugi način nedostaje.</p>
-<p class="ql-align-justify">Jamstvo se ne primjenjuje ako:</p>
+<p class="ql-align-justify"><strong>b) Εγγύηση na tehničke προϊόνe</strong></p>
+<p class="ql-align-justify">Za ορισμένe προϊόνe u μας ponudi primjenjuje se jamstveno razdoblje od 24 mjeseci. Εγγύηση se μπορεί primijeniti samo za tehničke προϊόνe i električne uređaje iz μας ponude. Jamstveno razdoblje od 24 mjeseci započinje na dan primitka robe. Svoje εγγύηση μπορείte ostvariti u skladu Zakonom o zaštiti καταναλωτήςa, na temelju τιμολόγιοa koji predstavlja επιβεβαίωση o jamstvu.</p>
+<p class="ql-align-justify">Εταιρεία zadržava pravo odbiti εγγύηση ako uz zahtjev nije priložen τιμολόγιο ili ako τιμολόγιο nije čitljiv ili na drugi način nedostaje.</p>
+<p class="ql-align-justify">Εγγύηση se ne primjenjuje ako:</p>
 <ul>
-<li class="ql-align-justify">je proizvod fizički oštećen;</li>
-<li class="ql-align-justify">proizvod pokazuje znakove trošenja zbog uobičajene upotrebe;</li>
-<li class="ql-align-justify">proizvod predstavlja nedostatke koji su nastali kao rezultat nepravilne, neprikladne ili neoprezne upotrebe proizvoda.</li>
+<li class="ql-align-justify">je προϊόν fizički oštećen;</li>
+<li class="ql-align-justify">προϊόν pokazuje znakove trošenja zbog uobičajene upotrebe;</li>
+<li class="ql-align-justify">προϊόν predstavlja nedostatke koji su nastali kao rezultat nepravilne, neprikladne ili neoprezne upotrebe προϊόνa.</li>
 </ul>
-<p class="ql-align-justify">Proizvodi za koje želite iskoristiti jamstvo moraju se ispitati, zbog čega vas molimo da svome zahtjevu za jamstvom priložite fotografije ili video isječke koji prikazuju nedostatak. Ako je potrebno, zamolit ćemo vas da nam vratite proizvod kako bismo ga mogli ispitati.</p>
-<p class="ql-align-justify">Ako odobrimo vaš zahtjev za jamstvom, pružit ćemo vam novi proizvod. Imate pravo zatražiti i popravak svojeg proizvoda, ali morate biti svjesni činjenice da je razdoblje popravka duže od razdoblja isporuke novog proizvoda. Ako popravak traje više od 45 dana, vaš će proizvod biti zamijenjen novim. Ako se novi proizvod ne može dostaviti, vratit ćemo vam cijenu proizvoda u cijelosti.</p>
-<p class="ql-align-justify">Μπορείτε να βρείτε τη σύνοψη της διαδικασίας στην καρτέλα «Αντικατάσταση εντός εγγύησης» στο κάτω μέρος του ιστότοπου.</p>
-<p class="ql-align-justify"><strong>UPOZORENJE: Tvrtka HS Plus prihvatit će povrat samo onih paketa koji sadržavaju proizvode kupljene na web-mjestu. Svi paketi koje pošalje pojedinac, a koji ne sadržavaju proizvode kupljene u našoj tvrtki, vratit će se pošiljatelju o njegovom trošku.</strong></p>
+<p class="ql-align-justify">Προϊόνi za koje želite iskoristiti εγγύηση moraju se ispitati, zbog čega vas παρακαλούμε da svome zahtjevu za εγγύησηm priložite fotografije ili video isječke koji prikazuju nedostatak. Ako je potrebno, zamolit ćemo vas da nam vratite προϊόν kako bismo ga mogli ispitati.</p>
+<p class="ql-align-justify">Ako odobrimo σας zahtjev za εγγύησηm, pružit ćemo vam novi προϊόν. Imate pravo zatražiti i popravak svojeg προϊόνa, ali morate biti svjesni činjenice da je razdoblje popravka duže od razdoblja παράδοσηe novog προϊόνa. Ako popravak traje više od 45 dana, σας će προϊόν biti zamijenjen novim. Ako se novi προϊόν ne μπορεί dostaviti, vratit ćemo vam τιμή προϊόνa u cijelosti.</p>
+<p class="ql-align-justify">Sažetak postupka μπορείte pronaći na kartici „Zamjena u jamstvu” pri dnu ιστότοπου.</p>
+<p class="ql-align-justify"><strong>ΠΡΟΕΙΔΟΠΟΙΗΣΗ: Εταιρεία HS Plus prihvatit će επιστροφή samo onih paketa koji sadržavaju προϊόνe kupljene na web-mjestu. Svi paketi koje pošalje pojedinac, a koji ne sadržavaju προϊόνe kupljene u μας εταιρεία, vratit će se pošiljatelju o njegovom trošku.</strong></p>
 <p class="ql-align-justify">&nbsp;</p>
-<p class="ql-align-justify"><strong>c) Reklamacija proizvoda zbog materijalnih nedostataka</strong></p>
+<p class="ql-align-justify"><strong>c) Παράποναa προϊόνa zbog materijalnih nedostataka</strong></p>
 <ol>
-<li class="ql-align-justify">Ako proizvod ne radi ispravno, pošaljite nam poruku e-pošte na <a href="/cdn-cgi/l/email-protection#f59c9b939ab5839c929a869d9a85db9d87"><span class="__cf_email__" data-cfemail="630a0d050c23150a040c100b0c134d0b11">[email&#160;protected]</span></a> i pomoći ćemo pružanjem potrebnog objašnjenja. Na taj ćete način spriječiti bilo kakvu potencijalnu zlouporabu proizvoda i štetu na samom proizvodu, kao i bilo kakve ozljede sebe ili drugih.</li>
-<li class="ql-align-justify">Ako vaš proizvod ne radi, možete podnijeti reklamaciju navodeći materijalne nedostatke na proizvodu. Slučajevi koji se smatraju materijalnim nedostacima na proizvodu navedeni su u odjeljku vii. ovih Općih uvjeta poslovanja. Materijalne nedostatke možete primijeniti samo ako su navedeni nedostaci već postojali u trenutku kupnje, ali su otkriveni kasnije.</li>
-<li class="ql-align-justify">Ako vaš proizvod ne radi zbog materijalnog nedostatka, molimo vas da nedostatak prijavite odmah nakon što ga otkrijete, ali ni u kojem slučaju kasnije od dva mjeseca od dana kada ste taj nedostatak otkrili. Pošaljite nam poruku e-pošte s fotografijom ili video isječkom s prikazom neispravnog proizvoda, na temelju kojeg se nedvosmisleno može utvrditi da proizvod ne radi. Ako je potrebno, zamolit ćemo vas da nam vratite predmetni proizvod kako bismo ga mogli ispitati i utvrditi nedostatak proizvoda.</li>
-<li class="ql-align-justify">Nećemo moći razmotriti vašu reklamaciju za proizvode koji su oštećeni zbog nepravilne ili neprikladne upotrebe ili ponašanja koje nije strogo neophodno za utvrđivanje prirode, svojstva i funkcioniranja robe. Ako želite povrat predmetnog proizvoda nakon odbijanja vaše reklamacije, poslat ćemo vam ga zajedno s računom za troškove povezane s isporukom navedenog proizvoda.</li>
-<li class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi proizvoda koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</li>
-<li class="ql-align-justify">Ako izvršavate nalog o materijalnom nedostatku, dostupne su vam sljedeće mogućnosti:</li>
+<li class="ql-align-justify">Ako προϊόν ne radi ispravno, pošaljite nam poruku e-pošte na <a href="/cdn-cgi/l/email-protection#f59c9b939ab5839c929a869d9a85db9d87"><span class="__cf_email__" data-cfemail="630a0d050c23150a040c100b0c134d0b11">[email&#160;protected]</span></a> i pomoći ćemo pružanjem potrebnog objašnjenja. Na taj ćete način spriječiti bilo kakvu potencijalnu zlouporabu προϊόνa i štetu na samom προϊόνu, kao i bilo kakve ozljede sebe ili drugih.</li>
+<li class="ql-align-justify">Ako σας προϊόν ne radi, μπορείte podnijeti παράποναu navodeći materijalne nedostatke na προϊόνu. Slučajevi koji se smatraju materijalnim nedostacima na προϊόνu navedeni su u odjeljku vii. ovih Općih όρων συναλλαγών. Materijalne nedostatke μπορείte primijeniti samo ako su navedeni nedostaci već postojali u στιγμή αγοράς, ali su otkriveni kasnije.</li>
+<li class="ql-align-justify">Ako σας προϊόν ne radi zbog materijalnog nedostatka, παρακαλούμε vas da nedostatak prijavite odmah nakon što ga otkrijete, ali ni u kojem slučaju kasnije od dva mjeseca od dana kada ste taj nedostatak otkrili. Pošaljite nam poruku e-pošte s fotografijom ili video isječkom s prikazom neispravnog προϊόνa, na temelju kojeg se nedvosmisleno μπορεί utvrditi da προϊόν ne radi. Ako je potrebno, zamolit ćemo vas da nam vratite predmetni προϊόν kako bismo ga mogli ispitati i utvrditi nedostatak προϊόνa.</li>
+<li class="ql-align-justify">Nećemo moći razmotriti σαςu παράποναu za προϊόνe koji su oštećeni zbog nepravilne ili neprikladne upotrebe ili poμαςnja koje nije strogo neophodno za utvrđivanje prirode, svojstva i funkcioniranja robe. Ako želite επιστροφή predmetnog προϊόνa nakon odbijanja σαςe παράποναe, poslat ćemo vam ga zajedno s τιμολόγιοom za troškove povezane s παράδοσηom navedenog προϊόνa.</li>
+<li class="ql-align-justify">Εταιρεία je odgovorna za nedostatke u izradi προϊόνa koji se pojave kroz 2 godine nakon παράδοσηe. Εταιρεία je dužna odgovoriti na prigovor u roku od 3 radna dana.</li>
+<li class="ql-align-justify">Ako izvršavate nalog o materijalnom nedostatku, dostupne su vam επόμενe mogućnosti:</li>
 </ol>
 <ul>
-<li class="ql-align-justify">zamjena proizvoda,</li>
-<li class="ql-align-justify">povrat kupoprodajne cijene,</li>
-<li class="ql-align-justify">otklanjanje nedostatka proizvoda ili</li>
-<li class="ql-align-justify">proporcionalni povrat kupoprodajne cijene.</li>
+<li class="ql-align-justify">zamjena προϊόνa,</li>
+<li class="ql-align-justify">επιστροφή kupoprodajne τιμές,</li>
+<li class="ql-align-justify">otklanjanje nedostatka προϊόνa ili</li>
+<li class="ql-align-justify">proporcionalni επιστροφή kupoprodajne τιμές.</li>
 </ul>
-<p class="ql-align-justify">Μπορείτε να βρείτε τη σύνοψη της διαδικασίας στην καρτέλα «Παράπονα και διαφορές» στο κάτω μέρος του ιστότοπου.</p>
+<p class="ql-align-justify">Sažetak postupka μπορείte pronaći u kartici „Pritužbe i sporovi” na dnu ιστότοπου.</p>
 <h3 class="ql-align-justify"><strong>vii. Materijalni nedostatak</strong></h3>
-<p class="ql-align-justify">Materijalni nedostatak može se primijeniti u sljedećim slučajevima:</p>
+<p class="ql-align-justify">Materijalni nedostatak μπορεί se primijeniti u επόμενim slučajevima:</p>
 <ul>
-<li class="ql-align-justify">ako proizvod ne sadrži karakteristike potrebne za njegovu uobičajenu upotrebu ili za stavljanje na tržište;</li>
-<li class="ql-align-justify">ako proizvod ne sadrži karakteristike potrebne za određenu upotrebu za koju je kupac kupio proizvod, a koje su prodavatelju bile poznate ili su prodavatelju trebale biti poznate;</li>
-<li class="ql-align-justify">ako proizvod ne sadrži karakteristike i kvalitete koje su izričito ili implicitno dogovorene ili propisane;</li>
-<li class="ql-align-justify">ako je prodavatelj kupcu dostavio proizvod koji nije u skladu s uzorkom ili modelom proizvoda, osim ako uzorak ili model proizvoda nisu prikazani samo u informativne svrhe.</li>
+<li class="ql-align-justify">ako προϊόν ne sadrži karakteristike potrebne za njegovu uobičajenu upotrebu ili za stavljanje na tržište;</li>
+<li class="ql-align-justify">ako προϊόν ne sadrži karakteristike potrebne za ορισμένu upotrebu za koju je αγοραστής kupio προϊόν, a koje su prodavatelju bile poznate ili su prodavatelju trebale biti poznate;</li>
+<li class="ql-align-justify">ako προϊόν ne sadrži karakteristike i kvalitete koje su izričito ili implicitno dogovorene ili propisane;</li>
+<li class="ql-align-justify">ako je prodavatelj kupcu dostavio προϊόν koji nije u skladu s uzorkom ili modelom προϊόνa, osim ako uzorak ili model προϊόνa nisu prikazani samo u informativne svrhe.</li>
 </ul>
-<p class="ql-align-justify">Μπορείτε να βρείτε τη σύνοψη της διαδικασίας στην καρτέλα «Παράπονα και διαφορές» στο κάτω μέρος του ιστότοπου.</p>
-<p class="ql-align-justify">Tvrtka je odgovorna za nedostatke u izradi proizvoda koji se pojave kroz 2 godine nakon isporuke. Tvrtka je dužna odgovoriti na prigovor u roku od 3 radna dana.</p>
+<p class="ql-align-justify">Sažetak postupka μπορείte pronaći u kartici „Pritužbe i sporovi” na dnu ιστότοπου.</p>
+<p class="ql-align-justify">Εταιρεία je odgovorna za nedostatke u izradi προϊόνa koji se pojave kroz 2 godine nakon παράδοσηe. Εταιρεία je dužna odgovoriti na prigovor u roku od 3 radna dana.</p>
 <h3 class="ql-align-justify"><strong>viii. Dostupnost informacija</strong></h3>
-<p class="ql-align-justify">Pružatelj se obvezuje da će kupcu uvijek pružiti sljedeće informacije:</p>
+<p class="ql-align-justify">Pružatelj se υποχρέωσηje da će kupcu uvijek pružiti επόμενe informacije:</p>
 <ul>
-<li class="ql-align-justify">identitet tvrtke (naziv i registrirana adresa tvrtke, matični broj),</li>
-<li class="ql-align-justify">podatke za kontakt koji korisniku omogućuju brzu i učinkovitu komunikaciju s pružateljem (e-pošta, automatska sekretarica),</li>
-<li class="ql-align-justify">bitne karakteristike robe ili usluga (uključujući usluge nakon prodaje i jamstva),</li>
-<li class="ql-align-justify">konačnu cijenu robe ili usluga, uključujući poreze, ili način izračuna cijene ako se zbog prirode robe ili usluge konačna cijena ne može izračunati unaprijed,</li>
-<li class="ql-align-justify">dostupnost proizvoda (svi proizvodi ili usluge ponuđeni na web-mjestu trebali bi biti dostupni u razumnom roku),</li>
-<li class="ql-align-justify">uvjete plaćanja, uvjete isporuke proizvoda ili uvjete za izvršenje usluge (način dostave, lokacija i rok),</li>
-<li class="ql-align-justify">informacije o svim potencijalnim troškovima prijevoza, dostave ili slanja, ili upozorenje da takvi troškovi mogu nastati ako se ne mogu izračunati unaprijed,</li>
+<li class="ql-align-justify">identitet εταιρείας (naziv i registrirana adresa εταιρείας, matični broj),</li>
+<li class="ql-align-justify">podatke za kontakt koji χρήστηςu omogućuju brzu i učinkovitu komunikaciju s pružateljem (e-pošta, automatska sekretarica),</li>
+<li class="ql-align-justify">bitne karakteristike robe ili usluga (uključujući usluge nakon prodaje i εγγύησης),</li>
+<li class="ql-align-justify">konačnu τιμή robe ili usluga, uključujući poreze, ili način izτιμολόγιοa τιμές ako se zbog prirode robe ili usluge konačna τιμή ne μπορεί izτιμολόγιοati unaprijed,</li>
+<li class="ql-align-justify">dostupnost προϊόνa (svi προϊόνi ili usluge ponuđeni na web-mjestu trebali bi biti dostupni u razumnom roku),</li>
+<li class="ql-align-justify">όρους πληρωμής, όρους παράδοσηe προϊόνa ili όρους za izvršenje usluge (način αποστολής, lokacija i rok),</li>
+<li class="ql-align-justify">informacije o svim potencijalnim troškovima prijevoza, αποστολής ili slanja, ili upozorenje da takvi troškovi mogu nastati ako se ne mogu izτιμολόγιοati unaprijed,</li>
 <li class="ql-align-justify">vremenski rok ponude,</li>
-<li class="ql-align-justify">uvjete, rokove i postupke u slučaju odustajanja od Ugovora i podatke o troškovima povrata robe (ako postoje),</li>
-<li class="ql-align-justify">objašnjenje postupka koji treba poduzeti u slučaju reklamacije, uključujući sve podatke o kontaktnoj osobi ili korisničkoj službi,</li>
+<li class="ql-align-justify">όρους, rokove i postupke u slučaju υπαναχώρησηa od Ugovora i podatke o troškovima επιστροφήa robe (ako postoje),</li>
+<li class="ql-align-justify">objašnjenje postupka koji treba poduzeti u slučaju παράποναe, uključujući sve podatke o kontaktnoj osobi ili korisničkoj službi,</li>
 <li class="ql-align-justify">svijest o odgovornosti u slučaju materijalnih nedostataka,</li>
-<li class="ql-align-justify">mogućnost i uvjete usluga nakon prodaje i dobrovoljnog jamstva, ako je potrebno.</li>
-<li class="ql-align-justify">Pri pripremi web-mjesta može doći do određenih pogrešaka. Budući da ne možemo utjecati na te pogreške, ne snosimo odgovornost za njih. U slučaju većih odstupanja u pogledu cijena ili tehničkih svojstava proizvoda, obavijestit ćemo vas o tome kada izvršite narudžbu.</li>
+<li class="ql-align-justify">mogućnost i όρους usluga nakon prodaje i dobrovoljnog εγγύησης, ako je potrebno.</li>
+<li class="ql-align-justify">Pri pripremi ιστότοπου μπορεί doći do ορισμένih pogrešaka. Budući da ne μπορείmo utjecati na te pogreške, ne snosimo odgovornost za njih. U slučaju većih odstupanja u pogledu τιμή ili tehničkih svojstava προϊόνa, ειδοποίησηit ćemo vas o tome kada εκτελέσειte παραγγελία.</li>
 </ul>
 <h3 class="ql-align-justify"><strong>ix. Podaci o registraciji, naziv registra, registarski broj:</strong></h3>
-<p class="ql-align-justify">Naziv tvrtke: HS PLUS, trgovina in storitve d.o.o.</p>
+<p class="ql-align-justify">Naziv εταιρείας: HS PLUS, κατάστημαa in storitve d.o.o.</p>
 <p class="ql-align-justify">Sjedište: Gmajna 8, Trzin, SI-1236 Trzin</p>
-<p class="ql-align-justify">Matični broj tvrtke: 6579639000</p>
+<p class="ql-align-justify">Αριθμός μητρώου εταιρείας: 6579639000</p>
 <p class="ql-align-justify">PDV ID: SI15553442</p>
 <p class="ql-align-justify">Porezni obveznik: DA</p>
 <p class="ql-align-justify">Datum upisa u registar: 28/03/2014</p>
 <p class="ql-align-justify">Standardna klasifikacija djelatnosti G47.910 – Trgovina na malo preko pošte ili interneta</p>
 <h3 class="ql-align-justify"><strong>x. Izvansudsko rješavanje sporova i drugi pravni lijekovi</strong></h3>
-<p class="ql-align-justify">Tvrtka se trudi sve sporove riješiti na sporazuman način. Ako takvo rješavanje sporova nije moguće, sud u Ljubljani bit će nadležan za rješavanje navedenih sporova.</p>
+<p class="ql-align-justify">Εταιρεία se trudi sve sporove riješiti na sporazuman način. Ako takvo rješavanje sporova nije moguće, sud u Ljubljani bit će nadležan za rješavanje navedenih sporova.</p>
 <h3 class="ql-align-justify"><strong>xi. Platforma za rješavanje sporova</strong></h3>
-<p class="ql-align-justify">U skladu s pravnim standardima, tvrtka HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja potrošačkih sporova kao pružatelja koji je ovlašten rješavati potrošačke sporove koje potrošači mogu pokrenuti na temelju izvansudske nagodbe Zakona o potrošačkim sporovima.</p>
+<p class="ql-align-justify">U skladu s pravnim standardima, εταιρεία HS plus d.o.o. ne priznaje nijednog pružatelja usluga izvansudskog rješavanja καταναλωτήςkih sporova kao pružatelja koji je ovlašten rješavati καταναλωτήςke sporove koje καταναλωτήςi mogu pokrenuti na temelju izvansudske nagodbe Zakona o καταναλωτήςkim sporovima.</p>
 <p class="ql-align-justify">Platforma za rješavanje sporova dostupna je na stranici&nbsp;<a href="https://ec.europa.eu/consumers/odr/">http://ec.europa.eu/consumers/odr/</a>.</p>
-<p class="ql-align-justify">Περισσότερες πληροφορίες o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/gr/MEMO_13_193">ec.europa.eu</a>.</p>
+<p class="ql-align-justify">Više informacija o platformi za rješavanje sporova potražite na <a href="https://ec.europa.eu/commission/presscorner/detail/hr/MEMO_13_193">ec.europa.eu</a>.</p>
 <p class="ql-align-justify">
 <h2 class="ql-align-justify"><strong>3. KOMUNIKACIJA</strong></h2>
-<p class="ql-align-justify">Tvrtka će se obratiti korisniku samo s pomoću daljinske komunikacije ako je to potrebno za izvršavanje narudžbe.</p>
-<p class="ql-align-justify">Tvrtka pruža usluge podrške svojim korisnicima na <a href="/cdn-cgi/l/email-protection#e38a8d858ca3958a848c908b8c93cd8b91"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7d1cec0c8d4cfc8d789cfd5">[email&#160;protected]</span></a>.</p>
-<p class="ql-align-justify">Međutim, korisnicima se možemo obratiti i u komercijalne svrhe ako nam za to daju svoju privolu ili ako su već obavili kupnju u našoj internetskoj trgovini, pri čemu će navedena komunikacija:</p>
+<p class="ql-align-justify">Εταιρεία će se obratiti χρήστηςu samo s pomoću daljinske komunikacije ako je to potrebno za εκτέλεσηe παραγγελίας.</p>
+<p class="ql-align-justify">Εταιρεία pruža usluge podrške svojim korisnicima na <a href="/cdn-cgi/l/email-protection#e38a8d858ca3958a848c908b8c93cd8b91"><span class="__cf_email__" data-cfemail="a7cec9c1c8e7d1cec0c8d4cfc8d789cfd5">[email&#160;protected]</span></a>.</p>
+<p class="ql-align-justify">Međutim, korisnicima se μπορείmo obratiti i u komercijalne svrhe ako nam za to daju svoju privolu ili ako su već obavili αγορά u μας ηλεκτρονικoj κατάστημαi, pri čemu će navedena komunikacija:</p>
 <ul>
 <li class="ql-align-justify">biti jasno i nedvosmisleno označena kao reklamna poruka,</li>
 <li class="ql-align-justify">jasno prikazivati pošiljatelja,</li>
 <li class="ql-align-justify">jasno označiti razne promocije i druge tehnike marketinga kao takve.</li>
 </ul>
-<p class="ql-align-justify">Περισσότερες πληροφορίες u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o kolačićima.</p>
+<p class="ql-align-justify">Više informacija u vezi s komunikacijom potražite u našim Pravilima o zaštiti privatnosti i Pravilima o cookieima.</p>
 <h2 class="ql-align-justify"><strong>4. INTELEKTUALNO VLASNIŠTVO</strong></h2>
-<p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na našem web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
-<p class="ql-align-justify">Kupnjom proizvoda ili upotrebom web-mjesta, korisnik neće steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za proizvode i/ili web-mjesto. Korisnik može upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
+<p class="ql-align-justify">Svi podaci, slike i tekstovi, kao i bilo koji drugi materijali (npr. video sadržaji, grafikoni, skice itd.) na μαςm web-mjestu zaštićeni su autorskim pravima i/ili zakonom o intelektualnom vlasništvu.</p>
+<p class="ql-align-justify">Kupnjom προϊόνa ili upotrebom ιστότοπου, χρήστης δεν θα steći autorska prava, imovinska prava ili prava intelektualnog vlasništva za προϊόνe i/ili ιστότοπο. Χρήστης μπορεί upotrebljavati materijale samo u svoje nekomercijalne svrhe.</p>
 <h2 class="ql-align-justify"><strong>5. IZJAVA O ODRICANJU ODGOVORNOSTI</strong></h2>
-<p class="ql-align-justify">Imajući na umu izjave o odricanju odgovornosti navedene u ovim Općim uvjetima poslovanja, tvrtka pruža sljedeća ograničenja:</p>
-<p class="ql-align-justify">Ako odlučite upotrebljavati našu internetsku trgovinu i/ili naše web-mjesto, pristajete na to dobrovoljno i stoga preuzimate sve rizike. Web-mjesto i trgovina pružaju se „takvi kakvi jesu”, bez ikakvih neizravnih ili izravnih jamstava. Sve izjave o odricanju odgovornosti navedene u ovom poglavlju ili na drugim mjestima u ovim Općim uvjetima poslovanja vrijede u najvećoj mjeri dopuštenoj zakonom.</p>
-<p class="ql-align-justify">Tvrtka ne jamči rad web-mjesta i njegovih funkcija te ne jamči da će web-mjesto raditi bez pogrešaka, virusa ili zlonamjernog softvera sličnog virusu. Uz to, tvrtka ne jamči da su podaci objavljeni na web-mjestu točni i sveobuhvatni. Tvrtka neće biti odgovorna za bilo kakvu štetu, uključujući, ali ne ograničavajući se na: izravnu, neizravnu ili posljedičnu štetu koja nastane ili se pojavi uslijed upotrebe web-mjesta.&nbsp;</p>
-<p class="ql-align-justify">Ako se odlučite za upotrebu internetske trgovine i izvršite plaćanje u našoj internetskoj trgovini, izričito se slažete da je upotrebljavate na vlastitu odgovornost i da ćete sami snositi sve rizike koji se odnose na plaćanje u našoj internetskoj trgovini, uključujući, ali ne ograničavajući se na neuspjela plaćanja od strane korisnika, pogreške u plaćanju i pogreške povrata u slučaju reklamacije. Ova se izjava o odricanju odgovornosti primjenjuje u najvećoj mjeri dopuštenoj zakonom. Tvrtka neće biti odgovorna za bilo kakvu štetu koja bi mogla nastati u vezi s upotrebom web-mjesta i/ili proizvoda dostupnih u našoj internetskoj trgovini.</p>
+<p class="ql-align-justify">Imajući na umu izjave o odricanju odgovornosti navedene u ovim Γενικοίς Όρους συναλλαγών, εταιρεία pruža επόμενa ograničenja:</p>
+<p class="ql-align-justify">Ako odlučite upotrebljavati μας ηλεκτρονικu κατάστημαu i/ili μας ιστότοπο, pristajete na to dobrovoljno i stoga preuzimate sve rizike. Ιστότοπος i κατάστημαa pružaju se „takvi kakvi jesu”, bez ikakvih neizravnih ili izravnih jamstava. Sve izjave o odricanju odgovornosti navedene u ovom poglavlju ili na drugim mjestima u ovim Γενικοίς Όρους συναλλαγών vrijede u najvećoj mjeri dopuštenoj zakonom.</p>
+<p class="ql-align-justify">Εταιρεία ne jamči rad ιστότοπου i njegovih funkcija te ne jamči da će ιστότοπο raditi bez pogrešaka, virusa ili zlonamjernog softvera sličnog virusu. Uz to, εταιρεία ne jamči da su podaci objavljeni na web-mjestu točni i sveobuhvatni. Εταιρεία δεν θα biti odgovorna za bilo kakvu štetu, uključujući, ali ne ograničavajući se na: izravnu, neizravnu ili posljedičnu štetu koja nastane ili se pojavi uslijed upotrebe ιστότοπου.&nbsp;</p>
+<p class="ql-align-justify">Ako se odlučite za upotrebu ηλεκτρονικe κατάστημαe i εκτελέσειte πληρωμή u μας ηλεκτρονικoj κατάστημαi, izričito se slažete da je upotrebljavate na vlastitu odgovornost i da ćete sami snositi sve rizike koji se odnose na πληρωμή u μας ηλεκτρονικoj κατάστημαi, uključujući, ali ne ograničavajući se na neuspjela πληρωμής od strane χρήστηςa, pogreške u plaćanju i pogreške επιστροφήa u slučaju παράποναe. Ova se izjava o odricanju odgovornosti primjenjuje u najvećoj mjeri dopuštenoj zakonom. Εταιρεία δεν θα biti odgovorna za bilo kakvu štetu koja bi mogla nastati u vezi s upotrebom ιστότοπου i/ili προϊόνa dostupnih u μας ηλεκτρονικoj κατάστημαi.</p>
 <h2 class="ql-align-justify"><strong>6. ZAVRŠNE ODREDBE</strong></h2>
-<p class="ql-align-justify"><strong>Sklapanje ugovora</strong>&nbsp;Zajedno s naručivanjem usluga na web-mjestu, kao i na svim podstranicama ovog web-mjesta, ovi Opći uvjeti poslovanja imaju karakter ugovora sklopljenog između kupca i tvrtke.</p>
-<p class="ql-align-justify"><strong>Odvojivost odredbi</strong>&nbsp;Ako se bilo koja od odredbi ovih Općih uvjeta poslovanja pokaže (u cijelosti ili djelomično) nezakonitom ili ništavnom na bilo koji drugi način, navedena će se odredba smatrati (u cijelosti ili djelomično) izbrisanom, dok se preostali Opći uvjeti poslovanja i dalje primjenjuju.</p>
-<p class="ql-align-justify"><strong>Puna pravna sposobnost</strong>&nbsp;Korisnik jamči da ima potpunu sposobnost za preuzimanje prava i obveza koje proizlaze iz ovih Općih uvjeta poslovanja. Time jamčite da vam nije potreban pristanak ili odobrenje bilo koje treće strane da biste ispunili svoje obveze koje proizlaze iz ovih Općih uvjeta poslovanja.</p>
-<p class="ql-align-justify"><strong>Poznavanje Općih uvjeta poslovanja</strong>&nbsp;Ovime jamčite da ste pročitali i da ste u potpunosti upoznati s ovim Općim uvjetima poslovanja prije nego što ih prihvatite, osobito kada je riječ o utvrđenim izjavama o odricanju odgovornosti.</p>
-<p class="ql-align-justify"><strong>Zakon koji se primjenjuje na ove Opće uvjete poslovanja</strong>&nbsp;Na ove se Opće uvjete poslovanja primjenjuje zakonodavstvo Republike Slovenije. Svi sporovi koji proizlaze iz ovih Općih uvjeta poslovanja u nadležnosti su sudova u Republici Sloveniji.</p>
-<p class="ql-align-justify"><strong>Izmjene ovih Općih uvjeta poslovanja</strong>&nbsp;Nemate pravo mijenjati bilo koju odredbu navedenu u ovim Općim uvjetima poslovanja ili se odricati (u cijelosti ili djelomično) valjanosti bilo koje od navedenih odredbi. Tvrtka ima pravo izmijeniti ove Opće uvjete poslovanja u bilo kojem trenutku. Sve izmjene bit će objavljene na web-mjestu. Ako i dalje upotrebljavate web-mjesto, smatrat će se da se slažete s izmjenama na snazi u relevantno vrijeme. Ako se ne slažete s izmjenama, imate pravo odustati od Ugovora.</p>
-<p class="ql-align-justify"><strong>Cjelokupnost ugovora</strong>&nbsp;Ovi Opći uvjeti poslovanja predstavljaju cjelokupnost sporazuma koji se primjenjuje između ugovornih strana. Svi potencijalni prethodni pisani ili usmeni sporazumi ili pregovori bit će u potpunosti zamijenjeni ovim Općim uvjetima poslovanja.</p>
-<p class="ql-align-justify"><strong>Jezične verzije&nbsp;</strong>Ovi su Opći uvjeti poslovanja bili izrađeni na slovenskom jeziku. Svaka izmjena ovih Općih uvjeta poslovanja na bilo kojem drugom jeziku pripremljena je kako bi se omogućio lakši pristup Općim uvjetima poslovanja. Ovim se slažete i u potpunosti razumijete da će slovenska verzija imati prednost u slučaju bilo kakvih sporova.</p>
-<p class="ql-align-justify"><strong>Značenje pojmova</strong>&nbsp;Definicije pojmova upotrebljavanih u ovim Općim uvjetima poslovanja navedene su na početku ovih Općih uvjeta poslovanja.</p>
+<p class="ql-align-justify"><strong>Sklapanje σύμβασηa</strong>&nbsp;Zajedno s naručivanjem usluga na web-mjestu, kao i na svim podstranicama ovog ιστότοπου, ovi Γενικοί Όροι συναλλαγών imaju karakter σύμβασηa συνάπτεταιog μεταξύ αγοραστή i εταιρείας.</p>
+<p class="ql-align-justify"><strong>Odvojivost odredbi</strong>&nbsp;Ako se bilo koja od odredbi ovih Općih όρων συναλλαγών pokaže (u cijelosti ili djelomično) nezakonitom ili ništavnom na bilo koji drugi način, navedena će se odredba smatrati (u cijelosti ili djelomično) izbrisanom, dok se preostali Γενικοί Όροι συναλλαγών i dalje primjenjuju.</p>
+<p class="ql-align-justify"><strong>Puna pravna sposobnost</strong>&nbsp;Χρήστης jamči da ima potpunu sposobnost za preuzimanje prava i υποχρέωση koje proizlaze iz ovih Općih όρων συναλλαγών. Time jamčite da vam nije potreban pristanak ili odobrenje bilo koje treće strane da biste ispunili svoje obveze koje proizlaze iz ovih Općih όρων συναλλαγών.</p>
+<p class="ql-align-justify"><strong>Poznavanje Općih όρων συναλλαγών</strong>&nbsp;Ovime jamčite da ste pročitali i da ste u potpunosti upoznati s ovim Γενικοίς Όρους συναλλαγών prije nego što ih prihvatite, osobito kada je riječ o utvrđenim izjavama o odricanju odgovornosti.</p>
+<p class="ql-align-justify"><strong>Zakon koji se primjenjuje na ove Γενικούς Όρους συναλλαγών</strong>&nbsp;Na ove se Γενικούς Όρους συναλλαγών primjenjuje zakonodavstvo Republike Slovenije. Svi sporovi koji proizlaze iz ovih Općih όρων συναλλαγών u nadležnosti su sudova u Republici Sloveniji.</p>
+<p class="ql-align-justify"><strong>Izmjene ovih Općih όρων συναλλαγών</strong>&nbsp;Nemate pravo mijenjati bilo koju odredbu navedenu u ovim Γενικοίς Όρους συναλλαγών ili se odricati (u cijelosti ili djelomično) valjanosti bilo koje od navedenih odredbi. Εταιρεία ima pravo izmijeniti ove Γενικούς Όρους συναλλαγών u bilo kojem στιγμή. Sve izmjene bit će objavljene na web-mjestu. Ako i dalje upotrebljavate ιστότοπο, smatrat će se da se slažete s izmjenama na snazi u relevantno vrijeme. Ako se ne slažete s izmjenama, imate pravo odustati od Ugovora.</p>
+<p class="ql-align-justify"><strong>Cjelokupnost σύμβασηa</strong>&nbsp;Ovi Γενικοί Όροι συναλλαγών predstavljaju cjelokupnost sporazuma koji se primjenjuje μεταξύ σύμβασηnih strana. Svi potencijalni prethodni pisani ili usmeni sporazumi ili pregovori bit će u potpunosti zamijenjeni ovim Γενικοίς Όρους συναλλαγών.</p>
+<p class="ql-align-justify"><strong>Γλωσσικές εκδόσεις&nbsp;</strong>Ovi su Γενικοί Όροι συναλλαγών bili izrađeni na slovenskom jeziku. Svaka izmjena ovih Općih όρων συναλλαγών na bilo kojem drugom jeziku pripremljena je kako bi se omogućio lakši pristup Γενικοίς Όρους συναλλαγών. Ovim se slažete i u potpunosti razumijete da će slovenska verzija imati prednost u slučaju bilo kakvih sporova.</p>
+<p class="ql-align-justify"><strong>Ερμηνεία όρων</strong>&nbsp;Definicije pojmova upotrebljavanih u ovim Γενικοίς Όρους συναλλαγών navedene su na početku ovih Općih όρων συναλλαγών.</p>
 <p class="ql-align-justify"><strong>HS PLUS&nbsp;d.o.o.&nbsp;&nbsp;</strong>Gmajna 8&nbsp;/&nbsp;SI-1236 Trzin&nbsp;/&nbsp;Slovenija&nbsp;/&nbsp;&nbsp;<a href="/cdn-cgi/l/email-protection#d6bfb8b0b996a0bfb1b9a5beb9a6f8bea4"><span class="__cf_email__" data-cfemail="355c5b535a75435c525a465d5a451b5d47">[email&#160;protected]</span></a></p>
-<p class="ql-align-justify">Tijelo za registraciju: Okružni sud u Ljubljani&nbsp;/&nbsp;Temeljni kapital: 7 500 EUR&nbsp;/&nbsp;IBAN SI56 2900&nbsp;0005&nbsp;2694&nbsp;428&nbsp;/&nbsp;PDV ID: 15553442&nbsp;/&nbsp;Matični broj tvrtke: 6579639000</p>
+<p class="ql-align-justify">Tijelo za registraciju: Okružni sud u Ljubljani&nbsp;/&nbsp;Temeljni kapital: 7 500 EUR&nbsp;/&nbsp;IBAN SI56 2900&nbsp;0005&nbsp;2694&nbsp;428&nbsp;/&nbsp;PDV ID: 15553442&nbsp;/&nbsp;Αριθμός μητρώου εταιρείας: 6579639000</p>
 </div>
                 </span>
                 <img decoding="async" id="close_ab_optin" src="https://images.vigo-shop.com/general/remove.png">
@@ -986,7 +986,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
         <div class="partial_inner_section">
             <img src="https://images.vigo-shop.com/general/banner_icons/delivery_icon.svg" alt="">
             <div class="text_wrapper">
-                Αποστολή: ΕΛΤΑ Courier            </div>
+                Dostavlja: ΕΛΤΑ Courier            </div>
         </div>
 
                     <div class="partial_inner_section">
@@ -1008,32 +1008,32 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <div class="footer-main__links">
                         <ul>
                                                             <li>
-                                    <a href="https://vigoshop.hr/opci-uvjeti-poslovanja/"
-                                       class="button button--link c--gray">Opći uvjeti poslovanja</a>
+                                    <a href="https://vigoshop.gr/opci-όροι-συναλλαγών/"
+                                       class="button button--link c--gray">Γενικοί Όροι Συναλλαγών</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/pravila-o-zastiti-privatnosti/"
-                                       class="button button--link c--gray">Pravila o zaštiti privatnosti</a>
+                                    <a href="https://vigoshop.gr/pravila-o-zastiti-privatnosti/"
+                                       class="button button--link c--gray">Πολιτική Απορρήτου</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/pravila-o-kolacicima/"
-                                       class="button button--link c--gray">Pravila o kolačićima</a>
+                                    <a href="https://vigoshop.gr/pravila-o-kolacicima/"
+                                       class="button button--link c--gray">Πολιτική Cookies</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/pravo-na-odustajanje-od-kupnje/"
+                                    <a href="https://vigoshop.gr/pravo-na-υπαναχώρησηe-od-αγοράς/"
                                        class="button button--link c--gray">Δικαίωμα υπαναχώρησης από αγορά</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/prituzbe-i-sporovi/"
+                                    <a href="https://vigoshop.gr/prituzbe-i-sporovi/"
                                        class="button button--link c--gray">Παράπονα και διαφορές</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/zamjena-u-jamstvu/"
+                                    <a href="https://vigoshop.gr/zamjena-u-jamstvu/"
                                        class="button button--link c--gray">Αντικατάσταση εντός εγγύησης</a>
                                 </li>
                                                             <li>
-                                    <a href="https://vigoshop.hr/informacije-o-tvrtki/"
-                                       class="button button--link c--gray">Informacije o tvrtki</a>
+                                    <a href="https://vigoshop.gr/informacije-o-εταιρεία/"
+                                       class="button button--link c--gray">Informacije o εταιρεία</a>
                                 </li>
                                                             <li>
                                     <a href="https://manuals.hs-plus.com/hr?brand=vigoshop"
@@ -1047,7 +1047,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="button button--link" id="scroll-to-top">
                         <div class="flex flex--autosize flex--middle flex--center">
                             <div class="flex__item back-top-icon"><svg viewBox="0 0 17 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M15.8654 2.30769H1.05769C0.473758 2.30769 0 1.79119 0 1.15409C0 0.516985 0.473758 0 1.05769 0H15.8654C16.4515 0 16.9231 0.516504 16.9231 1.15361C16.9231 1.79071 16.4493 2.30769 15.8654 2.30769ZM7.36833 8.30031L3.42706 12.3225C3.01302 12.7461 2.32115 12.7636 1.88252 12.3662C1.44298 11.9687 1.42157 11.3049 1.83561 10.8813L7.66581 4.93316C8.07847 4.50946 8.8445 4.50946 9.25726 4.93316L15.0874 10.8813C15.5014 11.3036 15.4803 11.968 15.0405 12.3644C14.8296 12.5557 14.5606 12.65 14.2916 12.65C14.0001 12.65 13.7132 12.5408 13.4959 12.3203L9.55464 8.30031V18.9501C9.55464 19.5297 9.06272 20 8.46149 20C7.86025 20 7.36833 19.5283 7.36833 18.9475V8.30031Z" /></svg></div>
-                            <div class="flex__item f--m c--lightgray scroll-to-top-text">Επιστροφή στην κορυφή</div>
+                            <div class="flex__item f--m c--lightgray scroll-to-top-text">Natrag na vrh</div>
                         </div>
                     </a>
                 </div>
@@ -1064,10 +1064,10 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
             <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd" d="M10.9107 7.38848H11.6071C12.3761 7.38848 13 8.04356 13 8.85098V14.701C13 15.5084 12.3761 16.1635 11.6071 16.1635H1.39286C0.623884 16.1635 0 15.5084 0 14.701V8.85098C0 8.04356 0.623884 7.38848 1.39286 7.38848H2.08929V5.19473C2.08929 2.64145 4.0683 0.563477 6.5 0.563477C8.9317 0.563477 10.9107 2.64145 10.9107 5.19473V7.38848ZM4.41071 5.19473V7.38848H8.58928V5.19473C8.58928 3.98512 7.65201 3.00098 6.5 3.00098C5.34799 3.00098 4.41071 3.98512 4.41071 5.19473Z" fill="white"/>
             </svg></div>
                             <div
-                                class="flex__item f--bold c--gray">100% ασφαλής αγορά</div>
+                                class="flex__item f--bold c--gray">100% sigurna kupnja</div>
                         </div>
                         <div
-                            class="f--s c--gray">εξασφαλισμένη με κρυπτογράφηση 256-bit</div>
+                            class="f--s c--gray">osigurano 256-bitnim šifriranjem</div>
                     </div>
                 </div>
             </div>
@@ -1075,7 +1075,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <a class="button button--link" id="scroll-to-top">
                     <div class="flex flex--autosize flex--middle">
                         <div class="flex__item"><svg viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8654 2.30769H1.05769C0.473758 2.30769 0 1.79119 0 1.15409C0 0.516985 0.473758 0 1.05769 0H15.8654C16.4515 0 16.9231 0.516504 16.9231 1.15361C16.9231 1.79071 16.4493 2.30769 15.8654 2.30769ZM7.36833 8.30031L3.42706 12.3225C3.01302 12.7461 2.32115 12.7636 1.88252 12.3662C1.44298 11.9687 1.42157 11.3049 1.83561 10.8813L7.66581 4.93316C8.07847 4.50946 8.8445 4.50946 9.25726 4.93316L15.0874 10.8813C15.5014 11.3036 15.4803 11.968 15.0405 12.3644C14.8296 12.5557 14.5606 12.65 14.2916 12.65C14.0001 12.65 13.7132 12.5408 13.4959 12.3203L9.55464 8.30031V18.9501C9.55464 19.5297 9.06272 20 8.46149 20C7.86025 20 7.36833 19.5283 7.36833 18.9475V8.30031Z" fill="#99A0A7"/></svg></div>
-                        <div class="flex__item f--m c--lightgray">Επιστροφή στην κορυφή</div>
+                        <div class="flex__item f--m c--lightgray">Natrag na vrh</div>
                     </div>
                 </a>
             </div>
@@ -1103,7 +1103,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </div>
     <div class="footer-copyright bg--primary-dark c--white">
         <div class="footer-copyright__content">
-            <div class="t--center f--s c--gray">Copyright © 2018 - 2026 -  internetska trgovina Vigoshop (HS plus d.o.o)</div>
+            <div class="t--center f--s c--gray">Copyright © 2018 - 2026 -  ηλεκτρονικa κατάστημαa Vigoshop (HS plus d.o.o)</div>
         </div>
     </div>
 </footer>
@@ -1119,19 +1119,19 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                 <img id="close_terms_conditions" src="https://images.vigo-shop.com/general/remove.png" alt="Close">
             </div>
             <div class='mobile-notice-modal__head s-all--s'>
-                <div class="f--l f--bold c--darkgray">Χρειάζεστε βοήθεια με την αγορά;</div>
-                <div class="f--s c--gray">Είμαστε διαθέσιμοι κάθε εργάσιμη ημέρα από <strong>07:00 - 19:00</strong>, και τα Σαββατοκύριακα από <strong>08:00 - 18:00.</strong></div>
+                <div class="f--l f--bold c--darkgray">Trebate li pomoć pri kupnji?</div>
+                <div class="f--s c--gray">Za Vas smo dostupni svaki radni dan od <strong>07:00 - 19:00</strong>, a vikendom od <strong>08:00 - 18:00.</strong></div>
             </div>
                 <div class="mobile-notice-modal__body">
             <div class="flex flex--vertical">
                
                                                     <div class="border border--top border--light"></div>
                     <a class="  flex__item t--no-decoration c--text s-all--s"
-                       href="https://api.whatsapp.com/send?phone=+386 64 109 783&text=Pozdrav,%20zanimam%20se%20za%20kupovinu%20proizvoda: (vigoshop)">
+                       href="https://api.whatsapp.com/send?phone=+386 64 109 783&text=Pozdrav,%20zanimam%20se%20za%20kupovinu%20προϊόνa: (vigoshop)">
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><defs><linearGradient id="ge5urdfv4a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#66ff74"/><stop offset="1" stop-color="#00b822"/></linearGradient><clipPath id="1s5y4t255b"><path data-name="Rectangle 3641" style="fill:none" d="M0 0h17.171v17.296H0z"/></clipPath></defs><path data-name="Path 11937" d="M4 0h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4a4 4 0 0 1 4-4z" style="fill:#00b822"/><g data-name="Group 10478"><g data-name="Group 10477" style="clip-path:url(#1s5y4t255b)" transform="translate(3.415 3)"><path data-name="Path 11934" d="M8.594 1.484a7.093 7.093 0 1 1-3.846 13.052.142.142 0 0 0-.114-.018l-1.128.3L2.1 15.2l.377-1.406.29-1.084a.142.142 0 0 0-.021-.118 7.091 7.091 0 0 1 5.848-11.1m0-1.492a8.577 8.577 0 0 0-7.443 12.84.142.142 0 0 1 .014.108l-.123.459-.377 1.406L0 17.3l2.483-.665 1.406-.377.526-.141a.142.142 0 0 1 .1.013A8.577 8.577 0 1 0 8.594 0" style="fill:#fff"/><path data-name="Path 11935" d="M52.9 55.99a1.835 1.835 0 0 1 .8-.027.4.4 0 0 1 .293.226c.324.688.431.961.663 1.486a.986.986 0 0 1-.233 1.118 12.15 12.15 0 0 0-.333.316c-.168.179.9 2.308 3.106 2.9a.276.276 0 0 0 .284-.092c.223-.271.438-.554.659-.828a.4.4 0 0 1 .459-.118c.732.286.942.448 1.675.734a.378.378 0 0 1 .284.386 1.781 1.781 0 0 1-1.2 1.845 2.723 2.723 0 0 1-.462.076c-2.867.179-6.64-2.839-7.028-5.7A2.291 2.291 0 0 1 52.9 55.99" transform="translate(-47.575 -51.327)" style="fill:#fff"/></g></g></svg></div>
                             <div
-                                class="flex__item desktop_contact desktop_whatsapp_contact">Στείλτε μας μήνυμα στο Whatsapp</div>
+                                class="flex__item desktop_contact desktop_whatsapp_contact">Pošaljite nam Whatsapp poruku</div>
                             <div class="flex__item mobile_contact mobile_whatsapp_contact">
                                 <strong>Whatsapp</strong></div>
                         </div>
@@ -1140,7 +1140,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
                     <a class="  flex__item t--no-decoration c--text s-all--s" href="tel:+385-1-3300-004">
                         <div class="flex flex--autosize flex--gaps">
                             <div class="flex__item"><svg viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg"><path d="M18.298 13.0304L14.2715 11.3042C13.7973 11.0989 13.241 11.2374 12.9189 11.6374L11.2827 13.6346C8.71287 12.3729 6.62544 10.2833 5.36371 7.71585L7.36059 6.08161C7.75952 5.75577 7.89534 5.20253 7.69361 4.72829L5.96763 0.702075C5.74148 0.185903 5.18461 -0.0964881 4.63947 0.03005L0.8988 0.89281C0.369985 1.01341 0 1.47911 0 2.02312C0 11.3855 7.61494 19 16.9777 19C17.5221 19 17.9864 18.6301 18.1077 18.1012L18.9705 14.3608C19.0955 13.8171 18.8139 13.2531 18.298 13.0304Z"/></svg></div>
-                            <div class="flex__item desktop_contact desktop_phone_contact">Για παραγγελίες καλέστε: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
+                            <div class="flex__item desktop_contact desktop_phone_contact">Za naručivanje nazovite: <span class="phone-padding-top"><strong>01 3300 004</strong></span></div>
                             <div class="flex__item mobile_contact mobile_phone_contact">
                                 <strong>01 3300 004</strong></div>
                         </div>
@@ -1168,7 +1168,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 <!--    -->    </div>
 </div>
     </div>
-        <link rel='stylesheet' id='check-client-css' href='https://vigoshop.hr/app/plugins/core/resources/dist/css/check-client/css/check-client-8571deb0ef.css' type='text/css' media='all' />
+        <link rel='stylesheet' id='check-client-css' href='https://vigoshop.gr/app/plugins/core/resources/dist/css/check-client/css/check-client-8571deb0ef.css' type='text/css' media='all' />
 </div>
 </body>
 </html>
