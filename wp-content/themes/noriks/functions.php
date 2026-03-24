@@ -90,8 +90,6 @@ if( $webshop_language == null  || $webshop_language == false  || $webshop_langua
 if ($webshop_language == "EN") {
   include(get_template_directory() . '/functions/lang/en.php');
 } else if ($webshop_language == "GR") {
-  include(get_template_directory() . '/functions/lang/hr.php');
-} else if ($webshop_language == "GR") {
   include(get_template_directory() . '/functions/lang/gr.php');
 }
 /*  include language specific files */
