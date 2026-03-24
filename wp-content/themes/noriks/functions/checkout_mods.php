@@ -329,6 +329,13 @@ add_action( 'wp_footer', function() {
       $(document.body).on('checkout_error', function(){
         $('#place_order').css('opacity','1').text('Παραγγελία');
         $('form.checkout').css({'opacity':'1','pointer-events':''});
+        /* Validate all fields after WC returns error */
+        $('.woocommerce-checkout .form-row.validate-required').each(function(){
+          var input = $(this).find('input, select, textarea').first();
+          if (input.length) validateField(input[0], true);
+        });
+        var first = $('.noriks-invalid:first');
+        if (first.length) $('html,body').animate({scrollTop: first.offset().top - 100}, 300);
       });
 
       function showError($row, msg) {
@@ -455,17 +462,17 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
     // Labels, placeholders, required
     $fields['billing']['billing_first_name']['label'] = 'Όνομα';
     $fields['billing']['billing_first_name']['placeholder'] = 'Όνομα';
-    $fields['billing']['billing_last_name']['label'] = 'Επώνυμο';
-    $fields['billing']['billing_last_name']['placeholder'] = 'Επώνυμο';
+    $fields['billing']['billing_last_name']['label'] = 'Επίθετο';
+    $fields['billing']['billing_last_name']['placeholder'] = 'Επίθετο';
     $fields['billing']['billing_address_1']['label'] = 'Οδός';
     $fields['billing']['billing_address_1']['placeholder'] = 'Οδός';
-    $fields['billing']['billing_address_2']['label'] = 'Αριθμός';
-    $fields['billing']['billing_address_2']['placeholder'] = 'Αριθμός';
+    $fields['billing']['billing_address_2']['label'] = 'ΑΡΙΘΜΌΣ';
+    $fields['billing']['billing_address_2']['placeholder'] = 'ΑΡΙΘΜΌΣ';
     $fields['billing']['billing_address_2']['required'] = true;
     $fields['billing']['billing_postcode']['label'] = 'Τ.Κ.';
     $fields['billing']['billing_postcode']['placeholder'] = 'Τ.Κ.';
-    $fields['billing']['billing_city']['label'] = 'Πόλη';
-    $fields['billing']['billing_city']['placeholder'] = 'Επιλέξτε πόλη';
+    $fields['billing']['billing_city']['label'] = 'ΠΟΛΗ';
+    $fields['billing']['billing_city']['placeholder'] = 'ΠΟΛΗ';
     $fields['billing']['billing_phone']['label'] = 'Τηλέφωνο';
     $fields['billing']['billing_phone']['placeholder'] = 'Αριθμός κινητού τηλεφώνου';
     $fields['billing']['billing_phone']['required'] = true;
@@ -503,7 +510,7 @@ add_filter( 'woocommerce_checkout_fields', function( $fields ) {
  */
 add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
     if ( $key === 'billing_last_name' ) {
-        $field .= '<div class="form-row form-row-wide col-xs-12">Εισαγάγετε τη διεύθυνση όπου θα βρίσκεστε <b>μεταξύ 8:00 και 16:00</b>.</div>';
+        $field .= '<div class="form-row form-row-wide col-xs-12">Εισαγάγετε τη διεύθυνση στην οποία θα βρίσκεστε <b>μεταξύ 9:00 και 18:00</b>.</div>';
     }
     return $field;
 }, 10, 2 );
@@ -514,7 +521,7 @@ add_filter( 'woocommerce_form_field_text', function( $field, $key ) {
  * Billing title
  */
 add_action( 'woocommerce_before_checkout_billing_form', function() {
-    echo '<h3 class="checkout-billing-title">Πληρωμή και Αποστολή</h3>';
+    echo '<h3 class="checkout-billing-title">Χρέωση & Αποστολή</h3>';
 });
 
 add_filter( 'default_checkout_billing_country', function() { return 'GR'; });
