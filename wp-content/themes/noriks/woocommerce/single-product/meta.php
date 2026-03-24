@@ -198,11 +198,11 @@ global $product;
 
 $is_singles_boxers = has_term( 'singles-boxers', 'product_cat', $current_product_id );
 
-$is_boxers = has_term( array( 'mpoxer','orto-bokserice', 'bokserice-sastavi-paket', 'bokserice', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi' ), 'product_cat', $current_product_id );
+$is_boxers = has_term( array( 'mpoxer','mpoxer-1-tem','orto-bokserice','mpoxer-paketo-3-tem','mpoxer-paketo-5-tem','mpoxer-paketo-7-tem','mpoxer-paketo-10-tem','mpoxer-paketo-15-tem' ), 'product_cat', $current_product_id ) && ! has_term( array( 'black-friday', 'majice-i-bokserice-paketi' ), 'product_cat', $current_product_id );
 
-$is_carape = has_term( array( 'kaltses', 'zimske-carape', 'kaltses', 'socks' ), 'product_cat', $current_product_id );
+$is_carape = has_term( array( 'kaltses','kaltses-lefko','kaltses-mavro' ), 'product_cat', $current_product_id );
 
-$is_mixed_bundle = has_term( array( 'set', 'sady', 'orto-starter', 'orto-majica-bokserica', 'set', 'seta', 'bundles', 'paketo-ekkinisis' ), 'product_cat', $current_product_id );
+$is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica','paketo-ekkinisis' ), 'product_cat', $current_product_id );
 
 ?>
 
