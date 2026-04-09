@@ -462,7 +462,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
     
     
      
-     <!-- 2 - slika tablica velicina 
+     <!-- 2 - slika tablica velicina  -->
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Πίνακας μεγεθών</h3>
@@ -473,7 +473,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
            <?php if( $is_boxers ): ?>
        
         
-            <img src="https://noriks.com/hr/wp-content/uploads/2026/02/boxers_size_gr.png">
+            <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
           
           
           
@@ -485,21 +485,21 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/hr/wp-content/uploads/2025/09/noriks_tablica_gr.jpg">
+     <img src="https://noriks.com/gr/wp-content/uploads/2026/04/gr_majice.jpeg">
         
-         <img src="https://noriks.com/hr/wp-content/uploads/2026/02/boxers_size_gr.png">
+         <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
           
           <?php else: ?>
       
       
-     <img src="https://noriks.com/hr/wp-content/uploads/2025/09/noriks_tablica_gr.jpg">
+     <img src="https://noriks.com/gr/wp-content/uploads/2026/04/gr_majice.jpeg">
         
         
             
         <?php endif; ?>
       </div>
     </div>
--->
+
 
     <!-- 3 - savjeti za pranje-->
     <div class="accordion-item">

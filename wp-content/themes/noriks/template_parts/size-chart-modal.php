@@ -150,7 +150,7 @@
     
     style="margin-top: 70px;margin-bottom: 70px;"
     
-      src="/gr/wp-content/uploads/2025/09/noriks_tablica_gr.jpg"
+      src="https://noriks.com/gr/wp-content/uploads/2026/04/gr_majice.jpeg"
       alt="Size Guide">
       
       <?php endif; ?>
