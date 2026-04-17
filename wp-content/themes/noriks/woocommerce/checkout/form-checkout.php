@@ -45,7 +45,14 @@ if ( WC()->cart->is_empty() ) return;
                   </div>
                   <div class="inner-wrapper-img">
                     <span class="shipping_method_delivery_price tag tag--red">
-                      <span class="woocommerce-Price-amount amount"><bdi>2,99<span class="woocommerce-Price-currencySymbol">&euro;</span></bdi></span>
+                      <?php
+                        $ship = (float) WC()->cart->get_shipping_total();
+                        if ( $ship > 0 ) {
+                          echo wc_price( $ship );
+                        } else {
+                          echo 'Δωρεάν';
+                        }
+                      ?>
                     </span>
                     <span class="delivery_img"><img decoding="async" class="elta_courier standard" src="https://images.vigo-shop.com/general/curriers/acs.png"/></span>
                   </div>
