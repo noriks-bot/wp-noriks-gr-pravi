@@ -105,7 +105,7 @@ add_action('init', function () {
 $webshop_language = get_field("webshop_language", "options");
 
 if( $webshop_language == null  || $webshop_language == false  || $webshop_language == "" ) {
-  $webshop_language = "GR";
+  $webshop_language = "EN";
 }
 
 /*  include language specific files */
@@ -113,10 +113,6 @@ if ($webshop_language == "EN") {
   include(get_template_directory() . '/functions/lang/en.php');
 } else if ($webshop_language == "GR") {
   include(get_template_directory() . '/functions/lang/gr.php');
-} else if ($webshop_language == "HR") {
-  include(get_template_directory() . '/functions/lang/hr.php');
-} else if ($webshop_language == "SI") {
-  include(get_template_directory() . '/functions/lang/si.php');
 }
 /*  include language specific files */
 
