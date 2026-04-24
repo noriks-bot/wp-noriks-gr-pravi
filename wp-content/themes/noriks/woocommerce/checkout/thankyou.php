@@ -53,7 +53,7 @@ if ( $upsell_is_majice ) {
 } else {
     $upsell_product_id = 2781; // Μαύρα Μποξεράκια
     $upsell_name       = 'Μαύρα Μποξεράκια';
-    $upsell_qty_prices = array( 1 => 7.99, 3 => 19.99, 5 => 29.99 );
+    $upsell_qty_prices = array( 1 => 4.99, 3 => 14.97, 5 => 24.95 );
     $upsell_qty_names  = array( 1 => '1x Μαύρα Μποξεράκια', 3 => '3x Μαύρα Μποξεράκια', 5 => '5x Μαύρα Μποξεράκια' );
     $upsell_qty_images = array(
         1 => 'https://noriks.com/hr/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
