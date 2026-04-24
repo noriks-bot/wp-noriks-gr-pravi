@@ -51,7 +51,7 @@ if ( $upsell_is_majice ) {
     );
     $upsell_title_text = 'Προσθέστε μπλουζάκια τώρα – 50% έκπτωση';
 } else {
-    $upsell_product_id = 2781; // Μαύρα Μποξεράκια
+    $upsell_product_id = 7029; // Μαύρα Μποξεράκια
     $upsell_name       = 'Μαύρα Μποξεράκια';
     $upsell_qty_prices = array( 1 => 4.99, 3 => 14.97, 5 => 24.95 );
     $upsell_qty_names  = array( 1 => '1x Μαύρα Μποξεράκια', 3 => '3x Μαύρα Μποξεράκια', 5 => '5x Μαύρα Μποξεράκια' );
