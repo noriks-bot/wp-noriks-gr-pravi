@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * T-shirt thumbnail images.
  */
 function gck_is_majica_image_swatch_product_gr( int $product_id ) : bool {
-    return ( $product_id === 3015 );
+    return false;
 }
 
 /**
@@ -562,7 +562,7 @@ function gck_render_bundle_selector() {
       .color-skoyro-mple,
       .color-%cf%83%ce%ba%ce%bf%cf%8d%cf%81%ce%bf-%ce%bc%cf%80%ce%bb%ce%b5,
       .color-%cf%83%ce%ba%ce%bf%cf%85%cf%81%ce%bf-%ce%bc%cf%80%ce%bb%ce%b5 {
-          background: #203240 !important;
+          background: #2a3262 !important;
       }
 
       .color-prasino,
@@ -585,7 +585,7 @@ function gck_render_bundle_selector() {
       .color-leuko       { background: #fff; border: 1px solid #ccc; }
       .color-gkri        { background: #706d78; }
       .color-mpez        { background: #e4e0cf; }
-      .color-skouro-mple { background: #203240; }
+      .color-skouro-mple { background: #2a3262; }
       .color-kafe        { background: #9f6f4e; }
       .color-prasino     { background: #65633c; }
       .color-mple        { background: #203240; }
