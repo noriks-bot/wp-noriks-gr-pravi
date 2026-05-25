@@ -485,14 +485,14 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
                   
     <?php elseif(  $is_mixed_bundle ): ?>
     
-     <img src="https://noriks.com/gr/wp-content/uploads/2026/04/gr_majice.jpeg">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
         
          <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
           
           <?php else: ?>
       
       
-     <img src="https://noriks.com/gr/wp-content/uploads/2026/04/gr_majice.jpeg">
+     <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
         
         
             
