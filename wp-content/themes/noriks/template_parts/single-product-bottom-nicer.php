@@ -1,5 +1,18 @@
 
 <?php
+/* Bunion / ortopas / fisiorest: dedicated why-sections (no return — the shared
+   review system still runs afterwards). Other products are untouched. */
+if ( function_exists( 'noriks_is_type' ) ) {
+    if ( noriks_is_type( 'bunion' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-bunion' );
+    } elseif ( noriks_is_type( 'ortopas' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-ortopas' );
+    } elseif ( noriks_is_type( 'fisiorest' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-fisiorest' );
+    }
+}
+?>
+<?php
 if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 'starter-pack' ), 'product_cat', get_the_id() )  )   :
 ?>
 
@@ -642,9 +655,18 @@ endif;
   // Detect if current product belongs to bokserice group
   $current_product_id = (function_exists('is_product') && is_product()) ? get_queried_object_id() : get_the_id();
   $is_bokserice_page  = has_term( array( 'boxerky','orto-bokserice', 'bokserice-sastavi-paket', 'bokserice', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $current_product_id );
+  $is_ortopas_page    = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) );
+  $is_bunion_page     = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) );
+  $is_fisiorest_page  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) );
 
-  // Include review pools
-  if ( ! $is_bokserice_page )  {
+  // Include review pools (own pool per orto product group)
+  if ( $is_fisiorest_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_fisiorest.php';
+  } elseif ( $is_bunion_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_bunion.php';
+  } elseif ( $is_ortopas_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_ortopas.php';
+  } elseif ( ! $is_bokserice_page )  {
     include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'.php';
   } else {
     include get_stylesheet_directory() . '/auto_reviews/'.$reviews_language.'_bokserice.php';
@@ -975,7 +997,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  $avatar_pool = get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   $product_pool = get_wc_product_pool();
 
@@ -1016,6 +1039,10 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $prod_count = count($auto_reviews_en);
   $ship_count = count($auto_reviews_ship);
 ?>
+
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) : ?>
+<style>/* belt + bunion + fisiorest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
   <div class="container basic-reviews-section-container" style="width:100%;max-width:1440px;padding-top:20px!important;margin:0 auto;padding-left: 10px; padding-right: 10px;">
@@ -1432,6 +1459,56 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
 $faq_list = get_field('faq_list', 'option');
 $faq_list2 = get_field('faq_list_2', 'option');
 $faq_list3 = get_field('faq_list_3', 'option');
+
+$is_ortopas_faq   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas') );
+$is_bunion_faq    = ( function_exists('noriks_is_type') && noriks_is_type('bunion') );
+$is_fisiorest_faq = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') );
+
+// Korektor haluksa — FAQ o izdelku (prevod, NORIKS) — Greek.
+$bunion_faq = array(
+  array( 'questioon' => 'Πόσο γρήγορα θα νιώσω καλύτερα;', 'answer' => 'Περίπου 30 λεπτά — τόσος χρόνος χρειάζεται για να ανακουφιστεί η δυσφορία. Με τακτική χρήση επί δύο εβδομάδες θα νιώσετε σημαντική ανακούφιση στις καθημερινές δραστηριότητες, όπως το περπάτημα, το στάσιμο ή ο ύπνος.' ),
+  array( 'questioon' => 'Πόσο γρήγορα θα δω διαφορά στο κότσι;', 'answer' => 'Ανάλογα με τη σοβαρότητα του κότσι, οι περισσότεροι πελάτες βλέπουν ορατή βελτίωση μετά από 4–8 εβδομάδες. Ήπιο κότσι: 4 εβδομάδες. Μέτριο κότσι: 4 εβδομάδες. Σοβαρό κότσι: 8 εβδομάδες.' ),
+  array( 'questioon' => 'Μπορεί να φορεθεί μέσα στα παπούτσια; Μπορώ να περπατώ με αυτό;', 'answer' => 'Όχι, δεν χωράει μέσα στο παπούτσι. Ναι, μπορείτε να περπατάτε με αυτό. Ωστόσο είναι σχεδιασμένο για ξεκούραση — όταν ξαπλώνετε στον καναπέ, βλέπετε τηλεόραση, διαβάζετε ή κοιμάστε.' ),
+  array( 'questioon' => 'Τι γίνεται αν με ενοχλεί;', 'answer' => 'Είναι απολύτως φυσιολογικό! Ο διορθωτής NORIKS είναι σχεδιασμένος αρκετά σταθερά ώστε να ευθυγραμμίζει την άρθρωση του δαχτύλου, να σταματά τη φλεγμονή και να μειώνει τη δυσφορία. Ίσως χρειαστείτε 1–2 συνεδρίες για να προσαρμοστείτε, και μετά θα νιώθετε πολύ καλύτερα!' ),
+  array( 'questioon' => 'Για πόση ώρα να το χρησιμοποιώ;', 'answer' => 'Συνιστούμε να ξεκινήσετε με 30 λεπτά την ημέρα και να αυξάνετε σταδιακά έως και συνεδρία 1 έως 3 ωρών. Μόλις νιώσετε άνετα, μπορείτε να αρχίσετε να το φοράτε και στον ύπνο. Φορέστε το ενώ ξεκουράζεστε — στον καναπέ, μπροστά στην τηλεόραση, διαβάζοντας ή κοιμώμενοι.' ),
+  array( 'questioon' => 'Θα βοηθήσει στη δική μου συγκεκριμένη περίπτωση;', 'answer' => 'Ο διορθωτής NORIKS είναι ιδανικός για: ανακούφιση της δυσφορίας που επηρεάζει τις καθημερινές δραστηριότητες, όπως το περπάτημα ή το στάσιμο· ανακούφιση της δυσφορίας από το κότσι κατά την ξεκούραση ή τον ύπνο· αντιμετώπιση του κότσι σε πρώιμο στάδιο που ίσως εξελίσσεται· κότσι που επανεμφανίστηκε μετά από εγχείρηση· υποστήριξη σε σοβαρότερο κότσι πριν από εγχείρηση· και ως αποτελεσματική μη χειρουργική επιλογή.' ),
+  array( 'questioon' => 'Θα ταιριάξει στο πόδι μου; Υπάρχει αριστερή και δεξιά πλευρά;', 'answer' => 'Ανεξάρτητα από το μέγεθος του ποδιού — από το μικρότερο παιδικό έως το μεγάλο πέλμα ενήλικα — ο διορθωτής NORIKS εφαρμόζει άνετα. Δεν υπάρχει πλευρά! Χάρη στον ευέλικτο σχεδιασμό του, προσαρμόζεται εξίσου εύκολα σε αριστερό ή δεξί πόδι.' ),
+);
+
+// Ortopedski pas — FAQ o izdelku (prevod, NORIKS) — Greek.
+$ortopas_faq = array(
+  array( 'questioon' => 'Πόσο γρήγορα νιώθω ανακούφιση από τον πόνο;', 'answer' => 'Πολλοί χρήστες νιώθουν αισθητή ανακούφιση από την ισχιαλγία και τους πόνους στη μέση αμέσως μόλις φορέσουν τη ζώνη NORIKS. Η στοχευμένη συμπίεσή της προσφέρει άμεση στήριξη, σταθεροποιεί τη σπονδυλική στήλη και μειώνει την πίεση στα νεύρα. Για μακροχρόνιο αποτέλεσμα, συνιστούμε να φοράτε τη ζώνη με συνέπεια σύμφωνα με τις οδηγίες τουλάχιστον δύο εβδομάδες. Με τον καιρό, με σωστή χρήση και υγιείς συνήθειες, μπορείτε να νιώσετε μόνιμη ανακούφιση και καλύτερη κινητικότητα.' ),
+  array( 'questioon' => 'Πώς τοποθετώ σωστά τη ζώνη;', 'answer' => 'Φορέστε τη ζώνη NORIKS γύρω από τα ισχία, λίγο κάτω από τη γραμμή της μέσης. Πρέπει να βρίσκεται πάνω από την περιοχή του ιερού οστού (κάτω μέση, ακριβώς πάνω από τους γλουτούς) και κάτω από τη λαγόνια ακρολοφία (πάνω μέρος των πλαϊνών ισχίων). Για περισσότερες πληροφορίες, δείτε τις οδηγίες χρήσης.' ),
+  array( 'questioon' => 'Θα αδυνατίσει η ζώνη τους μυς μου;', 'answer' => 'Όχι, η ζώνη NORIKS δεν αδυνατίζει τους μυς όπως ένας κηδεμόνας μέσης. Απλώς βοηθά να κρατηθούν μαζί οι ιερολαγόνιες αρθρώσεις και αποκαθιστά τη φυσιολογική τάση των συνδέσμων. Μπορείτε να τη φοράτε εβδομάδες ή μήνες χωρίς φόβο μυϊκής ατροφίας.' ),
+  array( 'questioon' => 'Μπορώ να φοράω τη ζώνη και στον ύπνο;', 'answer' => 'Ναι, μπορείτε να τη φοράτε και τη νύχτα. Η διάρκεια χρήσης δεν είναι περιορισμένη και η παρατεταμένη χρήση δεν έχει αρνητικές επιπτώσεις.' ),
+  array( 'questioon' => 'Πόσο σφιχτά να την τοποθετήσω;', 'answer' => 'Η ζώνη πρέπει να εφαρμόζει σφιχτά, αλλά όχι υπερβολικά, ώστε να αποφεύγετε τη δυσφορία. Πρέπει να κινείστε άνετα χωρίς η ζώνη να χαράζει ή να γλιστράει. Η ένταση ρυθμίζεται εύκολα με τους ελαστικούς ιμάντες.' ),
+  array( 'questioon' => 'Σε ποιους τη συνιστάτε;', 'answer' => 'Σε όλους όσους αντιμετωπίζουν πόνους στη μέση, ισχιαλγία, μυϊκή ένταση, κήλη μεσοσπονδύλιου δίσκου, πόνους στα ισχία ή τη λεκάνη και προβλήματα της ιερολαγόνιας άρθρωσης. Ανεξάρτητα από ηλικία, φύλο, ύψος και βάρος.' ),
+  array( 'questioon' => 'Υπάρχει εγγύηση επιστροφής χρημάτων;', 'answer' => 'Προσφέρουμε εγγύηση ικανοποίησης! Αν δεν είστε ικανοποιημένοι με τη ζώνη NORIKS, επικοινωνήστε μαζί μας στο info@noriks.com για επιστροφή και αποζημίωση εντός 90 ημερών. Η προθεσμία μετρά από την παραλαβή της ζώνης.' ),
+);
+
+// FisioRest — FAQ o izdelku (prevod, NORIKS) — Greek.
+$fisiorest_faq = array(
+  array( 'questioon' => 'Πώς λειτουργεί το NORIKS FisioRest;', 'answer' => 'Το FisioRest συνδυάζει έλξη, θερμότητα και μασάζ με δόνηση, με εργονομικό σχεδιασμό από αφρό μνήμης. Αυτή η τεχνολογία τεντώνει τον αυχένα στη σωστή γωνία και αποφορτίζει την αυχενική μοίρα. Στη συνέχεια, το καταπραϋντικό ζεστό μασάζ ενισχύει τη ροή αίματος πλούσιου σε οξυγόνο και θρεπτικά συστατικά προς τους μυς, βοηθώντας στην αναγέννηση των ιστών.' ),
+  array( 'questioon' => 'Σε τι είναι καλύτερο το FisioRest από άλλες συσκευές;', 'answer' => 'Το NORIKS FisioRest είναι ξεχωριστό γιατί συνδυάζει <strong>τρεις θεραπείες σε μία</strong> — θερμότητα, μασάζ και ήπια έλξη — που χαλαρώνουν τους μυς και επανευθυγραμμίζουν τον αυχένα για μακροχρόνια ανακούφιση. Επιπλέον, είναι <strong>ασύρματο, ασφαλές για ύπνο και τυλιγμένο σε δροσερό μετάξι</strong> για άνεση που δεν θα βρείτε αλλού.' ),
+  array( 'questioon' => 'Πώς χρησιμοποιείται το FisioRest;', 'answer' => '1. Φορτίστε το με το παρεχόμενο καλώδιο USB-C και τον φορτιστή για περίπου 4 έως 6 ώρες. 2. Κρατήστε το κουμπί μασάζ ή θερμότητας για 5 δευτερόλεπτα, μέχρι να ανάψει η λυχνία. 3. Πατώντας ξανά τα κουμπιά αλλάζετε την ταχύτητα μασάζ και τις ρυθμίσεις θερμότητας. 4. Απολαύστε ένα χαλαρωτικό μασάζ!' ),
+  array( 'questioon' => 'Για πόση ώρα να χρησιμοποιώ το FisioRest;', 'answer' => 'Συνιστούμε να ξεκινήσετε με 15 λεπτά, ώστε να προσαρμοστεί ο αυχένας. Με τον καιρό μπορείτε να φτάσετε σε πλήρη συνεδρία. Ενδεικτικά: ένας κύκλος ήπιας θερμότητας, μασάζ και έλξης διαρκεί 30 λεπτά, που είναι συνήθως ο ιδανικός χρόνος για να χαλαρώσει ο αυχένας και να ανακτήσει τη φυσική του καμπύλη.' ),
+  array( 'questioon' => 'Είναι ασύρματο το FisioRest;', 'answer' => 'Ναι! Το NORIKS FisioRest είναι εντελώς ασύρματο και επαναφορτιζόμενο για καθημερινή χρήση.' ),
+  array( 'questioon' => 'Πώς καθαρίζεται το FisioRest;', 'answer' => 'Το ύφασμα είναι ανθεκτικό σε λάδια και σκόνη, ωστόσο συνιστούμε να σκουπίζετε το FisioRest μετά τη χρήση με ένα απολυμαντικό μαντηλάκι, καθώς το κάλυμμα του μαξιλαριού δεν πλένεται.' ),
+  array( 'questioon' => 'Είναι ασφαλές για όλους;', 'answer' => 'Το NORIKS FisioRest είναι σχεδιασμένο ώστε να ταιριάζει σε όλους, ανεξάρτητα από ηλικία ή φύλο. Ωστόσο, κάθε περίπτωση είναι διαφορετική. Για λεπτομερείς οδηγίες προσαρμοσμένες στις ανάγκες σας, συνιστούμε να συμβουλευτείτε τον γιατρό σας.' ),
+  array( 'questioon' => 'Μπορώ να το επιστρέψω αν δεν δω αποτελέσματα;', 'answer' => 'Φυσικά! Προσφέρουμε πλήρη εγγύηση επιστροφής χρημάτων εντός 90 ημερών από την παράδοση, αν δεν είστε ικανοποιημένοι με το προϊόν. Γράψτε μας στο info@noriks.com και θα απαντήσουμε εντός 12 ωρών από την παραλαβή του μηνύματος!' ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq ) {
+  $t = (string) $title;
+  // GR product-info FAQ container title token ("προϊόν" = product).
+  $is_info = function_exists('mb_stripos')
+    ? ( mb_stripos( $t, 'προϊόν' ) !== false )
+    : ( stripos( $t, 'προϊόν' ) !== false );
+  if ( $is_fisiorest_faq && $is_info ) { return $fisiorest_faq; }
+  if ( $is_bunion_faq && $is_info )    { return $bunion_faq; }
+  if ( $is_ortopas_faq && $is_info )   { return $ortopas_faq; }
+  return $list;
+};
 ?>
 
 
@@ -1449,6 +1526,7 @@ $faq_list3 = get_field('faq_list_3', 'option');
             color: #222223;
             margin-bottom: 10px; "><?php echo get_field('faq_title_1', 'option'); ?></h4>
             <?php
+              $faq_list = $faq_pick( get_field('faq_title_1', 'option'), $faq_list );
               if( $faq_list && is_array($faq_list) ):
                       foreach( $faq_list as $faq_item ):
               ?>
@@ -1475,6 +1553,7 @@ $faq_list3 = get_field('faq_list_3', 'option');
             color: #001e36;
             margin-bottom: 10px; "><?php echo get_field('faq_title_2', 'option'); ?></h4>
             <?php
+              $faq_list2 = $faq_pick( get_field('faq_title_2', 'option'), $faq_list2 );
               if( $faq_list2 && is_array($faq_list2) ):
                       foreach( $faq_list2 as $faq_item ):
               ?>
@@ -1501,6 +1580,7 @@ $faq_list3 = get_field('faq_list_3', 'option');
             color: #001e36;
             margin-bottom: 10px; "><?php echo get_field('faq_title_3', 'option'); ?></h4>
             <?php
+              $faq_list3 = $faq_pick( get_field('faq_title_3', 'option'), $faq_list3 );
               if( $faq_list3 && is_array($faq_list3) ):
                       foreach( $faq_list3 as $faq_item ):
               ?>

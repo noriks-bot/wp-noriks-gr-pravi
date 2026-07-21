@@ -444,14 +444,26 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 Τα μποξεράκια NORIKS είναι κατασκευασμένα από πρωτοκλασάτο μείγμα 95% modal και 5% ελαστάνης, που εξασφαλίζει εξαιρετικά απαλό και ελαστικό ύφασμα που προσαρμόζεται τέλεια στο σώμα. Το ελαστικό λάστιχο είναι σχεδιασμένο για βέλτιστη εφαρμογή, παρέχοντας άνεση χωρίς σφίξιμο και τέλεια εμφάνιση κάτω από τα ρούχα.
 <br>
 
-        
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) ): ?>
+
+                Το NORIKS FisioRest είναι ένα θεραπευτικό μαξιλάρι αυχένα που συνδυάζει έλξη, θερμότητα και μασάζ με δόνηση σε εργονομικό σχεδιασμό από αφρό μνήμης. Τεντώνει απαλά τον αυχένα στη σωστή γωνία, αποφορτίζει την αυχενική μοίρα και χαλαρώνει τη μυϊκή ένταση με θερμότητα και μασάζ. Ασύρματο, επαναφορτιζόμενο και τυλιγμένο σε απαλό δροσερό μετάξι – ασφαλές ακόμη και για τον ύπνο.
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) ): ?>
+
+                Ο διορθωτής κότσι NORIKS, με προηγμένη θεραπεία ευθυγράμμισης και πατενταρισμένο αρθρωτό μηχανισμό, επαναφέρει απαλά το μεγάλο δάχτυλο στη φυσική του θέση, ανακουφίζει τη δυσφορία και αποτρέπει την περαιτέρω ανάπτυξη της προεξοχής. Ο ευέλικτος σχεδιασμός επιτρέπει να περπατάτε με αυτό. Εφαρμόζει σε όλα τα μεγέθη ποδιών, χωρίς αριστερή ή δεξιά πλευρά. Για χρήση σε ξεκούραση – ενώ αναπαύεστε, βλέπετε τηλεόραση, διαβάζετε ή κοιμάστε.
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
+
+                Η ορθοπεδική ζώνη NORIKS σταθεροποιεί στοχευμένα τη μέση μέσω στοχευμένης συμπίεσης, ευθυγραμμίζει σωστά τη λεκάνη και αποφορτίζει το ισχιακό νεύρο. Λεπτή και διακριτική κάτω από τα ρούχα, με ρυθμιζόμενο βαθμό στήριξης. Κατάλληλη για πόνους στη μέση, ισχιαλγία, μυϊκή ένταση και προβλήματα της ιερολαγόνιας άρθρωσης.
+
         <?php else: ?>
-        
-        
-        
+
+
+
             <?php echo get_field("__overwrite_sekcije_bellow_1"); ?>
-            
-            
+
+
         <?php endif; ?>
         
         
@@ -463,45 +475,56 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
     
      
      <!-- 2 - slika tablica velicina  -->
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) ) ) ) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Πίνακας μεγεθών</h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-          
-           <?php if( $is_boxers ): ?>
-       
-        
+
+           <?php if( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
+
+          <div style="line-height:1.9;">
+            <strong>S/M</strong> : περιφέρεια ισχίων 75–110 cm<br>
+            <strong>L/XL</strong> : περιφέρεια ισχίων 110–140 cm<br><br>
+            Παρακαλούμε μετρήστε την περιφέρεια των ισχίων σας για να βρείτε το μέγεθός σας.
+          </div>
+
+        <?php elseif( $is_boxers ): ?>
+
+
             <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
-          
-          
-          
-        
+
+
+
+
         <?php elseif(  $is_carape ): ?>
-        
-        
+
+
                   <img src="https://noriks.com/hr/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_Gr.png">
-                  
+
     <?php elseif(  $is_mixed_bundle ): ?>
-    
+
      <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
-        
+
          <img src="https://noriks.com/gr/wp-content/uploads/2026/02/boxers_size_gr.png">
-          
+
           <?php else: ?>
-      
-      
+
+
      <img src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
-        
-        
-            
+
+
+
         <?php endif; ?>
       </div>
     </div>
+    <?php endif; // /δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest ?>
 
 
     <!-- 3 - savjeti za pranje-->
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) ) ) ) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
@@ -510,20 +533,21 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
       <div class="accordion-content">
              <?php if( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
-        
-         
+
+
         <?php elseif(  has_term( array( 'orto-starter', 'orto-majica-bokserica' ), 'product_cat', $current_product_id )  ): ?>
-        
-        
-        
-                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati              
-        
-        
+
+
+
+                         Perite boje s bojama.  Program za nježno pranje na hladnoj vodi.  Sušite ravno položeno ili u sušilici na niskoj temperaturi.  Ne izbjeljivati
+
+
           <?php else: ?>
             <?php echo get_field("__overwrite_sekcije_bellow_3"); ?>
         <?php endif; ?>
       </div>
     </div>
+    <?php endif; // /δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest ?>
 
 
 
