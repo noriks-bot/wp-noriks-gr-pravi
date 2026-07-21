@@ -660,9 +660,15 @@ endif;
   $is_ortopas_page    = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) );
   $is_bunion_page     = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) );
   $is_fisiorest_page  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) );
+  $is_norikshers_page = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) );
+
+  // Fallback product name shown in review cards.
+  $rv_fallback_title = $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica';
 
   // Include review pools (own pool per orto product group)
-  if ( $is_fisiorest_page ) {
+  if ( $is_norikshers_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_norikshers.php';
+  } elseif ( $is_fisiorest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_fisiorest.php';
   } elseif ( $is_bunion_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_bunion.php';
@@ -732,12 +738,14 @@ endif;
           $product_id = get_queried_object_id();
       }
 
-      $is_bokserice = false;
+      $is_bokserice  = false;
+      $is_norikshers = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket', 'mpoxer', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $product_id );
+          $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_bokserice ? '_bokserice' : '_all' );
+      $cache_key = $transient_key . ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : '_all' ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -754,7 +762,9 @@ endif;
           'order'   => 'DESC',
       ];
 
-      if ( $is_bokserice ) {
+      if ( $is_norikshers ) {
+          $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
+      } elseif ( $is_bokserice ) {
           $args['category'] = [ 'mpoxer' ];
       } else {
           $args['tax_query'] = [
@@ -999,8 +1009,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  // Belt + bunion + fisiorest: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) ? array() : get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest + norikshers: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   $product_pool = get_wc_product_pool();
 
@@ -1042,8 +1052,8 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page ) : ?>
-<style>/* belt + bunion + fisiorest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page ) : ?>
+<style>/* belt + bunion + fisiorest + norikshers: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
@@ -1066,7 +1076,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
       <?php if (!empty($initial_product)) : foreach ($initial_product as $review) :
         $name  = $review['name'] ?? 'Ανώνυμος';
         $text  = $review['text'] ?? '';
-        $title = !empty($review['product_title']) ? $review['product_title'] : 'Jedna Siva Majica';
+        $title = !empty($review['product_title']) ? $review['product_title'] : $rv_fallback_title;
         $url   = !empty($review['product_url'])   ? $review['product_url']   : '#';
         $stars = '★★★★★';
         $date_display = $review['assigned_date'] ?? '';
@@ -1205,7 +1215,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
         article.className = 'review-card is-new';
 
         const url       = review.product_url   || '#';
-        const title     = review.product_title || 'Jedna Siva Majica';
+        const title     = review.product_title || '<?php echo esc_js($rv_fallback_title); ?>';
         const name      = review.name          || 'Ανώνυμος';
         const text      = review.text          || '';
         const headline  = review.headline      || '';
@@ -1462,9 +1472,10 @@ $faq_list = get_field('faq_list', 'option');
 $faq_list2 = get_field('faq_list_2', 'option');
 $faq_list3 = get_field('faq_list_3', 'option');
 
-$is_ortopas_faq   = ( function_exists('noriks_is_type') && noriks_is_type('ortopas') );
-$is_bunion_faq    = ( function_exists('noriks_is_type') && noriks_is_type('bunion') );
-$is_fisiorest_faq = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') );
+$is_ortopas_faq    = ( function_exists('noriks_is_type') && noriks_is_type('ortopas') );
+$is_bunion_faq     = ( function_exists('noriks_is_type') && noriks_is_type('bunion') );
+$is_fisiorest_faq  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') );
+$is_norikshers_faq = ( function_exists('noriks_is_type') && noriks_is_type('norikshers') );
 
 // Korektor haluksa — FAQ o izdelku (prevod, NORIKS) — Greek.
 $bunion_faq = array(
@@ -1500,12 +1511,27 @@ $fisiorest_faq = array(
   array( 'questioon' => 'Μπορώ να το επιστρέψω αν δεν δω αποτελέσματα;', 'answer' => 'Φυσικά! Προσφέρουμε πλήρη εγγύηση επιστροφής χρημάτων εντός 90 ημερών από την παράδοση, αν δεν είστε ικανοποιημένοι με το προϊόν. Γράψτε μας στο info@noriks.com και θα απαντήσουμε εντός 12 ωρών από την παραλαβή του μηνύματος!' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq ) {
+// NORIKS HERS (silikonske kolagenske trake za bore) — FAQ o izdelku (prevod, NORIKS HERS) — Greek.
+$norikshers_faq = array(
+  array( 'questioon' => 'Σε τι διαφέρει από τα κοινά αυτοκόλλητα ρυτίδων ή τις κρέμες για ουλές;', 'answer' => 'Τα περισσότερα αυτοκόλλητα ρυτίδων είναι από χαρτί ή υδροκολλοειδές, ενώ οι κρέμες για ουλές συχνά παραμένουν μόνο στην επιφάνεια του δέρματος. Το NORIKS HERS χρησιμοποιεί σιλικόνη κλινικής ποιότητας, την οποία οι δερματολόγοι εμπιστεύονται εδώ και χρόνια για να βελτιώνουν ορατά την υφή των ουλών και την ελαστικότητα του δέρματος — και τώρα εφαρμόζεται και για τη μείωση των ρυτίδων.' ),
+  array( 'questioon' => 'Μπορεί πραγματικά μία ταινία να δρα και στις ρυτίδες και στις ουλές;', 'answer' => 'Ναι, γιατί οι ρυτίδες και οι ουλές είναι και οι δύο σημάδια αποδόμησης του κολλαγόνου ή ασθενούς αναγέννησης του δέρματος. Η σιλικόνη υποστηρίζει τη διατήρηση της υγρασίας, την αναδόμηση του κολλαγόνου και την εξομάλυνση της υφής του δέρματος, κάτι που ωφελεί και τα δύο.' ),
+  array( 'questioon' => 'Σε πόσο χρόνο θα δω αποτελέσματα;', 'answer' => 'Οι περισσότεροι χρήστες βλέπουν ορατή εξομάλυνση στις λεπτές γραμμές ήδη μετά από 1–3 χρήσεις, ενώ η εμφάνιση των ουλών βελτιώνεται μέσα σε 2–3 εβδομάδες τακτικής χρήσης. Οι βαθύτερες ουλές και ρυτίδες μπορεί να χρειαστούν περισσότερο χρόνο, αλλά τα αποτελέσματα χτίζονται με τον καιρό.' ),
+  array( 'questioon' => 'Είναι ασφαλές για ευαίσθητο δέρμα ή δέρμα με τάση ακμής;', 'answer' => 'Απολύτως. Το NORIKS HERS είναι υποαλλεργικό, χωρίς λάτεξ και αρκετά απαλό για ευαίσθητες περιοχές, όπως γύρω από τα μάτια ή το στόμα, ακόμη και για σημάδια ακμής που επουλώνονται. Αν το δέρμα σας είναι πολύ αντιδραστικό, δοκιμάστε πρώτα σε μια μικρή περιοχή.' ),
+  array( 'questioon' => 'Για πόση ώρα μπορώ να το φορώ;', 'answer' => 'Για καλύτερα αποτελέσματα, συνιστούμε να φοράτε το NORIKS HERS για 6–8 ώρες, τη νύχτα. Μπορείτε να το χρησιμοποιείτε και την ημέρα — απλώς φροντίστε το δέρμα από κάτω να είναι καθαρό, χωρίς λάδια ή ορούς.' ),
+  array( 'questioon' => 'Πόσο διαρκεί ένα ρολό;', 'answer' => 'Ανάλογα με το πόσο συχνά και πού το χρησιμοποιείτε, ένα ρολό διαρκεί από 3 έως 6 εβδομάδες. Επειδή είναι επαναχρησιμοποιήσιμο, είναι πολύ πιο οικονομικό από τα αυτοκόλλητα μίας χρήσης ή τις κρέμες.' ),
+  array( 'questioon' => 'Μένει στη θέση του όσο κοιμάμαι;', 'answer' => 'Ναι! Το NORIKS HERS έχει φιλική προς το δέρμα, ανθεκτική κόλλα που ακολουθεί τις κινήσεις σας. Είναι αναπνέον και μένει στη θέση του, ακόμη και για όσους κοιμούνται στο πλάι.' ),
+  array( 'questioon' => 'Σε ποιες περιοχές μπορώ να το χρησιμοποιήσω;', 'answer' => 'Οπουδήποτε! Οι περισσότεροι πελάτες χρησιμοποιούν το NORIKS HERS σε: ρυτίδες μετώπου, μεσόφρυο, ρυτίδες χαμόγελου, ρυτίδες λαιμού, σημάδια μετά από ακμή, ουλές καισαρικής, ραγάδες, χειρουργικές ουλές ή ουλές τραυματισμού.' ),
+  array( 'questioon' => 'Σε τι είναι καλύτερο το NORIKS HERS από τα φθηνά online αυτοκόλλητα;', 'answer' => 'Πολλά αυτοκόλλητα που πωλούνται online είναι χαμηλής ποιότητας, λεπτά ή έχουν κακή κόλλα. Το NORIKS HERS χρησιμοποιεί premium σιλικόνη, ελεγμένη σε εργαστήριο για ασφάλεια και ανθεκτικότητα, και μένει στη θέση του όλη τη νύχτα. Επιπλέον, προσφέρουμε αποκλειστική εξυπηρέτηση πελατών και ταχύτερη αντικατάσταση, αν χρειαστείτε βοήθεια.' ),
+  array( 'questioon' => 'Υπάρχει εγγύηση επιστροφής χρημάτων;', 'answer' => 'Ναι, προσφέρουμε εγγύηση επιστροφής χρημάτων 30 ημερών χωρίς ρίσκο. Αν δεν είστε ικανοποιημένοι, απλώς επικοινωνήστε μαζί μας και θα το τακτοποιήσουμε.' ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
     ? ( mb_stripos( $t, 'προϊόν' ) !== false )
     : ( stripos( $t, 'προϊόν' ) !== false );
+  if ( $is_norikshers_faq && $is_info ) { return $norikshers_faq; }
   if ( $is_fisiorest_faq && $is_info ) { return $fisiorest_faq; }
   if ( $is_bunion_faq && $is_info )    { return $bunion_faq; }
   if ( $is_ortopas_faq && $is_info )   { return $ortopas_faq; }
