@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 7.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-05-20 12:50:33+0000\n"
+"PO-Revision-Date: 2026-07-10 10:24:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -37,63 +37,63 @@ msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "Asia/Kolkata"
 
-#: wp-admin/about.php:150
+#: wp-admin/about.php:181
 msgid "WordPress continues to polish accessibility across WordPress Core and Gutenberg, advancing the goals to meet accessibility standards. WordPress 7.0 includes fixes across the platform, improving media management, usability for voice control, and improvements to color contrast with the new admin color scheme. The editor ships with new blocks and improvements to editor navigation and interaction."
 msgstr "વર્ડપ્રેસ વર્ડપ્રેસ કોર અને ગુટેનબર્ગમાં સુલભતાને પોલિશ કરવાનું ચાલુ રાખે છે, સુલભતા ધોરણોને પૂર્ણ કરવાના લક્ષ્યોને આગળ ધપાવે છે. વર્ડપ્રેસ 7.0 માં પ્લેટફોર્મ પર સુધારાઓ, મીડિયા મેનેજમેન્ટમાં સુધારો, વૉઇસ કંટ્રોલ માટે ઉપયોગીતા અને નવી એડમિન રંગ યોજના સાથે રંગ કોન્ટ્રાસ્ટમાં સુધારાઓનો સમાવેશ થાય છે. સંપાદક નવા બ્લોક્સ અને સંપાદક નેવિગેશન અને ક્રિયાપ્રતિક્રિયામાં સુધારાઓ સાથે આવે છે."
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:172
 msgid "WordPress 7.0 improves the accuracy of image loading prioritization, preventing hidden images in navigation overlays or interactive blocks from degrading the loading of critical resources. On-demand block stylesheet loading in classic themes is more reliable, and the ability is added for scripts to depend on script modules to reduce render-blocking."
 msgstr "વર્ડપ્રેસ 7.0 ઇમેજ લોડિંગ પ્રાથમિકતાની ચોકસાઈમાં સુધારો કરે છે, નેવિગેશન ઓવરલે અથવા ઇન્ટરેક્ટિવ બ્લોક્સમાં છુપાયેલી છબીઓને મહત્વપૂર્ણ સંસાધનોના લોડિંગને ઘટાડતા અટકાવે છે. ક્લાસિક થીમ્સમાં ઓન-ડિમાન્ડ બ્લોક સ્ટાઇલશીટ લોડિંગ વધુ વિશ્વસનીય છે, અને રેન્ડર-બ્લોકિંગ ઘટાડવા માટે સ્ક્રિપ્ટ્સ માટે સ્ક્રિપ્ટ મોડ્યુલો પર આધાર રાખવાની ક્ષમતા ઉમેરવામાં આવી છે."
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:156
 msgid "Drop a pattern onto your page and it behaves like one block, so you don’t have to hunt through nested blocks for the element you want to change. Swap the text and images, adjust styles from the inspector, and keep moving. For any advanced edits, a single click to \"edit pattern\" gives you access to all available tools."
 msgstr "તમારા પેજ પર એક પેટર્ન મૂકો અને તે એક બ્લોક જેવું વર્તન કરશે, જેથી તમારે જે ઘટક બદલવા માંગો છો તે શોધવા માટે નેસ્ટેડ બ્લોક્સ શોધવાની જરૂર નહીં પડે. ટેક્સ્ટ અને છબીઓ સ્વેપ કરો, ઇન્સ્પેક્ટર પાસેથી શૈલીઓ સમાયોજિત કરો અને આગળ વધતા રહો. કોઈપણ અદ્યતન સંપાદન માટે, \"પેટર્ન સંપાદિત કરો\" પર એક ક્લિક તમને બધા ઉપલબ્ધ સાધનોની ઍક્સેસ આપે છે."
 
-#: wp-admin/about.php:124
+#: wp-admin/about.php:155
 msgid "Patterns as single blocks."
 msgstr "સિંગલ બ્લોક્સ તરીકે પેટર્ન."
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:153
 msgid "A simpler way to build with patterns"
 msgstr "પેટર્ન સાથે બનાવવાની એક સરળ રીત"
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:136
 msgid "Review your post&#8217;s revision history with a timeline slider and see exactly what changed in the document with visual markers, block by block. Find the version you want and restore it in one click."
 msgstr "ટાઇમલાઇન સ્લાઇડર વડે તમારા પોસ્ટના રિવિઝન ઇતિહાસની સમીક્ષા કરો અને વિઝ્યુઅલ માર્કર્સ વડે દસ્તાવેજમાં શું બદલાયું છે તે બરાબર જુઓ, બ્લોક બાય બ્લોક. તમને જોઈતું સંસ્કરણ શોધો અને તેને એક ક્લિકમાં પુનઃસ્થાપિત કરો."
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:135
 msgid "Scrub through every version of your page."
 msgstr "તમારા પૃષ્ઠના દરેક સંસ્કરણને સ્ક્રબ કરો."
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:133
 msgid "Visual revisions"
 msgstr "વિઝ્યુઅલ પુનરાવર્તનો"
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:126
 msgid "The Connectors screen introduces a single hub for managing a range of external service integrations, including AI providers. Opt in by connecting your preferred AI provider, then put it to work across your site. The optional AI plugin adds a growing set of tools directly into the editor: create titles and excerpts, generate and edit images, and suggest alt text. Any plugin that needs to connect to an outside service can tap into this standardized connection management system, making it easy for users and developers alike."
 msgstr "કનેક્ટર્સ સ્ક્રીન AI પ્રદાતાઓ સહિત વિવિધ બાહ્ય સેવા સંકલનનું સંચાલન કરવા માટે એક જ હબ રજૂ કરે છે. તમારા પસંદગીના AI પ્રદાતાને કનેક્ટ કરીને પસંદ કરો, પછી તેને તમારી સાઇટ પર કાર્ય કરવા માટે મૂકો. વૈકલ્પિક AI પ્લગઇન સીધા સંપાદકમાં સાધનોનો વધતો સમૂહ ઉમેરે છે: શીર્ષકો અને અવતરણો બનાવો, છબીઓ જનરેટ કરો અને સંપાદિત કરો, અને વૈકલ્પિક ટેક્સ્ટ સૂચવો. કોઈપણ પ્લગઇન જેને બાહ્ય સેવા સાથે કનેક્ટ કરવાની જરૂર હોય તે આ પ્રમાણિત કનેક્શન મેનેજમેન્ટ સિસ્ટમનો ઉપયોગ કરી શકે છે, જે વપરાશકર્તાઓ અને વિકાસકર્તાઓ બંને માટે સરળ બનાવે છે."
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:125
 msgid "A centralized hub for your connections."
 msgstr "તમારા જોડાણો માટે એક કેન્દ્રીકૃત કેન્દ્ર."
 
-#: wp-admin/about.php:92
+#: wp-admin/about.php:123
 msgid "AI foundations"
 msgstr "AI ફાઉન્ડેશનો"
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:106
 msgid "Build the menu overlay you want visitors to see. Go beyond a simple list of links: add columns, increase the font size, and align everything to your liking. Start from a pre-built template, or design your own from scratch."
 msgstr "મુલાકાતીઓ જે મેનુ ઓવરલે જોવા માંગે છે તે બનાવો. લિંક્સની સરળ સૂચિથી આગળ વધો: કૉલમ ઉમેરો, ફોન્ટનું કદ વધારો અને તમારી રુચિ પ્રમાણે બધું ગોઠવો. પહેલાથી બનાવેલા ટેમ્પલેટથી શરૂઆત કરો, અથવા શરૂઆતથી તમારું પોતાનું ડિઝાઇન કરો."
 
-#: wp-admin/about.php:72
+#: wp-admin/about.php:103
 msgid "Design your navigation overlay"
 msgstr "તમારા નેવિગેશન ઓવરલેને ડિઝાઇન કરો"
 
-#: wp-admin/about.php:74
+#: wp-admin/about.php:105
 msgid "A dedicated canvas for your menu."
 msgstr "તમારા મેનૂ માટે એક સમર્પિત કેનવાસ."
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:97
 msgid "WordPress 7.0 introduces the foundation for AI across the platform, letting you connect your preferred provider and put it to work across your site. Edit more simply by dropping in layouts and swapping content without diving into blocks. The navigation overlay now taps into the full potential of blocks, and reviewing historical changes is easier with a visual comparison."
 msgstr "વર્ડપ્રેસ 7.0 સમગ્ર પ્લેટફોર્મ પર AI માટે પાયો રજૂ કરે છે, જેનાથી તમે તમારા મનપસંદ પ્રદાતાને કનેક્ટ કરી શકો છો અને તેને તમારી સાઇટ પર કાર્યરત કરી શકો છો. બ્લોક્સમાં ડૂબકી લગાવ્યા વિના લેઆઉટ મૂકીને અને સામગ્રીને સ્વેપ કરીને વધુ સરળ રીતે સંપાદિત કરો. નેવિગેશન ઓવરલે હવે બ્લોક્સની સંપૂર્ણ સંભાવનાનો ઉપયોગ કરે છે, અને ઐતિહાસિક ફેરફારોની સમીક્ષા દ્રશ્ય સાથે સરળ છે."
 
@@ -608,12 +608,12 @@ msgid "Max simultaneous file uploads"
 msgstr "મહત્તમ એક સાથે ફાઇલ અપલોડ"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:245
+#: wp-admin/about.php:276
 msgid "WordPress %s Field Guide"
 msgstr "વર્ડપ્રેસ %s ફીલ્ડ ગાઈડ"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:218
+#: wp-admin/about.php:249
 msgid "WordPress %s Release Notes"
 msgstr "વર્ડપ્રેસ %s પ્રકાશન નોંધો"
 
@@ -784,16 +784,16 @@ msgstr "જો તમે પ્લગિન નિર્માતા છો, ત
 msgid "If you are a plugin author, you can learn more about <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\">how to add the Personal Data Eraser to a plugin</a>."
 msgstr "જો તમે પ્લગિન નિર્માતા છો, તો તમે <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\">પ્લગિનમાં વ્યક્તિગત(પર્સનલ) ડેટા ઇરેઝર સાધન કેવી રીતે ઉમેરવું</a> તે વિશે વધુ જાણી શકો છો."
 
-#: wp-admin/about.php:157
+#: wp-admin/about.php:188
 msgid "And much more"
 msgstr "અને ઘણું બધું"
 
-#: wp-admin/about.php:171
+#: wp-admin/about.php:202
 msgid "See everything new"
 msgstr "બધું નવું જુઓ"
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:163
+#: wp-admin/about.php:194
 msgid "For a comprehensive overview of all the new features and enhancements in WordPress %s, please visit the feature-showcase website."
 msgstr "વર્ડપ્રેસ %s માં તમામ નવી સુવિધાઓ અને ઉન્નત્તિકરણોની વ્યાપક ઝાંખી માટે, કૃપા કરીને ફીચર-શોકેસ વેબસાઇટની મુલાકાત લો."
 
@@ -1004,12 +1004,12 @@ msgstr[0] "%s પેટર્ન્સ અપડેટ કરી."
 msgstr[1] "%s પેટર્ન અપડેટ કરી."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:228
+#: wp-admin/about.php:259
 msgid "Read the WordPress %s Release Notes for information on installation, enhancements, fixed issues, release contributors, learning resources, and the list of file changes."
 msgstr "ઇન્સ્ટોલેશન, સુધારાઓ, સુધારેલા મુદ્દાઓ, રિલીઝ ફાળો આપનારાઓ, શીખવાના સંસાધનો અને ફાઇલ ફેરફારોની સૂચિ વિશે માહિતી માટે વર્ડપ્રેસ %s રિલીઝ નોટ્સ વાંચો."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:255
+#: wp-admin/about.php:286
 msgid "Explore the WordPress %s Field Guide. Learn about the changes in this release with detailed developer notes to help you build with WordPress."
 msgstr "વર્ડપ્રેસ %s ફીલ્ડ ગાઇડનું અન્વેષણ કરો. વર્ડપ્રેસ સાથે બિલ્ડ કરવામાં તમારી સહાય માટે વિગતવાર ડેવલપર નોંધો સાથે આ પ્રકાશનમાં થયેલા ફેરફારો વિશે જાણો."
 
@@ -1193,14 +1193,14 @@ msgstr "%s ડિરેક્ટરી અસ્તિત્વમાં છે 
 msgid "The upgrade directory exists but is not writable"
 msgstr "અપગ્રેડ ડિરેક્ટરી અસ્તિત્વમાં છે પરંતુ લખી શકાય તેવી નથી"
 
+#: wp-admin/includes/class-wp-site-health.php:2023
+msgid "The temporary backup directory exists but is not writable"
+msgstr "કામચલાઉ બેકઅપ ડિરેક્ટરી અસ્તિત્વમાં છે પરંતુ લખી શકાય તેવી નથી"
+
 #. translators: %s: wp-content/upgrade-temp-backup
 #: wp-admin/includes/class-wp-site-health.php:2026
 msgid "The %s directory exists but is not writable. This directory is used to improve the stability of plugin and theme updates. Please make sure the server has write permissions to this directory."
 msgstr "%s ડિરેક્ટરી અસ્તિત્વમાં છે પરંતુ લખી શકાય તેવી નથી. આ નિર્દેશિકાનો ઉપયોગ પ્લગઇન અને થીમ અપડેટ્સની સ્થિરતાને સુધારવા માટે થાય છે. કૃપા કરીને ખાતરી કરો કે સર્વરને આ નિર્દેશિકામાં લખવાની પરવાનગીઓ છે."
-
-#: wp-admin/includes/class-wp-site-health.php:2023
-msgid "The temporary backup directory exists but is not writable"
-msgstr "કામચલાઉ બેકઅપ ડિરેક્ટરી અસ્તિત્વમાં છે પરંતુ લખી શકાય તેવી નથી"
 
 #. translators: %s: wp-content/upgrade-temp-backup/themes
 #: wp-admin/includes/class-wp-site-health.php:2015
@@ -1492,7 +1492,7 @@ msgid "Be the future of WordPress"
 msgstr "વર્ડપ્રેસનું ભવિષ્ય બનો"
 
 #. translators: 1: Learn WordPress link, 2: Workshops link.
-#: wp-admin/about.php:196
+#: wp-admin/about.php:227
 msgid "<a href=\"%1$s\">Learn WordPress</a> is a free resource for new and experienced WordPress users. Learn is stocked with how-to videos on using various features in WordPress, <a href=\"%2$s\">interactive workshops</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of WordPress."
 msgstr "<a href=\"%1$s\">વર્ડપ્રેસ શીખો</a> એ નવા અને અનુભવી વર્ડપ્રેસ વપરાશકર્તાઓ માટે એક મફત સંસાધન છે. વર્ડપ્રેસ માં વિવિધ સુવિધાઓનો ઉપયોગ કેવી રીતે કરવો તેના પર વિડિઓઝ, વિષયોનું ઊંડાણપૂર્વક અન્વેષણ કરવા માટે <a href=\"%2$s\">ઇન્ટરેક્ટિવ વર્કશોપ</a> અને વર્ડપ્રેસ ના ચોક્કસ ક્ષેત્રોમાં ઊંડા ઉતરવા માટે પાઠ યોજનાઓનો સમાવેશ થાય છે."
 
@@ -1518,7 +1518,7 @@ msgstr "<a href=\"%1$s\">વર્ડપ્રેસ શીખો</a> એ નવ
 #: wp-admin/network.php:83 wp-admin/network/settings.php:65
 #: wp-admin/network/themes.php:340 wp-admin/network/upgrade.php:38
 msgid "<a href=\"https://wordpress.org/support/forums/\">Support forums</a>"
-msgstr "<a href=\"https://wordpress.org/support/forums/\">આધાર(સપોર્ટ) ફોરમ</a>"
+msgstr "<a href=\"https://wordpress.org/support/forums/\">સપોર્ટ ફોરમ</a>"
 
 #: wp-admin/users.php:63
 msgid "<strong>View</strong> takes you to a public author archive which lists all the posts published by the user."
@@ -1638,12 +1638,12 @@ msgid "<a href=\"https://wordpress.org/documentation/article/customizer/\">Docum
 msgstr "<a href=\"https://wordpress.org/documentation/article/customizer/\">કસ્ટમાઇઝર પર દસ્તાવેજીકરણ</a>"
 
 #. translators: %s: The major version of WordPress for this branch.
-#: wp-admin/about.php:333
+#: wp-admin/about.php:364
 msgid "This is the final release of WordPress %s"
 msgstr "આ વર્ડપ્રેસ %sનું અંતિમ પ્રકાશન છે"
 
 #. translators: The localized WordPress download URL.
-#: wp-admin/about.php:336
+#: wp-admin/about.php:367
 msgid "https://wordpress.org/download/"
 msgstr "https://gu.wordpress.org/download/"
 
@@ -1963,12 +1963,12 @@ msgid "- %1$s (from version %2$s to %3$s)%4$s"
 msgstr "- %1$s (સંસ્કરણ %2$s થી %3$s સુધી)%4$s"
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:330
+#: wp-admin/about.php:361
 msgid "Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "અગત્યનું! WordPress નું તમારું સંસ્કરણ (%1$s) નજીકના ભવિષ્યમાં સુરક્ષા અપડેટ્સ પ્રાપ્ત કરવાનું બંધ કરશે. તમારી સાઇટને સુરક્ષિત રાખવા માટે, કૃપા કરીને <a href=\"%2$s\">WordPress ના નવીનતમ સંસ્કરણ પર અપડેટ કરો</a>."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:327
+#: wp-admin/about.php:358
 msgid "Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "અગત્યનું! WordPress નું તમારું સંસ્કરણ (%1$s) હવે સમર્થિત નથી, તમને તમારી વેબસાઇટ માટે કોઈપણ સુરક્ષા અપડેટ્સ પ્રાપ્ત થશે નહીં. તમારી સાઇટને સુરક્ષિત રાખવા માટે, કૃપા કરીને <a href=\"%2$s\">WordPress ના નવીનતમ સંસ્કરણ પર અપડેટ કરો</a>."
 
@@ -1978,7 +1978,7 @@ msgid "https://make.wordpress.org/core/wordpress-%s-field-guide/"
 msgstr "https://make.wordpress.org/core/wordpress-%s-field-guide/"
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:187
+#: wp-admin/about.php:218
 msgid "Learn more about WordPress %s"
 msgstr "વર્ડપ્રેસ %s વિશે વધુ જાણો"
 
@@ -2705,15 +2705,15 @@ msgstr "%1$s માટેનું સેટિંગ હાલમાં 0 ત�
 msgid "Talk to your web host about supporting HTTPS for your website."
 msgstr "તમારી વેબસાઇટ માટે HTTPS ને સમર્થન આપવા વિશે તમારા વેબ હોસ્ટ સાથે વાત કરો."
 
-#. translators: 1: wp-config.php, 2: WP_HOME, 3: WP_SITEURL
-#: wp-admin/includes/class-wp-site-health.php:1555
-msgid "However, your WordPress Address is currently controlled by a PHP constant and therefore cannot be updated. You need to edit your %1$s and remove or update the definitions of %2$s and %3$s."
-msgstr "જો કે, તમારું વર્ડપ્રેસ એડ્રેસ હાલમાં પીએચપી કોન્સ્ટન્ટ દ્વારા નિયંત્રિત છે અને તેથી અપડેટ કરી શકાતું નથી. તમારે તમારા %1$s ને સંપાદિત કરવાની અને %2$s અને %3$s ની વ્યાખ્યાઓને દૂર કરવાની અથવા અપડેટ કરવાની જરૂર છે."
-
 #: wp-admin/includes/class-wp-site-health.php:1569
 #: wp-admin/includes/class-wp-site-health.php:1577
 msgid "Update your site to use HTTPS"
 msgstr "HTTPS નો ઉપયોગ કરવા માટે તમારી સાઇટ અપડેટ કરો"
+
+#. translators: 1: wp-config.php, 2: WP_HOME, 3: WP_SITEURL
+#: wp-admin/includes/class-wp-site-health.php:1555
+msgid "However, your WordPress Address is currently controlled by a PHP constant and therefore cannot be updated. You need to edit your %1$s and remove or update the definitions of %2$s and %3$s."
+msgstr "જો કે, તમારું વર્ડપ્રેસ એડ્રેસ હાલમાં પીએચપી કોન્સ્ટન્ટ દ્વારા નિયંત્રિત છે અને તેથી અપડેટ કરી શકાતું નથી. તમારે તમારા %1$s ને સંપાદિત કરવાની અને %2$s અને %3$s ની વ્યાખ્યાઓને દૂર કરવાની અથવા અપડેટ કરવાની જરૂર છે."
 
 #: wp-admin/includes/class-wp-site-health.php:1547
 msgid "HTTPS is already supported for your website."
@@ -2881,7 +2881,7 @@ msgstr "%s માટે તમારો નવો પાસવર્ડ છે:"
 msgid "Add Application Password"
 msgstr "એપ્લિકેશન પાસવર્ડ ઉમેરો"
 
-#: wp-admin/about.php:271
+#: wp-admin/about.php:302
 msgid "Go to Updates"
 msgstr "અપડેટ્સ પર જાઓ"
 
@@ -3443,13 +3443,13 @@ msgstr "પસંદ કરેલ પ્લગઈનો ઓટો-અપડે�
 msgid "Selected plugins will no longer be auto-updated."
 msgstr "પસંદ કરેલ પ્લગઈન્સ હવે સ્વઅપડેટ થશે નહીં."
 
-#: wp-admin/plugins.php:596
-msgid "Auto-updates can be enabled or disabled for each individual plugin. Plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system."
-msgstr "દરેક વ્યક્તિગત પ્લગઇન માટે સ્વતઃ-અપડેટ્સ સક્ષમ અથવા અક્ષમ કરી શકાય છે. સ્વતઃ-અપડેટ્સ સક્ષમ કરેલ પ્લગઈન્સ આગામી સ્વતઃ-અપડેટની અંદાજિત તારીખ દર્શાવશે. સ્વતઃ-અપડેટ્સ WP-Cron કાર્ય શેડ્યુલિંગ સિસ્ટમ પર આધારિત છે."
-
 #: wp-admin/edit.php:132 wp-admin/post.php:261 wp-admin/upload.php:301
 msgid "Error in moving the item to Trash."
 msgstr "આઇટમને ટ્રેશમાં ખસેડવામાં ભૂલ."
+
+#: wp-admin/plugins.php:596
+msgid "Auto-updates can be enabled or disabled for each individual plugin. Plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system."
+msgstr "દરેક વ્યક્તિગત પ્લગઇન માટે સ્વતઃ-અપડેટ્સ સક્ષમ અથવા અક્ષમ કરી શકાય છે. સ્વતઃ-અપડેટ્સ સક્ષમ કરેલ પ્લગઈન્સ આગામી સ્વતઃ-અપડેટની અંદાજિત તારીખ દર્શાવશે. સ્વતઃ-અપડેટ્સ WP-Cron કાર્ય શેડ્યુલિંગ સિસ્ટમ પર આધારિત છે."
 
 #: wp-admin/edit.php:160 wp-admin/post.php:291 wp-admin/upload.php:322
 msgid "Error in restoring the item from Trash."
@@ -4769,7 +4769,7 @@ msgstr "એચટીટીપી વિનંતીઓ %s સતત દ્વા
 msgid "HTTP requests have been blocked by the %1$s constant, with some allowed hosts: %2$s."
 msgstr "એચટીટીપી વિનંતીઓને %1$s સતત દ્વારા અવરોધિત કરવામાં આવી છે, કેટલાક યજમાનો વ્હાઇટલિસ્ટ કરેલા: %2$s."
 
-#: wp-admin/about.php:140 wp-admin/includes/class-wp-site-health.php:259
+#: wp-admin/about.php:171 wp-admin/includes/class-wp-site-health.php:259
 #: wp-admin/includes/class-wp-site-health.php:737
 #: wp-admin/includes/class-wp-site-health.php:908
 #: wp-admin/includes/class-wp-site-health.php:1147
@@ -4808,14 +4808,6 @@ msgstr "તમે %1$s ડ્રોપ-ઇનનો ઉપયોગ કરી �
 msgid "The WordPress Hosting Team maintains a list of those modules, both recommended and required, in <a href=\"%1$s\" %2$s>the team handbook%3$s</a>."
 msgstr "વર્ડપ્રેસ હોસ્ટિંગ ટીમ <a href=\"%1$s\" %2$s>ટીમ હેન્ડબુક%3$s</a>માં ભલામણ કરેલ અને જરૂરી એમ બંને મોડ્યુલોની સૂચિ જાળવી રાખે છે."
 
-#. translators: 1: The amount of inactive themes. 2: The currently active
-#. theme.
-#: wp-admin/includes/class-wp-site-health.php:674
-msgid "Your site has %1$d inactive theme, other than %2$s, your active theme."
-msgid_plural "Your site has %1$d inactive themes, other than %2$s, your active theme."
-msgstr[0] "તમારી સાઇટમાં %1$d નિષ્ક્રિય થીમ છે, %2$s , તમારી સક્રિય થીમ સિવાય."
-msgstr[1] "તમારી સાઇટમાં %1$d નિષ્ક્રિય થીમ છે, %2$s , તમારી સક્રિય થીમ સિવાય."
-
 #. translators: 1: The amount of inactive themes. 2: The default theme for
 #. WordPress. 3: The currently active theme.
 #: wp-admin/includes/class-wp-site-health.php:689
@@ -4823,6 +4815,14 @@ msgid "Your site has %1$d inactive theme, other than %2$s, the default WordPress
 msgid_plural "Your site has %1$d inactive themes, other than %2$s, the default WordPress theme, and %3$s, your active theme."
 msgstr[0] "તમારી સાઇટમાં %1$d નિષ્ક્રિય થીમ છે, %2$s સિવાય, ડિફોલ્ટ WordPress થીમ અને %3$s, તમારી સક્રિય થીમ."
 msgstr[1] "તમારી સાઇટમાં %1$d નિષ્ક્રિય થીમ છે, %2$s સિવાય, ડિફોલ્ટ WordPress થીમ અને %3$s, તમારી સક્રિય થીમ."
+
+#. translators: 1: The amount of inactive themes. 2: The currently active
+#. theme.
+#: wp-admin/includes/class-wp-site-health.php:674
+msgid "Your site has %1$d inactive theme, other than %2$s, your active theme."
+msgid_plural "Your site has %1$d inactive themes, other than %2$s, your active theme."
+msgstr[0] "તમારી સાઇટમાં %1$d નિષ્ક્રિય થીમ છે, %2$s , તમારી સક્રિય થીમ સિવાય."
+msgstr[1] "તમારી સાઇટમાં %1$d નિષ્ક્રિય થીમ છે, %2$s , તમારી સક્રિય થીમ સિવાય."
 
 #: wp-admin/includes/class-wp-site-health.php:320
 #: wp-admin/includes/class-wp-site-health.php:360
@@ -5059,10 +5059,6 @@ msgstr "REST API ઉપલબ્ધ છે"
 msgid "HTTP requests are partially blocked"
 msgstr "HTTP વિનંતીઓ અંશતઃ અવરોધિત છે"
 
-#: wp-admin/includes/class-wp-site-health.php:1667
-msgid "Scheduled events are what periodically looks for updates to plugins, themes and WordPress itself. It is also what makes sure scheduled posts are published on time. It may also be used by various plugins to make sure that planned actions are executed."
-msgstr "શેડ્યૂલ કરેલ ઇવેન્ટ્સ એ સમયાંતરે પ્લગિન્સ, થીમ્સ અને વર્ડપ્રેસ પરના અપડેટ્સ માટે જુએ છે. સુનિશ્ચિત પોસ્ટ્સ સમયસર પ્રકાશિત થાય છે તે પણ તે છે. તે સુનિશ્ચિત કરવા માટે વિવિધ પ્લગિન્સ દ્વારા પણ ઉપયોગમાં લઈ શકાય છે કે યોજના ઘડવામાં આવે છે."
-
 #. translators: Hidden accessibility text.
 #: wp-admin/includes/class-wp-site-health.php:1761
 msgid "Passed"
@@ -5079,6 +5075,10 @@ msgstr "તમારી સાઇટ લૂપબેક વિનંતીને
 #: wp-admin/includes/class-wp-site-health.php:1691
 msgid "A scheduled event has failed"
 msgstr "સુનિશ્ચિત ઇવેન્ટ નિષ્ફળ થઈ"
+
+#: wp-admin/includes/class-wp-site-health.php:1667
+msgid "Scheduled events are what periodically looks for updates to plugins, themes and WordPress itself. It is also what makes sure scheduled posts are published on time. It may also be used by various plugins to make sure that planned actions are executed."
+msgstr "શેડ્યૂલ કરેલ ઇવેન્ટ્સ એ સમયાંતરે પ્લગિન્સ, થીમ્સ અને વર્ડપ્રેસ પરના અપડેટ્સ માટે જુએ છે. સુનિશ્ચિત પોસ્ટ્સ સમયસર પ્રકાશિત થાય છે તે પણ તે છે. તે સુનિશ્ચિત કરવા માટે વિવિધ પ્લગિન્સ દ્વારા પણ ઉપયોગમાં લઈ શકાય છે કે યોજના ઘડવામાં આવે છે."
 
 #: wp-admin/includes/class-wp-site-health.php:1773
 msgid "Background updates may not be working properly"
@@ -5198,17 +5198,17 @@ msgstr "સખત જૂનું એસક્યુએલ સર્વર"
 msgid "WordPress requires %1$s version %2$s or higher. Contact your web hosting company to correct this."
 msgstr "WordPress ને %1$s સંસ્કરણ %2$s અથવા ઉચ્ચતરની જરૂર છે. આને સુધારવા માટે તમારી વેબ હોસ્ટિંગ કંપનીનો સંપર્ક કરો."
 
-#. translators: 1: The IP address WordPress.org resolves to. 2: The error
-#. returned by the lookup.
-#: wp-admin/includes/class-wp-site-health.php:1355
-msgid "Your site is unable to reach WordPress.org at %1$s, and returned the error: %2$s"
-msgstr "તમારી સાઇટ %1$s પર WordPress.org સુધી પહોંચવામાં અસમર્થ છે, અને ભૂલ પરત કરી છે: %2$s"
-
 #. translators: 1: The database engine in use (MySQL or MariaDB). 2: Database
 #. server recommended version number.
 #: wp-admin/includes/class-wp-site-health.php:1267
 msgid "For optimal performance and security reasons, you should consider running %1$s version %2$s or higher. Contact your web hosting company to correct this."
 msgstr "શ્રેષ્ઠ કાર્યપ્રદર્શન અને સુરક્ષા કારણોસર, તમારે %1$s સંસ્કરણ %2$s અથવા ઉચ્ચતર ચલાવવાનું વિચારવું જોઈએ. આને સુધારવા માટે તમારી વેબ હોસ્ટિંગ કંપનીનો સંપર્ક કરો."
+
+#. translators: 1: The IP address WordPress.org resolves to. 2: The error
+#. returned by the lookup.
+#: wp-admin/includes/class-wp-site-health.php:1355
+msgid "Your site is unable to reach WordPress.org at %1$s, and returned the error: %2$s"
+msgstr "તમારી સાઇટ %1$s પર WordPress.org સુધી પહોંચવામાં અસમર્થ છે, અને ભૂલ પરત કરી છે: %2$s"
 
 #: wp-admin/includes/class-wp-site-health.php:1261
 msgid "Outdated SQL server"
@@ -6032,7 +6032,7 @@ msgstr "આ પ્લગિન તમારા પીએચપી ની આવ�
 
 #. translators: %s: WordPress version number.
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:21 wp-admin/includes/update.php:321
+#: wp-admin/about.php:21 wp-admin/about.php:85 wp-admin/includes/update.php:321
 #: wp-admin/index.php:119 wp-admin/install.php:242 wp-admin/update-core.php:94
 #: wp-admin/upgrade.php:96
 msgid "https://wordpress.org/documentation/wordpress-version/version-%s/"
@@ -6354,15 +6354,15 @@ msgstr "આ વિભાગમાં તમારે માહિતી કે �
 msgid "What third parties we receive data from"
 msgstr "અમે કયા તૃતીય પક્ષો પાસેથી ડેટા પ્રાપ્ત કરીએ છીએ"
 
-#. translators: Privacy policy tutorial.
-#: wp-admin/includes/class-wp-privacy-policy-content.php:628
-msgid "In this section you should explain what measures you have taken to protect your users&#8217; data. This could include technical measures such as encryption; security measures such as two factor authentication; and measures such as staff training in data protection. If you have carried out a Privacy Impact Assessment, you can mention it here too."
-msgstr "આ વિભાગમાં તમારે તમારા વપરાશકર્તાઓને બચાવવા માટે તમે કયા પગલાં લીધાં છે તે સમજાવવું જોઈએ & # 8217; માહિતી આમાં એન્ક્રિપ્શન જેવી તકનીકી પગલાં શામેલ હોઈ શકે છે; સુરક્ષા પગલાં જેમ કે 2FA; અને માનવ સુરક્ષા જેવા કે ડેટા સંરક્ષણમાં સ્ટાફ તાલીમ. જો તમે ગોપનીય અસર આકારણી હાથ ધરવામાં આવી હોય, તો તમે તેને અહીં પણ ઉલ્લેખ કરી શકો છો."
-
 #. translators: Default privacy policy heading.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:633
 msgid "What data breach procedures we have in place"
 msgstr "અમારી પાસે કઈ જગ્યાએ ભંગાણ પ્રક્રિયાઓ છે"
+
+#. translators: Privacy policy tutorial.
+#: wp-admin/includes/class-wp-privacy-policy-content.php:628
+msgid "In this section you should explain what measures you have taken to protect your users&#8217; data. This could include technical measures such as encryption; security measures such as two factor authentication; and measures such as staff training in data protection. If you have carried out a Privacy Impact Assessment, you can mention it here too."
+msgstr "આ વિભાગમાં તમારે તમારા વપરાશકર્તાઓને બચાવવા માટે તમે કયા પગલાં લીધાં છે તે સમજાવવું જોઈએ & # 8217; માહિતી આમાં એન્ક્રિપ્શન જેવી તકનીકી પગલાં શામેલ હોઈ શકે છે; સુરક્ષા પગલાં જેમ કે 2FA; અને માનવ સુરક્ષા જેવા કે ડેટા સંરક્ષણમાં સ્ટાફ તાલીમ. જો તમે ગોપનીય અસર આકારણી હાથ ધરવામાં આવી હોય, તો તમે તેને અહીં પણ ઉલ્લેખ કરી શકો છો."
 
 #. translators: Default privacy policy heading.
 #: wp-admin/includes/class-wp-privacy-policy-content.php:626
@@ -7511,6 +7511,11 @@ msgctxt "Background Scroll"
 msgid "Scroll"
 msgstr "સ્ક્રોલ"
 
+#. translators: 1: Used memory, 2: Total memory
+#: wp-admin/includes/class-wp-debug-data.php:496
+msgid "%1$s of %2$s"
+msgstr "%2$s ના %1$s"
+
 #. translators: %s: https://wordpress.org/plugins
 #: wp-admin/plugin-install.php:100
 msgid "Plugins hook into WordPress to extend its functionality with custom features. Plugins are developed independently from the core WordPress application by thousands of developers all over the world. All plugins in the official <a href=\"%s\">WordPress Plugin Directory</a> are compatible with the license WordPress uses."
@@ -7670,6 +7675,17 @@ msgstr "જીવંત પૂર્વદર્શન સાથે મેને
 msgid "Sorry, you are not allowed to add links to this site."
 msgstr "માફ કરશો, તમને આ સાઇટ માટે લીંક્સ ઉમેરવાની મંજૂરી નથી."
 
+#. translators: %s: Gravatar URL.
+#: wp-admin/includes/upgrade.php:285
+msgid ""
+"Hi, this is a comment.\n"
+"To get started with moderating, editing, and deleting comments, please visit the Comments screen in the dashboard.\n"
+"Commenter avatars come from <a href=\"%s\">Gravatar</a>."
+msgstr ""
+"નમસ્તે, આ ટિપ્પણી છે.\n"
+"ટિપ્પણીઓને મંજૂર કરવા, સંપાદિત કરવા અથવા કાઢી નાખવાનું શરૂ કરવા માટે, કૃપા કરીને ડેશબોર્ડમાં ટિપ્પણીઓની સ્ક્રીનની મુલાકાત લો.\n"
+"ટિપ્પણી કરનારના અવતાર <a href=\"%s\">Gravatar</a> પર થી આવે છે."
+
 #. translators: %s: Theme name.
 #: wp-admin/includes/update.php:1003
 msgctxt "theme"
@@ -7811,6 +7827,10 @@ msgstr "માફ કરશો, તમને આ સાઇટ પર ગોપ�
 #: wp-admin/includes/ajax-actions.php:4587
 msgid "Sorry, you are not allowed to activate plugins on this site."
 msgstr "માફ કરશો, તમને આ સાઇટ પર પ્લગઇન્સ ઇન્સ્ટોલ કરવા માટે મંજૂરી નથી."
+
+#: wp-admin/options-connectors.php:16
+msgid "Sorry, you are not allowed to manage connectors on this site."
+msgstr "માફ કરશો, તમને આ સાઇટ પર કનેક્ટર્સનું સંચાલન કરવાની મંજૂરી નથી."
 
 #: wp-admin/includes/ajax-actions.php:4185 wp-admin/theme-install.php:16
 #: wp-admin/update.php:262 wp-admin/update.php:304 wp-admin/update.php:342
@@ -8287,7 +8307,7 @@ msgid "(Currently set to: %s)"
 msgstr "(હાલમાં સુયોજિત : %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:301
+#: wp-admin/about.php:332
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>આવૃત્તિ %s</strong> મા એક સુરક્ષા નો મુદ્દો સંબોધવામાં આવ્યો."
 
@@ -8300,15 +8320,15 @@ msgstr "https://gravatar.com/"
 msgid "Profile Picture"
 msgstr "પ્રોફાઇલ ચિત્ર"
 
-#: wp-admin/about.php:292
+#: wp-admin/about.php:323
 msgid "Maintenance Releases"
 msgstr "જાળવણી સલાહ"
 
-#: wp-admin/about.php:295
+#: wp-admin/about.php:326
 msgid "Security Releases"
 msgstr "સુરક્ષા સલાહ"
 
-#: wp-admin/about.php:298
+#: wp-admin/about.php:329
 msgid "Maintenance and Security Releases"
 msgstr "જાળવણી અને સુરક્ષા સલાહ"
 
@@ -11448,21 +11468,22 @@ msgstr "આ પોસ્ટની નીચે આવૃત્તિ કરત�
 msgid "Show Toolbar when viewing site"
 msgstr "જ્યારે સાઇટ જોઈ ત્યારે ટૂલબાર બતાવો"
 
+#. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:324
+#: wp-admin/about.php:82 wp-admin/about.php:355
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "વધારે માહિતી માટે, <a href=\"%s\">પ્રકાશન નોંધો</a> જુઓ."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:318
+#: wp-admin/about.php:349
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>આવૃત્તિ %1$s</strong> માં સુરક્ષા સમસ્યા ઓને સંબોઘી ને %2$s ભૂલ ને સુધારવામાં આવી."
 msgstr[1] "<strong>આવૃત્તિ %1$s</strong> માં સુરક્ષા સમસ્યા ઓને સંબોઘી ને %2$s ભૂલો ને સુધારવામાં આવી."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:306
+#: wp-admin/about.php:70 wp-admin/about.php:337
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>આવૃત્તિ %1$s</strong> માં %2$s ભૂલ ને સંબોઘવા માં આવી."
@@ -11470,21 +11491,21 @@ msgstr[1] "<strong>આવૃત્તિ %1$s</strong> માં %2$s ભૂલ�
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:312
+#: wp-admin/about.php:343
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>આવૃત્તિ %1$s</strong>માં સુરક્ષાને લગતી ત્રુટીઓ અને %2$s ભૂલ સુધારવામાં આવેલ છે "
 msgstr[1] "<strong>આવૃત્તિ %1$s</strong>માં સુરક્ષાને લગતી ત્રુટીઓ અને %2$s ભૂલો સુધારવામાં આવેલ છે "
 
-#: wp-admin/about.php:294
+#: wp-admin/about.php:325
 msgid "Security Release"
 msgstr "સુરક્ષા પ્રકાશન"
 
-#: wp-admin/about.php:291
+#: wp-admin/about.php:65 wp-admin/about.php:322
 msgid "Maintenance Release"
 msgstr "જાળવણી પ્રકાશન"
 
-#: wp-admin/about.php:297
+#: wp-admin/about.php:328
 msgid "Maintenance and Security Release"
 msgstr "જાળવણી અને સુરક્ષા પ્રકાશન"
 
@@ -11494,7 +11515,7 @@ msgid "What&#8217;s New"
 msgstr "નવું શું છે."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:303
+#: wp-admin/about.php:334
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "<strong>આવૃત્તિ %s</strong> માં અમુક સુરક્ષાના મુદ્દાઓ સંબોધવામાં આવ્યા છે."
 
@@ -11665,10 +11686,6 @@ msgstr "કડીઓ કાઢી રહ્યા છીએ"
 msgid "Managing pages is very similar to managing posts, and the screens can be customized in the same way."
 msgstr "પેજ વ્યવસ્થા પોસ્ટ્સ વ્યવસ્થા જેવું જ છે, અને સ્ક્રીન એ જ રીતે બદલી શકાય છે."
 
-#: wp-admin/upload.php:396
-msgid "If a media file has not been attached to any content, you will see that in the Uploaded To column, and can click on Attach to launch a small popup that will allow you to search for existing content and attach the file."
-msgstr "એક મીડિયા ફાઇલ કોઈપણ લખાણ સાથે જોડાણ કરવામાં આવી નથી, તો તમે અપલોડ સ્તંભમાં જોઈ શકો છો અને જોડાણ પર ક્લિક કરી શકો છો જેનાથી એક નાની પોપઅપ ખુલશે જેમાં તમે હાલનું લખાણ શોધવા અને ફાઇલ જોડવા માટેની પરવાનગી આપે છે."
-
 #: wp-admin/upload.php:371
 msgid "All the files you&#8217;ve uploaded are listed in the Media Library, with the most recent uploads listed first. You can use the Screen Options tab to customize the display of this screen."
 msgstr "તમામ અપલોડ કરેલી ફાઇલો મીડિયા લાઇબ્રેરી માં દેખાશે, તાજેતરના અપલોડ પ્રથમ દેખાશે. તમે આ સ્ક્રીન પ્રદર્શન કસ્ટમાઇઝ કરવા માટે સ્ક્રીન વિકલ્પો ટેબ ઉપયોગ કરી શકો છો."
@@ -11676,6 +11693,10 @@ msgstr "તમામ અપલોડ કરેલી ફાઇલો મીડ�
 #: wp-admin/edit-comments.php:223
 msgid "Many people take advantage of keyboard shortcuts to moderate their comments more quickly. Use the link to the side to learn more."
 msgstr "ઘણા લોકો વધુ ઝડપથી તેમની ટિપ્પણીઓ મધ્યસ્થી કરવા માટે કીબોર્ડ શૉર્ટકટ્સ નો લાભ લે છે. વધુ જાણવા માટે બાજુની લિંકનો ઉપયોગ કરો."
+
+#: wp-admin/upload.php:396
+msgid "If a media file has not been attached to any content, you will see that in the Uploaded To column, and can click on Attach to launch a small popup that will allow you to search for existing content and attach the file."
+msgstr "એક મીડિયા ફાઇલ કોઈપણ લખાણ સાથે જોડાણ કરવામાં આવી નથી, તો તમે અપલોડ સ્તંભમાં જોઈ શકો છો અને જોડાણ પર ક્લિક કરી શકો છો જેનાથી એક નાની પોપઅપ ખુલશે જેમાં તમે હાલનું લખાણ શોધવા અને ફાઇલ જોડવા માટેની પરવાનગી આપે છે."
 
 #: wp-admin/index.php:52
 msgid "Links in the Toolbar at the top of the screen connect your dashboard and the front end of your site, and provide access to your profile and helpful WordPress information."
@@ -11734,11 +11755,11 @@ msgstr "<strong>ટ્રેશ</strong> આ સૂચિમાંથી તમ�
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "કારણ કે આ મલ્ટીસાઇટ સ્થાપન છે, તમે એકાઉન્ટ્સ કે જે પહેલાથી જ એક વપરાશકર્તા નામ અથવા ઇમેઇલ સ્પષ્ટ છે, અને એક ભૂમિકા વ્યાખ્યાયિત કરીને નેટવર્ક પર અસ્તિત્વ ધરાવે છે ઉમેરી શકો છો. આવા પાસવર્ડ સ્પષ્ટ વધારે વિકલ્પો, માટે, તમે નેટવર્ક સંચાલક હોય છે અને નેટવર્ક સંચાલન > તમામ વપરાશકારો હેઠળ વપરાશકર્તા પ્રોફાઇલ સંપાદિત કરવા માટે હાલની વપરાશકર્તા નામ હેઠળ હોવર લિંકનો ઉપયોગ કરો."
 
-#: wp-admin/about.php:278
+#: wp-admin/about.php:309
 msgid "Go to Dashboard &rarr; Home"
 msgstr "ડેશબોર્ડ &rarr; મુખ્યપેજ પર જાવ"
 
-#: wp-admin/about.php:271
+#: wp-admin/about.php:302
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "ડેશબોર્ડ &rarr; અપડેટ્સ પર જાવ"
 
@@ -13375,7 +13396,7 @@ msgstr "મેનુ વસ્તુઓ સંપાદિત કરો"
 msgid "View All"
 msgstr "બધુ જુઓ"
 
-#: wp-admin/about.php:278
+#: wp-admin/about.php:309
 msgid "Go to Dashboard"
 msgstr "ડેશબોર્ડ પર જાઓ"
 

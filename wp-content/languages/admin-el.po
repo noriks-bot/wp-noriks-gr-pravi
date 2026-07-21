@@ -37,63 +37,63 @@ msgctxt "default GMT offset or timezone string"
 msgid "0"
 msgstr "3"
 
-#: wp-admin/about.php:150
+#: wp-admin/about.php:201
 msgid "WordPress continues to polish accessibility across WordPress Core and Gutenberg, advancing the goals to meet accessibility standards. WordPress 7.0 includes fixes across the platform, improving media management, usability for voice control, and improvements to color contrast with the new admin color scheme. The editor ships with new blocks and improvements to editor navigation and interaction."
 msgstr "Το WordPress συνεχίζει να βελτιώνει την προσβασιμότητα τόσο στον πυρήνα του WordPress όσο και στον Gutenberg, προωθώντας τους στόχους για την τήρηση των προτύπων προσβασιμότητας. Η έκδοση WordPress 7.0 περιλαμβάνει διορθώσεις σε ολόκληρη την πλατφόρμα, βελτιώνοντας τη διαχείριση πολυμέσων, τη χρηστικότητα για τον φωνητικό έλεγχο, καθώς και τη χρωματική αντίθεση με το νέο χρωματικό σχήμα του πίνακα ελέγχου. Ο επεξεργαστής διαθέτει νέα μπλοκ και βελτιώσεις στην πλοήγηση και την αλληλεπίδραση με τον επεξεργαστή."
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:192
 msgid "WordPress 7.0 improves the accuracy of image loading prioritization, preventing hidden images in navigation overlays or interactive blocks from degrading the loading of critical resources. On-demand block stylesheet loading in classic themes is more reliable, and the ability is added for scripts to depend on script modules to reduce render-blocking."
 msgstr "Το WordPress 7.0 βελτιώνει την ακρίβεια της ιεράρχησης κατά τη φόρτωση εικόνων, αποτρέποντας τις κρυφές εικόνες σε επικαλύψεις πλοήγησης ή διαδραστικά μπλοκ να επιβραδύνουν τη φόρτωση κρίσιμων πόρων. Η φόρτωση κατά παραγγελίων του στυλ των μπλοκ στα κλασικά θέματα είναι πιο αξιόπιστη, ενώ προστέθηκε η δυνατότητα τα scripts να βασίζονται σε script modules, ώστε να μειωθεί ο χρόνος μπλοκαρίσματος της απεικόνισης της σελίδας."
 
-#: wp-admin/about.php:125
+#: wp-admin/about.php:176
 msgid "Drop a pattern onto your page and it behaves like one block, so you don’t have to hunt through nested blocks for the element you want to change. Swap the text and images, adjust styles from the inspector, and keep moving. For any advanced edits, a single click to \"edit pattern\" gives you access to all available tools."
 msgstr "Απλώς τοποθετήστε ένα μοτίβο στη σελίδα σας και θα λειτουργεί σαν ένα ενιαίο μπλοκ, οπότε δεν χρειάζεται να ψάχνετε μέσα σε εμφωλευμένα μπλοκ για να βρείτε το στοιχείο που θέλετε να αλλάξετε. Αντικαταστήστε το κείμενο και τις εικόνες, προσαρμόστε τα στυλ από τον επιθεωρητή και συνεχίστε τη δουλειά σας. Για οποιεσδήποτε πιο σύνθετες τροποποιήσεις, με ένα μόνο κλικ στην επιλογή «επεξεργασία μοτίβου» αποκτάτε πρόσβαση σε όλα τα διαθέσιμα εργαλεία."
 
-#: wp-admin/about.php:124
+#: wp-admin/about.php:175
 msgid "Patterns as single blocks."
 msgstr "Μοτίβα ως ενιαία μπλοκ."
 
-#: wp-admin/about.php:122
+#: wp-admin/about.php:173
 msgid "A simpler way to build with patterns"
 msgstr "Ένας απλούστερος τρόπος για να δημιουργείτε με μοτίβα"
 
-#: wp-admin/about.php:105
+#: wp-admin/about.php:156
 msgid "Review your post&#8217;s revision history with a timeline slider and see exactly what changed in the document with visual markers, block by block. Find the version you want and restore it in one click."
 msgstr "Ελέγξτε το ιστορικό αναθεωρήσεων του άρθρου σας με το slider χρονοσειράς και δείτε ακριβώς τι άλλαξε στο έγγραφο με οπτικές ενδείξεις, μπλοκ προς μπλοκ. Βρείτε την έκδοση που θέλετε και επαναφέρετέ την με ένα κλικ."
 
-#: wp-admin/about.php:104
+#: wp-admin/about.php:155
 msgid "Scrub through every version of your page."
 msgstr "Ελέγξτε προσεκτικά κάθε έκδοση της σελίδας σας."
 
-#: wp-admin/about.php:102
+#: wp-admin/about.php:153
 msgid "Visual revisions"
 msgstr "Οπτικές αναθεωρήσεις"
 
-#: wp-admin/about.php:95
+#: wp-admin/about.php:146
 msgid "The Connectors screen introduces a single hub for managing a range of external service integrations, including AI providers. Opt in by connecting your preferred AI provider, then put it to work across your site. The optional AI plugin adds a growing set of tools directly into the editor: create titles and excerpts, generate and edit images, and suggest alt text. Any plugin that needs to connect to an outside service can tap into this standardized connection management system, making it easy for users and developers alike."
 msgstr "Η οθόνη «Connectors» προσφέρει έναν ενιαίο κόμβο για τη διαχείριση μιας σειράς ενσωματώσεων εξωτερικών υπηρεσιών, συμπεριλαμβανομένων των παρόχων τεχνητής νοημοσύνης. Ενεργοποιήστε τη λειτουργία συνδέοντας τον προτιμώμενο πάροχο τεχνητής νοημοσύνης και, στη συνέχεια, αξιοποιήστε τον σε ολόκληρο τον ιστότοπό σας. Το προαιρετικό πρόσθετο τεχνητής νοημοσύνης προσθέτει ένα συνεχώς διευρυνόμενο σύνολο εργαλείων απευθείας στον επεξεργαστή: δημιουργία τίτλων και αποσπασμάτων, δημιουργία και επεξεργασία εικόνων, καθώς και προτάσεις εναλλακτικού κειμένου. Οποιοδήποτε πρόσθετο που απαιτεί σύνδεση με εξωτερική υπηρεσία μπορεί να αξιοποιήσει αυτό το τυποποιημένο σύστημα διαχείρισης συνδέσεων, διευκολύνοντας τόσο τους χρήστες όσο και τους προγραμματιστές."
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:145
 msgid "A centralized hub for your connections."
 msgstr "Ένας κεντρικός κόμβος για τις συνδέσεις σας."
 
-#: wp-admin/about.php:92
+#: wp-admin/about.php:143
 msgid "AI foundations"
 msgstr "Τα θεμέλια της Τεχνητής Νοημοσύνης (AI)"
 
-#: wp-admin/about.php:75
+#: wp-admin/about.php:126
 msgid "Build the menu overlay you want visitors to see. Go beyond a simple list of links: add columns, increase the font size, and align everything to your liking. Start from a pre-built template, or design your own from scratch."
 msgstr "Δημιουργήστε το μενού που θέλετε να βλέπουν οι επισκέπτες. Μην περιοριστείτε σε μια απλή λίστα συνδέσμων: προσθέστε στήλες, αυξήστε το μέγεθος της γραμματοσειράς και ευθυγραμμίστε τα πάντα όπως σας αρέσει. Ξεκινήστε από ένα έτοιμο πρότυπο ή σχεδιάστε το δικό σας από το μηδέν."
 
-#: wp-admin/about.php:74
+#: wp-admin/about.php:125
 msgid "A dedicated canvas for your menu."
 msgstr "Ένας πίνακας ειδικά για το μενού σας."
 
-#: wp-admin/about.php:72
+#: wp-admin/about.php:123
 msgid "Design your navigation overlay"
 msgstr "Σχεδιάστε την πλευρική πλοήγηση"
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:117
 msgid "WordPress 7.0 introduces the foundation for AI across the platform, letting you connect your preferred provider and put it to work across your site. Edit more simply by dropping in layouts and swapping content without diving into blocks. The navigation overlay now taps into the full potential of blocks, and reviewing historical changes is easier with a visual comparison."
 msgstr "Το WordPress 7.0 θέτει τα θεμέλια για την αξιοποίηση της τεχνητής νοημοσύνης σε ολόκληρη την πλατφόρμα, επιτρέποντάς σας να συνδέσετε τον προτιμώμενο πάροχο και να τον αξιοποιήσετε σε ολόκληρο τον ιστότοπό σας. Επεξεργαστείτε το περιεχόμενο πιο εύκολα προσθέτοντας διατάξεις και αντικαθιστώντας στοιχεία χωρίς να χρειάζεται να επεξεργαστείτε χειροκίνητα τα μπλοκ. Η πλευρική πλοήγηση αξιοποιεί πλέον πλήρως τις δυνατότητες των μπλοκ, ενώ η ανασκόπηση των προηγούμενων αλλαγών γίνεται ευκολότερη χάρη στην οπτική σύγκριση."
 
@@ -625,12 +625,12 @@ msgid "Skip to Editor"
 msgstr "Μετάβαση στον επεξεργαστή"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:245
+#: wp-admin/about.php:296
 msgid "WordPress %s Field Guide"
 msgstr "Οδηγός πεδίων WordPress %s"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:218
+#: wp-admin/about.php:269
 msgid "WordPress %s Release Notes"
 msgstr "Σημειώσεις έκδοσης WordPress %s"
 
@@ -789,7 +789,7 @@ msgstr "Αν είστε δημιουργός προσθέτων, μπορείτ�
 msgid "If you are a plugin author, you can learn more about <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\">how to add the Personal Data Eraser to a plugin</a>."
 msgstr "Αν είστε δημιουργός προσθέτων, μπορείτε να μάθετε περισσότερα σχετικά με το <a href=\"https://developer.wordpress.org/plugins/privacy/adding-the-personal-data-eraser-to-your-plugin/\">πώς να προσθέσετε έναν διαγραφέα προσωπικών δεδομένων σε ένα πρόσθετο</a>."
 
-#: wp-admin/about.php:171
+#: wp-admin/about.php:222
 msgid "See everything new"
 msgstr "Δείτε καθετί νέο"
 
@@ -799,11 +799,11 @@ msgid "https://wordpress.org/download/releases/%s/"
 msgstr "https://wordpress.org/download/releases/%s/"
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:163
+#: wp-admin/about.php:214
 msgid "For a comprehensive overview of all the new features and enhancements in WordPress %s, please visit the feature-showcase website."
 msgstr "Για μια ολοκληρωμένη επισκόπηση όλων των νέων χαρακτηριστικών και βελτιώσεων του WordPress %s, παρακαλούμε επισκεφθείτε τον ιστότοπο με την επίδειξη των χαρακτηριστικών."
 
-#: wp-admin/about.php:157
+#: wp-admin/about.php:208
 msgid "And much more"
 msgstr "Και πολλά άλλα"
 
@@ -1009,12 +1009,12 @@ msgid "When using Bulk Edit, you can change the metadata (categories, author, et
 msgstr "Όταν χρησιμοποιείτε τη Μαζική επεξεργασία, μπορείτε να αλλάξετε τα μεταδεδομένα (κατηγορίες, συντάκτης κλπ.) για όλα τα επιλεγμένα άρθρα διά μιας. Για να αφαιρέσετε ένα άρθρο από την ομάδα, απλά πατήστε στο %s<span class=\"screen-reader-text\">remove</span> δίπλα στον τίτλο του στην περιοχή Μαζική επεξεργασία που εμφανίζεται."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:228
+#: wp-admin/about.php:279
 msgid "Read the WordPress %s Release Notes for information on installation, enhancements, fixed issues, release contributors, learning resources, and the list of file changes."
 msgstr "Διαβάστε τις σημειώσεις έκδοσης WordPress %s για πληροφορίες σχετικά με την εγκατάσταση, τις βελτιώσεις, τις διορθώσεις, τους συνεισφέροντες, το εκπαιδευτικό υλικό, και την λίστα με τις αλλαγές αρχείων."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:255
+#: wp-admin/about.php:306
 msgid "Explore the WordPress %s Field Guide. Learn about the changes in this release with detailed developer notes to help you build with WordPress."
 msgstr "Εξερευνήστε τον Οδηγό Πεδίων WordPress %s. Μάθετε για τις αλλαγές σε αυτή την έκδοση με εκτενής πληροφορίες για προγραμματιστές για να σας βοηθήσουν να δημιουργήσετε με το WordPress."
 
@@ -1497,7 +1497,7 @@ msgid "Be the future of WordPress"
 msgstr "Γίνε το μέλλον του WordPress"
 
 #. translators: 1: Learn WordPress link, 2: Workshops link.
-#: wp-admin/about.php:196
+#: wp-admin/about.php:247
 msgid "<a href=\"%1$s\">Learn WordPress</a> is a free resource for new and experienced WordPress users. Learn is stocked with how-to videos on using various features in WordPress, <a href=\"%2$s\">interactive workshops</a> for exploring topics in-depth, and lesson plans for diving deep into specific areas of WordPress."
 msgstr "Το <a href=\"%1$s\">μάθετε WordPress</a> είναι ένας δωρεάν πόρος για νέους και έμπειρους χρήστες του WordPress. Το μάθημα είναι εφοδιασμένο με βίντεο οδηγούς για τη χρήση διαφόρων λειτουργιών του WordPress, <a href=\"%2$s\">διαδραστικά εργαστήρια</a> για τη διερεύνηση θεμάτων σε βάθος, και σχέδια μαθημάτων για εμβάθυνση σε συγκεκριμένους τομείς του WordPress."
 
@@ -1643,12 +1643,12 @@ msgid "<a href=\"https://wordpress.org/documentation/article/customizer/\">Docum
 msgstr "<a href=\"https://wordpress.org/documentation/article/customizer/\">Τεκμηρίωση για τον Προσαρμογέα</a>"
 
 #. translators: The localized WordPress download URL.
-#: wp-admin/about.php:336
+#: wp-admin/about.php:387
 msgid "https://wordpress.org/download/"
 msgstr "https://wordpress.org/download/"
 
 #. translators: %s: The major version of WordPress for this branch.
-#: wp-admin/about.php:333
+#: wp-admin/about.php:384
 msgid "This is the final release of WordPress %s"
 msgstr "Αυτή είναι η τελική έκδοση του WordPress %s"
 
@@ -1968,12 +1968,12 @@ msgid "Reach out to WordPress Core developers to ensure you'll never have this p
 msgstr "Απευθυνθείτε στους προγραμματιστές του WordPress Core για να βεβαιωθείτε ότι δεν θα αντιμετωπίσετε ποτέ ξανά αυτό το πρόβλημα."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:330
+#: wp-admin/about.php:381
 msgid "Important! Your version of WordPress (%1$s) will stop receiving security updates in the near future. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Σημαντικό! Η έκδοση WordPress (%1$s) που έχετε θα σταματήσει να λαμβάνει ενημερώσεις ασφαλείας στο κοντινό μέλλον. Για να διατηρήσετε τον ιστότοπό σας ασφαλή, παρακαλούμε <a href=\"%2$s\">ενημερώστε στην τελευταία έκδοση του WordPress</a>."
 
 #. translators: 1: WordPress version number, 2: Link to update WordPress
-#: wp-admin/about.php:327
+#: wp-admin/about.php:378
 msgid "Important! Your version of WordPress (%1$s) is no longer supported, you will not receive any security updates for your website. To keep your site secure, please <a href=\"%2$s\">update to the latest version of WordPress</a>."
 msgstr "Σημαντικό! Η έκδοση WordPress (%1$s) που έχετε δεν υποστηρίζεται πλέον και δεν θα λαμβάνετε ενημερώσεις ασφαλείας για τον ιστότοπό σας. Για να διατηρήσετε τον ιστότοπό σας ασφαλή, παρακαλούμε <a href=\"%2$s\">ενημερώστε στην τελευταία έκδοση του WordPress</a>."
 
@@ -1983,7 +1983,7 @@ msgid "https://make.wordpress.org/core/wordpress-%s-field-guide/"
 msgstr "https://make.wordpress.org/core/wordpress-%s-field-guide/"
 
 #. translators: %s: Version number.
-#: wp-admin/about.php:187
+#: wp-admin/about.php:238
 msgid "Learn more about WordPress %s"
 msgstr "Μάθετε περισσότερα για το WordPress %s"
 
@@ -2108,7 +2108,7 @@ msgstr "Μια προσπάθεια έγινε, αλλά ο ιστότοπος �
 
 #: wp-admin/includes/class-core-upgrader.php:166
 #: wp-admin/includes/class-wp-upgrader.php:206
-#: wp-admin/includes/update-core.php:1158
+#: wp-admin/includes/update-core.php:1163
 msgid "The update cannot be installed because some files could not be copied. This is usually due to inconsistent file permissions."
 msgstr "Δεν είναι δυνατή η εγκατάσταση της ενημέρωσης επειδή δεν ήταν δυνατή η αντιγραφή ορισμένων αρχείων. Αυτό συνήθως οφείλεται σε ασυνεπή δικαιώματα αρχείων."
 
@@ -2885,7 +2885,7 @@ msgstr "Προσθήκη συνθηματικού εφαρμογής"
 msgid "Required to create an Application Password, but not to update the user."
 msgstr "Απαιτείται για να δημιουργήσετε συνθηματικό εφαρμογής, όχι για να ενημερώσετε τον χρήστη."
 
-#: wp-admin/about.php:271
+#: wp-admin/about.php:322
 msgid "Go to Updates"
 msgstr "Πηγαίνετε στις ενημερώσεις"
 
@@ -4138,7 +4138,7 @@ msgid "The seventh parameter passed to %s should be numeric representing menu po
 msgstr "Η έβδομη παράμετρος που αποστέλλεται στο %s πρέπει να είναι ένας ακέραιος που αντιπροσωπεύει τη θέση του μενού."
 
 #. translators: 1: WordPress version number, 2: The PHP extension name needed.
-#: wp-admin/includes/update-core.php:1264
+#: wp-admin/includes/update-core.php:1269
 msgid "The update cannot be installed because WordPress %1$s requires the %2$s PHP extension."
 msgstr "Η ενημέρωση δεν μπορεί να εγκατασταθεί επειδή το WordPress %1$s απαιτεί την %2$s PHP extension."
 
@@ -4787,7 +4787,7 @@ msgstr "https://make.wordpress.org/hosting/handbook/handbook/server-environment/
 msgid "The WordPress Hosting Team maintains a list of those modules, both recommended and required, in <a href=\"%1$s\" %2$s>the team handbook%3$s</a>."
 msgstr "Η Ομάδα Φιλοξενίας του WordPress διατηρεί μια λίστα από τέτοια αθρώματα, συνιστώμενα όσο και απαραίτητα, στο <a href=\"%1$s\" %2$s>εγχειρίδιο της ομάδας%3$s</a>."
 
-#: wp-admin/about.php:140 wp-admin/includes/class-wp-site-health.php:259
+#: wp-admin/about.php:191 wp-admin/includes/class-wp-site-health.php:259
 #: wp-admin/includes/class-wp-site-health.php:737
 #: wp-admin/includes/class-wp-site-health.php:908
 #: wp-admin/includes/class-wp-site-health.php:1147
@@ -6034,9 +6034,9 @@ msgstr "Αυτό το πρόσθετο δεν είναι συμβατό με τ�
 
 #. translators: %s: WordPress version number.
 #. translators: %s: WordPress version.
-#: wp-admin/about.php:21 wp-admin/includes/update.php:321
-#: wp-admin/index.php:119 wp-admin/install.php:242 wp-admin/update-core.php:94
-#: wp-admin/upgrade.php:96
+#: wp-admin/about.php:21 wp-admin/about.php:80 wp-admin/about.php:105
+#: wp-admin/includes/update.php:321 wp-admin/index.php:119
+#: wp-admin/install.php:242 wp-admin/update-core.php:94 wp-admin/upgrade.php:96
 msgid "https://wordpress.org/documentation/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/documentation/wordpress-version/version-%s/"
 
@@ -8313,7 +8313,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Έχει οριστεί σε:%s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:301
+#: wp-admin/about.php:352
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>Η έκδοση %s</strong> διευθέτησε ένα θέμα ασφαλείας."
 
@@ -8326,15 +8326,15 @@ msgstr "https://gravatar.com/"
 msgid "Profile Picture"
 msgstr "Εικόνα προφίλ"
 
-#: wp-admin/about.php:298
+#: wp-admin/about.php:65 wp-admin/about.php:349
 msgid "Maintenance and Security Releases"
 msgstr "Εκδόσεις συντήρησης και ασφάλειας"
 
-#: wp-admin/about.php:295
+#: wp-admin/about.php:346
 msgid "Security Releases"
 msgstr "Εκδόσεις Ασφαλείας"
 
-#: wp-admin/about.php:292
+#: wp-admin/about.php:343
 msgid "Maintenance Releases"
 msgstr "Έκδοση Συντήρησης"
 
@@ -10016,8 +10016,8 @@ msgstr "Ο ιστότοπος στην %1$s παρουσίασε κάποιο κ
 msgid "WordPress %s is also now available."
 msgstr "To WordPress %s είναι επίσης διαθέσιμο."
 
-#: wp-admin/includes/update-core.php:1354
-#: wp-admin/includes/update-core.php:1390
+#: wp-admin/includes/update-core.php:1359
+#: wp-admin/includes/update-core.php:1395
 msgid "The update cannot be installed because your site is unable to copy some files. This is usually due to inconsistent file permissions."
 msgstr "Η ενημέρωση δεν μπορεί να εγκατασταθεί επειδή ο ιστότοπος σας δεν μπορεί να αντιγράψει κάποια αρχεία. Αυτό συνήθως οφείλεται σε ασυνεπή δικαιώματα αρχείων."
 
@@ -10132,7 +10132,7 @@ msgstr "Ενημέρωση μεταφράσεων"
 msgid "Background updates"
 msgstr "Ενημερώσεις στο παρασκήνιο"
 
-#: wp-admin/includes/update-core.php:1457
+#: wp-admin/includes/update-core.php:1462
 msgid "There is not enough free disk space to complete the update."
 msgstr "Δεν υπάρχει αρκετός ελεύθερος χώρος στο δίσκο για να ολοκληρώσετε την ενημέρωση."
 
@@ -10210,11 +10210,11 @@ msgstr "Το όνομα χρήστη που δώσατε έχει μη αποδ�
 msgid "Please provide a valid username."
 msgstr "Παρακαλώ δώστε ένα έγκυρο όνομα χρήστη."
 
-#: wp-admin/includes/update-core.php:1371
+#: wp-admin/includes/update-core.php:1376
 msgid "Copying the required files&#8230;"
 msgstr "Αντιγραφή απαιτούμενων αρχείων"
 
-#: wp-admin/includes/update-core.php:1278
+#: wp-admin/includes/update-core.php:1283
 msgid "Preparing to install the latest version&#8230;"
 msgstr "Προετοιμασία για την εγκατάσταση της τελευταίας έκδοσης"
 
@@ -10898,7 +10898,7 @@ msgid "Search engine visibility"
 msgstr "Εμφάνιση σε μηχανές αναζήτησης"
 
 #. translators: 1: WordPress version, 2: URL to About screen.
-#: wp-admin/includes/update-core.php:1759 wp-admin/update-core.php:923
+#: wp-admin/includes/update-core.php:1764 wp-admin/update-core.php:923
 msgid "Welcome to WordPress %1$s. You will be redirected to the About WordPress screen. If not, click <a href=\"%2$s\">here</a>."
 msgstr "Καλώς ήρθατε στο WordPress %1$s. Θα ανακατευθυνθείτε αυτόματα στις πληροφορίες για το WordPress. Αν όχι κάντε κλικ <a href=\"%2$s\">εδώ</a>."
 
@@ -11608,14 +11608,15 @@ msgstr "Συμπληρώστε την email διεύθυνση ενός μέλο
 msgid "Show Toolbar when viewing site"
 msgstr "Προβολή και στη δημόσια όψη"
 
+#. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:324
+#: wp-admin/about.php:77 wp-admin/about.php:102 wp-admin/about.php:375
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "Για περισσότερα δείτε το <a href=\"%s\">σχετικό σημείωμα</a>."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:318
+#: wp-admin/about.php:369
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "Η <strong>έκδοση %1$s</strong> αντιμετωπίζει ορισμένα θέματα ασφαλείας και επιλύει %2$s πρόβλημα."
@@ -11623,33 +11624,34 @@ msgstr[1] "Η <strong>έκδοση %1$s</strong> αντιμετωπίζει ορ
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:312
+#: wp-admin/about.php:363
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "Η <strong>έκδοση %1$s</strong> αντιμετωπίζει ένα θέμα ασφαλείας και επιλύει %2$s πρόβλημα."
 msgstr[1] "Η <strong>έκδοση %1$s</strong> αντιμετωπίζει ένα θέμα ασφαλείας και επιλύει %2$s προβλήματα."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:306
+#: wp-admin/about.php:90 wp-admin/about.php:357
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "H <strong>έκδοση %1$s</strong> επιλύει %2$s πρόβλημα."
 msgstr[1] "H <strong>έκδοση %1$s</strong> επιλύει %2$s προβλήματα."
 
+#. translators: %s: WordPress version.
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:303
+#: wp-admin/about.php:70 wp-admin/about.php:354
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "H <strong>έκδοση %s</strong> αφορά μερικά θέματα ασφαλείας."
 
-#: wp-admin/about.php:297
+#: wp-admin/about.php:348
 msgid "Maintenance and Security Release"
 msgstr "Έκδοση ασφαλείας και διορθώσεων"
 
-#: wp-admin/about.php:294
+#: wp-admin/about.php:345
 msgid "Security Release"
 msgstr "Έκδοση ασφαλείας"
 
-#: wp-admin/about.php:291
+#: wp-admin/about.php:342
 msgid "Maintenance Release"
 msgstr "Αναβάθμιση επιδιορθώσεων"
 
@@ -11663,7 +11665,7 @@ msgid "This screen allows you to choose your permalink structure. You can choose
 msgstr "Aυτή η οθόνη σας επιτρέπει να επιλέγετε τη δομή μονίμων συνδέσμων. Μπορείτε να επιλέξετε μία από τις κοινές ρυθμίσεις ή να δημιουργήσετε μια προσαρμοσμένη δομή URL."
 
 #. translators: 1: WordPress version, 2: URL to About screen.
-#: wp-admin/includes/update-core.php:1767 wp-admin/update-core.php:931
+#: wp-admin/includes/update-core.php:1772 wp-admin/update-core.php:931
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Καλώς ήρθατε στο WordPress %1$s. <a href=\"%2$s\">Αλλαγές στο WordPress %1$s</a>."
 
@@ -11922,15 +11924,15 @@ msgstr "<strong>Επεξεργασία</strong>. Μεταβείτε στην ο�
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Μιας και αυτή είναι μια εγκατάσταση πολλαπλών ιστοτόπων μπορείτε να προσθέσετε λογαριασμούς που ήδη υπάρχουν στο Δίκτυο δίνοντας ένα όνομα χρήστη ή ένα email και ορίζοντας ένα ρόλο. Για περισσότερες επιλογές, όπως το να ορίσετε ένα συνθηματικό χρήστη, θα πρέπει να είστε Διαχειριστής Δικτύου και να χρησιμοποιήσετε το σύνδεσμο Επεξεργασία που εμφανίζετε κάτω από το όνομα ενός χρήστη στο μενού Διαχειριστής Δικτύου &gt; Όλοι οι Χρήστες, ώστε να επεξεργαστείτε το προφίλ του."
 
-#: wp-admin/about.php:65
+#: wp-admin/about.php:116
 msgid "Welcome to WordPress 7.0"
 msgstr "Καλώς ήρθατε στο WordPress 7.0"
 
-#: wp-admin/about.php:278
+#: wp-admin/about.php:329
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Επιστροφή στον Πίνακα ελέγχου"
 
-#: wp-admin/about.php:271
+#: wp-admin/about.php:322
 msgid "Go to Dashboard &rarr; Updates"
 msgstr "Επιστροφή στη διαχείριση ενημερώσεων"
 
@@ -13590,7 +13592,7 @@ msgid "User already exists. Password inherited."
 msgstr "Το μέλος υπάρχει ήδη. Το συνθηματικό μεταβιβάστηκε."
 
 #: wp-admin/includes/class-wp-automatic-updater.php:529
-#: wp-admin/includes/update-core.php:1753 wp-admin/update-core.php:919
+#: wp-admin/includes/update-core.php:1758 wp-admin/update-core.php:919
 msgid "WordPress updated successfully."
 msgstr "To WordPress ενημερώθηκε επιτυχώς."
 
@@ -13619,7 +13621,7 @@ msgstr "Ενημερώσεις WordPress"
 msgid "Edit menu item"
 msgstr "Επεξεργασία στοιχείου μενού"
 
-#: wp-admin/about.php:278
+#: wp-admin/about.php:329
 msgid "Go to Dashboard"
 msgstr "Επιστροφή στον Πίνακα Ελέγχου"
 
@@ -14727,34 +14729,34 @@ msgstr "Ενημέρωση σε %s"
 msgid "You are using a development version (%1$s). Cool! Please <a href=\"%2$s\">stay updated</a>."
 msgstr "Χρησιμοποιείτε προέκδοση του WordPress (%1$s). Ωραία! Φροντίζετε <a href=\"%2$s\">να την ενημερώνετε</a>."
 
-#: wp-admin/includes/update-core.php:1626
+#: wp-admin/includes/update-core.php:1631
 msgid "Upgrading database&#8230;"
 msgstr "Αναβάθμιση βάσης δεδομένων…"
 
-#: wp-admin/includes/update-core.php:1142
+#: wp-admin/includes/update-core.php:1147
 msgid "The update could not be unpacked"
 msgstr "Αδύνατη η αποσυμπίεση της αναβάθμισης"
 
-#: wp-admin/includes/update-core.php:1124
+#: wp-admin/includes/update-core.php:1129
 msgid "Verifying the unpacked files&#8230;"
 msgstr "Επαλήθευση αποσυμπιεσμένων αρχείων…"
 
 #. translators: 1: WordPress version number, 2: Minimum required MySQL version
 #. number, 3: Current MySQL version number.
-#: wp-admin/includes/update-core.php:1244
+#: wp-admin/includes/update-core.php:1249
 msgid "The update cannot be installed because WordPress %1$s requires MySQL version %2$s or higher. You are running version %3$s."
 msgstr "Η αναβάθμιση ήταν αδύνατη διότι το WordPress %1$s προαπαιτεί MySQL %2$s ή νεότερη.  Έχετε MySQL έκδ. %3$s."
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Current PHP version number.
-#: wp-admin/includes/update-core.php:1233
+#: wp-admin/includes/update-core.php:1238
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher. You are running version %3$s."
 msgstr "Η αναβάθμιση ήταν αδύνατη διότι το WordPress %1$s προαπαιτεί PHP %2$s ή νεότερη.  Τώρα έχετε PHP έκδ. %3$s."
 
 #. translators: 1: WordPress version number, 2: Minimum required PHP version
 #. number, 3: Minimum required MySQL version number, 4: Current PHP version
 #. number, 5: Current MySQL version number.
-#: wp-admin/includes/update-core.php:1220
+#: wp-admin/includes/update-core.php:1225
 msgid "The update cannot be installed because WordPress %1$s requires PHP version %2$s or higher and MySQL version %3$s or higher. You are running PHP version %4$s and MySQL version %5$s."
 msgstr "Η ενημέρωση ήταν αδύνατη διότι το WordPress %1$s προαπαιτεί PHP %2$s ή νεότερη και MySQL %3$s ή νεότερη.  Τώρα έχετε PHP %4$s και MySQL %5$s."
 
@@ -15600,7 +15602,7 @@ msgid "Empty archive."
 msgstr "Κενό αρχείο."
 
 #: wp-admin/includes/file.php:1825 wp-admin/includes/file.php:1984
-#: wp-admin/includes/file.php:2042 wp-admin/includes/update-core.php:1564
+#: wp-admin/includes/file.php:2042 wp-admin/includes/update-core.php:1569
 msgid "Could not copy file."
 msgstr "Αδύνατη η αντιγραφή του αρχείου."
 
@@ -15905,12 +15907,12 @@ msgid "The plugin is at the latest version."
 msgstr "Έχετε την τελευταία έκδοση του προσθέτου."
 
 #: wp-admin/includes/class-wp-upgrader.php:210
-#: wp-admin/includes/update-core.php:1511
+#: wp-admin/includes/update-core.php:1516
 msgid "Disabling Maintenance mode&#8230;"
 msgstr "Απενεργοποίηση λειτουργίας συντήρησης…"
 
 #: wp-admin/includes/class-wp-upgrader.php:209
-#: wp-admin/includes/update-core.php:1362
+#: wp-admin/includes/update-core.php:1367
 msgid "Enabling Maintenance mode&#8230;"
 msgstr "Ενεργοποίηση λειτουργίας συντήρησης…"
 
