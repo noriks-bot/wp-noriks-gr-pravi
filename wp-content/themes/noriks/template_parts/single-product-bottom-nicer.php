@@ -575,7 +575,11 @@ endif;
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
 
-          <?php if ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', get_the_ID() ) ): ?>
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>
+
+          Δεν είστε μόνη στην αναζήτηση λείου δέρματος χωρίς ρυτίδες.
+
+          <?php elseif ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', get_the_ID() ) ): ?>
 
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
 
@@ -587,7 +591,7 @@ endif;
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
