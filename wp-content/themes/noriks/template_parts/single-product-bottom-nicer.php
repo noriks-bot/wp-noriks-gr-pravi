@@ -196,7 +196,7 @@ if (  has_term( array( 'startovaci-balicek','orto-starter', 'paketo-ekkinisis', 
 
 
 <?php
-if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 'mplouzoakia-mavro' ), 'product_cat', get_the_id() )  ||  has_term( array('sady', 'set', 'seta', 'bundles'), 'product_cat', get_the_id() )) :
+if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 'mplouzoakia-mavro', 'orto-majica-darila' ), 'product_cat', get_the_id() )  ||  has_term( array('sady', 'set', 'seta', 'bundles'), 'product_cat', get_the_id() )) :
 ?>
 
 
