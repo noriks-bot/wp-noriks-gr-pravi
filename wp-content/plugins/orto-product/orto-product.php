@@ -250,21 +250,9 @@ function gck_split_attrs_color_size( array $custom_attrs ) : array {
         $hay = function_exists('mb_strtolower') ? mb_strtolower($hay, 'UTF-8') : strtolower($hay);
 
         // IMPORTANT FIX: your old code checked 'Χρώμα' / 'Μέγεθος' against lowercase hay => never matched.
-        $is_color = (
-            strpos($hay, 'χρώμα') !== false ||
-            strpos($hay, 'χρωμα') !== false ||
-            strpos($hay, 'xroma') !== false ||
-            strpos($hay, 'color') !== false ||
-            strpos($hay, 'colour') !== false
-        );
+        $is_color = ( strpos($hay, 'boja') !== false || strpos($hay, 'barva') !== false || strpos($hay, 'farb') !== false || strpos($hay, 'culoare') !== false || strpos($hay, 'color') !== false || strpos($hay, 'colour') !== false || strpos($hay, 'colore') !== false || strpos($hay, 'kolor') !== false || strpos($hay, 'szín') !== false || strpos($hay, 'szin') !== false || strpos($hay, 'ρώμ') !== false || strpos($hay, 'цвят') !== false );
 
-        $is_size  = (
-            strpos($hay, 'μέγεθος') !== false ||
-            strpos($hay, 'μεγεθος') !== false ||
-            strpos($hay, 'megethos') !== false ||
-            strpos($hay, 'veli') !== false ||
-            strpos($hay, 'size') !== false
-        );
+        $is_size = ( strpos($hay, 'vel') !== false || strpos($hay, 'size') !== false || strpos($hay, 'marime') !== false || strpos($hay, 'mărime') !== false || strpos($hay, 'rozmiar') !== false || strpos($hay, 'taglia') !== false || strpos($hay, 'größe') !== false || strpos($hay, 'grosse') !== false || strpos($hay, 'groesse') !== false || strpos($hay, 'meret') !== false || strpos($hay, 'méret') !== false || strpos($hay, 'εγεθ') !== false || strpos($hay, 'азмер') !== false || strpos($hay, 'размер') !== false );
 
         $values = $attr->get_options();
         if ( ! is_array($values) ) $values = [];
