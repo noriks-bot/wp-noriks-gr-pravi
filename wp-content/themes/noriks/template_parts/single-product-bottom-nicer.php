@@ -13,6 +13,12 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-norikshers' );
     } elseif ( noriks_is_type( 'kompresijske-nogavice' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompresijske' );
+    } elseif ( noriks_is_type( 'leakboxers' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-leakboxers' );
+    } elseif ( noriks_is_type( 'kompresijske-majice' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-kompresijske-majice' );
+    } elseif ( noriks_is_type( 'kidsnest' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-kidsnest' );
     }
 }
 ?>
@@ -581,6 +587,18 @@ endif;
 
           Δεν είστε μόνη στην αναζήτηση λείου δέρματος χωρίς ρυτίδες.
 
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>
+
+          Δεν είστε ο μόνος που αναζητά αξιόπιστη προστασία από τις διαρροές ούρων.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>
+
+          Δεν είστε ο μόνος που αναζητά πιο κομψή σιλουέτα και καλύτερη στάση σώματος.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
+
+          Δεν είστε οι μόνοι που αναζητούν ήρεμο παιδικό ύπνο.
+
           <?php elseif ( !has_term( array( 'bokserice', 'bokserice-sastavi-paket', 'boxerky', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', get_the_ID() ) ): ?>
 
           <?php echo get_field("singlepp_content_standard_reviews_t2","options"); ?>
@@ -593,7 +611,7 @@ endif;
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -667,12 +685,24 @@ endif;
   $is_bunion_page     = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) );
   $is_fisiorest_page  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) );
   $is_norikshers_page = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) );
+  $is_leakboxers_page = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers', $current_product_id) );
+  $is_kompmajice_page = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $current_product_id) );
+  $is_kidsnest_page   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) );
 
   // Fallback product name shown in review cards.
-  $rv_fallback_title = $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica';
+  $rv_fallback_title = $is_kidsnest_page ? 'NORIKS KidsNest μαξιλάρι'
+                     : ( $is_leakboxers_page ? 'NORIKS απορροφητικά μποξεράκια'
+                     : ( $is_kompmajice_page ? 'NORIKS FIT φανελάκι συμπίεσης'
+                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) );
 
   // Include review pools (own pool per orto product group)
-  if ( $is_norikshers_page ) {
+  if ( $is_kidsnest_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_kidsnest.php';
+  } elseif ( $is_leakboxers_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_leakboxers.php';
+  } elseif ( $is_kompmajice_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_kompresijske-majice.php';
+  } elseif ( $is_norikshers_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_norikshers.php';
   } elseif ( $is_fisiorest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_fisiorest.php';
@@ -746,12 +776,14 @@ endif;
 
       $is_bokserice  = false;
       $is_norikshers = false;
+      $is_kidsnest   = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket', 'mpoxer', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $product_id );
           $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
+          $is_kidsnest   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : '_all' ) );
+      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : '_all' ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -768,7 +800,9 @@ endif;
           'order'   => 'DESC',
       ];
 
-      if ( $is_norikshers ) {
+      if ( $is_kidsnest ) {
+          $args['category'] = [ 'orto-kidsnest' ];
+      } elseif ( $is_norikshers ) {
           $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
       } elseif ( $is_bokserice ) {
           $args['category'] = [ 'mpoxer' ];
@@ -1015,10 +1049,12 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  // Belt + bunion + fisiorest + norikshers: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page ) ? array() : get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + kidsnest: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page ) ? array() : get_review_avatar_pool($avatar_type);
 
-  $product_pool = get_wc_product_pool();
+  // On single-product landing pages (leak boxers / kompresijske majice) the cards should
+  // reference THIS product (via $rv_fallback_title), not random pool products.
+  $product_pool = ( $is_leakboxers_page || $is_kompmajice_page ) ? array() : get_wc_product_pool();
 
   // 1) Stable daily shuffle of review pools
   $auto_reviews_en   = shuffle_with_seed($auto_reviews_en,   'pool-en:'   . $daily_seed);
@@ -1058,8 +1094,8 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page ) : ?>
-<style>/* belt + bunion + fisiorest + norikshers: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_kidsnest_page ) : ?>
+<style>/* belt + bunion + fisiorest + norikshers + kidsnest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
@@ -1482,6 +1518,38 @@ $is_ortopas_faq    = ( function_exists('noriks_is_type') && noriks_is_type('orto
 $is_bunion_faq     = ( function_exists('noriks_is_type') && noriks_is_type('bunion') );
 $is_fisiorest_faq  = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') );
 $is_norikshers_faq = ( function_exists('noriks_is_type') && noriks_is_type('norikshers') );
+$is_leakboxers_faq = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') );
+$is_kompmajice_faq = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') );
+$is_kidsnest_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') );
+
+// NORIKS FIT (kompresijska/oblikujuća majica) — FAQ o izdelku (prevod, NORIKS FIT) — Greek.
+$kompmajice_faq = array(
+  array( 'questioon' => 'Για ποιον προορίζεται το NORIKS FIT;', 'answer' => 'Το NORIKS FIT δημιουργήθηκε για άνδρες που θέλουν πιο λεπτή εμφάνιση, να ανακτήσουν την αυτοπεποίθηση στο σώμα τους, να διορθώσουν τη στάση τους, να νιώθουν πιο ενεργητικοί κατά τη διάρκεια της ημέρας και να δείχνουν πιο αδύνατοι κάτω από οποιοδήποτε ρούχο.' ),
+  array( 'questioon' => 'Πώς ακριβώς λειτουργεί το φανελάκι NORIKS FIT;', 'answer' => 'Το NORIKS FIT χρησιμοποιεί προηγμένο ιοντικό ύφασμα συμπίεσης που ενεργοποιεί τη φυσική απόκριση του σώματος. Οι μικρο-υφασμένες ίνες ενισχύουν την υγιή κυκλοφορία και σας βοηθούν να διατηρείτε όρθια στάση από το πρωί έως το βράδυ. Με τακτική χρήση προσφέρει εμφανώς πιο διαμορφωμένο κορμό, καλύτερη ευθυγράμμιση της σπονδυλικής στήλης και περισσότερη αυτοπεποίθηση.' ),
+  array( 'questioon' => 'Πόσο γρήγορα θα δω αποτελέσματα;', 'answer' => 'Κάθε σώμα είναι διαφορετικό, αλλά οι περισσότεροι πελάτες αναφέρουν ορατή αλλαγή μέσα στις πρώτες 30 ημέρες. Για το καλύτερο αποτέλεσμα, φοράτε το NORIKS FIT καθημερινά και συνδυάστε το με ισορροπημένη διατροφή και τακτική κίνηση.' ),
+  array( 'questioon' => 'Φαίνεται κάτω από το πουκάμισο;', 'answer' => 'Όχι. Το NORIKS FIT είναι λεπτό, διακριτικό και αόρατο κάτω από οποιοδήποτε πουκάμισο, ενώ ταυτόχρονα διαμορφώνει την κοιλιά και το στήθος και στηρίζει τη στάση του σώματος.' ),
+  array( 'questioon' => 'Πώς πλένεται και από τι είναι κατασκευασμένο;', 'answer' => 'Είναι κατασκευασμένο από 80 % νάιλον και 20 % ελαστάνη. Πλένετέ το σε κρύο, απαλό πρόγραμμα για να διατηρήσετε τη συμπίεση και να παρατείνετε τη διάρκεια ζωής του υφάσματος.' ),
+);
+
+// NORIKS LEAK BOXERS (μποξεράκια ακράτειας) — FAQ o izdelku (prevod, NORIKS) — Greek.
+$leakboxers_faq = array(
+  array( 'questioon' => 'Γιατί περισσότεροι από 123.000 άνδρες επέλεξαν το NORIKS;', 'answer' => 'Τα NORIKS είναι τα πιο απορροφητικά πλενόμενα μποξεράκια για ανδρική ακράτεια: συγκρατούν έως 300 ml, είναι πιστοποιημένα Oeko-Tex® και χωρίς βλαβερές ουσίες, πλενόμενα και επαναχρησιμοποιήσιμα (οικολογική εναλλακτική στις σερβιέτες μίας χρήσης), σχεδιασμένα για άνεση και αυτοπεποίθηση όλη την ημέρα. Το 87 % των πελατών παραγγέλνει ξανά μετά την πρώτη αγορά.' ),
+  array( 'questioon' => 'Πόσο απορροφούν;', 'answer' => 'Έως 300 ml — σχεδόν 3 φορές περισσότερο από τα περισσότερα προϊόντα της αγοράς. Χάρη στον πυρήνα PureDry™ 7 στρωμάτων, το υγρό απορροφάται στιγμιαία και κλειδώνεται βαθιά μέσα, το δέρμα μένει στεγνό και το εξωτερικό στρώμα είναι αδιάβροχο.' ),
+  array( 'questioon' => 'Φαίνονται κάτω από τα ρούχα;', 'answer' => 'Όχι. Τα μποξεράκια NORIKS είναι λεπτά, διακριτικά και ελαστικά — μοιάζουν και νιώθουν σαν κανονικό εσώρουχο, χωρίς όγκο και χωρίς αίσθηση «πάνας».' ),
+  array( 'questioon' => 'Πώς πλένονται;', 'answer' => 'Πλένετε στους 30–40 °C, χωρίς μαλακτικό και χλωρίνη, και στεγνώνετε στον αέρα. Διατηρούν την απορροφητικότητά τους για εκατοντάδες πλυσίματα.' ),
+  array( 'questioon' => 'Είναι διακριτική η αποστολή;', 'answer' => 'Ναι. Όλες οι παραγγελίες αποστέλλονται σε ουδέτερη, διακριτική συσκευασία χωρίς ορατές ενδείξεις περιεχομένου, για να προστατεύσουμε την ιδιωτικότητά σας.' ),
+  array( 'questioon' => 'Από τι είναι κατασκευασμένα;', 'answer' => 'Εξωτερικό στρώμα από ίνα μπαμπού με ελαστάνη, απορροφητικός πυρήνας 7 στρωμάτων από τεχνικές μικροΐνες και αδιάβροχη διαπνέουσα μεμβράνη.' ),
+);
+
+// KidsNest παιδικό μαξιλάρι — FAQ o izdelku (NORIKS, ublazene tvrdnje) — Greek.
+$kidsnest_faq = array(
+  array( 'questioon' => 'Πόσο γρήγορα θα δω ότι σταματά η αναπνοή από το στόμα;', 'answer' => 'Οι περισσότεροι γονείς παρατηρούν πιο ήσυχη αναπνοή και λιγότερα ξυπνήματα με ανοιχτό στόμα μέσα στις πρώτες 5–7 νύχτες. Έως τη 14η νύχτα, στα περισσότερα παιδιά το ροχαλητό ηρεμεί και τα χείλη μένουν κλειστά. Την πλήρη διαφορά — εμφανώς καλύτερη θέση και πιο ήρεμο ύπνο — οι γονείς την περιγράφουν συνήθως γύρω στην 21η έως 30ή ημέρα. Χρησιμοποιήστε το κάθε νύχτα.' ),
+  array( 'questioon' => 'Για ποια ηλικία προορίζεται το KidsNest;', 'answer' => 'Το KidsNest διατίθεται σε τρία μεγέθη: 1–3, 3–9 και 9–18 ετών. Το πιο σημαντικό παράθυρο είναι μεταξύ 3 και 9 ετών, όταν ο ουρανίσκος και η γνάθος αναπτύσσονται πιο έντονα — αλλά κάθε ηλικία έχει το δικό της μέγεθος και το δικό της όφελος.' ),
+  array( 'questioon' => 'Είναι ασφαλές; Τι έχει μέσα;', 'answer' => 'Το KidsNest είναι κατασκευασμένο από υποαλλεργικό αφρό μνήμης με πιστοποίηση OEKO-TEX® — χωρίς φορμαλδεΰδη, βαρέα μέταλλα και BPA. Είναι ανθεκτικό στα ακάρεα και διαπνέον, ενώ η θήκη αφαιρείται και πλένεται στο πλυντήριο.' ),
+  array( 'questioon' => 'Θα το χρησιμοποιήσει πραγματικά το παιδί μου;', 'answer' => 'Ναι. Το εργονομικό σχήμα νιώθει σαν στήριξη, όχι σαν κάτι παράξενο — τα περισσότερα παιδιά συνηθίζουν σε 1–2 νύχτες. Οι γονείς συχνά αναφέρουν ότι μετά την πρώτη εβδομάδα τα παιδιά δεν θέλουν να κοιμηθούν χωρίς αυτό. Η δομή 3 ζωνών αγκαλιάζει φυσικά το κεφάλι — δεν υπάρχει «σωστός τρόπος», δεν υπάρχει μάχη πριν τον ύπνο.' ),
+  array( 'questioon' => 'Λειτουργεί αν το παιδί μου ήδη αναπνέει από το στόμα;', 'answer' => 'Ναι — ακριβώς για αυτά τα παιδιά σχεδιάστηκε. Η δομή 3 ζωνών βοηθά να αποτραπεί η κλίση του κεφαλιού προς τα πίσω, εξαιτίας της οποίας ανοίγει το στόμα στον ύπνο. Στα περισσότερα παιδιά, μέσα σε 7–14 νύχτες τα χείλη κλείνουν φυσικά και η αναπνοή από τη μύτη επανέρχεται.' ),
+  array( 'questioon' => 'Τι γίνεται αν δεν βοηθήσει το παιδί μου;', 'answer' => 'Αφήστε το παιδί να κοιμηθεί στο KidsNest για 30 νύχτες. Αν δεν δείτε διαφορά — λιγότερη αναπνοή από το στόμα, πιο ήσυχες νύχτες, πιο ήρεμο ύπνο — επικοινωνήστε μαζί μας και σας επιστρέφουμε τα χρήματα. Χωρίς ερωτήσεις και χωρίς ψιλά γράμματα.' ),
+);
 
 // Korektor haluksa — FAQ o izdelku (prevod, NORIKS) — Greek.
 $bunion_faq = array(
@@ -1531,12 +1599,15 @@ $norikshers_faq = array(
   array( 'questioon' => 'Υπάρχει εγγύηση επιστροφής χρημάτων;', 'answer' => 'Ναι, προσφέρουμε εγγύηση επιστροφής χρημάτων 30 ημερών χωρίς ρίσκο. Αν δεν είστε ικανοποιημένοι, απλώς επικοινωνήστε μαζί μας και θα το τακτοποιήσουμε.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
     ? ( mb_stripos( $t, 'προϊόν' ) !== false )
     : ( stripos( $t, 'προϊόν' ) !== false );
+  if ( $is_kidsnest_faq && $is_info )   { return $kidsnest_faq; }
+  if ( $is_leakboxers_faq && $is_info ) { return $leakboxers_faq; }
+  if ( $is_kompmajice_faq && $is_info ) { return $kompmajice_faq; }
   if ( $is_norikshers_faq && $is_info ) { return $norikshers_faq; }
   if ( $is_fisiorest_faq && $is_info ) { return $fisiorest_faq; }
   if ( $is_bunion_faq && $is_info )    { return $bunion_faq; }

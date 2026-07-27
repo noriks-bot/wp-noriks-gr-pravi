@@ -420,6 +420,45 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
  <div class="accordion">
 
 
+    <!-- KidsNest: πρώτες δύο θέσεις accordion (μακρύ περιεχόμενο από το summary) -->
+    <?php if ( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ) : ?>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Το πρόσωπο του παιδιού σας διαμορφώνεται τώρα — και έχετε χρόνο έως τα 9 του χρόνια</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <p>Οι ερευνητές των αεραγωγών και οι παιδιατρικοί οδοντίατροι προειδοποιούν εδώ και χρόνια για το ίδιο μοτίβο — για το οποίο οι περισσότεροι γονείς δεν έχουν ακούσει ποτέ. Ονομάζεται <strong>σύνδρομο επιμήκους προσώπου</strong> (αδενοειδές πρόσωπο).</p>
+        <p>Κάθε νύχτα που το παιδί κοιμάται με ανοιχτό στόμα σε λάθος μαξιλάρι, συμβαίνουν τέσσερα πράγματα ταυτόχρονα: η γλώσσα πέφτει προς τα πίσω, η γνάθος τραβιέται, ο ουρανίσκος στενεύει σε ψηλή αψίδα και το πρόσωπο αρχίζει να μεγαλώνει κάθετα αντί οριζόντια. Μετά από χιλιάδες τέτοιες νύχτες μεταξύ 3 και 9 ετών, οι αλλαγές παγιώνονται.</p>
+        <p>Γι' αυτό τα 9χρονα εμφανίζονται σήμερα στον ορθοδοντικό με τραβηγμένο πιγούνι, μαύρους κύκλους, στριμωγμένα δόντια — και έναν ακριβό λογαριασμό για σιδεράκια. Ο τρόπος που αναπνέει το παιδί μεταξύ 3 και 9 ετών επηρεάζει έντονα το πρόσωπο που θα έχει για όλη του τη ζωή.</p>
+        <p>Το NORIKS <strong>KidsNest</strong> σχεδιάστηκε για να δρα στη βαθύτερη αιτία — τη λανθασμένη θέση κεφαλιού και γνάθου κατά τις 9 ώρες ύπνου — με <strong>εργονομική δομή 3 ζωνών</strong> που κρατά το κεφάλι, τον αυχένα και τη γνάθο σε σωστή ευθυγράμμιση από την πρώτη νύχτα.</p>
+        <p><strong>Τι θα δείτε στο παιδί σας:</strong></p>
+        <ul style="margin:6px 0 12px;padding-left:18px;">
+          <li style="margin:0 0 7px;"><strong>Λιγότερη αναπνοή από το στόμα:</strong> χείλη κλειστά τη νύχτα, επιστροφή της αναπνοής από τη μύτη, τέλος το στεγνό στόμα το πρωί.</li>
+          <li style="margin:0 0 7px;"><strong>Πιο ήσυχες νύχτες:</strong> το ροχαλητό στα περισσότερα παιδιά ηρεμεί μέσα σε 1–2 εβδομάδες.</li>
+          <li style="margin:0 0 7px;"><strong>Στήριξη της γνάθου που αναπτύσσεται:</strong> σωστή θέση νύχτα με τη νύχτα, στα χρόνια που μετρούν περισσότερο.</li>
+          <li style="margin:0 0 7px;"><strong>Έξυπνη πρόληψη:</strong> ένα μαξιλάρι σήμερα — αντί για ακριβές διορθώσεις αύριο.</li>
+        </ul>
+        <p><strong>Ένα μαξιλάρι απόψε. Ή χιλιάδες αργότερα.</strong></p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Μεγαλύτερο από 9; Το παράθυρο στενεύει. Η ζημιά δεν σταματά.</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <p>Η συμβουλή που ακούσατε είναι μόνο κατά το ήμισυ σωστή. Ναι, ο ουρανίσκος σταθεροποιείται γύρω στα 9. Αλλά το πρόσωπο αναπτύσσεται έως τα 20, η κάτω γνάθος μεγαλώνει έως τα 17 και οι αεραγωγοί προσαρμόζονται διαρκώς.</p>
+        <p>Γι' αυτό κάθε νύχτα αναπνοής από το στόμα μετά τα 9 προσθέτει νέα ζημιά στην παλιά: τρίξιμο δοντιών, πονοκέφαλοι, ύπνος που δεν ξεκουράζει, πτώση συγκέντρωσης — και κούραση που όλοι μπερδεύουν με τεμπελιά. Ο έφηβός σας δεν είναι τεμπέλης. Μετά βίας αναπνέει έξι ώρες κάθε νύχτα.</p>
+        <p>Το KidsNest στο μέγεθος <strong>9–18 ετών</strong> είναι φτιαγμένο για μεγαλύτερο κεφάλι, αυχένα και ώμους. Διαφορετικό περίγραμμα, άλλο ύψος, άλλη στήριξη. Ίδιος βασικός μηχανισμός: σωστή ευθυγράμμιση κεφαλιού, αυχένα και γνάθου, όλη τη νύχτα, σε ένα σώμα που ακόμη μεγαλώνει.</p>
+        <p>Τι παρατηρούν οι γονείς: το ροχαλητό ηρεμεί σε 7 έως 14 νύχτες, επιστρέφει η πραγματική πρωινή ενέργεια, οι πονοκέφαλοι ξεθωριάζουν, η συγκέντρωση επανέρχεται.</p>
+        <p>Το καλύτερο παράθυρο παραμένει από τα 3 έως τα 9. Ένα ισχυρό παράθυρο είναι από τα 8 έως τα 18. Κανένα δεν είναι εντελώς κλειστό — αλλά κάθε νύχτα αναμονής προσθέτει πίεση σε ένα σώμα που προσπαθεί να ανακάμψει.</p>
+        <p><strong>Το χθες πέρασε. Το απόψε είναι ακόμη δικό σας.</strong></p>
+      </div>
+    </div>
+    <?php endif; ?>
+
+
     <!-- 1 - detajli --> <!-- κρυμμένο στο norikshers -->
     <?php if ( ! ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) ) ) : ?>
     <div class="accordion-item">
@@ -428,11 +467,23 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-          
-         <?php if( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
-         
-         
-         
+
+         <?php if( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
+
+                Το NORIKS KidsNest είναι κατασκευασμένο από υποαλλεργικό αφρό μνήμης με πιστοποίηση OEKO-TEX® — χωρίς φορμαλδεΰδη, βαρέα μέταλλα και BPA — με διαπνέουσα, πλενόμενη θήκη που αφαιρείται εύκολα.<br><br>Η εργονομική δομή 3 ζωνών αγκαλιάζει απαλά το κεφάλι, στηρίζει τον αυχένα και βοηθά να διατηρείται η σπονδυλική στήλη σε φυσική ευθυγράμμιση — ακόμη κι όταν το παιδί στριφογυρίζει πολύ τη νύχτα. Έτσι ενθαρρύνει την αναπνοή από τη μύτη και πιο ήρεμο, βαθύτερο ύπνο.<br><br>Διαθέσιμο σε τρία μεγέθη (1–3, 3–9 και 9–18 ετών), μεγαλώνει μαζί με το παιδί σας και προσφέρει το σωστό ύψος στήριξης σε κάθε στάδιο ανάπτυξης.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
+
+                Τα μποξεράκια ακράτειας NORIKS είναι κατασκευασμένα από απαλή αντιβακτηριδιακή ίνα μπαμπού με αδιάβροχο εξωτερικό στρώμα. Στο κέντρο βρίσκεται ο πυρήνας PureDry™ 7 στρωμάτων που απορροφά στιγμιαία και κλειδώνει έως 300 ml υγρού, ώστε το δέρμα να μένει στεγνό και η διαρροή να μένει μέσα.<br><br>Η γραμμή είναι λεπτή και διακριτική — μοιάζουν και νιώθουν σαν κανονικό εσώρουχο, χωρίς όγκο και χωρίς αίσθηση «πάνας». Η προστασία στα πόδια αποτρέπει τις πλευρικές διαρροές, ενώ ο έλεγχος οσμών διατηρεί τη φρεσκάδα όλη την ημέρα.<br><br>Πλένονται και επαναχρησιμοποιούνται — διατηρούν την απορροφητικότητά τους για εκατοντάδες πλυσίματα, ως οικολογική και οικονομική εναλλακτική στις σερβιέτες μίας χρήσης και στις πάνες.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice', $current_product_id ) ): ?>
+
+                Το NORIKS FIT είναι κατασκευασμένο από προηγμένο ιοντικό ύφασμα συμπίεσης που προσφέρει εφαρμοστή, υποστηρικτική γραμμή. Η στοχευμένη συμπίεση σφίγγει ομοιόμορφα την κοιλιά και τα πλευρά, εξομαλύνει τη σιλουέτα και στηρίζει την όρθια στάση — χωρίς σφίξιμο που εμποδίζει την αναπνοή ή την κίνηση.<br><br>Οι μικρο-υφασμένες ίνες ενισχύουν την κυκλοφορία και σας βοηθούν να στέκεστε πιο όρθια και να νιώθετε πιο σίγουροι στη διάρκεια της ημέρας. Το ύφασμα είναι ελαφρύ, διαπνέον και απομακρύνει την υγρασία, ώστε να μένετε στεγνοί και άνετοι.<br><br>Η λεπτή και διακριτική γραμμή το κάνει αόρατο κάτω από οποιοδήποτε πουκάμισο, ενώ μπορεί να χρησιμοποιηθεί και ως αθλητικό φανελάκι. Το αποτέλεσμα: πιο κομψή εμφάνιση, καλύτερη στάση και αυτοπεποίθηση — μόλις το φορέσετε.
+
+         <?php elseif( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
+
+
+
         <?php echo get_field("singlepp_acc_t_1","options"); ?>
         
         
@@ -486,7 +537,81 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
       </div>
       <div class="accordion-content">
 
-           <?php if( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
+           <?php if( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
+
+          <div class="kn-size">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine.webp" alt="Μεγέθη KidsNest ανά ηλικία" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
+            <p style="margin:0;line-height:1.6;"><strong>Το παιδί είναι ανάμεσα σε δύο μεγέθη;</strong> Επιλέξτε πάντα το μεγαλύτερο. Το μαξιλάρι είναι σχεδιασμένο να στηρίζει την υγιή ευθυγράμμιση όσο το παιδί μεγαλώνει — το μεγαλύτερο μέγεθος δίνει περισσότερο χώρο και μεγαλύτερη διάρκεια χρήσης.</p>
+          </div>
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
+
+          <div class="lbx-size">
+            <p style="margin:0 0 6px;font-weight:700;">Πώς να μετρήσετε τους γοφούς</p>
+            <p style="margin:0 0 14px;line-height:1.6;">Τυλίξτε τη μεζούρα γύρω από το φαρδύτερο σημείο των γοφών (πάνω από τους γλουτούς), χωρίς να σφίγγετε. Σταθείτε χαλαρά και όρθια και σημειώστε τη μέτρηση σε εκατοστά.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#12233b;color:#fff;">
+                  <th style="padding:8px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Μέγεθος</th>
+                  <th style="padding:8px 10px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Γοφοί (cm)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                $lbx_sizes = array(
+                  array('S','έως 76 cm','έως 30"'),
+                  array('M','77 – 85 cm','30 – 33"'),
+                  array('L','86 – 94 cm','34 – 37"'),
+                  array('XL','95 – 102 cm','37 – 40"'),
+                  array('2XL','103 – 114 cm','41 – 45"'),
+                  array('3XL','115 – 121 cm','45 – 48"'),
+                  array('4XL','122 – 129 cm','48 – 51"'),
+                  array('5XL','130 – 137 cm','51 – 54"'),
+                  array('6XL','138 – 145 cm','54 – 57"'),
+                  array('7XL','146 – 153 cm','57 – 60"'),
+                  array('8XL','154 cm και άνω','61" και άνω'),
+                );
+                foreach ( $lbx_sizes as $i => $r ) :
+                  $bg = ( $i % 2 ) ? '#f7fafb' : '#fff'; ?>
+                  <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eee;">
+                    <td style="padding:8px 10px;font-weight:700;"><?php echo esc_html($r[0]); ?></td>
+                    <td style="padding:8px 10px;"><?php echo esc_html($r[1]); ?></td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Ανάμεσα σε δύο μεγέθη;</strong> Συνιστούμε πάντα το μεγαλύτερο για βέλτιστη άνεση και μέγιστη απορρόφηση.</p>
+          </div>
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice', $current_product_id ) ): ?>
+
+          <div class="kmf-size">
+            <table style="width:100%;border-collapse:collapse;font-size:15px;">
+              <thead>
+                <tr style="background:#111;color:#fff;">
+                  <th style="padding:9px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Μέγεθος</th>
+                  <th style="padding:9px 12px;text-align:left;background:#e9e9e9 !important;color:#111 !important;">Αντίστοιχο βάρος</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php
+                $kmf_sizes = array(
+                  array('S','50 – 70 kg'), array('M','70 – 90 kg'), array('L','90 – 110 kg'), array('XL','110 – 130 kg'),
+                  array('2XL','130 – 150 kg'), array('3XL','150 – 170 kg'), array('4XL','170 – 190 kg'), array('5XL','190 – 210 kg'),
+                );
+                foreach ( $kmf_sizes as $i => $r ) :
+                  $bg = ( $i % 2 ) ? '#f4f4f4' : '#fff'; ?>
+                  <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eaeaea;">
+                    <td style="padding:9px 12px;font-weight:800;"><?php echo esc_html($r[0]); ?></td>
+                    <td style="padding:9px 12px;font-weight:700;"><?php echo esc_html($r[1]); ?></td>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            <p style="margin:12px 0 0;line-height:1.6;">Επιλέξτε μέγεθος με βάση το βάρος σας. Ανάμεσα σε δύο μεγέθη; Για ισχυρότερη συμπίεση επιλέξτε το μικρότερο.</p>
+          </div>
+
+        <?php elseif( function_exists('noriks_is_type') && noriks_is_type('ortopas', $current_product_id) ): ?>
 
           <div style="line-height:1.9;">
             <strong>S/M</strong> : περιφέρεια ισχίων 75–110 cm<br>
@@ -526,15 +651,23 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
     <?php endif; // /δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest ?>
 
 
-    <!-- 3 - savjeti za pranje-->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) ) ) ) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers ?>
+    <!-- 3 - savjeti za pranje--> <!-- κρυμμένο και στο kidsnest -->
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) ) ) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + kidsnest ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
         <div class="toggle">+</div>
       </div>
       <div class="accordion-content">
-             <?php if( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
+             <?php if( function_exists('noriks_is_type') && noriks_is_type( 'leakboxers', $current_product_id ) ): ?>
+
+                Πλένετε στους 30–40 °C, σε πρόγραμμα για ευαίσθητα. Χωρίς μαλακτικό και χλωρίνη. Στεγνώνετε στον αέρα. Διατηρούν την απορροφητικότητά τους για εκατοντάδες πλυσίματα.
+
+             <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-majice', $current_product_id ) ): ?>
+
+                Πλύσιμο στο πλυντήριο σε κρύο, απαλό πρόγραμμα. Χωρίς χλωρίνη και μαλακτικό. Όχι στεγνωτήριο — στεγνώνετε στον αέρα για να διατηρηθεί η συμπίεση και το σχήμα.
+
+             <?php elseif( !$is_boxers &&  !$is_carape &&   !$is_mixed_bundle ): ?>
         <?php echo get_field("singlepp_acc_t_2","options"); ?>
 
 
