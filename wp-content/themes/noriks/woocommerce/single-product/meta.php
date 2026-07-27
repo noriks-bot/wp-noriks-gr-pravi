@@ -459,8 +459,38 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
     <?php endif; ?>
 
 
-    <!-- 1 - detajli --> <!-- κρυμμένο στο norikshers -->
-    <?php if ( ! ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) ) ) : ?>
+    <!-- ErgoSit ortopedski jastuk: prva dva accordion mjesta (kopija originala, GR) -->
+    <?php if ( function_exists('noriks_is_type') && noriks_is_type( 'ortopedski-jastuk', $current_product_id ) ) : ?>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Προδιαγραφές προϊόντος</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <ul style="margin:8px 0 12px; padding-left:18px;">
+          <li style="margin:0 0 8px;"><strong>Εξωτερική θήκη:</strong> Διαπνέον πλεκτό ύφασμα, αφαιρείται και πλένεται στο πλυντήριο, υποαλλεργική</li>
+          <li style="margin:0 0 8px;"><strong>Πυρήνας:</strong> Προσαρμοστικός αφρός OrthoFlex™ | Μη τοξικός, με πιστοποίηση OEKO-TEX® | Σχεδιασμένος για αποφόρτιση της πίεσης + ευθυγράμμιση της στάσης</li>
+        </ul>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Τι το κάνει τόσο ξεχωριστό;</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <ul style="margin:8px 0 12px; padding-left:18px;">
+          <li style="margin:0 0 10px;"><strong>Αφρός μνήμης OrthoFlex™:</strong> Αφρός υψηλής πυκνότητας που αποφορτίζει την πίεση και προσαρμόζεται χωρίς να ξεφουσκώνει — στηρίζει κόκκυγα, γοφούς και σπονδυλική στήλη για άνεση όλη την ημέρα.</li>
+          <li style="margin:0 0 10px;"><strong>Θήκη BreatheEase™:</strong> Απαλή, διαπνέουσα και φιλική προς το δέρμα. Αφαιρείται και πλένεται στο πλυντήριο, ώστε το μαξιλάρι να μένει πάντα φρέσκο.</li>
+          <li style="margin:0 0 10px;"><strong>Ισορροπημένη στήριξη:</strong> Ούτε πολύ μαλακό, ούτε πολύ σκληρό. Σχεδιασμένο να ευθυγραμμίζει τη στάση και να ανακουφίζει τα επώδυνα σημεία από τις πολλές ώρες καθίσματος.</li>
+        </ul>
+      </div>
+    </div>
+    <?php endif; ?>
+
+
+    <!-- 1 - detajli --> <!-- κρυμμένο στο norikshers + ortopedski jastuk -->
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) ) ) : ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_1","options"); ?></h3>
@@ -529,7 +559,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
      <?php endif; // /κρυμμένες λεπτομέρειες στο norikshers ?>
 
      <!-- 2 - slika tablica velicina  -->
-     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) ) ) ) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest + norikshers ?>
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) ) ) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest + norikshers + ortopedski jastuk ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Πίνακας μεγεθών</h3>
@@ -652,7 +682,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
 
     <!-- 3 - savjeti za pranje--> <!-- κρυμμένο και στο kidsnest -->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) ) ) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + kidsnest ?>
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) ) ) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + ortopedski jastuk + kidsnest ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>

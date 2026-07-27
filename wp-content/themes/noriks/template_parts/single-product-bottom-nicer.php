@@ -17,6 +17,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-leakboxers' );
     } elseif ( noriks_is_type( 'kompresijske-majice' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompresijske-majice' );
+    } elseif ( noriks_is_type( 'ortopedski-jastuk' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-ortopedski-jastuk' );
     } elseif ( noriks_is_type( 'kidsnest' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kidsnest' );
     }
@@ -595,6 +597,10 @@ endif;
 
           Δεν είστε ο μόνος που αναζητά πιο κομψή σιλουέτα και καλύτερη στάση σώματος.
 
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>
+
+          Δεν είστε ο μόνος που αναζητά κάθισμα χωρίς πόνο.
+
           <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
 
           Δεν είστε οι μόνοι που αναζητούν ήρεμο παιδικό ύπνο.
@@ -611,7 +617,7 @@ endif;
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Χιλιάδες πελάτες χρησιμοποιούν ήδη το ορθοπεδικό μαξιλάρι NORIKS ErgoSit για κάθισμα χωρίς πόνο σε κόκκυγα, μέση και γοφούς – στο αυτοκίνητο, στο γραφείο και στο σπίτι.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -687,17 +693,21 @@ endif;
   $is_norikshers_page = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $current_product_id) );
   $is_leakboxers_page = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers', $current_product_id) );
   $is_kompmajice_page = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $current_product_id) );
+  $is_jastuk_page     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) );
   $is_kidsnest_page   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) );
 
   // Fallback product name shown in review cards.
   $rv_fallback_title = $is_kidsnest_page ? 'NORIKS KidsNest μαξιλάρι'
+                     : ( $is_jastuk_page ? 'NORIKS ErgoSit ορθοπεδικό μαξιλάρι'
                      : ( $is_leakboxers_page ? 'NORIKS απορροφητικά μποξεράκια'
                      : ( $is_kompmajice_page ? 'NORIKS FIT φανελάκι συμπίεσης'
-                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) );
+                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) );
 
   // Include review pools (own pool per orto product group)
   if ( $is_kidsnest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_kidsnest.php';
+  } elseif ( $is_jastuk_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_ortopedski_jastuk.php';
   } elseif ( $is_leakboxers_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_leakboxers.php';
   } elseif ( $is_kompmajice_page ) {
@@ -776,14 +786,16 @@ endif;
 
       $is_bokserice  = false;
       $is_norikshers = false;
+      $is_jastuk     = false;
       $is_kidsnest   = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket', 'mpoxer', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $product_id );
           $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
+          $is_jastuk     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $product_id) );
           $is_kidsnest   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : '_all' ) ) );
+      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_jastuk ? '_jastuk' : ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -802,6 +814,8 @@ endif;
 
       if ( $is_kidsnest ) {
           $args['category'] = [ 'orto-kidsnest' ];
+      } elseif ( $is_jastuk ) {
+          $args['category'] = [ 'orto-ortopedski-jastuk' ];
       } elseif ( $is_norikshers ) {
           $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
       } elseif ( $is_bokserice ) {
@@ -1049,8 +1063,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
 
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
-  // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + kidsnest: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_leakboxers_page || $is_kompmajice_page || $is_kidsnest_page ) ? array() : get_review_avatar_pool($avatar_type);
+  // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + ortopedski jastuk + kidsnest: text-only reviews (no avatar images).
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_leakboxers_page || $is_kompmajice_page || $is_jastuk_page || $is_kidsnest_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   // On single-product landing pages (leak boxers / kompresijske majice) the cards should
   // reference THIS product (via $rv_fallback_title), not random pool products.
@@ -1094,8 +1108,8 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_kidsnest_page ) : ?>
-<style>/* belt + bunion + fisiorest + norikshers + kidsnest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_jastuk_page || $is_kidsnest_page ) : ?>
+<style>/* belt + bunion + fisiorest + norikshers + jastuk + kidsnest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
 <section id="reviews-section" class="basic-reviews-section" style="margin-bottom:40px!important;padding-bottom:40px!important;">
@@ -1520,6 +1534,7 @@ $is_fisiorest_faq  = ( function_exists('noriks_is_type') && noriks_is_type('fisi
 $is_norikshers_faq = ( function_exists('noriks_is_type') && noriks_is_type('norikshers') );
 $is_leakboxers_faq = ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') );
 $is_kompmajice_faq = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') );
+$is_jastuk_faq     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') );
 $is_kidsnest_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') );
 
 // NORIKS FIT (kompresijska/oblikujuća majica) — FAQ o izdelku (prevod, NORIKS FIT) — Greek.
@@ -1539,6 +1554,17 @@ $leakboxers_faq = array(
   array( 'questioon' => 'Πώς πλένονται;', 'answer' => 'Πλένετε στους 30–40 °C, χωρίς μαλακτικό και χλωρίνη, και στεγνώνετε στον αέρα. Διατηρούν την απορροφητικότητά τους για εκατοντάδες πλυσίματα.' ),
   array( 'questioon' => 'Είναι διακριτική η αποστολή;', 'answer' => 'Ναι. Όλες οι παραγγελίες αποστέλλονται σε ουδέτερη, διακριτική συσκευασία χωρίς ορατές ενδείξεις περιεχομένου, για να προστατεύσουμε την ιδιωτικότητά σας.' ),
   array( 'questioon' => 'Από τι είναι κατασκευασμένα;', 'answer' => 'Εξωτερικό στρώμα από ίνα μπαμπού με ελαστάνη, απορροφητικός πυρήνας 7 στρωμάτων από τεχνικές μικροΐνες και αδιάβροχη διαπνέουσα μεμβράνη.' ),
+);
+
+// ErgoSit ortopedski jastuk — FAQ o izdelku (NORIKS) — Greek.
+$jastuk_faq = array(
+  array( 'questioon' => 'Πώς ανακουφίζει το NORIKS ErgoSit τον πόνο στο κάθισμα;', 'answer' => 'Το ErgoSit διαθέτει εγκοπή για τον κόκκυγα που αφαιρεί την άμεση πίεση από το κοκκυγικό οστό και το ισχιακό νεύρο, ενώ το ανατομικό σχήμα από αφρό μνήμης υψηλής πυκνότητας κατανέμει το βάρος ομοιόμορφα σε γοφούς και μηρούς. Έτσι αποφορτίζονται τα ευαίσθητα σημεία και στηρίζεται μια υγιής, όρθια στάση.' ),
+  array( 'questioon' => 'Πού μπορώ να χρησιμοποιήσω το μαξιλάρι;', 'answer' => 'Οπουδήποτε κάθεστε — στο αυτοκίνητο, στην καρέκλα γραφείου, στην καρέκλα τραπεζαρίας, σε αναπηρικό αμαξίδιο ή στο σπίτι. Η σταθερή αντιολισθητική βάση το κρατά στη θέση του, ώστε η άνεση να σας ακολουθεί όλη την ημέρα.' ),
+  array( 'questioon' => 'Ξεφουσκώνει ο αφρός με τον καιρό;', 'answer' => 'Όχι. Το ErgoSit χρησιμοποιεί αφρό μνήμης υψηλής πυκνότητας που διατηρεί το σχήμα και τη σταθερότητά του ακόμη και μετά από μακροχρόνια καθημερινή χρήση, σε αντίθεση με τα φθηνά μαξιλάρια που ξεφουσκώνουν γρήγορα.' ),
+  array( 'questioon' => 'Πλένεται η θήκη;', 'answer' => 'Ναι. Η θήκη αφαιρείται και μπορεί να πλυθεί στο πλυντήριο, ώστε το μαξιλάρι να μένει φρέσκο και καθαρό. Το ύφασμα είναι διαπνέον, υποαλλεργικό και πιστοποιημένο κατά OEKO-TEX®.' ),
+  array( 'questioon' => 'Ταιριάζει στην καρέκλα ή στο κάθισμά μου;', 'answer' => 'Το ErgoSit έχει καθολικό σχήμα και ταιριάζει στα περισσότερα καθίσματα αυτοκινήτου, σε καρέκλες γραφείου και κουζίνας, καθώς και σε αναπηρικά αμαξίδια. Δεν υπάρχουν μεγέθη — ένα μοντέλο ταιριάζει σε όλους.' ),
+  array( 'questioon' => 'Σε πόσο χρόνο θα νιώσω διαφορά;', 'answer' => 'Οι περισσότεροι χρήστες νιώθουν λιγότερη πίεση στον κόκκυγα και πιο άνετο κάθισμα ήδη από την πρώτη ημέρα. Για καλύτερη στάση και λιγότερο πόνο στη μέση, το αποτέλεσμα χτίζεται επιπλέον με την τακτική χρήση.' ),
+  array( 'questioon' => 'Υπάρχει εγγύηση επιστροφής χρημάτων;', 'answer' => 'Ναι, κάθε NORIKS ErgoSit συνοδεύεται από εγγύηση άνεσης 60 ημερών. Αν δεν νιώσετε λιγότερο πόνο και περισσότερη άνεση, επικοινωνήστε μαζί μας και θα το τακτοποιήσουμε.' ),
 );
 
 // KidsNest παιδικό μαξιλάρι — FAQ o izdelku (NORIKS, ublazene tvrdnje) — Greek.
@@ -1599,13 +1625,14 @@ $norikshers_faq = array(
   array( 'questioon' => 'Υπάρχει εγγύηση επιστροφής χρημάτων;', 'answer' => 'Ναι, προσφέρουμε εγγύηση επιστροφής χρημάτων 30 ημερών χωρίς ρίσκο. Αν δεν είστε ικανοποιημένοι, απλώς επικοινωνήστε μαζί μας και θα το τακτοποιήσουμε.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_kidsnest_faq, $kidsnest_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
     ? ( mb_stripos( $t, 'προϊόν' ) !== false )
     : ( stripos( $t, 'προϊόν' ) !== false );
   if ( $is_kidsnest_faq && $is_info )   { return $kidsnest_faq; }
+  if ( $is_jastuk_faq && $is_info )     { return $jastuk_faq; }
   if ( $is_leakboxers_faq && $is_info ) { return $leakboxers_faq; }
   if ( $is_kompmajice_faq && $is_info ) { return $kompmajice_faq; }
   if ( $is_norikshers_faq && $is_info ) { return $norikshers_faq; }
