@@ -51,14 +51,14 @@ if ( $upsell_is_majice ) {
     );
     $upsell_title_text = 'Προσθέστε μπλουζάκια τώρα – 50% έκπτωση';
 } else {
-    $upsell_product_id = 7029; // Μαύρα Μποξεράκια
-    $upsell_name       = 'Μαύρα Μποξεράκια';
+    $upsell_product_id = 3081; // Γκρι Μποξεράκια (siva verzija, ista struktura kot crna)
+    $upsell_name       = 'Γκρι Μποξεράκια';
     $upsell_qty_prices = array( 1 => 4.99, 3 => 14.97, 5 => 24.95 );
-    $upsell_qty_names  = array( 1 => '1x Μαύρα Μποξεράκια', 3 => '3x Μαύρα Μποξεράκια', 5 => '5x Μαύρα Μποξεράκια' );
+    $upsell_qty_names  = array( 1 => '1x Γκρι Μποξεράκια', 3 => '3x Γκρι Μποξεράκια', 5 => '5x Γκρι Μποξεράκια' );
     $upsell_qty_images = array(
-        1 => 'https://noriks.com/hr/wp-content/uploads/2025/11/crne-boksarice-produktna.jpg',
-        3 => 'https://noriks.com/hr/wp-content/uploads/2025/11/boksarice_3x_crne.png',
-        5 => 'https://noriks.com/hr/wp-content/uploads/2026/01/boksarice_5x_crne.png',
+        1 => 'https://noriks.com/gr/wp-content/uploads/2026/02/sive-boksarice-produktna.jpg',
+        3 => 'https://noriks.com/gr/wp-content/uploads/2026/02/sive-boksarice-produktna.jpg', // TODO: 3x siva kompozitna, ko obstaja
+        5 => 'https://noriks.com/gr/wp-content/uploads/2026/02/sive-boksarice-produktna.jpg', // TODO: 5x siva kompozitna, ko obstaja
     );
     $upsell_title_text = 'Προσθέστε μποξεράκια τώρα – 50% έκπτωση';
 }
