@@ -580,7 +580,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
            <?php if( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
 
           <div class="kn-size">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine.webp" alt="Μεγέθη KidsNest ανά ηλικία" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/kidsnest/tablica-velicine-gr.webp" alt="Μεγέθη KidsNest ανά ηλικία" style="width:100%;height:auto;border-radius:10px;display:block;margin:0 0 12px;" loading="lazy">
             <p style="margin:0;line-height:1.6;"><strong>Το παιδί είναι ανάμεσα σε δύο μεγέθη;</strong> Επιλέξτε πάντα το μεγαλύτερο. Το μαξιλάρι είναι σχεδιασμένο να στηρίζει την υγιή ευθυγράμμιση όσο το παιδί μεγαλώνει — το μεγαλύτερο μέγεθος δίνει περισσότερο χώρο και μεγαλύτερη διάρκεια χρήσης.</p>
           </div>
 
