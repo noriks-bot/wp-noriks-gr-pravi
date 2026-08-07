@@ -667,6 +667,11 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
 
 
+        <?php // KOMZIPS: vlastna lokalizirana tabela velikosti (sicer pade v else = tabela za majice).
+        elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice', $current_product_id) ): ?>
+
+                  <img class="js-open-size-chart" style="cursor:pointer;" src="<?php echo get_template_directory_uri(); ?>/img/kompresijske-tabela-gr.webp" alt="Πίνακας μεγεθών — κάλτσες συμπίεσης">
+
         <?php elseif(  $is_carape ): ?>
 
 
