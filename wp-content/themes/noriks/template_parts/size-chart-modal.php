@@ -210,6 +210,16 @@
       
       
        
+      <?php elseif ( function_exists('noriks_is_type') && noriks_is_type( 'kompresijske-nogavice' ) ): ?>
+
+      <div style="line-height:1.9; text-align:left; margin:40px 0; padding:0 6px; font-size:15px; color:#111;">
+        <strong>S/M</strong> : νούμερο παπουτσιού 36–40 / περιφέρεια γάμπας : 23–36 εκ.<br>
+        <strong>L/XL</strong> : νούμερο παπουτσιού 40–44 / περιφέρεια γάμπας : 36–45 εκ.<br>
+        <strong>2XL</strong> : νούμερο παπουτσιού 44–48 / περιφέρεια γάμπας : 45–56 εκ.<br><br>
+        Μετρήστε την περιφέρεια της γάμπας στο πιο φαρδύ σημείο για να βρείτε το μέγεθός σας.<br><br>
+        Συνιστούμε να επιλέξετε μέγεθος με βάση την περιφέρεια της γάμπας και όχι το συνηθισμένο νούμερο παπουτσιού.
+      </div>
+
       <?php elseif ( has_term( array( 'ponozky', 'zimske-carape', 'kaltses', 'socks' ), 'product_cat', get_the_ID() ) ): ?>
       
       

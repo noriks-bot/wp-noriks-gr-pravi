@@ -667,6 +667,16 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
 
 
+        <?php elseif( noriks_is_type( 'kompresijske-nogavice', $current_product_id ) ): ?>
+
+          <div style="line-height:1.9;">
+            <strong>S/M</strong> : νούμερο παπουτσιού 36–40 / περιφέρεια γάμπας : 23–36 εκ.<br>
+            <strong>L/XL</strong> : νούμερο παπουτσιού 40–44 / περιφέρεια γάμπας : 36–45 εκ.<br>
+            <strong>2XL</strong> : νούμερο παπουτσιού 44–48 / περιφέρεια γάμπας : 45–56 εκ.<br><br>
+            Μετρήστε την περιφέρεια της γάμπας στο πιο φαρδύ σημείο για να βρείτε το μέγεθός σας.<br><br>
+            Συνιστούμε να επιλέξετε μέγεθος με βάση την περιφέρεια της γάμπας και όχι το συνηθισμένο νούμερο παπουτσιού.
+          </div>
+
         <?php elseif(  $is_carape ): ?>
 
 
