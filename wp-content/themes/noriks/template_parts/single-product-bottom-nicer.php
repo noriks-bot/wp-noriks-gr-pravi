@@ -603,7 +603,11 @@ endif;
 
           Δεν είστε ο μόνος που αναζητά κάθισμα χωρίς πόνο.
 
-          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>
+
+           Δεν είστε ο μόνος που ψάχνει πιο σταθερό γόνατο.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kneefix') ): ?>Χιλιάδες πελάτες φορούν ήδη τον νάρθηκα NORIKS KneeFix για πιο σταθερό γόνατο – στις σκάλες, στη βόλτα και στην παρατεταμένη ορθοστασία.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>
 
           Δεν είστε οι μόνοι που αναζητούν ήρεμο παιδικό ύπνο.
 
@@ -697,16 +701,20 @@ endif;
   $is_kompmajice_page = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice', $current_product_id) );
   $is_jastuk_page     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $current_product_id) );
   $is_kidsnest_page   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $current_product_id) );
+  $is_kneefix_page    = ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) );
 
   // Fallback product name shown in review cards.
-  $rv_fallback_title = $is_kidsnest_page ? 'NORIKS KidsNest μαξιλάρι'
+  $rv_fallback_title = $is_kneefix_page ? 'Νάρθηκας γόνατος NORIKS KneeFix'
+                     : ( $is_kidsnest_page ? 'NORIKS KidsNest μαξιλάρι'
                      : ( $is_jastuk_page ? 'NORIKS ErgoSit ορθοπεδικό μαξιλάρι'
                      : ( $is_leakboxers_page ? 'NORIKS απορροφητικά μποξεράκια'
                      : ( $is_kompmajice_page ? 'NORIKS FIT φανελάκι συμπίεσης'
-                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) );
+                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) );
 
   // Include review pools (own pool per orto product group)
-  if ( $is_kidsnest_page ) {
+  if ( $is_kneefix_page ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_kneefix.php';
+  } elseif ( $is_kidsnest_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_kidsnest.php';
   } elseif ( $is_jastuk_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_ortopedski_jastuk.php';
@@ -1066,7 +1074,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
   // Avatar pools based on page category
   $avatar_type = $is_bokserice_page ? 'bokserice' : 'majice';
   // Belt + bunion + fisiorest + norikshers + leak boxers + kompresijske majice + ortopedski jastuk + kidsnest: text-only reviews (no avatar images).
-  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_leakboxers_page || $is_kompmajice_page || $is_jastuk_page || $is_kidsnest_page ) ? array() : get_review_avatar_pool($avatar_type);
+  $avatar_pool = ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_leakboxers_page || $is_kompmajice_page || $is_jastuk_page || $is_kidsnest_page || $is_kneefix_page ) ? array() : get_review_avatar_pool($avatar_type);
 
   // On single-product landing pages (leak boxers / kompresijske majice) the cards should
   // reference THIS product (via $rv_fallback_title), not random pool products.
@@ -1110,7 +1118,7 @@ $auto_reviews_ship = assign_unique_avatars_first_n($auto_reviews_ship, $avatar_p
   $ship_count = count($auto_reviews_ship);
 ?>
 
-<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_jastuk_page || $is_kidsnest_page ) : ?>
+<?php if ( $is_ortopas_page || $is_bunion_page || $is_fisiorest_page || $is_norikshers_page || $is_jastuk_page || $is_kidsnest_page || $is_kneefix_page ) : ?>
 <style>/* belt + bunion + fisiorest + norikshers + jastuk + kidsnest: text-only reviews, no avatar */ #reviews-section .avatar { display: none !important; }</style>
 <?php endif; ?>
 
@@ -1538,6 +1546,7 @@ $is_leakboxers_faq = ( function_exists('noriks_is_type') && noriks_is_type('leak
 $is_kompmajice_faq = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') );
 $is_jastuk_faq     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') );
 $is_kidsnest_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') );
+$is_kneefix_faq   = ( function_exists('noriks_is_type') && noriks_is_type('kneefix') );
 
 // NORIKS FIT (kompresijska/oblikujuća majica) — FAQ o izdelku (prevod, NORIKS FIT) — Greek.
 $kompmajice_faq = array(
@@ -1570,6 +1579,37 @@ $jastuk_faq = array(
 );
 
 // KidsNest παιδικό μαξιλάρι — FAQ o izdelku (NORIKS, ublazene tvrdnje) — Greek.
+$kneefix_faq = array(
+  array(
+    'questioon' => 'Είναι ο KneeFix κατάλληλος για καθημερινή χρήση;',
+    'answer'    => 'Ναι. Ο NORIKS KneeFix σχεδιάστηκε ακριβώς για τις καθημερινές κινήσεις — περπάτημα, δουλειά, ανέβασμα σκάλας ή παρατεταμένη ορθοστασία.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να ρυθμίσω μόνος μου τη συμπίεση;',
+    'answer'    => 'Ναι. Με τον ενσωματωμένο τροχό ακριβείας ρυθμίζετε μόνοι σας τη συμπίεση — όση στήριξη σας είναι άνετη.',
+  ),
+  array(
+    'questioon' => 'Γλιστράει ο νάρθηκας στο περπάτημα;',
+    'answer'    => 'Ο KneeFix έχει αντιολισθητικό άκρο σιλικόνης που βοηθά να μειωθεί το γλίστρημα και το τσαλάκωμα κατά τη χρήση.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να φοράω τον νάρθηκα κάτω από τα ρούχα;',
+    'answer'    => 'Ναι. Η ευέλικτη και λεπτή γραμμή επιτρέπει άνετη χρήση κάτω από τα περισσότερα καθημερινά ρούχα.',
+  ),
+  array(
+    'questioon' => 'Ταιριάζει ο νάρθηκας και στα δύο γόνατα;',
+    'answer'    => 'Κατά την παραγγελία επιλέγετε πλευρά (αριστερά ή δεξιά), ώστε ο νάρθηκας να εφαρμόζει ακριβώς στο γόνατο που θέλετε να στηρίξετε.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να τον φοράω για μεγάλο διάστημα;',
+    'answer'    => 'Ο νάρθηκας σχεδιάστηκε για καθημερινή χρήση. Πολλοί πελάτες τον φορούν στη δουλειά, στη βόλτα και στις καθημερινές δραστηριότητες.',
+  ),
+  array(
+    'questioon' => 'Πώς επιλέγω μέγεθος;',
+    'answer'    => 'Τα μεγέθη καθορίζονται με βάση το σωματικό βάρος: S (50–60 kg), M (61–75 kg), L (76–90 kg), XL (91–110 kg) και 2XL (110 kg+).',
+  ),
+);
+
 $kidsnest_faq = array(
   array( 'questioon' => 'Πόσο γρήγορα θα δω ότι σταματά η αναπνοή από το στόμα;', 'answer' => 'Οι περισσότεροι γονείς παρατηρούν πιο ήσυχη αναπνοή και λιγότερα ξυπνήματα με ανοιχτό στόμα μέσα στις πρώτες 5–7 νύχτες. Έως τη 14η νύχτα, στα περισσότερα παιδιά το ροχαλητό ηρεμεί και τα χείλη μένουν κλειστά. Την πλήρη διαφορά — εμφανώς καλύτερη θέση και πιο ήρεμο ύπνο — οι γονείς την περιγράφουν συνήθως γύρω στην 21η έως 30ή ημέρα. Χρησιμοποιήστε το κάθε νύχτα.' ),
   array( 'questioon' => 'Για ποια ηλικία προορίζεται το KidsNest;', 'answer' => 'Το KidsNest διατίθεται σε τρία μεγέθη: 1–3, 3–9 και 9–18 ετών. Το πιο σημαντικό παράθυρο είναι μεταξύ 3 και 9 ετών, όταν ο ουρανίσκος και η γνάθος αναπτύσσονται πιο έντονα — αλλά κάθε ηλικία έχει το δικό της μέγεθος και το δικό της όφελος.' ),
@@ -1627,12 +1667,13 @@ $norikshers_faq = array(
   array( 'questioon' => 'Υπάρχει εγγύηση επιστροφής χρημάτων;', 'answer' => 'Ναι, προσφέρουμε εγγύηση επιστροφής χρημάτων 30 ημερών χωρίς ρίσκο. Αν δεν είστε ικανοποιημένοι, απλώς επικοινωνήστε μαζί μας και θα το τακτοποιήσουμε.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
     ? ( mb_stripos( $t, 'προϊόν' ) !== false )
     : ( stripos( $t, 'προϊόν' ) !== false );
+  if ( $is_kneefix_faq && $is_info ) { return $kneefix_faq; }
   if ( $is_kidsnest_faq && $is_info )   { return $kidsnest_faq; }
   if ( $is_jastuk_faq && $is_info )     { return $jastuk_faq; }
   if ( $is_leakboxers_faq && $is_info ) { return $leakboxers_faq; }
