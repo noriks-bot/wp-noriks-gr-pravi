@@ -1761,74 +1761,7 @@ function gck_render_bundle_selector() {
                                                    value="">
                                         </div>
                                     <?php endif; ?>
-                                    <?php if ( ! empty($color_values) && $target_color_field_key !== '' ) : ?>
-                                        <div class="color-swatches <?php echo $use_image_swatches ? 'is-image-swatches' : ''; ?>"
-                                             data-attr-key="<?php echo esc_attr($target_color_attr_key); ?>"
-                                             data-name="pairs[<?php echo esc_attr( $offer_id ); ?>][<?php echo $i; ?>][<?php echo esc_attr( $target_color_field_key ); ?>]">
-
-                                            <?php foreach ( $color_values as $val ) :
-                                                $val_str = (string)$val;
-
-                                                if ( $use_image_swatches ) {
-                                                    $img = gck_get_majica_swatch_image_url_gr( $val_str );
-                                                } else {
-                                                    $img = '';
-                                                }
-                                            ?>
-                                                <div class="swatch" data-value="<?php echo esc_attr( $val_str ); ?>" title="<?php echo esc_attr( $val_str ); ?>">
-                                                    <?php if ( $use_image_swatches && $img !== '' ) : ?>
-                                                        <img src="<?php echo esc_url( $img ); ?>" alt="<?php echo esc_attr( $val_str ); ?>">
-                                                    <?php else: ?>
-                                                        <?php
-                                                        // Your original "reliable greeklish mapping" for dot swatches (kept)
-                                                        $greeklish_map = [
-                                                            'μαύρο'       => 'mauro',
-                                                            'μαυρο'       => 'mauro',
-                                                            'mauro'       => 'mauro',
-
-                                                            'λευκό'       => 'leuko',
-                                                            'λευκο'       => 'leuko',
-                                                            'leuko'       => 'leuko',
-
-                                                            'γκρι'        => 'gkri',
-                                                            'γκρί'        => 'gkri',
-
-                                                            'μπεζ'        => 'mpez',
-                                                            'μπεζ '       => 'mpez',
-
-                                                            'σκούρο μπλε' => 'skouro-mple',
-                                                            'σκουρο μπλε' => 'skouro-mple',
-                                                            'σκούρο-μπλε' => 'skouro-mple',
-                                                            'σκουρο-μπλε' => 'skouro-mple',
-
-                                                            'καφέ'        => 'kafe',
-                                                            'καφε'        => 'kafe',
-                                                            'kafe'        => 'kafe',
-
-                                                            'πράσινο'     => 'prasino',
-                                                            'πρασινο'     => 'prasino',
-                                                            'prasino'     => 'prasino',
-                                                        ];
-
-                                                        $val_lower = trim(function_exists('mb_strtolower') ? mb_strtolower($val_str, 'UTF-8') : strtolower($val_str));
-                                                        $class_slug = $greeklish_map[$val_lower] ?? sanitize_title($val_lower);
-
-                                                        $class_slug = preg_replace('/[\x{0300}-\x{036F}]/u', '', $class_slug);
-                                                        $class_slug = preg_replace('/[^a-z0-9\-]/', '-', $class_slug);
-                                                        $class_slug = trim($class_slug, '-');
-                                                        ?>
-                                                        <span class="swatch-circle color-<?php echo esc_attr($class_slug); ?>"></span>
-                                                    <?php endif; ?>
-                                                </div>
-                                            <?php endforeach; ?>
-
-                                            <input type="hidden"
-                                                   class="swatch-input"
-                                                   data-attr-key="<?php echo esc_attr($target_color_attr_key); ?>"
-                                                   name="pairs[<?php echo esc_attr( $offer_id ); ?>][<?php echo $i; ?>][<?php echo esc_attr( $target_color_field_key ); ?>]"
-                                                   value="">
-                                        </div>
-                                    <?php endif; ?>
+                                    
 
                                     <?php if ( ! empty($size_values) && $target_size_field_key !== '' ) : ?>
                                         <select
