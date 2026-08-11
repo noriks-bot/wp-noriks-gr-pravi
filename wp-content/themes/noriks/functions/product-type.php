@@ -33,6 +33,8 @@ function noriks_product_type_map() : array {
         // (identical in every market) + the GR front-facing socks category.
         'kompresijske-nogavice'   => array( 'orto-kompresijske-carape', 'kaltses', 'socks', 'ponozky' ),
         'ortopas'                 => array( 'orto-ortopas', 'ortopas' ),
+        // KneeFix ortopedska steznica za koljeno.
+        'kneefix'                 => array( 'orto-kneefix' ),
         'bunion'                  => array( 'orto-bunion', 'bunion' ),
         'fisiorest'               => array( 'orto-fisiorest', 'fisiorest' ),
         'norikshers'              => array( 'orto-norikshers', 'orto-noriks-hers', 'norikshers' ),
