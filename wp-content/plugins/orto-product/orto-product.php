@@ -800,21 +800,15 @@ function gck_render_bundle_selector() {
 
       /* Emergency matches for failing colors */
       .color-skouro-mple,
-      .color-skoyro-mple,
-      .color-%cf%83%ce%ba%ce%bf%cf%8d%cf%81%ce%bf-%ce%bc%cf%80%ce%bb%ce%b5,
-      .color-%cf%83%ce%ba%ce%bf%cf%85%cf%81%ce%bf-%ce%bc%cf%80%ce%bb%ce%b5 {
+      .color-skoyro-mple {
           background: #2a3262 !important;
       }
 
-      .color-prasino,
-      .color-%cf%80%cf%81%ce%ac%cf%83%ce%b9%ce%bd%ce%bf,
-      .color-%cf%80%cf%81%ce%b1%cf%83%ce%b9%ce%bd%ce%bf {
+      .color-prasino {
           background: #294d3b !important;
       }
 
-      .color-kafe,
-      .color-%ce%ba%ce%b1%cf%86%ce%ad,
-      .color-%ce%ba%ce%b1%cf%86%ce%b5 {
+      .color-kafe {
           background: #9f6f4e !important;
       }
 
@@ -833,15 +827,30 @@ function gck_render_bundle_selector() {
       .color-kokkino     { background: #ba212f; }
 
       /* Encoded Greek color classes – generated from your values */
-      .color-%ce%bc%ce%b1%cf%8d%cf%81%ce%bf           { background: #000; }
-      .color-%ce%bb%ce%b5%cf%85%ce%ba%cf%8c           { background: #fff; border: 1px solid #ccc; }
-      .color-%ce%b3%ce%ba%cf%81%ce%b9                 { background: #706d78; }
-      .color-%ce%bc%cf%80%ce%b5%ce%b6                 { background: #e4e0cf; }
-      .color-%cf%83%ce%ba%ce%bf%cf%8d%cf%81%ce%bf-%ce%bc%cf%80%ce%bb%ce%b5  { background: #203240; }
-      .color-%ce%ba%ce%b1%cf%86%ce%ad                 { background: #9f6f4e; }
-      .color-%cf%80%cf%81%ce%ac%cf%83%ce%b9%ce%bd%ce%bf { background: #294d3b; }
-      .color-%ce%bc%ce%b1%cf%8d%cf%81%ce%bf { background: #000 !important; }
       .color-black, .color-mauro, .color-mayro { background: #000 !important; }
+
+      /* GRCKE boje: biramo po data-value. Klasa tipa .color-%ce%bc... je NEVALJAN CSS
+         (znak postotka u selektoru) pa je preglednik cijelo pravilo odbacivao -> prazni krugovi. */
+      .color-swatches .swatch[data-value="Μαύρο"] .swatch-circle { background: #000 !important; }
+      .color-swatches .swatch[data-value="Μαυρο"] .swatch-circle { background: #000 !important; }
+      .color-swatches .swatch[data-value="Λευκό"] .swatch-circle { background: #fff !important; border: 1px solid #ccc; }
+      .color-swatches .swatch[data-value="Λευκο"] .swatch-circle { background: #fff !important; border: 1px solid #ccc; }
+      .color-swatches .swatch[data-value="Γκρι"] .swatch-circle { background: #706d78 !important; }
+      .color-swatches .swatch[data-value="Μπεζ"] .swatch-circle { background: #e4e0cf !important; }
+      .color-swatches .swatch[data-value="Σκούρο μπλε"] .swatch-circle { background: #2a3262 !important; }
+      .color-swatches .swatch[data-value="Σκουρο μπλε"] .swatch-circle { background: #2a3262 !important; }
+      .color-swatches .swatch[data-value="Καφέ"] .swatch-circle { background: #9f6f4e !important; }
+      .color-swatches .swatch[data-value="Καφε"] .swatch-circle { background: #9f6f4e !important; }
+      .color-swatches .swatch[data-value="Πράσινο"] .swatch-circle { background: #65633c !important; }
+      .color-swatches .swatch[data-value="Πρασινο"] .swatch-circle { background: #65633c !important; }
+      .color-swatches .swatch[data-value="Μπλε"] .swatch-circle { background: #203240 !important; }
+      .color-swatches .swatch[data-value="Κόκκινο"] .swatch-circle { background: #ba212f !important; }
+      .color-swatches .swatch[data-value="Κοκκινο"] .swatch-circle { background: #ba212f !important; }
+
+      .color-swatches .swatch[data-value="Λευκές"] .swatch-circle { background: #fff !important; border: 1px solid #ccc; }
+      .color-swatches .swatch[data-value="Λευκες"] .swatch-circle { background: #fff !important; border: 1px solid #ccc; }
+      .color-swatches .swatch[data-value="Μαύρες"] .swatch-circle { background: #000 !important; }
+      .color-swatches .swatch[data-value="Μαυρες"] .swatch-circle { background: #000 !important; }
 
       .bundle-option input[type="radio"] {
           -webkit-appearance: none;
