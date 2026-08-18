@@ -43,7 +43,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
       <p>Το εργονομικό παιδικό μαξιλάρι κρατά <strong>το κεφάλι και τον αυχένα σε φυσική ευθυγράμμιση και βοηθά να αποτραπεί η κλίση του κεφαλιού</strong> κατά τη διάρκεια της νύχτας. Έτσι η σπονδυλική στήλη παραμένει σωστά ευθυγραμμισμένη — ακόμη κι αν το παιδί στριφογυρίζει πολύ στον ύπνο του.</p>
       <p><strong>Το αποτέλεσμα: πιο ήρεμος ύπνος και καλύτερη ανάκαμψη.</strong></p>
     </div>
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'02-san.jpg' ); ?>" alt="Παιδί κοιμάται ήρεμα στο μαξιλάρι KidsNest" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-gr-2.webp' ); ?>" alt="Παιδί κοιμάται ήρεμα στο μαξιλάρι KidsNest" loading="lazy" onerror="this.style.display='none'"></div>
   </div>
 </section>
 
@@ -92,7 +92,7 @@ $kn = get_template_directory_uri() . '/img/kidsnest/';
 <!-- ============ 6) Kvaliteta materijala — slika LIJEVO, tekst DESNO ============ -->
 <section class="kn-sec">
   <div class="kn-wrap kn-row2">
-    <div class="kn-media"><img src="<?php echo esc_url( $kn.'03-detalj.webp' ); ?>" alt="KidsNest — δομή 3 ζωνών και διαπνέον ύφασμα από κοντά" loading="lazy" onerror="this.style.display='none'"></div>
+    <div class="kn-media"><img src="<?php echo esc_url( $kn.'kn-gr-6.webp' ); ?>" alt="KidsNest — δομή 3 ζωνών και διαπνέον ύφασμα από κοντά" loading="lazy" onerror="this.style.display='none'"></div>
     <div class="kn-copy">
       <h2 class="kn-h2 kn-h2-blue">Ποιότητα που τη νιώθετε — νύχτα με τη νύχτα.</h2>
       <p>Το πυκνό, διαπνέον πλεκτό ύφασμα και η προσεκτικά διαμορφωμένη επιφάνεια δεν υπάρχουν για την εμφάνιση — <strong>κάθε ζώνη έχει τον ρόλο της</strong>. Το κέντρο αγκαλιάζει απαλά το κεφάλι, οι άκρες στηρίζουν τον αυχένα και η δομή κρατά το σχήμα της ακόμη και μετά από μήνες καθημερινής χρήσης.</p>
