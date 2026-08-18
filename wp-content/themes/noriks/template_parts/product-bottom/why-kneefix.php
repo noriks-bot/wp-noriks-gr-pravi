@@ -31,7 +31,7 @@ $kf_img = function( $file, $alt ) use ( $kf, $kf_path ) {
 <!-- ============ 1) Όταν κάθε βήμα γίνεται δυσάρεστο ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('13_stepenice.jpg','Πόνος στο γόνατο κατά την κάθοδο σκάλας'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-gr-3.webp','Πόνος στο γόνατο κατά την κάθοδο σκάλας'); ?></div>
     <div class="kfx-copy">
       <h2 class="kfx-h2">Όταν κάθε βήμα γίνεται δυσάρεστο</h2>
       <p class="kfx-lead">Στην αρχή είναι συχνά μόνο ένα ελαφρύ τράβηγμα.</p>
@@ -133,14 +133,14 @@ $kf_img = function( $file, $alt ) use ( $kf, $kf_path ) {
       <p>Ο NORIKS KneeFix σχεδιάστηκε για να κάνει τις καθημερινές κινήσεις πιο ευχάριστες — χωρίς περιττούς περιορισμούς. Το ευέλικτο υλικό προσαρμόζεται καλύτερα στη μέρα σας και στηρίζει το γόνατο εκεί που το χρειάζεστε.</p>
       <a class="kfx-cta" href="#bundle-selector">Επιλέξτε το μέγεθός σας →</a>
     </div>
-    <div class="kfx-media"><?php echo $kf_img('05_lifestyle_GR.webp','KneeFix στην καθημερινότητα — περπάτημα, ποδήλατο, προπόνηση'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-gr-1.webp','KneeFix στην καθημερινότητα — περπάτημα, ποδήλατο, προπόνηση'); ?></div>
   </div>
 </section>
 
 <!-- ============ 7) Συνιστάται για καθημερινή στήριξη του γόνατος ============ -->
 <section class="kfx-sec">
   <div class="kfx-wrap kfx-row2">
-    <div class="kfx-media"><?php echo $kf_img('06_giatros_GR.webp','Συνιστάται για καθημερινή στήριξη του γόνατος'); ?></div>
+    <div class="kfx-media"><?php echo $kf_img('kf-gr-2.webp','Συνιστάται για καθημερινή στήριξη του γόνατος'); ?></div>
     <div class="kfx-copy">
       <h2 class="kfx-h2">Συνιστάται για καθημερινή στήριξη του γόνατος</h2>
       <ul class="kfx-check">
