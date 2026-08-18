@@ -782,7 +782,7 @@ endif;
    * Build/caches a pool of products: [['title'=>..., 'url'=>...], ...]
    */
   function get_wc_product_pool(
-      $transient_key = 'reviews_product_pool_cache_v2',
+      $transient_key = 'reviews_product_pool_cache_v3',
       $ttl = 12 * HOUR_IN_SECONDS
   ) {
       if ( ! function_exists( 'wc_get_products' ) ) {
@@ -831,14 +831,10 @@ endif;
       } elseif ( $is_bokserice ) {
           $args['category'] = [ 'mpoxer' ];
       } else {
-          $args['tax_query'] = [
-              [
-                  'taxonomy' => 'product_cat',
-                  'field'    => 'slug',
-                  'terms'    => [ 'mpoxer' ],
-                  'operator' => 'NOT IN',
-              ],
-          ];
+          // Stranice majica: bazen SAMO iz kategorije majica (s podkategorijama).
+          // Prije je uzimao sve osim bokserica, pa su recenzije o majicama
+          // zavrsavale pod orto proizvodima (Cloth XXL, Cool Curl…).
+          $args['category'] = [ 'mplouzoakia' ];
       }
 
       $ids = wc_get_products( $args );
