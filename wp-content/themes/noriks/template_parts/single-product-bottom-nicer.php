@@ -734,12 +734,16 @@ endif;
   $is_kneefix_page    = ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) );
 
   // Fallback product name shown in review cards.
-  $rv_fallback_title = $is_kneefix_page ? 'Νάρθηκας γόνατος NORIKS KneeFix'
+  $rv_fallback_title = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ) ? 'Κάλτσες συμπίεσης NORIKS'
+                     : ( $is_ortopas_page ? 'Ζώνη μέσης NORIKS'
+                     : ( $is_bunion_page ? 'Διορθωτής κότσι NORIKS'
+                     : ( $is_fisiorest_page ? 'NORIKS FisioRest'
+                     : ( $is_kneefix_page ? 'Νάρθηκας γόνατος NORIKS KneeFix'
                      : ( $is_kidsnest_page ? 'NORIKS KidsNest μαξιλάρι'
                      : ( $is_jastuk_page ? 'NORIKS ErgoSit ορθοπεδικό μαξιλάρι'
                      : ( $is_leakboxers_page ? 'NORIKS απορροφητικά μποξεράκια'
                      : ( $is_kompmajice_page ? 'NORIKS FIT φανελάκι συμπίεσης'
-                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) );
+                     : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) ) ) ) ) );
 
   // Include review pools (own pool per orto product group)
   if ( $is_kneefix_page ) {
