@@ -587,7 +587,37 @@ endif;
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
 
-          <?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
+
+          
+
+          Δεν είσαι ο μόνος που ψάχνει ανακούφιση από την ένταση στον αυχένα.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>
+
+          
+
+          Δεν είσαι ο μόνος που ψάχνει ανακούφιση από τον πόνο στο κότσι.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>
+
+          
+
+          Δεν είσαι ο μόνος που ψάχνει ανακούφιση για τη μέση.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>
+
+          
+
+          Δεν είσαι ο μόνος που ψάχνει τις τέλειες κάλτσες συμπίεσης.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>
+
+          
+
+          Δεν είσαι ο μόνος που ψάχνει τα τέλεια μπόξερ.
+
+          <?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>
 
           Δεν είστε μόνη στην αναζήτηση λείου δέρματος χωρίς ρυτίδες.
 
@@ -623,7 +653,7 @@ endif;
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Χιλιάδες πελάτες χρησιμοποιούν ήδη το ορθοπεδικό μαξιλάρι NORIKS ErgoSit για κάθισμα χωρίς πόνο σε κόκκυγα, μέση και γοφούς – στο αυτοκίνητο, στο γραφείο και στο σπίτι.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Χιλιάδες άνθρωποι χρησιμοποιούν ήδη το NORIKS FisioRest για λιγότερο πόνο και ένταση στον αυχένα – έλξη, δόνηση και θερμότητα σε μία συσκευή.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Χιλιάδες άνθρωποι φοράνε ήδη τον διορθωτή NORIKS για λιγότερο πόνο και πιο ίσια θέση του δακτύλου – στο σπίτι, μπροστά στην τηλεόραση ή στον ύπνο.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Χιλιάδες άνθρωποι φοράνε ήδη τη ζώνη NORIKS για λιγότερο πόνο και πιο σταθερή μέση – στη δουλειά, στο σήκωμα βάρους και στο πολύωρο κάθισμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Χιλιάδες άντρες φοράνε ήδη τις κάλτσες συμπίεσης NORIKS για πιο ελαφριά και ξεκούραστα πόδια – στη δουλειά, στα ταξίδια και στην προπόνηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Χιλιάδες άντρες φοράνε ήδη τα μπόξερ NORIKS – άνεση που κρατάει όλη μέρα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Χιλιάδες πελάτες χρησιμοποιούν ήδη το ορθοπεδικό μαξιλάρι NORIKS ErgoSit για κάθισμα χωρίς πόνο σε κόκκυγα, μέση και γοφούς – στο αυτοκίνητο, στο γραφείο και στο σπίτι.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -797,15 +827,23 @@ endif;
       $is_bokserice  = false;
       $is_norikshers = false;
       $is_jastuk     = false;
+      $is_fisiorest = false;
+      $is_bunion = false;
+      $is_ortopas = false;
+      $is_nogavice = false;
       $is_kidsnest   = false;
       if ( $product_id ) {
           $is_bokserice = has_term( array( 'bokserice','orto-bokserice', 'bokserice-sastavi-paket', 'mpoxer', 'mpoxerakia', 'boxers', 'boxerakia' ), 'product_cat', $product_id );
           $is_norikshers = ( function_exists('noriks_is_type') && noriks_is_type('norikshers', $product_id) );
           $is_jastuk     = ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk', $product_id) );
+          $is_fisiorest = ( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $product_id) );
+          $is_bunion = ( function_exists('noriks_is_type') && noriks_is_type('bunion', $product_id) );
+          $is_ortopas = ( function_exists('noriks_is_type') && noriks_is_type('ortopas', $product_id) );
+          $is_nogavice = ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice', $product_id) );
           $is_kidsnest   = ( function_exists('noriks_is_type') && noriks_is_type('kidsnest', $product_id) );
       }
 
-      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_jastuk ? '_jastuk' : ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : '_all' ) ) ) );
+      $cache_key = $transient_key . ( $is_kidsnest ? '_kidsnest' : ( $is_jastuk ? '_jastuk' : ( $is_norikshers ? '_norikshers' : ( $is_bokserice ? '_bokserice' : ( $is_fisiorest ? '_fisiorest' : ( $is_bunion ? '_bunion' : ( $is_ortopas ? '_ortopas' : ( $is_nogavice ? '_nogavice' : '_all' ) ) ) ) ) ) ) );
 
       if ( function_exists( 'get_transient' ) ) {
           $cached = get_transient( $cache_key );
@@ -830,7 +868,15 @@ endif;
           $args['category'] = [ 'orto-norikshers', 'orto-noriks-hers' ];
       } elseif ( $is_bokserice ) {
           $args['category'] = [ 'mpoxer' ];
-      } else {
+      } elseif ( $is_fisiorest ) {
+        $args['category'] = [ 'orto-fisiorest', 'fisiorest' ];
+    } elseif ( $is_bunion ) {
+        $args['category'] = [ 'orto-bunion', 'bunion' ];
+    } elseif ( $is_ortopas ) {
+        $args['category'] = [ 'orto-ortopas', 'ortopas' ];
+    } elseif ( $is_nogavice ) {
+        $args['category'] = [ 'orto-kompresijske-carape', 'kaltses', 'socks', 'ponozky' ];
+    } else {
           // Stranice majica: bazen SAMO iz kategorije majica (s podkategorijama).
           // Prije je uzimao sve osim bokserica, pa su recenzije o majicama
           // zavrsavale pod orto proizvodima (Cloth XXL, Cool Curl…).
