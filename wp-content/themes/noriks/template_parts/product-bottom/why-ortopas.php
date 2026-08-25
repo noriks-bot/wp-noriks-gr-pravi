@@ -46,7 +46,7 @@ $opz_cmp_rows = array(
     array( 'Προσιτή τιμή',                      true,  false ),
     array( 'Άμεση χαλάρωση',                    true,  false ),
     array( 'Χωρίς αναμονή',                     true,  false ),
-    array( 'Εγγύηση επιστροφής χρημάτων 60 ημερών', true, false ),
+    array( 'Εγγύηση επιστροφής χρημάτων 30 ημερών', true, false ),
     array( 'Μακροπρόθεσμο κόστος',              false, true  ),
 );
 /* Mnenja s sliko — 8) sekcija */

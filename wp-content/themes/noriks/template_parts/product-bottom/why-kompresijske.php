@@ -60,7 +60,7 @@ $knv = get_template_directory_uri() . '/img/kompresijske-videos/';
           <tr><td>Ενισχυμένο φερμουάρ, δεν κολλάει ποτέ</td><td class="mid">—</td><td class="no">✕</td><td class="us ok">✓</td></tr>
           <tr><td>Αναπνέον ύφασμα</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
           <tr><td>Άνεση όλη μέρα (+12 ώρες)</td><td class="mid">~</td><td class="no">✕</td><td class="us ok">✓</td></tr>
-          <tr><td>Εγγύηση επιστροφής χρημάτων 60 ημερών</td><td class="no">✕</td><td class="no">✕</td><td class="us ok">✓</td></tr>
+          <tr><td>Εγγύηση επιστροφής χρημάτων 30 ημερών</td><td class="no">✕</td><td class="no">✕</td><td class="us ok">✓</td></tr>
           <tr class="knc-price"><td>Τιμή ανά ζευγάρι</td><td>από 85 €</td><td>~15 €</td><td class="us">από 23,33 €</td></tr>
         </tbody>
       </table>
