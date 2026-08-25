@@ -739,7 +739,7 @@
 
         <div class="noriks-sc-guarantee">
           <span class="noriks-sc-check">&#10003;</span>
-          <span>Δεν είσαι σίγουρος; Δωρεάν αλλαγή μεγέθους εντός 30 ημερών.</span>
+          <span>Δεν είσαι σίγουρος; Αλλαγή μεγέθους εντός 30 ημερών.</span>
         </div>
       </div>
 
