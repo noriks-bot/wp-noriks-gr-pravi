@@ -129,7 +129,7 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
   <div class="nhs-wrap nhs-row2">
     <div class="nhs-media"><img src="<?php echo esc_url( $nh.'12.png' ); ?>" alt="NORIKS HERS αποτελέσματα" loading="lazy"></div>
     <div class="nhs-res-copy">
-      <h2 class="nhs-h2">Δείτε αποτελέσματα σε 14 ημέρες ή <em>επιστροφή χρημάτων!</em></h2>
+      <h2 class="nhs-h2">Δείτε αποτελέσματα σε 30 ημέρες ή <em>επιστροφή χρημάτων!</em></h2>
       <?php
       $nhs_stats = array(
         array( 'p' => '98', 'dash' => '172.4', 't' => 'Παρατήρησαν <strong>πιο λείο δέρμα</strong> και μειωμένες λεπτές γραμμές ήδη από την <strong>πρώτη εβδομάδα</strong> χρήσης.' ),
@@ -146,7 +146,7 @@ $nh = get_template_directory_uri() . '/img/norikshers/';
           <p><?php echo wp_kses_post($s['t']); ?></p>
         </div>
       <?php endforeach; ?>
-      <a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Δοκιμάστε χωρίς ρίσκο για 14 ημέρες</a>
+      <a class="nhs-cta nhs-cta-solid" href="#bundle-selector">Δοκιμάστε χωρίς ρίσκο για 30 ημέρες</a>
       <p class="nhs-cta-note"><em>Δεν ενθουσιαστήκατε; Πλήρης επιστροφή!</em></p>
     </div>
   </div>
