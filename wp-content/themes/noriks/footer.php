@@ -105,9 +105,8 @@
 			<div class="nf-wrap nf-main-grid">
 
 				<div class="nf-brand-col">
-					<p class="nf-brand-tagline">Ρούχα για πιο δυνατές σωματοδομές, φτιαγμένα να ταιριάζουν πραγματικά.</p>
 					<p class="nf-brand-desc"><?php echo esc_html( $nf_brand ); ?></p>
-					<a class="nf-btn nf-btn-outline" href="/gr/shop">Δες τη συλλογή</a>
+					<a class="nf-btn nf-btn-outline" href="/gr/shop">Αγόρασε τώρα</a>
 				</div>
 
 				<nav class="nf-links">
