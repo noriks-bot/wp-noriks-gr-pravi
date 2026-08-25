@@ -142,17 +142,17 @@ document.addEventListener('DOMContentLoaded', function () {
   <div class="marquee">
     <div class="marquee-content">
       <span><a href="/gr/shop"><?php echo $mq_ico_truck; ?>Δωρεάν αποστολή για παραγγελίες άνω των 70 €</a></span>
-      <span><a href="/gr/shop"><?php echo $mq_ico_shield; ?>30 ημέρες χωρίς ρίσκο – δοκιμάστε χωρίς ανησυχία</a></span>
+      <span><a href="/gr/shop"><?php echo $mq_ico_shield; ?>14 ημέρες χωρίς ρίσκο – δοκιμάστε χωρίς ανησυχία</a></span>
       <!--<span><a href="/gr/shop">Χειμερινή προσφορά: Έως 70% έκπτωση!</a></span>-->
 
       <!-- DUPLICATED for seamless infinite loop -->
       <span><a href="/gr/shop"><?php echo $mq_ico_truck; ?>Δωρεάν αποστολή για παραγγελίες άνω των 70 €</a></span>
-      <span><a href="/gr/shop"><?php echo $mq_ico_shield; ?>30 ημέρες χωρίς ρίσκο – δοκιμάστε χωρίς ανησυχία</a></span>
+      <span><a href="/gr/shop"><?php echo $mq_ico_shield; ?>14 ημέρες χωρίς ρίσκο – δοκιμάστε χωρίς ανησυχία</a></span>
      <!-- <span><a href="/gr/shop">Χειμερινή προσφορά: Έως 70% έκπτωση!</a></span>-->
       
        <!-- DUPLICATED for seamless infinite loop -->
       <span><a href="/gr/shop"><?php echo $mq_ico_truck; ?>Δωρεάν αποστολή για παραγγελίες άνω των 70 €</a></span>
-      <span><a href="/gr/shop"><?php echo $mq_ico_shield; ?>30 ημέρες χωρίς ρίσκο – δοκιμάστε χωρίς ανησυχία</a></span>
+      <span><a href="/gr/shop"><?php echo $mq_ico_shield; ?>14 ημέρες χωρίς ρίσκο – δοκιμάστε χωρίς ανησυχία</a></span>
      <!-- <span><a href="/hr/shop">Zimska ponuda: Do 70% popusta!</a></span>-->
     </div>
   </div>

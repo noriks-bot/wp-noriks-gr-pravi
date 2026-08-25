@@ -1805,7 +1805,7 @@ function gck_render_bundle_selector() {
                     <?php endif; /* $gck_shgifts vs SHBOX/normal render */ ?>
 
 <!--
-                    <small style="display: block; line-height: 1;"><?php esc_html_e( 'Προσφέρουμε 30 ημέρες επιστροφή χρημάτων ή δωρεάν ανταλλαγή προϊόντος – αγορές χωρίς άγχος!
+                    <small style="display: block; line-height: 1;"><?php esc_html_e( 'Προσφέρουμε 14 ημέρες επιστροφή χρημάτων ή δωρεάν ανταλλαγή προϊόντος – αγορές χωρίς άγχος!
 ', 'gift-card-kompetentnost' ); ?></small>
 -->
                 </div>

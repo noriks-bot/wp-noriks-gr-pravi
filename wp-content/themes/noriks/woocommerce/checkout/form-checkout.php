@@ -91,7 +91,7 @@ if ( WC()->cart->is_empty() ) return;
     <img decoding="async" src="https://images.vigo-shop.com/general/guarantee_money_back/satisfaction_icon_gr.png">
   </div>
   <div class="flex__item--autosize f--m checkout-warranty__text">
-    <strong>Αγοράστε χωρίς ανησυχία </strong><br>Επιστροφή χρημάτων εντός 90 ημερών
+    <strong>Αγοράστε χωρίς ανησυχία </strong><br>Επιστροφή χρημάτων εντός 14 ημερών
   </div>
 </div>
 
