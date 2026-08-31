@@ -358,12 +358,12 @@ if ( is_shop() ) {
 
 
 
-    echo do_shortcode('[yith_wcan_filters slug="%cf%8c%ce%bb%ce%b1"]');
+    noriks_shop_filter_links();
 
 // CATEGORY: /bokserice + ALL CHILD CATEGORIES (CZ: boxerky, GR: mpoxerakia/boxerakia)
 } elseif ( is_product_category_or_child('mpoxer') || is_product_category_or_child('mpoxerakia') || is_product_category_or_child('boxerakia') || is_product_category_or_child('boxers') ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="%ce%bc%cf%80%cf%8c%ce%be%ce%b5%cf%81"]');
+    noriks_shop_filter_links();
 
 // CATEGORY GROUP (starter packs)
 } elseif (
@@ -374,14 +374,14 @@ if ( is_shop() ) {
     is_product_category_or_child('starter-pack')
 ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="%cf%8c%ce%bb%ce%b1"]');
+    noriks_shop_filter_links();
 
 
 
 // CATEGORY: /majice + children (CZ: tricka, GR: mplouzoakia/blouzakia)
 } elseif ( is_product_category_or_child('tricka') || is_product_category_or_child('mplouzoakia') || is_product_category_or_child('blouzakia') || is_product_category_or_child('t-shirts') ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="%ce%bc%cf%80%ce%bb%ce%bf%cf%85%ce%b6%ce%ac%ce%ba%ce%b9%ce%b1"]');
+    noriks_shop_filter_links();
     
     
     
@@ -390,19 +390,19 @@ if ( is_shop() ) {
 // CATEGORY: /kompleti + children (CZ: sady, GR: set/seta)
 } elseif ( is_product_category_or_child('set') || is_product_category_or_child('set') || is_product_category_or_child('seta') || is_product_category_or_child('bundles') ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="%cf%83%ce%b5%cf%84"]');
+    noriks_shop_filter_links();
 
 
 
 // CATEGORY: /carape + children (CZ: ponozky, GR: kaltses) SOCKS
 } elseif ( is_product_category_or_child('kaltses') || is_product_category_or_child('kaltses') || is_product_category_or_child('socks') ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="%ce%ba%ce%ac%ce%bb%cf%84%cf%83%ce%b5%cf%82"]');
+    noriks_shop_filter_links();
 
 // FALLBACK for any other product category
 } elseif ( is_product_category() ) {
 
-    echo do_shortcode('[yith_wcan_filters slug="%cf%8c%ce%bb%ce%b1"]');
+    noriks_shop_filter_links();
 }
 ?>
         </div>
