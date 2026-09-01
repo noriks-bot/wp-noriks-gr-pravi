@@ -781,6 +781,46 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
         <?php echo get_field("singlepp_acc_t_4","options"); ?>
       </div>
     </div>
+
+    <!-- 6 - navodila za uporabo (samo KidsNest) -->
+    <?php if ( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ) : ?>
+    <div class="accordion-item">
+      <div class="accordion-header" onclick="toggleAccordion(this)">
+        <h3>Οδηγίες χρήσης</h3>
+        <div class="toggle">+</div>
+      </div>
+      <div class="accordion-content">
+        <a class="noriks-manual-link" href="<?php echo esc_url( get_template_directory_uri() . '/manuals/noriks-kidsnest.pdf' ); ?>" target="_blank" rel="noopener">
+          <span class="noriks-manual-ico" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5z" fill="#e53935"/>
+              <path d="M14 2v5h5" fill="#b71c1c"/>
+              <text x="12" y="17" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="700" fill="#fff">PDF</text>
+            </svg>
+          </span>
+          <span class="noriks-manual-txt">
+            <strong>Οδηγίες χρήσης NORIKS KidsNest</strong>
+            <small>PDF · άνοιγμα σε νέα καρτέλα</small>
+          </span>
+          <span class="noriks-manual-dl" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#12233b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </span>
+        </a>
+        <style>
+        .noriks-manual-link { display:flex; align-items:center; gap:14px; padding:14px 16px; border:1px solid #e2e2e2;
+          border-radius:10px; text-decoration:none; background:#fafafa; transition:background .15s, border-color .15s; }
+        .noriks-manual-link:hover { background:#f2f4f8; border-color:#c9d2e0; }
+        .noriks-manual-ico { flex:0 0 auto; display:flex; }
+        .noriks-manual-txt { display:flex; flex-direction:column; gap:2px; }
+        .noriks-manual-txt strong { color:#12233b; font-size:15px; line-height:1.3; }
+        .noriks-manual-txt small { color:#6b7280; font-size:12.5px; }
+        .noriks-manual-dl { margin-left:auto; flex:0 0 auto; display:flex; }
+        </style>
+      </div>
+    </div>
+    <?php endif; ?>
     
     
     <!-- konec 5 acrodinov -->
