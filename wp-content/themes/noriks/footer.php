@@ -33,7 +33,7 @@
   <div style="" class="info-item">
     <img loading="lazy" decoding="async" src="<?php echo get_field("footer_top_icon_3","option"); ?>" alt="Shipping Icon" class="info-icon">
     <h3><?php echo get_field("footer_top_heading_3", "option"); ?></h3>
-    <p><?php echo get_field("footer_top_text_3", "option"); ?></p>
+    <p><?php echo function_exists('noriks_fix_days') ? noriks_fix_days( get_field("footer_top_text_3", "option") ) : get_field("footer_top_text_3", "option"); ?></p>
   </div>
   </div>
 </section>
