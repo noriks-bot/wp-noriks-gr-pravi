@@ -512,7 +512,12 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
                 Το NORIKS KidsNest είναι κατασκευασμένο από υποαλλεργικό αφρό μνήμης με πιστοποίηση OEKO-TEX® — χωρίς φορμαλδεΰδη, βαρέα μέταλλα και BPA — με διαπνέουσα, πλενόμενη θήκη που αφαιρείται εύκολα.<br><br>Η εργονομική δομή 3 ζωνών αγκαλιάζει απαλά το κεφάλι, στηρίζει τον αυχένα και βοηθά να διατηρείται η σπονδυλική στήλη σε φυσική ευθυγράμμιση — ακόμη κι όταν το παιδί στριφογυρίζει πολύ τη νύχτα. Έτσι ενθαρρύνει την αναπνοή από τη μύτη και πιο ήρεμο, βαθύτερο ύπνο.<br><br>Διαθέσιμο σε τρία μεγέθη (1–3, 3–9 και 9–14 ετών), μεγαλώνει μαζί με το παιδί σας και προσφέρει το σωστό ύψος στήριξης σε κάθε στάδιο ανάπτυξης.
 
-         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) ): ?>
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('controlpro', $current_product_id) ): ?>
+
+                Το NORIKS ControlPro είναι μηχανική συσκευή εξάσκησης του πυελικού εδάφους με πραγματική φυσική αντίσταση. Αντί να σφίγγετε στο κενό, αποκτάτε κάτι για να πιέσετε — την ίδια αρχή προοδευτικής επιβάρυνσης με την οποία δυναμώνει κάθε άλλος μυς του σώματος.<br><br>Χρησιμοποιείται καθιστά: τοποθετείτε τη συσκευή ανάμεσα στα γόνατα και πιέζετε με αντίσταση — 3 σετ των 10 επαναλήψεων ημερησίως, περίπου πέντε λεπτά. Χωρίς αισθητήρες και εισαγωγή, χωρίς καλώδια, τζελ, μπαταρίες και εφαρμογές. Ο ενσωματωμένος μετρητής επαναλήψεων δείχνει πόσα κάνατε.<br><br>Η κατασκευή είναι στιβαρή, με μαλακά μαξιλαράκια στα στηρίγματα που δεν πιέζουν ούτε μετά από πολλά σετ. Η αντίσταση αυξάνεται προοδευτικά καθώς οι μύες δυναμώνουν.<br><br>Απευθύνεται σε άνδρες που θέλουν να ανακτήσουν τον έλεγχο της ουροδόχου κύστης — μετά από επέμβαση προστάτη, σε διαρροή κατά την προσπάθεια ή μετά από μήνες ασκήσεων Kegel χωρίς αποτέλεσμα. Η αποστολή είναι διακριτική, σε ουδέτερο κουτί χωρίς σημάνσεις.
+
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ): ?>
 
                 Το NORIKS KneeFix είναι ένας εύκαμπτος νάρθηκας γόνατος που συνδυάζει τέσσερις λειτουργίες σε ένα σύστημα στήριξης: ρυθμιζόμενη συμπίεση μέσω ενός ακριβούς τροχού, διπλούς πλαϊνούς σταθεροποιητές, μαξιλαράκι γέλης που ανακουφίζει την επιγονατίδα και σιλικονούχο αντιολισθητικό περίγραμμα που κρατά τον νάρθηκα στη θέση του.<br><br>Σε αντίθεση με τους άκαμπτους νάρθηκες, το KneeFix δεν ακινητοποιεί το γόνατο — το στηρίζει κατά τη φυσική κίνηση. Τη συμπίεση τη ρυθμίζετε σε ένα δευτερόλεπτο: το πρωί πιο σφιχτά, το απόγευμα πιο χαλαρά, ανάλογα με το πόσο είστε όρθιοι. Έτσι το γόνατο αποκτά σταθερότητα όταν σηκώνεστε, στις σκάλες, στο περπάτημα και στην παρατεταμένη ορθοστασία.<br><br>Το ύφασμα είναι ελαφρύ, αναπνέει και απομακρύνει την υγρασία, οπότε ο νάρθηκας φοριέται για ώρες χωρίς εφίδρωση και χωρίς να χαράζει. Είναι λεπτός και διακριτικός — κάτω από το παντελόνι σχεδόν δεν φαίνεται.<br><br>Διατίθεται σε μεγέθη από S έως 2XL ανάλογα με το σωματικό βάρος και σε έκδοση για αριστερό και δεξί γόνατο, ώστε η εφαρμογή να παραμένει ακριβής.
 
@@ -573,7 +578,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
      <?php endif; // /κρυμμένες λεπτομέρειες στο norikshers ?>
 
      <!-- 2 - slika tablica velicina  -->
-     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) )) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest + norikshers + ortopedski jastuk ?>
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest + norikshers + ortopedski jastuk ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Πίνακας μεγεθών</h3>
@@ -706,7 +711,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
 
     <!-- 3 - savjeti za pranje--> <!-- κρυμμένο και στο kidsnest -->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) )) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + ortopedski jastuk + kidsnest ?>
+    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + ortopedski jastuk + kidsnest ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
