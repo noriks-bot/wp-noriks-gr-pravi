@@ -19,6 +19,12 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompresijske-majice' );
     } elseif ( noriks_is_type( 'ortopedski-jastuk' ) ) {
         get_template_part( 'template_parts/product-bottom/why-ortopedski-jastuk' );
+    } elseif ( noriks_is_type( 'cloath' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-cloath' );
+    } elseif ( noriks_is_type( 'cloud' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-cloud' );
+    } elseif ( noriks_is_type( 'hyd' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-hyd' );
     } elseif ( noriks_is_type( 'kneefix' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kneefix' );
     } elseif ( noriks_is_type( 'controlpro' ) ) {
@@ -749,9 +755,18 @@ endif;
                      : ( $is_kompmajice_page ? 'NORIKS FIT φανελάκι συμπίεσης'
                      : ( $is_norikshers_page ? 'NORIKS HERS' : 'Jedna Siva Majica' ) ) ) ) ) ) ) ) );
   if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro συσκευή πυελικού εδάφους'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
 
   // Include review pools (own pool per orto product group)
-  if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) {
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_cloath.php';
+  } else  if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_cloud.php';
+  } else  if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_hyd.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_controlpro.php';
   } elseif ( $is_kneefix_page ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_kneefix.php';
@@ -1775,7 +1790,43 @@ $controlpro_faq = array(
   array( 'questioon' => 'Μπορώ να το επιστρέψω;', 'answer' => 'Ναι, έχετε <strong>30 ημέρες</strong> για επιστροφή χρημάτων. Αρκεί ένα e-mail, χωρίς έντυπα.' ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_cloath_faq = ( function_exists('noriks_is_type') && noriks_is_type('cloath') );
+$cloath_faq = array(
+  array(
+    'questioon' => 'Τι γίνεται αν δεν μείνω ικανοποιημένος;',
+    'answer'    => 'Έχετε 30 ημέρες να δοκιμάσετε το πανί χωρίς ρίσκο. Αν δεν είστε ευχαριστημένοι με το αποτέλεσμα, γράψτε στην υποστήριξή μας και επιστρέφουμε τα χρήματα — χωρίς χαρτιά και χωρίς εξηγήσεις.',
+  ),
+  array(
+    'questioon' => 'Από τι είναι φτιαγμένο το πανί;',
+    'answer'    => 'Από πυκνό ύφασμα μικροϊνών με διπλή όψη: η χνουδωτή πλευρά μαζεύει βρωμιά και νερό, η διχτυωτή γυαλίζει. Η άκρη είναι ενισχυμένη με μαλακή ρέλια που δεν χαράζει.',
+  ),
+  array(
+    'questioon' => 'Γιατί κοστίζει περισσότερο από τα κοινά πανιά;',
+    'answer'    => 'Επειδή είναι πιο πυκνό και πιο βαρύ από τη συνηθισμένη μικροΐνα — απορροφά πολλαπλάσιο νερό, δεν αφήνει χνούδι και αντέχει εκατοντάδες πλύσεις. Ένα αντικαθιστά μια ολόκληρη σειρά φθηνών που ξεφτίζουν μετά από λίγες πλύσεις.',
+  ),
+  array(
+    'questioon' => 'Πόσο διαρκεί σε σχέση με τα κοινά πανιά;',
+    'answer'    => 'Με σωστή φροντίδα αντέχει εκατοντάδες χρήσεις. Τα πανιά του εμπορίου συνήθως μετά από 20 πλύσεις χάνουν πυκνότητα και αρχίζουν να αφήνουν γραμμές.',
+  ),
+  array(
+    'questioon' => 'Αφήνει γραμμές ή λεκέδες;',
+    'answer'    => 'Όχι. Λόγω της πυκνότητας και της διπλής όψης το νερό απορροφάται αντί να απλώνεται, οπότε τζάμια και καθρέφτες μένουν χωρίς γραμμές — και χωρίς χνούδι.',
+  ),
+  array(
+    'questioon' => 'Πώς πλένεται καλύτερα;',
+    'answer'    => 'Στο πλυντήριο στους 40 °C, με απορρυπαντικό χωρίς μαλακτικό (το μαλακτικό φράζει τις ίνες και μειώνει την απορρόφηση). Μη χρησιμοποιείτε χλωρίνη και μην το βάζετε στο στεγνωτήριο — στεγνώστε το στον αέρα.',
+  ),
+  array(
+    'questioon' => 'Γιατί σε κάποια πλάνα το πανί φαίνεται πιο σκούρο;',
+    'answer'    => 'Λόγω του φωτισμού. Το πανί είναι σκούρο γκρι με μαύρη ρέλια· σε δυνατό φως δείχνει πιο ανοιχτό και σε εσωτερικό χώρο πιο σκούρο.',
+  ),
+  array(
+    'questioon' => 'Κάνει για δώρο;',
+    'answer'    => 'Ναι — τα πακέτα 3+3 και 8+4 είναι από τα πιο συνηθισμένα δώρα για νέο σπίτι και γιορτές. Το πανί έρχεται προσεκτικά διπλωμένο, έτοιμο για δώρο.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
@@ -1910,3 +1961,4 @@ $faq_pick = function( $title, $list ) use ( $is_controlpro_faq, $controlpro_faq,
 
 
 
+  if ( $is_cloath_faq && $is_info ) { return $cloath_faq; }
