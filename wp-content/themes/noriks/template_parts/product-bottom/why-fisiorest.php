@@ -18,7 +18,7 @@ $fis_science = array(
 );
 $fis_v = get_template_directory_uri() . '/img/fisiorest-videos/';
 $fis_i = get_template_directory_uri() . '/img/fisiorest/';
-$fis_hero_video = $fis_v . 'hero.mp4';
+$fis_hero_video = $fis_v . 'hero-v2.mp4';
 
 // 3) Το προτείνουν οι ειδικοί
 $fis_experts = array(
@@ -151,7 +151,7 @@ $fis_upgrades = array(
       <h2 class="fis-h2">Σχεδιασμένο από μηχανικούς. Κατασκευασμένο με προδιαγραφές φυσικοθεραπείας</h2>
       <p>Επενδύσαμε πάνω από 50.000 € και 2 χρόνια ανάπτυξης ώστε το NORIKS να μην είναι απλώς μια συσκευή μασάζ αυχένα. Είναι μια ολοκληρωμένη συσκευή θεραπείας αυχένα που πραγματικά θεραπεύει την αιτία. Κάθε παραγγελία περνά από αυστηρό έλεγχο ποιότητας ώστε να φτάνει σε άριστη κατάσταση.</p>
     </div>
-    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero.mp4' ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
+    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
   </div>
 </section>
 
