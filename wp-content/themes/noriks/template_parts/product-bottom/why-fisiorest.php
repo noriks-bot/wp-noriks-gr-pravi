@@ -30,8 +30,8 @@ $fis_experts = array(
 $fis_ugc = array(
     array( 'img' => $fis_i.'fis-uporaba-1.jpg', 'cap' => '«Για πρώτη φορά μετά από καιρό είμαι επιτέλους χωρίς πόνο…»' ),
     array( 'img' => $fis_i.'fis-uporaba-2.jpg', 'cap' => '«Το μαξιλάρι NORIKS έγινε η νέα καθημερινή μου αναγκαιότητα…»' ),
-    array( 'img' => $fis_i.'fis-uporaba-3.jpg', 'cap' => '«Με βοηθάει πολύ να ανακουφίζω την ένταση στον αυχένα και τους ώμους.»' ),
-    array( 'img' => $fis_i.'fis-uporaba-4.jpg', 'cap' => '«Αν μόλις γίνατε μαμά, αυτό ίσως είναι ακριβώς αυτό που χρειάζεστε…»' ),
+    array( 'img' => $fis_i.'fis-uporaba-3.jpg', 'cap' => '«Αν μόλις γίνατε μαμά, αυτό ίσως είναι ακριβώς αυτό που χρειάζεστε…»' ),
+    array( 'img' => $fis_i.'fis-uporaba-4.jpg', 'cap' => '«Με βοηθάει πολύ να ανακουφίζω την ένταση στον αυχένα και τους ώμους.»' ),
 );
 // 5) ThermoTrac 3-σε-1
 $fis_thermo = array(
