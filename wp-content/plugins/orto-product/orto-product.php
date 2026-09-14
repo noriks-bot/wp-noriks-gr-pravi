@@ -1373,6 +1373,13 @@ function gck_render_bundle_selector() {
       #bundle-selector .swatch-circle.color-zelena     { background: #b3bf9a !important; }
       #bundle-selector .swatch-circle.color-ljubicasta { background: #b48fc4 !important; }
       #bundle-selector .swatch-circle.color-tamnoplava { background: #2b3a63 !important; }
+      /* lokalizirane barve GR */
+      #bundle-selector .swatch-circle.color-\%ce\%bc\%cf\%80\%ce\%bb\%ce\%b5 { background: #b7c4e6 !important; }
+      #bundle-selector .swatch-circle.color-\%cf\%81\%ce\%bf\%ce\%b6 { background: #e6a8b8 !important; }
+      #bundle-selector .swatch-circle.color-\%ce\%b3\%ce\%ba\%cf\%81\%ce\%b9 { background: #c9c2ba !important; }
+      #bundle-selector .swatch-circle.color-\%cf\%80\%cf\%81\%ce\%ac\%cf\%83\%ce\%b9\%ce\%bd\%ce\%bf { background: #b3bf9a !important; }
+      #bundle-selector .swatch-circle.color-\%ce\%bc\%cf\%89\%ce\%b2 { background: #b48fc4 !important; }
+      #bundle-selector .swatch-circle.color-\%cf\%83\%ce\%ba\%ce\%bf\%cf\%8d\%cf\%81\%ce\%bf-\%ce\%bc\%cf\%80\%ce\%bb\%ce\%b5 { background: #2b3a63 !important; }
       @media (max-width: 560px) {
         #bundle-selector .color-swatches { gap: 8px; width: 100% !important; }
         #bundle-selector .color-swatches .swatch { width: 42px !important; height: 42px !important; }
@@ -1393,6 +1400,10 @@ function gck_render_bundle_selector() {
       #bundle-selector .swatch-circle.color-crna      { background: #17161a !important; }
       #bundle-selector .swatch-circle.color-tamnosiva { background: #4a4a4f !important; }
       #bundle-selector .swatch-circle.color-roza      { background: #e28ba4 !important; }
+      /* lokalizirane barve GR */
+      #bundle-selector .swatch-circle.color-\%ce\%bc\%ce\%b1\%cf\%8d\%cf\%81\%ce\%bf { background: #17161a !important; }
+      #bundle-selector .swatch-circle.color-\%cf\%83\%ce\%ba\%ce\%bf\%cf\%8d\%cf\%81\%ce\%bf-\%ce\%b3\%ce\%ba\%cf\%81\%ce\%b9 { background: #4a4a4f !important; }
+      #bundle-selector .swatch-circle.color-\%cf\%81\%ce\%bf\%ce\%b6 { background: #e28ba4 !important; }
 
       /* Cijeli izbornik ponuda u roza/bordo paleti stranice (#a8536b / #5c2331 / #fbf3f4).
          Gumb "Dodaj u kosaricu" ostaje nepromijenjen. */

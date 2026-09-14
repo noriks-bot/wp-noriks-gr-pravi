@@ -508,7 +508,23 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
       </div>
       <div class="accordion-content">
 
-         <?php if( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
+                  <?php if( function_exists('noriks_is_type') && noriks_is_type('snug', $current_product_id) ): ?>
+
+                Το <strong>NORIKS Snug</strong> είναι μαξιλάρι σώματος σε σχήμα S. Τα περισσότερα μαξιλάρια σώματος είναι ίσια — το σώμα σας δεν είναι. Γι' αυτό το Snug ακολουθεί τη γραμμή του σώματος και στηρίζει ώμους, γοφούς και γόνατα ταυτόχρονα.<br><br>Όταν κοιμάστε στο πλάι χωρίς στήριξη, ο ώμος σηκώνει όλο το βάρος, ο γοφός βυθίζεται και η σπονδυλική στήλη στρίβει. Τρία σημεία στήριξης μοιράζουν το βάρος, ώστε κανένα σημείο να μη σηκώνει όλο το φορτίο.<br><br>Οι διαστάσεις είναι 105 cm μήκος και 30 cm πλάτος — αρκετό για να σας στηρίζει από τον ώμο ως τα γόνατα, χωρίς να πιάνει όλο το κρεβάτι. Η γέμιση είναι από χιλιάδες λεπτές, ελαστικές ίνες που επανέρχονται στο σχήμα τους και δεν πλακώνουν ούτε μετά από μήνες χρήσης.<br><br>Το δροσιστικό κάλυμμα βγαίνει και πλένεται στο πλυντήριο στους 40 °C, ενώ το ύφασμα αφήνει τον αέρα να περνά όλη τη νύχτα. Διατίθεται σε έξι χρώματα: μπλε, ροζ, γκρι, πράσινο, μοβ και σκούρο μπλε.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
+
+                Η <strong>NORIKS FIT Woman</strong> είναι μπλούζα σμίλευσης όπου το ανάγλυφο είναι υφασμένο μέσα στο ίδιο το ύφασμα, όχι τυπωμένο πάνω του. Μια φαρδιά ζώνη περνά από την κοιλιά και τους γοφούς και μια δεύτερη από την πλάτη.<br><br>Η συμπίεση κατανέμεται σε πλάτος, αντί να σφίγγει σε ένα σημείο, οπότε τίποτα δεν χαράζει. Η κοιλιά μένει λεία, η μέση πιο στενή και η πλάτη παίρνει στήριξη που βοηθά να στέκεστε πιο ίσια.<br><br>Το πλεκτό είναι χωρίς ραφές, λεπτό και ματ — εξαφανίζεται κάτω από πουκάμισο, σακάκι ή εφαρμοστό φόρεμα. Δεν τυλίγεται μέσα στη μέρα και δεν διαγράφεται κάτω από τα ρούχα.<br><br>Πλύνετε στο πλυντήριο στους 30 °C, χωρίς λευκαντικό, σίδερο και στεγνωτήριο. Διατίθεται σε τρία χρώματα (μαύρο, σκούρο γκρι, ροζ) και σε μεγέθη από S έως 3XL. Αν είστε ανάμεσα σε δύο μεγέθη, πάρτε το μεγαλύτερο.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('pal', $current_product_id) ): ?>
+
+                Το <strong>NORIKS Pal</strong> είναι μπαστούνι σχεδιασμένο γύρω από ένα πρόβλημα: το σήκωμα. Εκτός από την επάνω λαβή έχει και δεύτερη, χαμηλότερα, την οποία πιάνετε όταν σηκώνεστε από την πολυθρόνα, από το κρεβάτι ή από χαμηλή καρέκλα — χωρίς να σκύβετε μπροστά και χωρίς ξένη βοήθεια.<br><br>Τέσσερα λαστιχένια πόδια κρατούν το μπαστούνι όρθιο όταν το αφήνετε. Δεν πέφτει στο πάτωμα, οπότε δεν χρειάζεται να σκύψετε να το σηκώσετε. Η βάση είναι αντιολισθητική και μένει σταθερή σε πλακάκι, παρκέ και σε ανώμαλο έδαφος.<br><br>Στη λαβή είναι ενσωματωμένος φακός που φωτίζει τον δρόμο μπροστά σας — για τη διαδρομή ως το μπάνιο τη νύχτα ή για βόλτα το σούρουπο. Δίπλα του υπάρχει και ηχητικός συναγερμός, που ειδοποιεί τους δικούς σας αν πέσετε ή χρειαστείτε βοήθεια.<br><br>Το μπαστούνι διπλώνει και χωράει σε τσάντα ή στο ντουλαπάκι του αυτοκινήτου, ενώ το ύψος ρυθμίζεται σε λίγα δευτερόλεπτα, χωρίς εργαλεία, για κάθε ανάστημα.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('red', $current_product_id) ): ?>
+
+                Το <strong>NORIKS RedRelief</strong> είναι ταινία καρπού που συνδυάζει τα δύο πιο μελετημένα μήκη κύματος στη θεραπεία με κόκκινο φως: το κόκκινο φως 660 nm ηρεμεί τη φλεγμονή στην επιφάνεια και το υπέρυθρο 850 nm φτάνει βαθύτερα, στον ιστό γύρω από το μέσο νεύρο.<br><br>Το φως μετατρέπεται στον ιστό σε κυτταρική ενέργεια (ATP) και ενισχύει την τοπική κυκλοφορία — δύο διεργασίες που είναι μέρος της φυσικής αποκατάστασης του σώματος. Γι' αυτό χρησιμοποιείται στο σύνδρομο καρπιαίου σωλήνα, στην τενοντίτιδα, στην αρθρίτιδα και σε πόνους χεριού και καρπού.<br><br>Στην ταινία είναι ενσωματωμένα 48 διπλά LED κατανεμημένα σε όλη την εσωτερική πλευρά, οπότε το φως καλύπτει όλο τον καρπό και όχι μόνο ένα σημείο. Διατίθενται 4 λειτουργίες και 3 επίπεδα ισχύος.<br><br>Η συσκευή είναι ασύρματη και φορτίζει με καλώδιο USB-C — μία φόρτιση αρκεί για έως 4 συνεδρίες. Ζυγίζει μόλις 126 g, έχει άνοιγμα για τον αντίχειρα και ρυθμιζόμενο λουράκι, οπότε ταιριάζει και στο αριστερό και στο δεξί χέρι. Συνιστάται μία συνεδρία 15 λεπτών την ημέρα· η συσκευή σβήνει μόνη της στο τέλος.
+
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type( 'kidsnest', $current_product_id ) ): ?>
 
                 Το NORIKS KidsNest είναι κατασκευασμένο από υποαλλεργικό αφρό μνήμης με πιστοποίηση OEKO-TEX® — χωρίς φορμαλδεΰδη, βαρέα μέταλλα και BPA — με διαπνέουσα, πλενόμενη θήκη που αφαιρείται εύκολα.<br><br>Η εργονομική δομή 3 ζωνών αγκαλιάζει απαλά το κεφάλι, στηρίζει τον αυχένα και βοηθά να διατηρείται η σπονδυλική στήλη σε φυσική ευθυγράμμιση — ακόμη κι όταν το παιδί στριφογυρίζει πολύ τη νύχτα. Έτσι ενθαρρύνει την αναπνοή από τη μύτη και πιο ήρεμο, βαθύτερο ύπνο.<br><br>Διαθέσιμο σε τρία μεγέθη (1–3, 3–9 και 9–14 ετών), μεγαλώνει μαζί με το παιδί σας και προσφέρει το σωστό ύψος στήριξης σε κάθε στάδιο ανάπτυξης.
 
@@ -578,7 +594,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
      <?php endif; // /κρυμμένες λεπτομέρειες στο norikshers ?>
 
      <!-- 2 - slika tablica velicina  -->
-     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest + norikshers + ortopedski jastuk ?>
+     <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('snug', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('pal', $current_product_id) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('red', $current_product_id) )) : // δεν υπάρχει πίνακας μεγεθών για bunion + fisiorest + norikshers + ortopedski jastuk ?>
      <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3>Πίνακας μεγεθών</h3>
@@ -691,7 +707,55 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
                   <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/hr/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_Gr.png">
 
-    <?php elseif(  $is_mixed_bundle ): ?>
+    <?php elseif( function_exists('noriks_is_type') && noriks_is_type('kompwom', $current_product_id) ): ?>
+
+          <div class="kwm-size">
+            <p style="margin:0 0 14px;line-height:1.6;">Διαλέξτε μέγεθος με βάση την <strong>περίμετρο στήθους</strong> — αυτή καθορίζει πώς κάθεται η μπλούζα στο στήθος και στους ώμους. Αν είστε ανάμεσα σε δύο μεγέθη, πάρτε το <strong>μεγαλύτερο</strong>.</p>
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#a8536b;color:#fff;">
+                  <th style="padding:9px 10px;text-align:left;">Μέγεθος</th>
+                  <th style="padding:9px 10px;text-align:left;">Περίμετρος στήθους</th>
+                  <th style="padding:9px 10px;text-align:left;">Περίμετρος μέσης</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr style="background:#fff;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">S<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 0–4</span></td>
+                    <td style="padding:9px 10px;">78 – 83 cm</td>
+                    <td style="padding:9px 10px;">65 – 71 cm</td>
+                  </tr>
+                  <tr style="background:#fbf7f8;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">M<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 6–8</span></td>
+                    <td style="padding:9px 10px;">83 – 89 cm</td>
+                    <td style="padding:9px 10px;">71 – 77 cm</td>
+                  </tr>
+                  <tr style="background:#fff;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">L<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 10–12</span></td>
+                    <td style="padding:9px 10px;">89 – 95 cm</td>
+                    <td style="padding:9px 10px;">77 – 83 cm</td>
+                  </tr>
+                  <tr style="background:#fbf7f8;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">XL<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 14</span></td>
+                    <td style="padding:9px 10px;">95 – 102 cm</td>
+                    <td style="padding:9px 10px;">83 – 88 cm</td>
+                  </tr>
+                  <tr style="background:#fff;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">2XL<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 16–18</span></td>
+                    <td style="padding:9px 10px;">102 – 108 cm</td>
+                    <td style="padding:9px 10px;">88 – 94 cm</td>
+                  </tr>
+                  <tr style="background:#fbf7f8;border-bottom:1px solid #f0e6ea;">
+                    <td style="padding:9px 10px;font-weight:700;">3XL<span style="display:block;font-size:11.5px;font-weight:600;color:#a08d95;">US 20</span></td>
+                    <td style="padding:9px 10px;">108 – 115 cm</td>
+                    <td style="padding:9px 10px;">94 – 100 cm</td>
+                  </tr>
+              </tbody>
+            </table>
+            <p style="margin:14px 0 0;line-height:1.6;"><strong>Πώς να μετρήσετε:</strong> στήθος στο πιο φαρδύ σημείο, μέση στο πιο στενό. Μετρήστε πάνω από τα εσώρουχα, με τη μεζούρα εφαρμοστή αλλά όχι σφιχτή.</p>
+          </div>
+
+        <?php elseif(  $is_mixed_bundle ): ?>
 
      <img class="js-open-size-chart" style="cursor:pointer;" src="<?php echo get_template_directory_uri(); ?>/img/tabela-velikosti-majice.jpg">
 

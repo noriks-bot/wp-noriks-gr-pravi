@@ -25,6 +25,14 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-cloud' );
     } elseif ( noriks_is_type( 'hyd' ) ) {
         get_template_part( 'template_parts/product-bottom/why-hyd' );
+    } elseif ( noriks_is_type( 'snug' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-snug' );
+    } elseif ( noriks_is_type( 'kompwom' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-kompwom' );
+    } elseif ( noriks_is_type( 'pal' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-pal' );
+    } elseif ( noriks_is_type( 'red' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-red' );
     } elseif ( noriks_is_type( 'kneefix' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kneefix' );
     } elseif ( noriks_is_type( 'controlpro' ) ) {
@@ -758,8 +766,21 @@ endif;
   if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug μαξιλάρι σώματος'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman μπλούζα σμίλευσης'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal μπαστούνι βάδισης'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief θεραπεία με κόκκινο φως'; }
 
   // Include review pools (own pool per orto product group)
+  if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_snug.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_kompwom.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('pal') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_pal.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_red.php';
+  } else
   if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_cloath.php';
   } else  if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) {
@@ -1181,7 +1202,11 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('bra') ||
         noriks_is_type('hyd') ||
         noriks_is_type('snore') ||
-        noriks_is_type('cloud')
+        noriks_is_type('cloud') ||
+        noriks_is_type('snug') ||
+        noriks_is_type('kompwom') ||
+        noriks_is_type('pal') ||
+        noriks_is_type('red')
   );
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   $avatar_pool = $noriks_no_photos ? array() : get_review_avatar_pool($avatar_type);
@@ -1898,12 +1923,164 @@ $hyd_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_snug = ( function_exists('noriks_is_type') && noriks_is_type('snug') );
+$snug_faq = array(
+  array(
+    'questioon' => 'Ποιες είναι οι διαστάσεις του μαξιλαριού;',
+    'answer'    => 'Ένα μέγεθος: <strong>105 cm μήκος και 30 cm πλάτος</strong>. Στηρίζει από τον ώμο ως τα γόνατα, αλλά δεν πιάνει όλο το κρεβάτι — γι\' αυτό κρατιέται εύκολα και γυρίζετε εύκολα μαζί του.',
+  ),
+  array(
+    'questioon' => 'Θα πλακώσει με τον καιρό;',
+    'answer'    => 'Όχι. Η γέμιση αποτελείται από χιλιάδες λεπτές ελαστικές ίνες που επανέρχονται στο σχήμα τους. Η στήριξη που νιώθετε την πρώτη νύχτα είναι ίδια και μετά από ενενήντα νύχτες.',
+  ),
+  array(
+    'questioon' => 'Με τι είναι γεμισμένο;',
+    'answer'    => 'Με γέμιση ινών υψηλής ελαστικότητας — μαλακή και ευχάριστη απ\' έξω, σφιχτή και υποστηρικτική από μέσα. Χωρίς αφρό μνήμης, που ζεσταίνεται.',
+  ),
+  array(
+    'questioon' => 'Πώς πλένεται;',
+    'answer'    => 'Το κάλυμμα βγαίνει και πλένεται στο πλυντήριο στους 40 °C. Το ίδιο το μαξιλάρι μην το βάζετε στο πλυντήριο — αν χρειαστεί, αερίστε το και αφήστε το να στεγνώσει στον αέρα.',
+  ),
+  array(
+    'questioon' => 'Είναι κατάλληλο στην εγκυμοσύνη;',
+    'answer'    => 'Ναι. Το σχήμα S στηρίζει την κοιλιά μπροστά και την πλάτη πίσω, ενώ η συνιστώμενη στάση στην εγκυμοσύνη είναι ο ύπνος στην αριστερή πλευρά. Σε περίπτωση επιπλοκών, συμβουλευτείτε τον γιατρό σας.',
+  ),
+  array(
+    'questioon' => 'Πόσο χρειάζεται για να το συνηθίσω;',
+    'answer'    => 'Οι περισσότεροι βρίσκουν τη θέση τους ως τη δεύτερη νύχτα. Το σχήμα S είναι διαφορετικό από ένα ίσιο μαξιλάρι, οπότε τις πρώτες νύχτες το σώμα μαθαίνει πού να ακουμπήσει.',
+  ),
+  array(
+    'questioon' => 'Ποια χρώματα υπάρχουν;',
+    'answer'    => 'Έξι χρώματα: μπλε, ροζ, γκρι, πράσινο, μοβ και σκούρο μπλε. Το χρώμα το επιλέγετε σε αυτή τη σελίδα, πριν το προσθέσετε στο καλάθι.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να το επιστρέψω;',
+    'answer'    => 'Ναι, έχετε <strong>30 ημέρες</strong> για επιστροφή χρημάτων ή αλλαγή. Αρκεί ένα e-mail, χωρίς φόρμες.',
+  ),
+);
+
+$is_kompwom = ( function_exists('noriks_is_type') && noriks_is_type('kompwom') );
+$kompwom_faq = array(
+  array(
+    'questioon' => 'Πώς διαλέγω μέγεθος;',
+    'answer'    => 'Από την περίμετρο στήθους — αυτή καθορίζει πώς κάθεται η μπλούζα στο στήθος και στους ώμους. Αν είστε ανάμεσα σε δύο μεγέθη, πάρτε το <strong>μεγαλύτερο</strong>. Διαθέσιμα από S έως 3XL.',
+  ),
+  array(
+    'questioon' => 'Φαίνεται κάτω από τα ρούχα;',
+    'answer'    => 'Όχι. Το πλεκτό είναι χωρίς ραφές, λεπτό και ματ, οπότε εξαφανίζεται κάτω από πουκάμισο, σακάκι ή εφαρμοστό φόρεμα. Δεν έχει άκρη που να χαράζει.',
+  ),
+  array(
+    'questioon' => 'Τυλίγεται μέσα στη μέρα;',
+    'answer'    => 'Όχι. Η συμπίεση κατανέμεται σε πλάτος αντί να πιέζει σε ένα σημείο, οπότε η μπλούζα μένει στη θέση της ακόμα και μετά από ολόκληρη μέρα.',
+  ),
+  array(
+    'questioon' => 'Οι γραμμές 3D είναι τυπωμένες;',
+    'answer'    => 'Όχι. Η πλέξη είναι <strong>υφασμένη μέσα στο ίδιο το ύφασμα</strong>, οπότε τίποτα δεν σκάει και τίποτα δεν ξεφλουδίζει με τον καιρό, όσες φορές κι αν την πλύνετε.',
+  ),
+  array(
+    'questioon' => 'Πόσο σφίγγει;',
+    'answer'    => 'Σταθερά, αλλά ποτέ στενά. Πρέπει να αναπνέετε και να τρώτε κανονικά, χωρίς να σκέφτεστε τη μπλούζα. Αν το σημάδι στο δέρμα φαίνεται είκοσι λεπτά αφού τη βγάλετε, το μέγεθος είναι μικρό.',
+  ),
+  array(
+    'questioon' => 'Πώς πλένεται;',
+    'answer'    => 'Στο πλυντήριο στους <strong>30 °C</strong>. Χωρίς λευκαντικό, χωρίς σίδερο και χωρίς στεγνωτήριο — αφήστε την να στεγνώσει στον αέρα.',
+  ),
+  array(
+    'questioon' => 'Ποια χρώματα υπάρχουν;',
+    'answer'    => 'Τρία χρώματα: μαύρο, σκούρο γκρι και ροζ. Το χρώμα και το μέγεθος τα επιλέγετε σε αυτή τη σελίδα, πριν το προσθέσετε στο καλάθι.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να την επιστρέψω;',
+    'answer'    => 'Ναι, έχετε <strong>30 ημέρες</strong> για επιστροφή χρημάτων ή αλλαγή μεγέθους. Αρκεί ένα e-mail, χωρίς φόρμες.',
+  ),
+);
+
+$is_pal = ( function_exists('noriks_is_type') && noriks_is_type('pal') );
+$pal_faq = array(
+  array(
+    'questioon' => 'Σε τι χρησιμεύει η δεύτερη λαβή;',
+    'answer'    => 'Στο <strong>σήκωμα</strong>. Την κάτω λαβή την πιάνετε όταν σηκώνεστε από την πολυθρόνα, από το κρεβάτι ή από χαμηλή καρέκλα — η πίεση πάει κάθετα προς τα κάτω, οπότε δεν χρειάζεται να σκύψετε μπροστά ούτε να ζητήσετε βοήθεια.',
+  ),
+  array(
+    'questioon' => 'Στέκεται πραγματικά μόνο του;',
+    'answer'    => 'Ναι. Η βάση έχει <strong>τέσσερα λαστιχένια πόδια</strong> που κρατούν το μπαστούνι όρθιο όταν το αφήνετε. Δεν πέφτει στο πάτωμα, οπότε δεν χρειάζεται να σκύψετε να το πιάσετε.',
+  ),
+  array(
+    'questioon' => 'Γλιστράει σε λεία δάπεδα;',
+    'answer'    => 'Όχι. Τα πόδια είναι από αντιολισθητικό λάστιχο και κρατούν σε πλακάκι, παρκέ και laminate. Η βάση προσαρμόζεται και σε ανώμαλο έδαφος έξω.',
+  ),
+  array(
+    'questioon' => 'Πώς λειτουργεί ο φακός;',
+    'answer'    => 'Ο φακός είναι ενσωματωμένος στη λαβή και ανάβει με ένα κουμπί. Φωτίζει τον δρόμο μπροστά σας — για τη νυχτερινή διαδρομή ως το μπάνιο ή για βόλτα το σούρουπο.',
+  ),
+  array(
+    'questioon' => 'Τι κάνει ο συναγερμός;',
+    'answer'    => 'Πατώντας το κουμπί ενεργοποιείται ένα <strong>δυνατό ηχητικό σήμα</strong>, που ειδοποιεί τους δικούς σας αν πέσετε ή χρειαστείτε βοήθεια.',
+  ),
+  array(
+    'questioon' => 'Ρυθμίζεται το ύψος;',
+    'answer'    => 'Ναι. Το ύψος ρυθμίζεται σε λίγα δευτερόλεπτα, χωρίς εργαλεία, οπότε το μπαστούνι ταιριάζει σε κάθε ανάστημα.',
+  ),
+  array(
+    'questioon' => 'Διπλώνει;',
+    'answer'    => 'Ναι. Διπλώνει σε λίγα μέρη και χωράει σε τσάντα ή στο ντουλαπάκι του αυτοκινήτου — πρακτικό για ταξίδια και επισκέψεις στον γιατρό.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να το επιστρέψω;',
+    'answer'    => 'Ναι, έχετε <strong>30 ημέρες</strong> για επιστροφή χρημάτων ή αλλαγή. Αρκεί ένα e-mail, χωρίς φόρμες.',
+  ),
+);
+
+$is_red = ( function_exists('noriks_is_type') && noriks_is_type('red') );
+$red_faq = array(
+  array(
+    'questioon' => 'Πώς βοηθά η θεραπεία με κόκκινο φως στο σύνδρομο καρπιαίου σωλήνα;',
+    'answer'    => 'Το κόκκινο και το υπέρυθρο φως διεισδύει στον ιστό και διεγείρει την <strong>παραγωγή κυτταρικής ενέργειας (ATP)</strong>, κάτι που βοηθά να καταλαγιάσει η φλεγμονή γύρω από το μέσο νεύρο, να βελτιωθεί η κυκλοφορία και να υποστηριχθεί η φυσική επούλωση.',
+  ),
+  array(
+    'questioon' => 'Πόσο χρειάζεται για τα πρώτα αποτελέσματα;',
+    'answer'    => 'Οι περισσότεροι χρήστες νιώθουν λιγότερο νυχτερινό μούδιασμα μέσα σε <strong>1 – 2 εβδομάδες</strong>. Πιο αισθητή αλλαγή στη δύναμη λαβής έρχεται συνήθως γύρω στην τέταρτη εβδομάδα. Συνιστούμε τακτική, καθημερινή χρήση για τουλάχιστον οκτώ εβδομάδες.',
+  ),
+  array(
+    'questioon' => 'Είναι ασφαλές για καθημερινή χρήση;',
+    'answer'    => 'Ναι. Η συσκευή είναι σχεδιασμένη για <strong>καθημερινές συνεδρίες 15 λεπτών</strong>. Το φως σε αυτές τις δόσεις δεν ζεσταίνει τον ιστό. Η συσκευή σβήνει μόνη της στο τέλος της συνεδρίας.',
+  ),
+  array(
+    'questioon' => 'Δουλεύει και για τα δύο χέρια;',
+    'answer'    => 'Ναι, η ταινία μπαίνει <strong>και στο αριστερό και στο δεξί χέρι</strong>. Αν έχετε ενόχληση και στα δύο, κάντε δύο συνεχόμενες συνεδρίες των 15 λεπτών ή επιλέξτε το πακέτο με δύο συσκευές.',
+  ),
+  array(
+    'questioon' => 'Σε ποια μεγέθη χεριού ταιριάζει;',
+    'answer'    => 'Η ελαστική ταινία με ρυθμιζόμενο λουράκι ταιριάζει στα <strong>περισσότερα μεγέθη χεριού ενήλικα</strong>, ακόμα και στα μεγαλύτερα. Το άνοιγμα για τον αντίχειρα κρατά τη συσκευή στη θέση της σε όλη τη συνεδρία.',
+  ),
+  array(
+    'questioon' => 'Τι περιέχει η συσκευασία;',
+    'answer'    => '1× ταινία NORIKS RED, <strong>1× καλώδιο φόρτισης USB-C</strong> και οδηγίες με το συνιστώμενο πρωτόκολλο θεραπείας.',
+  ),
+  array(
+    'questioon' => 'Πόσο κρατά η μπαταρία;',
+    'answer'    => 'Μία φόρτιση αρκεί για <strong>έως 4 συνεδρίες</strong>. Η συσκευή φορτίζει με καλώδιο USB-C, οπότε τη φορτίζετε από φορτιστή κινητού ή από laptop.',
+  ),
+  array(
+    'questioon' => 'Αντικαθιστά τον γιατρό;',
+    'answer'    => 'Όχι. Το NORIKS RED είναι συσκευή οικιακής χρήσης και <strong>δεν αντικαθιστά την ιατρική εξέταση</strong> ούτε τη θεραπεία που σας έχει συνταγογραφηθεί. Σε επίμονες ή έντονες ενοχλήσεις απευθυνθείτε σε γιατρό.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να το επιστρέψω;',
+    'answer'    => 'Ναι, έχετε <strong>30 ημέρες</strong> για επιστροφή χρημάτων ή αλλαγή. Αρκεί ένα e-mail, χωρίς φόρμες.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
     ? ( mb_stripos( $t, 'προϊόν' ) !== false )
     : ( stripos( $t, 'προϊόν' ) !== false );
+  if ( $is_snug && $is_info ) { return $snug_faq; }
+  if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
+  if ( $is_pal && $is_info ) { return $pal_faq; }
+  if ( $is_red && $is_info ) { return $red_faq; }
   if ( $is_kneefix_faq && $is_info ) { return $kneefix_faq; }
   if ( $is_controlpro_faq && $is_info ) { return $controlpro_faq; }
   if ( $is_kidsnest_faq && $is_info )   { return $kidsnest_faq; }
