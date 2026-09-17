@@ -33,6 +33,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-pal' );
     } elseif ( noriks_is_type( 'red' ) ) {
         get_template_part( 'template_parts/product-bottom/why-red' );
+    } elseif ( noriks_is_type( 'kneeheat' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-kneeheat' );
     } elseif ( noriks_is_type( 'kneefix' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kneefix' );
     } elseif ( noriks_is_type( 'controlpro' ) ) {
@@ -770,6 +772,7 @@ endif;
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman μπλούζα σμίλευσης'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal μπαστούνι βάδισης'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief θεραπεία με κόκκινο φως'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat συσκευή θέρμανσης και μασάζ γονάτου'; }
 
   // Include review pools (own pool per orto product group)
   if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
@@ -780,6 +783,8 @@ endif;
     include get_stylesheet_directory() . '/auto_reviews/GR_pal.php';
   } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_red.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_kneeheat.php';
   } else
   if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_cloath.php';
@@ -1206,7 +1211,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('snug') ||
         noriks_is_type('kompwom') ||
         noriks_is_type('pal') ||
-        noriks_is_type('red')
+        noriks_is_type('red') ||
+        noriks_is_type('kneeheat')
   );
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   $avatar_pool = $noriks_no_photos ? array() : get_review_avatar_pool($avatar_type);
@@ -2071,7 +2077,43 @@ $red_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
+$is_kneeheat = ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') );
+$kneeheat_faq = array(
+  array(
+    'questioon' => 'Πώς λειτουργεί στην πράξη η συσκευή;',
+    'answer'    => 'Η θερμότητα έως <strong>42 °C</strong> διαστέλλει τα αιμοφόρα αγγεία και διευκολύνει τη ροή του αίματος προς τους βαθύτερους ιστούς. Η ρυθμική συμπίεση με αέρα απομακρύνει το συσσωρευμένο υγρό και φέρνει φρέσκο αίμα, ενώ η δόνηση <strong>60 Hz</strong> χαλαρώνει τη δυσκαμψία γύρω από την άρθρωση. Και οι τρεις θεραπείες λειτουργούν ταυτόχρονα.',
+  ),
+  array(
+    'questioon' => 'Για ποιες ενοχλήσεις προορίζεται;',
+    'answer'    => 'Για χρόνιες ενοχλήσεις που εμφανίστηκαν σταδιακά — δύσκαμπτο, πονεμένο ή πρησμένο γόνατο που εμφανίζεται με την ηλικία και την καταπόνηση. Σε πρόσφατο τραυματισμό, πρόσφατη επέμβαση ή διαταραχές κυκλοφορίας, συμβουλευτείτε πρώτα τον γιατρό σας.',
+  ),
+  array(
+    'questioon' => 'Πόσο διαρκεί μία συνεδρία;',
+    'answer'    => '<strong>12 λεπτά.</strong> Η συσκευή ξεκινά με ένα κουμπί και σταματά μόνη της στο τέλος της συνεδρίας.',
+  ),
+  array(
+    'questioon' => 'Πότε θα νιώσω τη διαφορά;',
+    'answer'    => 'Πολλοί νιώθουν το γόνατο πιο χαλαρό ήδη μετά την πρώτη συνεδρία. Πιο αισθητή αλλαγή έρχεται συνήθως μετά από <strong>7 έως 14 ημέρες</strong> καθημερινής χρήσης.',
+  ),
+  array(
+    'questioon' => 'Μπορώ να το χρησιμοποιήσω και στα δύο γόνατα;',
+    'answer'    => 'Ναι. Το περιτύλιγμα ταιριάζει στο αριστερό και στο δεξί πόδι — αν ενοχλούν και τα δύο, κάντε μία συνεδρία στο καθένα.',
+  ),
+  array(
+    'questioon' => 'Σε τι διαφέρει από μια συσκευή TENS ή μια θερμοφόρα;',
+    'answer'    => 'Το TENS καλύπτει το σήμα του πόνου και η θερμοφόρα ζεσταίνει μόνο την επιφάνεια και κρυώνει σε λίγα λεπτά. Το KneeHeat συνδυάζει διαρκή θερμότητα, συμπίεση και δόνηση για να δράσει στους βαθύτερους ιστούς.',
+  ),
+  array(
+    'questioon' => 'Χρειάζεται φόρτιση;',
+    'answer'    => 'Ναι, η συσκευή είναι ασύρματη και φορτίζει με το καλώδιο USB-C που περιλαμβάνεται. Μία φόρτιση αρκεί για πολλές συνεδρίες.',
+  ),
+  array(
+    'questioon' => 'Ταιριάζει σε κάθε μέγεθος ποδιού;',
+    'answer'    => 'Οι ιμάντες ρυθμίζονται και στη συσκευασία υπάρχει και ιμάντας προέκτασης για μεγαλύτερες περιφέρειες ποδιού.',
+  ),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
@@ -2081,6 +2123,7 @@ $faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $k
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
+  if ( $is_kneeheat && $is_info ) { return $kneeheat_faq; }
   if ( $is_kneefix_faq && $is_info ) { return $kneefix_faq; }
   if ( $is_controlpro_faq && $is_info ) { return $controlpro_faq; }
   if ( $is_kidsnest_faq && $is_info )   { return $kidsnest_faq; }
