@@ -2134,6 +2134,9 @@ $faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $k
   if ( $is_fisiorest_faq && $is_info ) { return $fisiorest_faq; }
   if ( $is_bunion_faq && $is_info )    { return $bunion_faq; }
   if ( $is_ortopas_faq && $is_info )   { return $ortopas_faq; }
+  if ( $is_cloath_faq && $is_info )  { return $cloath_faq; }
+  if ( $is_cloud_faq && $is_info )   { return $cloud_faq; }
+  if ( $is_hyd_faq && $is_info )     { return $hyd_faq; }
   return $list;
 };
 ?>
@@ -2250,9 +2253,3 @@ $faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $k
     });
   });
 </script>
-
-
-
-  if ( $is_cloath_faq && $is_info ) { return $cloath_faq; }
-  if ( $is_cloud_faq && $is_info ) { return $cloud_faq; }
-  if ( $is_hyd_faq && $is_info ) { return $hyd_faq; }
