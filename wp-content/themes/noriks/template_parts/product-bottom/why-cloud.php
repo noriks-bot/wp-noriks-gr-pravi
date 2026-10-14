@@ -39,7 +39,7 @@ $cd_img = function( $file, $alt ) use ( $cd, $cd_path ) {
 <!-- ============ 2) Bez Noriksa / S Noriksom ============ -->
 <section class="ncd-sec ncd-dark">
   <div class="ncd-wrap ncd-row2">
-    <div class="ncd-media"><?php echo $cd_vid('cld-vid-razlika.mp4','cld-bez-s-noriksom.webp','Spavanje bez jastuka i s NORIKS Cloud jastukom'); ?></div>
+    <div class="ncd-media"><?php echo $cd_vid('cld-vid-razlika.mp4','cld-bez-s-noriksom.webp','Ύπνος χωρίς μαξιλάρι και με το μαξιλάρι NORIKS Cloud'); ?></div>
     <div class="ncd-copy">
       <h2 class="ncd-h2">Η διαφορά που φαίνεται από την πρώτη νύχτα</h2>
       <p><strong>Χωρίς μαξιλάρι:</strong> το πάνω πόδι πέφτει πάνω στο κάτω, η λεκάνη στρίβει και η πίεση πάει στη μέση και στα γόνατα.</p>
@@ -56,10 +56,10 @@ $cd_img = function( $file, $alt ) use ( $cd, $cd_path ) {
 <!-- ============ B) Koraci — pocnite bolje spavati vec veceras ============ -->
 <?php
 $cd_steps = array(
-  array( 'cld-korak1.webp', 'Otkopčajte traku i postavite jastuk', 'Pritisnite druker da oslobodite traku i stavite jastuk između koljena.' ),
-  array( 'cld-korak2.webp', 'Prilagodite traku svojoj nozi',       'Zategnite traku oko noge u jedan od dva položaja — čvrsto, ali bez pritiska.' ),
-  array( 'cld-korak3.webp', 'Spavajte s pravilnim poravnanjem',    'Jastuk drži razmak nogu, kralježnica ostaje poravnata, a pritisak popušta.' ),
-  array( 'cld-korak4.webp', 'Probudite se bez ukočenosti',         'Bez okretanja pola noći i bez traženja položaja koji ne boli.' ),
+  array( 'cld-korak1.webp', 'Ξεκουμπώστε τον ιμάντα και τοποθετήστε το μαξιλάρι', 'Πιέστε το κουμπώμα, ελευθερώστε τον ιμάντα και βάλτε το μαξιλάρι ανάμεσα στα γόνατα.' ),
+  array( 'cld-korak2.webp', 'Προσαρμόστε τον ιμάντα στο πόδι σας',       'Σφίξτε τον ιμάντα γύρω από το πόδι σε μία από τις δύο θέσεις — σταθερά, αλλά χωρίς πίεση.' ),
+  array( 'cld-korak3.webp', 'Κοιμηθείτε με σωστή ευθυγράμμιση',    'Το μαξιλάρι κρατά την απόσταση των ποδιών, η σπονδυλική στήλη μένει ευθυγραμμισμένη και η πίεση υποχωρεί.' ),
+  array( 'cld-korak4.webp', 'Ξυπνήστε χωρίς πιάσιμο',         'Χωρίς να στριφογυρίζετε μισή νύχτα και χωρίς να ψάχνετε στάση που δεν πονάει.' ),
 );
 ?>
 <section class="ncd-sec">
@@ -86,10 +86,10 @@ $cd_steps = array(
 <!-- ============ A) Recenzije kupaca — vrtuljak (kao prva sekcija na referenci) ============ -->
 <?php
 $cd_revs = array(
-  array( 5, 'Konačno spavam kroz noć',      'Spavam na boku cijeli život i uvijek sam se budila s ukočenim leđima. Prvo jutro nakon jastuka — ništa. Nisam vjerovala da je tako jednostavno.', 'Marina T.' ),
-  array( 5, 'Traka je ono što ga razlikuje', 'Prije mi je obični jastuk ispadao nakon pola sata. Ovaj ostaje između koljena do jutra, i kad se okrenem na drugu stranu.', 'Davor K.' ),
-  array( 5, 'Spas u trudnoći',               'Kupila sam ga u sedmom mjesecu. Konačno mogu ležati na lijevoj strani bez pritiska u kuku i bez vrpoljenja pola noći.', 'Ivana P.' ),
-  array( 5, 'Kukovi me više ne bole ujutro', 'Bila sam skeptična jer je to ipak samo jastuk. Razlika je stvarna — ustajem bez one ukočenosti u zdjelici.', 'Lucija H.' ),
+  array( 5, 'Επιτέλους κοιμάμαι όλη τη νύχτα',      'Κοιμάμαι στο πλάι μια ζωή και πάντα ξυπνούσα με πιασμένη μέση. Το πρώτο πρωί με το μαξιλάρι — τίποτα. Δεν πίστευα ότι ήταν τόσο απλό.', 'Μαρία Τ.' ),
+  array( 5, 'Ο ιμάντας είναι αυτό που το ξεχωρίζει', 'Παλιά το απλό μαξιλάρι μού έπεφτε μετά από μισή ώρα. Αυτό μένει ανάμεσα στα γόνατα μέχρι το πρωί, ακόμα κι όταν γυρίζω στο άλλο πλευρό.', 'Δημήτρης Κ.' ),
+  array( 5, 'Σωτηρία στην εγκυμοσύνη',               'Το πήρα στον έβδομο μήνα. Επιτέλους μπορώ να ξαπλώνω στο αριστερό πλευρό χωρίς πίεση στο ισχίο και χωρίς να στριφογυρίζω μισή νύχτα.', 'Ιωάννα Π.' ),
+  array( 5, 'Τα ισχία δεν με πονούν πια το πρωί', 'Ήμουν σκεπτικιστής, μια και είναι απλώς ένα μαξιλάρι. Η διαφορά όμως είναι αληθινή — σηκώνομαι χωρίς εκείνο το πιάσιμο στη λεκάνη.', 'Λουκία Χ.' ),
 );
 ?>
 <section class="ncd-sec ncd-dark">
@@ -125,10 +125,10 @@ $cd_revs = array(
       <p class="ncd-eyebrow">Ύπνος στο πλάι</p>
       <h2 class="ncd-h2">Πάρτε πίσω τα πρωινά που θεωρούσατε χαμένα</h2>
       <p>Ξέρετε την αίσθηση: ξυπνάτε πιασμένοι, όλη νύχτα ψάχνετε στάση που δεν πονάει ή ξυπνάτε αρκετές φορές χωρίς λόγο.</p>
-      <p>Problem niste vi. Kad spavate na boku bez oslonca između koljena, kukovi se uvijaju, donji dio leđa ostaje napet, a mišići cijelu noć rade da vas stabiliziraju.</p>
-      <p class="ncd-strong">NORIKS Cloud drži noge razmaknute točno koliko treba — kralježnica ostaje poravnata, a tijelo se konačno opusti.</p>
+      <p>Το πρόβλημα δεν είστε εσείς. Όταν κοιμάστε στο πλάι χωρίς στήριξη ανάμεσα στα γόνατα, τα ισχία στρίβουν, η μέση μένει τεντωμένη και οι μύες δουλεύουν όλη νύχτα για να σας σταθεροποιήσουν.</p>
+      <p class="ncd-strong">Το NORIKS Cloud κρατά τα πόδια ακριβώς στην απόσταση που χρειάζεται — η σπονδυλική στήλη μένει ευθυγραμμισμένη και το σώμα επιτέλους χαλαρώνει.</p>
     </div>
-    <div class="ncd-media"><?php echo $cd_vid('cld-vid-jutra.mp4','cld-jutra.webp','Jutro bez bolova u leđima'); ?></div>
+    <div class="ncd-media"><?php echo $cd_vid('cld-vid-jutra.mp4','cld-jutra.webp','Πρωινό χωρίς πόνο στη μέση'); ?></div>
   </div>
 </section>
 
@@ -137,26 +137,26 @@ $cd_revs = array(
   <div class="ncd-wrap ncd-row2">
     <div class="ncd-copy">
       <h2 class="ncd-h2">Η ευθυγράμμιση που νιώθετε το πρωί</h2>
-      <p>Kad je razmak nogu pravilan, kralježnica prestaje biti iskrivljena, zdjelica se poravna, a koljena se više ne stišću jedno o drugo.</p>
+      <p>Όταν η απόσταση των ποδιών είναι σωστή, η σπονδυλική στήλη παύει να στρεβλώνεται, η λεκάνη ευθυγραμμίζεται και τα γόνατα δεν πιέζονται πια μεταξύ τους.</p>
       <ul class="ncd-check">
         <li>Ευθυγραμμισμένη σπονδυλική στήλη αντί για στρεβλωμένη</li>
         <li>Ευθυγραμμισμένη λεκάνη χωρίς στρέψη</li>
         <li>Χωρισμένα γόνατα, χωρίς πίεση</li>
       </ul>
     </div>
-    <div class="ncd-media"><?php echo $cd_img('cld-prije-poslije.webp','Prije i poslije — poravnanje kralježnice'); ?></div>
+    <div class="ncd-media"><?php echo $cd_img('cld-prije-poslije.webp','Πριν και μετά — ευθυγράμμιση της σπονδυλικής στήλης'); ?></div>
   </div>
 </section>
 
 <!-- ============ 4) Za koga je — krugovi s naslovom i tekstom (kao na referenci) ============ -->
 <?php
 $cd_cases = array(
-  array( 'cld-case-bok.webp',       'Ύπνος στο πλάι', 'Prilagođeno vašem prirodnom položaju.' ),
-  array( 'cld-case-ledja.webp',     'Bol u leđima',     'Sprječava uvijanje donjeg dijela leđa noću.' ),
-  array( 'cld-case-kukovi.webp',    'Bol u kukovima',   'Drži kukove poravnate umjesto iskrivljene.' ),
-  array( 'cld-case-koljena.webp',   'Bol u koljenima',  'Kraj pritisku koljena o koljeno.' ),
-  array( 'cld-case-trudnoca.webp',  'Trudnoća',         'Podupire kukove i trbuh tijekom trudnoće.' ),
-  array( 'cld-case-operacija.webp', 'Nakon operacije',  'Štedi kuk i koljeno tijekom oporavka.' ),
+  array( 'cld-case-bok.webp',       'Ύπνος στο πλάι', 'Προσαρμοσμένο στη φυσική σας στάση.' ),
+  array( 'cld-case-ledja.webp',     'Πόνος στη μέση',     'Αποτρέπει το νυχτερινό στρίψιμο της μέσης.' ),
+  array( 'cld-case-kukovi.webp',    'Πόνος στα ισχία',   'Κρατά τα ισχία ευθυγραμμισμένα αντί στραμμένα.' ),
+  array( 'cld-case-koljena.webp',   'Πόνος στα γόνατα',  'Τέλος στην πίεση γόνατο με γόνατο.' ),
+  array( 'cld-case-trudnoca.webp',  'Εγκυμοσύνη',         'Στηρίζει τα ισχία και την κοιλιά στην εγκυμοσύνη.' ),
+  array( 'cld-case-operacija.webp', 'Μετά από επέμβαση',  'Προστατεύει ισχίο και γόνατο κατά την ανάρρωση.' ),
 );
 ?>
 <section class="ncd-sec">
@@ -189,14 +189,14 @@ $cd_cases = array(
         <li><strong>Διατηρεί το σχήμα του</strong> για χρόνια, δεν πλακώνει</li>
       </ul>
     </div>
-    <div class="ncd-media"><?php echo $cd_img('cld-pjena.webp','Prozračna memorijska pjena s perforacijama'); ?></div>
+    <div class="ncd-media"><?php echo $cd_img('cld-pjena.webp','Αναπνεύσιμος αφρός μνήμης με διατρήσεις'); ?></div>
   </div>
 </section>
 
 <!-- ============ 7) Usporedba ============ -->
 <section class="ncd-sec">
   <div class="ncd-wrap ncd-row2">
-    <div class="ncd-media"><?php echo $cd_img('cld-usporedba.webp','NORIKS Cloud u usporedbi s običnim jastucima'); ?></div>
+    <div class="ncd-media"><?php echo $cd_img('cld-usporedba.webp','Το NORIKS Cloud σε σύγκριση με τα κοινά μαξιλάρια'); ?></div>
     <div class="ncd-copy">
       <h2 class="ncd-h2">Δεν είναι όλα τα μαξιλάρια γονάτων ίδια</h2>
       <ul class="ncd-vs">
