@@ -29,6 +29,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-snug' );
     } elseif ( noriks_is_type( 'kompwom' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kompwom' );
+    } elseif ( noriks_is_type( 'bowl' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-bowl' );
     } elseif ( noriks_is_type( 'pal' ) ) {
         get_template_part( 'template_parts/product-bottom/why-pal' );
     } elseif ( noriks_is_type( 'red' ) ) {
@@ -771,6 +773,7 @@ endif;
   if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug μαξιλάρι σώματος'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman μπλούζα σμίλευσης'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal μπαστούνι βάδισης'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) { $rv_fallback_title = 'NORIKS Bowl ορθοπεδικό μπολ σκύλου'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief θεραπεία με κόκκινο φως'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat συσκευή θέρμανσης και μασάζ γονάτου'; }
 
@@ -779,6 +782,8 @@ endif;
     include get_stylesheet_directory() . '/auto_reviews/GR_snug.php';
   } elseif ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_kompwom.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_bowl.php';
   } elseif ( function_exists('noriks_is_type') && noriks_is_type('pal') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_pal.php';
   } elseif ( function_exists('noriks_is_type') && noriks_is_type('red') ) {
@@ -1210,6 +1215,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('cloud') ||
         noriks_is_type('snug') ||
         noriks_is_type('kompwom') ||
+        noriks_is_type('bowl') ||
         noriks_is_type('pal') ||
         noriks_is_type('red') ||
         noriks_is_type('kneeheat')
@@ -1222,7 +1228,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
     // Izdelki z lastnim imenom v karticah mnenj ne smejo dobiti nakljucnega izdelka iz kataloga.
   $rv_own_name = ( function_exists('noriks_is_type') && (
       noriks_is_type('cloud') || noriks_is_type('cloath') || noriks_is_type('hyd') || noriks_is_type('snug')
-   || noriks_is_type('kompwom') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat')
+   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat')
    || noriks_is_type('controlpro') || noriks_is_type('kidsnest') || noriks_is_type('ortopedski-jastuk')
    || noriks_is_type('bunion') || noriks_is_type('fisiorest') || noriks_is_type('ortopas')
    || noriks_is_type('norikshers') || noriks_is_type('kompresijske-nogavice') ) );
@@ -2008,6 +2014,24 @@ $kompwom_faq = array(
   ),
 );
 
+$is_bowl = ( function_exists('noriks_is_type') && noriks_is_type('bowl') );
+$bowl_faq = array(
+  array('questioon' => 'Για ποιους σκύλους είναι κατάλληλο το μπολ;',
+    'answer'    => 'Για <strong>μικρόσωμες ράτσες</strong> — ντάτσχουντ, γαλλικό μπουλντόγκ, σναούτσερ, παγκ, μαλτέζ και παρόμοιες. Το μπολ έχει διάμετρο 15 εκ. και χωρητικότητα περίπου 430 ml.'),
+  array('questioon' => 'Σε τι χρησιμεύει η κλίση 15°;',
+    'answer'    => 'Το μπολ γέρνει προς τον σκύλο, έτσι η τροφή γλιστράει προς το μέρος του και το κεφάλι με τον αυχένα βρίσκονται σε πιο φυσική θέση. Ο σκύλος δεν χρειάζεται να χώνει τη μύτη στη γωνία του μπολ ούτε να λυγίζει τον αυχένα ως το πάτωμα.'),
+  array('questioon' => 'Γιατί είναι υπερυψωμένο;',
+    'answer'    => 'Η βάση των 11 εκ. ανεβάζει το μπολ πιο κοντά στο ύψος του σκύλου, οπότε τρώει όρθιος, με λιγότερο λύγισμα αυχένα και πλάτης. Αυτό είναι ιδιαίτερα άνετο για ηλικιωμένους σκύλους.'),
+  array('questioon' => 'Μπορώ να το χρησιμοποιήσω για νερό;',
+    'answer'    => 'Ναι. Το μπολ είναι από ανοξείδωτο ατσάλι και είναι εξίσου κατάλληλο για τροφή και για νερό. Πολλοί ιδιοκτήτες παίρνουν δύο — ένα για τροφή, ένα για νερό.'),
+  array('questioon' => 'Πώς καθαρίζεται;',
+    'answer'    => 'Ξεπλύνετε το μπολ με ζεστό νερό και υγρό πιάτων. Το λείο ατσάλι δεν απορροφά οσμές και δεν κρατά υπολείμματα τροφής όπως το πλαστικό.'),
+  array('questioon' => 'Γλιστράει στο πάτωμα;',
+    'answer'    => 'Η βάση είναι σταθερή και δεν αναποδογυρίζει όταν τρώει ο σκύλος. Σε πολύ λεία δάπεδα προτείνουμε ένα αντιολισθητικό υπόστρωμα κάτω από τη βάση.'),
+  array('questioon' => 'Μπορώ να το επιστρέψω;',
+    'answer'    => 'Ναι, έχετε <strong>30 ημέρες</strong> για επιστροφή χρημάτων. Αρκεί ένα e-mail, χωρίς έντυπα.'),
+);
+
 $is_pal = ( function_exists('noriks_is_type') && noriks_is_type('pal') );
 $pal_faq = array(
   array(
@@ -2120,7 +2144,7 @@ $kneeheat_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
@@ -2128,6 +2152,7 @@ $faq_pick = function( $title, $list ) use ( $is_snug, $snug_faq, $is_kompwom, $k
     : ( stripos( $t, 'προϊόν' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
+  if ( $is_bowl && $is_info ) { return $bowl_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
   if ( $is_kneeheat && $is_info ) { return $kneeheat_faq; }
