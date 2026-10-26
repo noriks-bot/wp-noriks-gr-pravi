@@ -4,13 +4,13 @@
  * Sekcije i redoslijed preslikani s referentne stranice, tekst na HR,
  * slike su NORIKS kreative iz img/kneefix/. Svaka sekcija ima sliku s jedne
  * i tekst s druge strane (naizmjenično) — nema sekcija koje su samo slika.
- *   1. Όταν κάθε βήμα γίνεται δυσάρεστο   slika lijevo   13_stepenice
+ *   1. Όταν κάθε βήμα γίνεται δυσάρεστο   slika lijevo   kf-gr-3
  *   2. Ίσως δεν πρόκειται μόνο για φθορά   slika desno    14_zglob
  *   3. Στήριξη για ενεργά γόνατα         slika lijevo   08_aktivno
  *   4. 4 λειτουργίες. Πιο σταθερή αίσθηση.    slika desno    03_funkcije
  *   5. Άνετη στήριξη σε 3 βήματα          slika lijevo   04_koraki
- *   6. Περισσότερη άνεση στην καθημερινότητα      slika desno    05_lifestyle
- *   7. Preporučeno za potporu koljena     slika lijevo   06_zdravnik
+ *   6. Περισσότερη άνεση στην καθημερινότητα      slika desno    kf-gr-1
+ *   7. Preporučeno za potporu koljena     slika lijevo   kf-gr-2
  *   8. Η διαφορά είναι αισθητή                  slika desno    07_vs
  *   9. Τι λένε οι πελάτες μας                3 kartice      10/11/12
  * Recenzije i FAQ renderira zajednički reviews.php (ne ovdje).
