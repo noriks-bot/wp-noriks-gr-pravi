@@ -54,19 +54,19 @@ $opz_cmp_rows = array(
 /* Mnenja s sliko — 8) sekcija */
 $opz_reviews = array(
     array(
-        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-1.webp',
+        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-1.webp?v=20261026',
         'title' => 'Μεγάλη βοήθεια για τους πόνους στη μέση',
         'text'  => 'Η ζώνη NORIKS μου έκανε πραγματικά τη ζωή πολύ πιο εύκολη. Λειτουργεί ακριβώς όπως υπόσχεται. Μπορώ ξανά να σκύβω χωρίς πόνο.',
         'name'  => 'Ελισάβετ Μ.',
     ),
     array(
-        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-2.jpg',
+        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-2.webp?v=20261026',
         'title' => 'Μαλακή και άνετη',
         'text'  => 'Ο φυσικοθεραπευτής μου μού σύστησε μια ζώνη για τους πόνους στη μέση. Είχα δοκιμάσει και άλλες ζώνες πριν, αλλά αυτή είναι πολύ πιο άνετη στο κάθισμα και το σκύψιμο. Παρόλα αυτά προσφέρει εξαιρετική στήριξη!',
         'name'  => 'Ιουλία Ο.',
     ),
     array(
-        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-3.webp',
+        'img'   => get_template_directory_uri() . '/img/ortopas-reviews/review-3.webp?v=20261026',
         'title' => 'Κορυφαία!',
         'text'  => 'Με βοηθά να κάθομαι ίσια και έχω την αίσθηση ότι περπατάω πιο όρθιος. Οι πόνοι μειώθηκαν σημαντικά και επιτέλους μπορώ να σηκωθώ χωρίς πόνο ακόμη και μετά από πολλή ώρα καθιστός. Φοράω τη ζώνη περίπου 2–3 ώρες την ημέρα – κυρίως στη δουλειά.',
         'name'  => 'Γιάννης Δ.',
@@ -187,7 +187,7 @@ $opz_no  = '<svg class="opz-no" viewBox="0 0 24 24" width="20" height="20" aria-
           <tr>
             <th class="opz-th-feat"></th>
             <th class="opz-th-brand">NORIKS</th>
-            <th class="opz-th-alt">Φυσικοθ.</th>
+            <th class="opz-th-alt">Φυσικοθεραπεία</th>
           </tr>
         </thead>
         <tbody>
