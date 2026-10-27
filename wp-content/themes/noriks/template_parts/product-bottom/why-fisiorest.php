@@ -18,7 +18,8 @@ $fis_science = array(
 );
 $fis_v = get_template_directory_uri() . '/img/fisiorest-videos/';
 $fis_i = get_template_directory_uri() . '/img/fisiorest/';
-$fis_hero_video = $fis_v . 'hero-v2.mp4';
+$fis_ver = '?v=20261027';
+$fis_hero_video = $fis_v . 'hero-v2.mp4' . $fis_ver;
 
 // 3) Το προτείνουν οι ειδικοί
 $fis_experts = array(
@@ -35,16 +36,16 @@ $fis_ugc = array(
 );
 // 5) ThermoTrac 3-σε-1
 $fis_thermo = array(
-    array( 'vid' => $fis_v.'v10.mp4', 'title' => 'Θεραπεία με έλξη' ),
-    array( 'vid' => $fis_v.'v07.mp4', 'title' => 'Θεραπεία με δόνηση' ),
-    array( 'vid' => $fis_v.'v05.mp4', 'title' => 'Θεραπεία με θερμότητα' ),
+    array( 'vid' => $fis_v.'v10.mp4' . $fis_ver, 'title' => 'Θεραπεία με έλξη' ),
+    array( 'vid' => $fis_v.'v07.mp4' . $fis_ver, 'title' => 'Θεραπεία με δόνηση' ),
+    array( 'vid' => $fis_v.'v05.mp4' . $fis_ver, 'title' => 'Θεραπεία με θερμότητα' ),
 );
 // 6) Τέσσερις βελτιώσεις
 $fis_upgrades = array(
-    array( 't' => 'Επαναφορτιζόμενη μπαταρία', 'd' => 'Πάρτε το παντού — η μπαταρία 2500 mAh αντέχει έως 2 ώρες.' , 'ico' => 'battery-v2.png' ),
-    array( 't' => 'Κάλυμμα από μεταξωτό', 'd' => 'Τυλιγμένο σε δροσερό μετάξι για απαλή, πολυτελή αίσθηση.' , 'ico' => 'silk-v2.png' ),
-    array( 't' => 'Απενεργοποίηση στα 30 λεπτά', 'd' => 'Τέσσερις συνεδρίες των 30 λεπτών με μία φόρτιση, χωρίς ανησυχία.' , 'ico' => 'timer-v2.png' ),
-    array( 't' => 'Ρυθμιζόμενη θερμότητα', 'd' => 'Θέρμανση στους 50 °C με την προηγμένη τεχνολογία ThermoTrac.' , 'ico' => 'heat-v2.png' ),
+    array( 't' => 'Επαναφορτιζόμενη μπαταρία', 'd' => 'Πάρτε το παντού — η μπαταρία 2500 mAh αντέχει έως 2 ώρες.' , 'ico' => 'battery-v2.png?v=20261027' ),
+    array( 't' => 'Κάλυμμα από μεταξωτό', 'd' => 'Τυλιγμένο σε δροσερό μετάξι για απαλή, πολυτελή αίσθηση.' , 'ico' => 'silk-v2.png?v=20261027' ),
+    array( 't' => 'Απενεργοποίηση στα 30 λεπτά', 'd' => 'Τέσσερις συνεδρίες των 30 λεπτών με μία φόρτιση, χωρίς ανησυχία.' , 'ico' => 'timer-v2.png?v=20261027' ),
+    array( 't' => 'Ρυθμιζόμενη θερμότητα', 'd' => 'Θέρμανση στους 50 °C με την προηγμένη τεχνολογία ThermoTrac.' , 'ico' => 'heat-v2.png?v=20261027' ),
 );
 ?>
 
@@ -151,14 +152,14 @@ $fis_upgrades = array(
       <h2 class="fis-h2">Σχεδιασμένο από μηχανικούς. Κατασκευασμένο με προδιαγραφές φυσικοθεραπείας</h2>
       <p>Επενδύσαμε πάνω από 50.000 € και 2 χρόνια ανάπτυξης ώστε το NORIKS να μην είναι απλώς μια συσκευή μασάζ αυχένα. Είναι μια ολοκληρωμένη συσκευή θεραπείας αυχένα που πραγματικά θεραπεύει την αιτία. Κάθε παραγγελία περνά από αυστηρό έλεγχο ποιότητας ώστε να φτάνει σε άριστη κατάσταση.</p>
     </div>
-    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
+    <div class="fis-row2-media"><video src="<?php echo esc_url( $fis_v.'hero-v2.mp4' . $fis_ver ); ?>" muted autoplay loop playsinline preload="metadata"></video></div>
   </div>
 </section>
 
 <!-- ============ 8) 14x ceneje ============ -->
 <section class="fis-cheaper">
   <div class="fis-wrap fis-row2">
-    <div class="fis-row2-media"><img src="<?php echo esc_url( $fis_i.'fis-produkt-kvadrat.jpg' ); ?>" alt="NORIKS FisioRest" loading="lazy"></div>
+    <div class="fis-row2-media"><img src="<?php echo esc_url( $fis_i.'fis-produkt-kvadrat.jpg' . $fis_ver ); ?>" alt="NORIKS FisioRest" loading="lazy"></div>
     <div class="fis-row2-copy">
       <p class="fis-eyebrow">ΑΣΦΑΛΗΣ ΚΑΙ ΧΑΛΑΡΩΤΙΚΗ ΘΕΡΑΠΕΙΑ</p>
       <h2 class="fis-h2">14× φθηνότερο από εβδομαδιαία ραντεβού</h2>
