@@ -907,7 +907,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   // MAJICE i BOKSERICE: recenzije BEZ fotografija - isti uvjet kao nove why sekcije.
   $noriks_no_photos = $noriks_no_photos
-    || has_term( array( 'orto-majice', 'mplouzoakia', 't-shirts', 'mplouzoakia-mavro' ), 'product_cat', get_the_ID() )
+    || has_term( array( 'orto-majice', 'mplouzoakia', 't-shirts', 'mplouzoakia-mavro', 'orto-majica-darila' ), 'product_cat', get_the_ID() )
+    || has_term( array( 'sady', 'set', 'seta', 'bundles' ), 'product_cat', get_the_ID() )
     || has_term( array( 'orto-starter2', 'orto-bokserice', 'mpoxerakia', 'boxers', 'mpoxer' ), 'product_cat', get_the_ID() );
   $avatar_pool = $noriks_no_photos ? array() : get_review_avatar_pool($avatar_type);
 
