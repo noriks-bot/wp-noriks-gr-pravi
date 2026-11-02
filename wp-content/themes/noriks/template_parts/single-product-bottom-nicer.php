@@ -37,6 +37,8 @@ if ( function_exists( 'noriks_is_type' ) ) {
         get_template_part( 'template_parts/product-bottom/why-red' );
     } elseif ( noriks_is_type( 'kneeheat' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kneeheat' );
+    } elseif ( noriks_is_type( 'slabproof' ) ) {
+        get_template_part( 'template_parts/product-bottom/why-slabproof' );
     } elseif ( noriks_is_type( 'kneefix' ) ) {
         get_template_part( 'template_parts/product-bottom/why-kneefix' );
     } elseif ( noriks_is_type( 'controlpro' ) ) {
@@ -291,7 +293,7 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
       <!--<h4 style="" class="highlight"><?php echo get_field("singlepp_content_standard_reviews_t1","options"); ?></h4>-->
       <h1 style="color:black;     margin-bottom: 4px;">
 
-          <?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
+          <?php if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Δεν είστε οι μόνοι που τα πόδια τους καίγονται μετά από μια βάρδια στο μπετόν.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>
 
           
 
@@ -359,7 +361,7 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
 
 
           </h1>
-    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Χιλιάδες άνθρωποι χρησιμοποιούν ήδη το NORIKS FisioRest για λιγότερο πόνο και ένταση στον αυχένα – έλξη, δόνηση και θερμότητα σε μία συσκευή.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Χιλιάδες άνθρωποι φοράνε ήδη τον διορθωτή NORIKS για λιγότερο πόνο και πιο ίσια θέση του δακτύλου – στο σπίτι, μπροστά στην τηλεόραση ή στον ύπνο.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Χιλιάδες άνθρωποι φοράνε ήδη τη ζώνη NORIKS για λιγότερο πόνο και πιο σταθερή μέση – στη δουλειά, στο σήκωμα βάρους και στο πολύωρο κάθισμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Χιλιάδες άντρες φοράνε ήδη τις κάλτσες συμπίεσης NORIKS για πιο ελαφριά και ξεκούραστα πόδια – στη δουλειά, στα ταξίδια και στην προπόνηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Χιλιάδες άντρες φοράνε ήδη τα μπόξερ NORIKS – άνεση που κρατάει όλη μέρα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Χιλιάδες πελάτες χρησιμοποιούν ήδη το ορθοπεδικό μαξιλάρι NORIKS ErgoSit για κάθισμα χωρίς πόνο σε κόκκυγα, μέση και γοφούς – στο αυτοκίνητο, στο γραφείο και στο σπίτι.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
+    <p class="note" style="color: black; margin-top: 0px; margin-bottom: 5px;"><?php if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ): ?>Χιλιάδες μάστορες δουλεύουν ήδη με κάλτσες NORIKS SlabProof – ζωνικό μαξιλάρωμα εκεί που χτυπά το μπετόν, ενισχυμένη φτέρνα και δάχτυλα και στεγνά πόδια όλη τη βάρδια.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('fisiorest') ): ?>Χιλιάδες άνθρωποι χρησιμοποιούν ήδη το NORIKS FisioRest για λιγότερο πόνο και ένταση στον αυχένα – έλξη, δόνηση και θερμότητα σε μία συσκευή.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bunion') ): ?>Χιλιάδες άνθρωποι φοράνε ήδη τον διορθωτή NORIKS για λιγότερο πόνο και πιο ίσια θέση του δακτύλου – στο σπίτι, μπροστά στην τηλεόραση ή στον ύπνο.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopas') ): ?>Χιλιάδες άνθρωποι φοράνε ήδη τη ζώνη NORIKS για λιγότερο πόνο και πιο σταθερή μέση – στη δουλειά, στο σήκωμα βάρους και στο πολύωρο κάθισμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-nogavice') ): ?>Χιλιάδες άντρες φοράνε ήδη τις κάλτσες συμπίεσης NORIKS για πιο ελαφριά και ξεκούραστα πόδια – στη δουλειά, στα ταξίδια και στην προπόνηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('bokserice') ): ?>Χιλιάδες άντρες φοράνε ήδη τα μπόξερ NORIKS – άνεση που κρατάει όλη μέρα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('norikshers') ): ?>Χιλιάδες γυναίκες χρησιμοποιούν ήδη τις λωρίδες κολλαγόνου σιλικόνης HERS για πιο λείο, πιο σφριγηλό και πιο νεανικό δέρμα.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('leakboxers') ): ?>Χιλιάδες άνδρες φορούν ήδη τα απορροφητικά μποξεράκια NORIKS για στεγνή αίσθηση και αυτοπεποίθηση – χωρίς σερβιέτες και πάνες.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kompresijske-majice') ): ?>Χιλιάδες άνδρες φορούν ήδη το φανελάκι συμπίεσης NORIKS για επίπεδη κοιλιά, καλύτερη στάση και περισσότερη αυτοπεποίθηση.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('ortopedski-jastuk') ): ?>Χιλιάδες πελάτες χρησιμοποιούν ήδη το ορθοπεδικό μαξιλάρι NORIKS ErgoSit για κάθισμα χωρίς πόνο σε κόκκυγα, μέση και γοφούς – στο αυτοκίνητο, στο γραφείο και στο σπίτι.<?php elseif ( function_exists('noriks_is_type') && noriks_is_type('kidsnest') ): ?>Χιλιάδες γονείς έχουν ήδη αντικαταστήσει το απλό μαξιλάρι με το NORIKS KidsNest – πιο ήσυχες νύχτες, αναπνοή από τη μύτη και ύπνος που πραγματικά ξεκουράζει.<?php else: ?><?php echo get_field("singlepp_content_standard_reviews_t3","options"); ?><?php endif; ?></p>
     </div>
   </section>
   </div>
@@ -460,6 +462,7 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
   if ( function_exists('noriks_is_type') && noriks_is_type('bowl') ) { $rv_fallback_title = 'NORIKS Bowl ορθοπεδικό μπολ σκύλου'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('red') ) { $rv_fallback_title = 'NORIKS RedRelief θεραπεία με κόκκινο φως'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) { $rv_fallback_title = 'NORIKS KneeHeat συσκευή θέρμανσης και μασάζ γονάτου'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) { $rv_fallback_title = 'NORIKS SlabProof™ Κάλτσες Εργασίας'; }
 
   // Include review pools (own pool per orto product group)
   if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) {
@@ -474,6 +477,8 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
     include get_stylesheet_directory() . '/auto_reviews/GR_red.php';
   } elseif ( function_exists('noriks_is_type') && noriks_is_type('kneeheat') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_kneeheat.php';
+  } elseif ( function_exists('noriks_is_type') && noriks_is_type('slabproof') ) {
+    include get_stylesheet_directory() . '/auto_reviews/GR_slabproof.php';
   } else
   if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) {
     include get_stylesheet_directory() . '/auto_reviews/GR_cloath.php';
@@ -902,7 +907,8 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
         noriks_is_type('bowl') ||
         noriks_is_type('pal') ||
         noriks_is_type('red') ||
-        noriks_is_type('kneeheat')
+        noriks_is_type('kneeheat') ||
+        noriks_is_type('slabproof')
   );
   // fotografije osoba: samo na odjeci (majice, bokserice, kompleti), ne na ortopedskim pomagalima
   // MAJICE i BOKSERICE: recenzije BEZ fotografija - isti uvjet kao nove why sekcije.
@@ -917,7 +923,7 @@ function assign_unique_avatars_first_n(array $reviews, array $avatar_pool, strin
     // Izdelki z lastnim imenom v karticah mnenj ne smejo dobiti nakljucnega izdelka iz kataloga.
   $rv_own_name = ( function_exists('noriks_is_type') && (
       noriks_is_type('cloud') || noriks_is_type('cloath') || noriks_is_type('hyd') || noriks_is_type('snug')
-   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat')
+   || noriks_is_type('kompwom') || noriks_is_type('bowl') || noriks_is_type('pal') || noriks_is_type('red') || noriks_is_type('kneeheat') || noriks_is_type('slabproof')
    || noriks_is_type('controlpro') || noriks_is_type('kidsnest') || noriks_is_type('ortopedski-jastuk')
    || noriks_is_type('bunion') || noriks_is_type('fisiorest') || noriks_is_type('ortopas')
    || noriks_is_type('norikshers') || noriks_is_type('kompresijske-nogavice') ) );
@@ -1703,6 +1709,26 @@ $kompwom_faq = array(
   ),
 );
 
+$is_slabproof = ( function_exists('noriks_is_type') && noriks_is_type('slabproof') );
+$slabproof_faq = array(
+  array('questioon' => 'Ποιο μέγεθος να παραγγείλω; Έχω μεγάλο πόδι.',
+    'answer'    => 'Τρία μεγέθη: <strong>M</strong> για EU 39–42, <strong>L</strong> για EU 43–45 και <strong>XL</strong> για EU 46–49. Παραγγείλτε το νούμερο παπουτσιού που φοράτε συνήθως.'),
+  array('questioon' => 'Είναι μάλλινες; Δεν αντέχω να με τσιμπάνε.',
+    'answer'    => 'Δεν έχουν μαλλί, ούτε μία κλωστή. Τίποτα δεν τσιμπάει, δεν βγάζουν ερεθισμούς και το πόδι δεν βράζει όταν κάνει ζέστη. Η πλέξη τραβά τον ιδρώτα από το δέρμα αντί να τον κρατά.'),
+  array('questioon' => 'Δεν θα κολυμπάνε τα πόδια μου στον ιδρώτα;',
+    'answer'    => 'Ακριβώς γι’ αυτό είναι φτιαγμένες έτσι. Το αεριζόμενο δίχτυ στο πάνω μέρος του ποδιού και η πλέξη που απομακρύνει την υγρασία παίρνουν τον ιδρώτα από το δέρμα.'),
+  array('questioon' => 'Πώς πλένονται; Θέλουν ιδιαίτερη προσοχή;',
+    'answer'    => 'Στο πλυντήριο σε κρύο νερό, στεγνωτήριο σε χαμηλή θερμοκρασία, μαζί με τα ρούχα της δουλειάς. Χωρίς πλύσιμο στο χέρι, χωρίς άπλωμα στο σκοινί και χωρίς ειδικό απορρυπαντικό.'),
+  array('questioon' => 'Θα αντέξουν στ’ αλήθεια ή θα τρυπήσουν όπως όλες οι άλλες;',
+    'answer'    => 'Η φτέρνα και τα δάχτυλα είναι ενισχυμένα με διπλοπλεγμένο νάιλον, ακριβώς εκεί που οι κάλτσες σκίζονται πρώτες. Αν τελικά δεν σας κάνουν, έχετε <strong>30 ημέρες για επιστροφή χρημάτων</strong>.'),
+  array('questioon' => 'Πότε θα νιώσω τη διαφορά;',
+    'answer'    => 'Το μαξιλάρωμα, από την πρώτη φορά που θα πατήσετε με αυτές. Ότι δεν κατεβαίνουν και μένουν στεγνές, μέσα στη βάρδια. Οι περισσότεροι το καταλαβαίνουν ήδη στον δρόμο για το σπίτι την πρώτη μέρα, και το πραγματικό σημάδι είναι όταν το επόμενο πρωί τις ξαναφοράτε.'),
+  array('questioon' => 'Πόσο κοστίζει η αποστολή και πώς πληρώνω;',
+    'answer'    => 'Η αποστολή είναι <strong>δωρεάν για παραγγελίες άνω των 70 €</strong> και πληρώνετε με αντικαταβολή όταν παραλάβετε το δέμα.'),
+  array('questioon' => 'Κι αν απλώς δεν μου κάνουν;',
+    'answer'    => 'Έχετε <strong>30 ημέρες για επιστροφή χρημάτων</strong>. Αν δεν είστε ευχαριστημένοι, επικοινωνήστε μαζί μας και σας επιστρέφουμε τα χρήματα.'),
+);
+
 $is_bowl = ( function_exists('noriks_is_type') && noriks_is_type('bowl') );
 $bowl_faq = array(
   array('questioon' => 'Για ποιους σκύλους είναι κατάλληλο το μπολ;',
@@ -1833,7 +1859,7 @@ $kneeheat_faq = array(
   ),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
+$faq_pick = function( $title, $list ) use ( $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
@@ -1841,6 +1867,7 @@ $faq_pick = function( $title, $list ) use ( $is_bowl, $bowl_faq, $is_snug, $snug
     : ( stripos( $t, 'προϊόν' ) !== false );
   if ( $is_snug && $is_info ) { return $snug_faq; }
   if ( $is_kompwom && $is_info ) { return $kompwom_faq; }
+  if ( $is_slabproof && $is_info ) { return $slabproof_faq; }
   if ( $is_bowl && $is_info ) { return $bowl_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
