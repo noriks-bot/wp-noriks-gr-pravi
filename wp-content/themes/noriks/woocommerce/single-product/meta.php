@@ -516,6 +516,10 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
                 Η <strong>NORIKS FIT Woman</strong> είναι μπλούζα σμίλευσης όπου το ανάγλυφο είναι υφασμένο μέσα στο ίδιο το ύφασμα, όχι τυπωμένο πάνω του. Μια φαρδιά ζώνη περνά από την κοιλιά και τους γοφούς και μια δεύτερη από την πλάτη.<br><br>Η συμπίεση κατανέμεται σε πλάτος, αντί να σφίγγει σε ένα σημείο, οπότε τίποτα δεν χαράζει. Η κοιλιά μένει λεία, η μέση πιο στενή και η πλάτη παίρνει στήριξη που βοηθά να στέκεστε πιο ίσια.<br><br>Το πλεκτό είναι χωρίς ραφές, λεπτό και ματ — εξαφανίζεται κάτω από πουκάμισο, σακάκι ή εφαρμοστό φόρεμα. Δεν τυλίγεται μέσα στη μέρα και δεν διαγράφεται κάτω από τα ρούχα.<br><br>Πλύνετε στο πλυντήριο στους 30 °C, χωρίς λευκαντικό, σίδερο και στεγνωτήριο. Διατίθεται σε τρία χρώματα (μαύρο, σκούρο γκρι, ροζ) και σε μεγέθη από S έως 3XL. Αν είστε ανάμεσα σε δύο μεγέθη, πάρτε το μεγαλύτερο.
 
+         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
+
+                Οι NORIKS Tradesman είναι χοντρές κάλτσες εργασίας από μπαμπού για όλους όσοι στέκονται και περπατούν όλη μέρα με μπότες εργασίας – στο εργοτάξιο, στην αποθήκη, στο συνεργείο ή έξω τον χειμώνα. Το μαλακό μαξιλάρωμα απαλύνει κάθε βήμα στο μπετόν και στο παγωμένο έδαφος, η ενισχυμένη φτέρνα και τα δάχτυλα αντέχουν τις σκληρές μπότες, ενώ η ταινία καμάρας και η διπλή μανσέτα κρατούν την κάλτσα στη θέση της όλη τη βάρδια.<br><br><strong>Σύνθεση:</strong> 56 % λυοσέλ από μπαμπού, 38 % νάιλον, 6 % ελαστάν – αντιστέκονται φυσικά στις δυσάρεστες μυρωδιές, απομακρύνουν την υγρασία και είναι πολύ μαλακές στο δέρμα. <strong>Κατασκευή:</strong> στήριξη αστραγάλου 360°, ταινία καμάρας, μαξιλάρωμα, διχτυωτός αερισμός, διπλή μανσέτα με γλωττίδα, ενισχυμένη φτέρνα. Ύψος: κλασικό (crew), περίπου 18 cm από τη φτέρνα ως το χείλος.<br><br><strong>Μεγέθη (νούμερο παπουτσιού EU):</strong> M 39–42, L 42,5–46, XL 46,5–49,5. Χρώματα: μαύρο και λευκό. <strong>Φροντίδα:</strong> πλύνετε σε κρύο νερό, στεγνώστε στον αέρα.<br><br>Με τη NORIKS έχετε 30 ημέρες για επιστροφή χρημάτων, δωρεάν αποστολή άνω των 70 € και πληρωμή με αντικαταβολή.
+
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
                 Οι <strong>NORIKS SlabProof</strong> είναι κάλτσες εργασίας φτιαγμένες για ανθρώπους που στέκονται όλη μέρα στο μπετόν. Οι μπότες εργασίας προστατεύουν το πόδι, αλλά δεν το μαξιλαρώνουν — το μπετόν δεν απορροφά τίποτα, έτσι κάθε βήμα πηγαίνει στις φτέρνες, στα γόνατα και στη μέση. Το μόνο που μπορεί να απαλύνει αυτό το χτύπημα είναι η κάλτσα.<br><br>Γι’ αυτό έχουν <strong>ζωνικό μαξιλάρωμα</strong>: πυκνά μαξιλαράκια κάτω από τη φτέρνα και το μπροστινό μέρος του πέλματος, ακριβώς εκεί που χτυπά το μπετόν, και λεπτή πλέξη παντού αλλού, ώστε η μπότα να μη γίνεται στενή. Η φτέρνα και τα δάχτυλα είναι ενισχυμένα με διπλοπλεγμένο νάιλον, στα δύο σημεία όπου οι κάλτσες σκίζονται πρώτες.<br><br>Το αεριζόμενο δίχτυ στο πάνω μέρος του ποδιού και η πλέξη που απομακρύνει τον ιδρώτα κρατούν τα πόδια στεγνά όλη τη βάρδια. Το μείγμα δεν έχει μαλλί, οπότε τίποτα δεν τσιμπάει και το πόδι δεν υπερθερμαίνεται.<br><br>Το φαρδύ ριμπ λάστιχο κρατά την κάλτσα πάνω χωρίς να σφίγγει τη γάμπα, η βαθιά θήκη φτέρνας με γλωττίδα δεν την αφήνει να γλιστρήσει μέσα στην μπότα και η ταινία γύρω από την καμάρα κρατά το πόδι να μη γλιστράει.<br><br>Διατίθενται σε μαύρο χρώμα, στα μεγέθη M (EU 39–42), L (EU 43–45) και XL (EU 46–49). Ισχύει <strong>επιστροφή χρημάτων εντός 30 ημερών</strong> και η αποστολή είναι δωρεάν για παραγγελίες άνω των 70 €.
@@ -719,6 +723,35 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
                   <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/hr/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_Gr.png">
 
+    <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
+
+          <div class="noriks-size">
+            <p style="margin:0 0 14px;line-height:1.6;">Διαλέξτε μέγεθος ανάλογα με το <strong>νούμερο παπουτσιού σας (EU)</strong>.</p>
+            <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;">
+            <table style="width:100%;border-collapse:collapse;font-size:14px;">
+              <thead>
+                <tr style="background:#a9683f;color:#fff;">
+                  <th style="padding:9px 8px;text-align:left;">Μέγεθος</th>
+                  <th style="padding:9px 8px;text-align:left;">Νούμερο παπουτσιού (EU) – ανδρικό</th>
+                  <th style="padding:9px 8px;text-align:left;">Νούμερο παπουτσιού (EU) – γυναικείο</th>
+                </tr>
+              </thead>
+              <tbody>
+                <?php foreach ( noriks_tradesman_sizes() as $i => $r ) :
+                  $bg = ( $i % 2 ) ? '#fdf8f5' : '#fff'; ?>
+                  <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eee;">
+                    <?php foreach ( $r as $j => $c ) : ?>
+                    <td style="padding:9px 8px;<?php echo $j ? '' : 'font-weight:700;white-space:nowrap;'; ?>"><?php echo esc_html( $c ); ?></td>
+                    <?php endforeach; ?>
+                  </tr>
+                <?php endforeach; ?>
+              </tbody>
+            </table>
+            </div>
+            <p style="margin:12px 0 0;line-height:1.6;">Ανάμεσα σε δύο μεγέθη; Πάρτε το μεγαλύτερο.</p>
+            <p style="margin:14px 0 0;line-height:1.6;">Αν το μέγεθος δεν σας ταιριάζει, έχετε 30 ημέρες για επιστροφή ή αλλαγή.</p>
+          </div>
+
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
           <div class="noriks-size">
@@ -812,7 +845,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
 
     <!-- 3 - savjeti za pranje--> <!-- κρυμμένο και στο kidsnest -->
-    <?php if ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) )) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + ortopedski jastuk + kidsnest ?>
+    <?php if ( ( ! ( function_exists('noriks_is_type') && ( noriks_is_type('ortopas', $current_product_id) || noriks_is_type('bunion', $current_product_id) || noriks_is_type('fisiorest', $current_product_id) || noriks_is_type('norikshers', $current_product_id) || noriks_is_type('ortopedski-jastuk', $current_product_id) || noriks_is_type('kidsnest', $current_product_id) ) )  && ! ( function_exists('noriks_is_type') && noriks_is_type('kneefix', $current_product_id) || noriks_is_type('controlpro', $current_product_id) ) ) && ! ( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ) ) : // δεν υπάρχουν οδηγίες πλυσίματος για ζώνη/bunion/fisiorest + norikshers + ortopedski jastuk + kidsnest ?>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)">
         <h3><?php echo get_field("singlepp_acc_h_2","options"); ?></h3>
