@@ -522,7 +522,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('tradesman', $current_product_id) ): ?>
 
-                Οι NORIKS Tradesman είναι χοντρές κάλτσες εργασίας από μπαμπού για όλους όσοι στέκονται και περπατούν όλη μέρα με μπότες εργασίας – στο εργοτάξιο, στην αποθήκη, στο συνεργείο ή έξω τον χειμώνα. Το μαλακό μαξιλάρωμα απαλύνει κάθε βήμα στο μπετόν και στο παγωμένο έδαφος, η ενισχυμένη φτέρνα και τα δάχτυλα αντέχουν τις σκληρές μπότες, ενώ η ταινία καμάρας και η διπλή μανσέτα κρατούν την κάλτσα στη θέση της όλη τη βάρδια.<br><br><strong>Σύνθεση:</strong> 56 % λυοσέλ από μπαμπού, 38 % νάιλον, 6 % ελαστάν – αντιστέκονται φυσικά στις δυσάρεστες μυρωδιές, απομακρύνουν την υγρασία και είναι πολύ μαλακές στο δέρμα. <strong>Κατασκευή:</strong> στήριξη αστραγάλου 360°, ταινία καμάρας, μαξιλάρωμα, διχτυωτός αερισμός, διπλή μανσέτα με γλωττίδα, ενισχυμένη φτέρνα. Ύψος: κλασικό (crew), περίπου 18 cm από τη φτέρνα ως το χείλος.<br><br><strong>Μεγέθη (νούμερο παπουτσιού EU):</strong> M 39–42, L 42,5–46, XL 46,5–49,5. Χρώματα: μαύρο και λευκό. <strong>Φροντίδα:</strong> πλύνετε σε κρύο νερό, στεγνώστε στον αέρα.<br><br>Με τη NORIKS έχετε 30 ημέρες για επιστροφή χρημάτων, δωρεάν αποστολή άνω των 70 € και πληρωμή με αντικαταβολή.
+                Οι NORIKS Tradesman είναι χοντρές κάλτσες εργασίας από μπαμπού για όλους όσοι στέκονται και περπατούν όλη μέρα με μπότες εργασίας – στο εργοτάξιο, στην αποθήκη, στο συνεργείο ή έξω τον χειμώνα. Το μαλακό μαξιλάρωμα απαλύνει κάθε βήμα στο μπετόν και στο παγωμένο έδαφος, η ενισχυμένη φτέρνα και τα δάχτυλα αντέχουν τις σκληρές μπότες, ενώ η ταινία καμάρας και η διπλή μανσέτα κρατούν την κάλτσα στη θέση της όλη τη βάρδια.<br><br><strong>Σύνθεση:</strong> 56 % λυοσέλ από μπαμπού, 38 % νάιλον, 6 % ελαστάν – αντιστέκονται φυσικά στις δυσάρεστες μυρωδιές, απομακρύνουν την υγρασία και είναι πολύ μαλακές στο δέρμα. <strong>Κατασκευή:</strong> στήριξη αστραγάλου 360°, ταινία καμάρας, μαξιλάρωμα, διχτυωτός αερισμός, διπλή μανσέτα με γλωττίδα, ενισχυμένη φτέρνα. Ύψος: κλασικό (crew), περίπου 18 cm από τη φτέρνα ως το χείλος.<br><br><strong>Μεγέθη (νούμερο παπουτσιού EU):</strong> 39–42, 43–45, 46–49. Χρώμα: μαύρο. <strong>Φροντίδα:</strong> πλύνετε σε κρύο νερό, στεγνώστε στον αέρα.<br><br>Με τη NORIKS έχετε 30 ημέρες για επιστροφή χρημάτων, δωρεάν αποστολή άνω των 70 € και πληρωμή με αντικαταβολή.
 
          <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slabproof', $current_product_id) ): ?>
 
@@ -766,9 +766,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#a9683f;color:#fff;">
-                  <th style="padding:9px 8px;text-align:left;">Μέγεθος</th>
-                  <th style="padding:9px 8px;text-align:left;">Νούμερο παπουτσιού (EU) – ανδρικό</th>
-                  <th style="padding:9px 8px;text-align:left;">Νούμερο παπουτσιού (EU) – γυναικείο</th>
+                  <th style="padding:9px 8px;text-align:left;">Νούμερο παπουτσιού (EU)</th>
                 </tr>
               </thead>
               <tbody>
@@ -794,7 +792,6 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
             <table style="width:100%;border-collapse:collapse;font-size:14px;">
               <thead>
                 <tr style="background:#d2632e;color:#fff;">
-                  <th style="padding:9px 10px;text-align:left;">Μέγεθος</th>
                   <th style="padding:9px 10px;text-align:left;">Νούμερο παπουτσιού EU</th>
                 </tr>
               </thead>
@@ -804,7 +801,6 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
                   $bg = ( $i % 2 ) ? '#faf7f0' : '#fff'; ?>
                   <tr style="background:<?php echo $bg; ?>;border-bottom:1px solid #eee;">
                     <td style="padding:9px 10px;font-weight:700;"><?php echo esc_html( $r[0] ); ?></td>
-                    <td style="padding:9px 10px;"><?php echo esc_html( $r[1] ); ?></td>
                   </tr>
                 <?php endforeach; ?>
               </tbody>

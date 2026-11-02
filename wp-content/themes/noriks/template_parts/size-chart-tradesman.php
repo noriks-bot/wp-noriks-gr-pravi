@@ -7,7 +7,7 @@
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 $noriks_st = array(
     'uvod'    => 'Διαλέξτε μέγεθος ανάλογα με το <strong>νούμερο παπουτσιού σας (EU)</strong>.',
-    'glava'   => array( 'Μέγεθος', 'Νούμερο παπουτσιού (EU) – ανδρικό', 'Νούμερο παπουτσιού (EU) – γυναικείο' ),
+    'glava'   => array( 'Νούμερο παπουτσιού (EU)' ),
     'vrstice' => function_exists( 'noriks_tradesman_sizes' ) ? noriks_tradesman_sizes() : array(),
     'opomba'  => 'Ανάμεσα σε δύο μεγέθη; Πάρτε το μεγαλύτερο.',
 );
