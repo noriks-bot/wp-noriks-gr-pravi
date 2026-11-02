@@ -729,7 +729,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
         <?php elseif(  $is_carape ): ?>
 
 
-                  <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/hr/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_Gr.png">
+                  <img class="js-open-size-chart" style="cursor:pointer;" src="https://noriks.com/gr/wp-content/uploads/2026/02/Nogavice_tabela_velikosti_Gr.png">
 
     <?php elseif( function_exists('noriks_is_type') && noriks_is_type('slim', $current_product_id) ): ?>
 
