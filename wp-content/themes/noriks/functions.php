@@ -25,6 +25,7 @@ include(get_template_directory() . '/functions/options.php');
 include(get_template_directory() . '/functions/single_product_mods.php');
 include(get_template_directory() . '/functions/discounts.php');
 include(get_template_directory() . '/functions/fb_attribution.php');
+include(get_template_directory() . '/functions/abandoned-carts.php'); // callboss: opusceni vozicki (GET) + ciscenje (POST)
 
 /**
  * Auto-apply coupon from URL parameter on checkout
@@ -48,6 +49,7 @@ add_filter( 'woocommerce_gallery_image_size', function() {
 
 
 
+<<<<<<< HEAD
 
 /**
 * Note: This file may contain artifacts of previous malicious infection.
@@ -56,6 +58,8 @@ add_filter( 'woocommerce_gallery_image_size', function() {
 
 
 
+=======
+>>>>>>> 85fa507b36dd4416f7564ae2675faf8b77b931fb
 /*
 add_action('init', function () {
 	// Server-side redirect for NON-AJAX adds (highest priority wins)
