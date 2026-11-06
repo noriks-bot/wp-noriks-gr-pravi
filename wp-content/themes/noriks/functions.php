@@ -49,17 +49,6 @@ add_filter( 'woocommerce_gallery_image_size', function() {
 
 
 
-<<<<<<< HEAD
-
-/**
-* Note: This file may contain artifacts of previous malicious infection.
-* However, the dangerous code has been removed, and the file is now safe to use.
-*/
-
-
-
-=======
->>>>>>> 85fa507b36dd4416f7564ae2675faf8b77b931fb
 /*
 add_action('init', function () {
 	// Server-side redirect for NON-AJAX adds (highest priority wins)
