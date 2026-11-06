@@ -588,7 +588,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('fisiorest', $current_product_id) ): ?>
 
-                Το NORIKS FisioRest είναι ένα θεραπευτικό μαξιλάρι αυχένα που συνδυάζει έλξη, θερμότητα και μασάζ με δόνηση σε εργονομικό σχεδιασμό από αφρό μνήμης. Τεντώνει απαλά τον αυχένα στη σωστή γωνία, αποφορτίζει την αυχενική μοίρα και χαλαρώνει τη μυϊκή ένταση με θερμότητα και μασάζ. Ασύρματο, επαναφορτιζόμενο και τυλιγμένο σε απαλό δροσερό μετάξι – ασφαλές ακόμη και για τον ύπνο.
+                Το NORIKS NeckRelax είναι ένα θεραπευτικό μαξιλάρι αυχένα που συνδυάζει έλξη, θερμότητα και μασάζ με δόνηση σε εργονομικό σχεδιασμό από αφρό μνήμης. Τεντώνει απαλά τον αυχένα στη σωστή γωνία, αποφορτίζει την αυχενική μοίρα και χαλαρώνει τη μυϊκή ένταση με θερμότητα και μασάζ. Ασύρματο, επαναφορτιζόμενο και τυλιγμένο σε απαλό δροσερό μετάξι – ασφαλές ακόμη και για τον ύπνο.
 
         <?php elseif( function_exists('noriks_is_type') && noriks_is_type('bunion', $current_product_id) ): ?>
 
@@ -962,7 +962,7 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
         'kidsnest'          => array( 'noriks-kidsnest.pdf',   'NORIKS KidsNest — παιδικό ορθοπεδικό μαξιλάρι' ),
         'kneefix'           => array( 'noriks-kneefix.pdf',    'NORIKS KneeFix — ορθοπεδικός νάρθηκας γόνατος' ),
         'ortopedski-jastuk' => array( 'noriks-ergosit.pdf',    'NORIKS ErgoSit — ορθοπεδικό μαξιλάρι καθίσματος' ),
-        'fisiorest'         => array( 'noriks-fisiorest.pdf',  'NORIKS FisioRest — συσκευή αυχένα' ),
+        'fisiorest'         => array( 'noriks-fisiorest.pdf',  'NORIKS NeckRelax — συσκευή αυχένα' ),
         'bunion'            => array( 'noriks-bunion-fix.pdf', 'NORIKS Bunion Fix — διορθωτής κότσιου' ),
         'ortopas'           => array( 'noriks-ortopas.pdf',    'Ορθοπεδική ζώνη μέσης NORIKS' ),
     );

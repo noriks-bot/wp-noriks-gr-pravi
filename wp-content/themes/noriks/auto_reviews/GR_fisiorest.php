@@ -1,5 +1,5 @@
 <?php
-// Review pool for the NORIKS FisioRest neck traction device (fisiorest).
+// Review pool for the NORIKS NeckRelax neck traction device (fisiorest).
 // Text-only (no images), Greek.
 $auto_reviews_en = array(
     array("name" => "Νίκος Δ.",      "text" => "Δουλεύω ώρες μπροστά στον υπολογιστή και ο αυχένας μου ήταν συνέχεια πιασμένος. Μετά από λίγες συνεδρίες νιώθω πραγματικά μεγάλη ανακούφιση."),

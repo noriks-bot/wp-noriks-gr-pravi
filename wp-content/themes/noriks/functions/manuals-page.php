@@ -48,7 +48,7 @@ function noriks_manuals_list() {
         array(
             'file'  => 'noriks-fisiorest.pdf',
             'sku'   => 'NORIKS-FISIOREST',
-            'title' => 'NORIKS FisioRest — συσκευή αυχένα',
+            'title' => 'NORIKS NeckRelax — συσκευή αυχένα',
             'sub'   => 'Έλξη, θερμότητα και μασάζ με δόνηση σε συνεδρία 15 έως 30 λεπτών.',
         ),
         array(
