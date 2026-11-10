@@ -87,7 +87,7 @@ $nwc_testimonials = array(
 
 <section class="fis-eng"><div class="fis-wrap fis-row2"><div class="fis-row2-copy"><h2 class="fis-h2">Κομψό δώρο για τους λάτρεις του κρασιού</h2><p>Το μαύρο κουτί NORIKS είναι έτοιμο για δώρο – για τα Χριστούγεννα, για γενέθλια ή για τον οικοδεσπότη. Απλώς το προσφέρετε.</p></div><div class="fis-row2-media nk-media nk-wide"><video src="<?php echo esc_url( $nwc ); ?>winecooler-gift.mp4" muted autoplay loop playsinline preload="metadata"></video></div></div></section>
 
-<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $nwc ); ?>winecooler-3-kusy.jpg" alt="NORIKS WineCooler" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">ΣΥΜΦΕΡΟΥΣΑ ΑΓΟΡΑ</p><h2 class="fis-h2">3 τεμάχια: ένα για εσάς, δύο για δώρο</h2><p>Ένα WineCooler κοστίζει <span data-price="1">24,99 €</span>. Στο πακέτο των 3 τεμ. πληρώνετε <span data-price="3">54,99 €</span>, δηλαδή μόνο <span data-price="3-unit">18,33 €</span> το τεμάχιο. Με 30 ημέρες για επιστροφή χρημάτων.</p></div></div></section>
+<section class="fis-cheaper"><div class="fis-wrap fis-row2"><div class="fis-row2-media nk-media"><img src="<?php echo esc_url( $nwc ); ?>winecooler-3-kusy.jpg" alt="NORIKS WineCooler" loading="lazy"></div><div class="fis-row2-copy"><p class="fis-eyebrow">ΣΥΜΦΕΡΟΥΣΑ ΑΓΟΡΑ</p><h2 class="fis-h2">3 τεμάχια: ένα για εσάς, δύο για δώρο</h2><p>Ένα WineCooler κοστίζει <span data-price="1">29,99 €</span>. Στο πακέτο των 3 τεμ. πληρώνετε <span data-price="3">54,99 €</span>, δηλαδή μόνο <span data-price="3-unit">18,33 €</span> το τεμάχιο. Με 30 ημέρες για επιστροφή χρημάτων.</p></div></div></section>
 
 <!-- 5) ODLIČNO 4,8 / 5 -->
 <section class="nwc-sec nwc-tint">
