@@ -965,6 +965,20 @@ $is_mixed_bundle = has_term( array( 'set','orto-starter','orto-majica-bokserica'
         'fisiorest'         => array( 'noriks-fisiorest.pdf',  'NORIKS NeckRelax — συσκευή αυχένα' ),
         'bunion'            => array( 'noriks-bunion-fix.pdf', 'NORIKS Bunion Fix — διορθωτής κότσιου' ),
         'ortopas'           => array( 'noriks-ortopas.pdf',    'Ορθοπεδική ζώνη μέσης NORIKS' ),
+        'slim' => array( 'noriks-slim.pdf', 'NORIKS Slim — διαμορφωτικό σλιπ ψηλής μέσης' ),
+        'red' => array( 'noriks-redrelief.pdf', 'NORIKS RedRelief — θεραπεία με κόκκινο φως για τον καρπό' ),
+        'pal' => array( 'noriks-pal.pdf', 'NORIKS Pal — μπαστούνι περπατήματος με δεύτερη λαβή' ),
+        'cloath' => array( 'noriks-polar-cloth.pdf', 'Polar NORIKS Cloth XXL — πανί καθαρισμού μόνο με νερό' ),
+        'slabproof' => array( 'noriks-slabproof.pdf', 'NORIKS SlabProof — κάλτσες εργασίας με ενίσχυση' ),
+        'controlpro' => array( 'noriks-controlpro.pdf', 'NORIKS ControlPro — όργανο εξάσκησης των μυών του πυελικού εδάφους' ),
+        'tradesman' => array( 'noriks-tradesman.pdf', 'NORIKS Tradesman — κάλτσες εργασίας με ενίσχυση και στήριξη καμάρας' ),
+        'bowl' => array( 'noriks-bowl.pdf', 'NORIKS Bowl — ορθοπεδικό μπολ για σκύλους με κλίση 15°' ),
+        'cloud' => array( 'noriks-cloud.pdf', 'NORIKS Cloud — ορθοπεδικό μαξιλάρι ανάμεσα στα γόνατα' ),
+        'kneeheat' => array( 'noriks-kneeheat.pdf', 'NORIKS KneeHeat — θέρμανση, συμπίεση και μασάζ γονάτου' ),
+        'mamafit' => array( 'noriks-mamafit.pdf', 'NORIKS MamaFit — σλιπ συμπίεσης 360° για μετά τον τοκετό' ),
+        'snug' => array( 'noriks-snug.pdf', 'NORIKS Snug — μαξιλάρι σώματος σε σχήμα S' ),
+        'hyd' => array( 'noriks-hyd.pdf', 'NORIKS HYD — μπουκάλι για νερό υδρογόνου με ηλεκτρόλυση PEM' ),
+        'winecooler' => array( 'noriks-winecooler.pdf', 'NORIKS WineCooler — ψύκτης κρασιού με στόμιο σερβιρίσματος' ),
     );
     $noriks_manual = null;
     if ( function_exists('noriks_is_type') ) {
