@@ -1941,7 +1941,28 @@ $winecooler_faq = array(
     'answer'    => 'Δικαίωμα επιστροφής εντός 30 ημερών. Αν δεν είστε απόλυτα ικανοποιημένοι με την αγορά σας, επικοινωνήστε μαζί μας εντός 30 ημερών από την παραλαβή της παραγγελίας και θα σας βοηθήσουμε με χαρά με την επιστροφή του προϊόντος ή των χρημάτων σας.'),
 );
 
-$faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
+// NORIKS MamaBelt: pogosta vprasanja (kot HR auto_reviews/FAQ_HR_mamabelt.php).
+$is_mamabelt = ( function_exists('noriks_is_type') && noriks_is_type('mamabelt') );
+$mamabelt_faq = array(
+  array('questioon' => 'Πώς τοποθετείται ο προσαρμογέας;',
+    'answer'    => 'Σε τέσσερα βήματα: περάστε τον ιμάντα του προσαρμογέα ανάμεσα στο κάθισμα και την πλάτη, οδηγήστε τον κάτω από το κάθισμα (χωρίς να είναι στριμμένος), περάστε την άκρη από το πάνω και το κάτω άνοιγμα της πόρπης και τραβήξτε προς τα κάτω, ώστε ο προσαρμογέας να στερεωθεί καλά.'),
+  array('questioon' => 'Πώς δένεται μετά η ζώνη;',
+    'answer'    => 'Όπως πάντα – απλώς περάστε το κάτω μέρος της ζώνης ασφαλείας από το άγκιστρο του προσαρμογέα πριν τη δέσετε. Έτσι το κάτω μέρος της ζώνης μένει χαμηλά, πάνω από τους μηρούς.'),
+  array('questioon' => 'Θα χαλαρώσει στο κάθισμα;',
+    'answer'    => 'Ο ιμάντας του προσαρμογέα έχει ρυθμιζόμενο μήκος και, αφού σφίξει, κρατά σταθερά. Το εσωτερικό στρώμα του προσαρμογέα είναι από ατσάλι και το εξωτερικό από θερμοπλαστικό καουτσούκ.'),
+  array('questioon' => 'Ταιριάζει στο αυτοκίνητό μου;',
+    'answer'    => 'Ο προσαρμογέας τοποθετείται στο κάθισμα και ο ιμάντας ρυθμίζεται σε μήκος, γι’ αυτό ταιριάζει στα περισσότερα τυπικά καθίσματα αυτοκινήτου.'),
+  array('questioon' => 'Μπορώ να τον χρησιμοποιώ και μετά την εγκυμοσύνη;',
+    'answer'    => 'Ναι. Αν και σχεδιάστηκε για την εγκυμοσύνη, ταιριάζει σε όποιον ενοχλεί το κάτω μέρος της ζώνης πάνω στην κοιλιά.'),
+  array('questioon' => 'Ποια χρώματα υπάρχουν;',
+    'answer'    => 'Μαύρο και ροζ.'),
+  array('questioon' => 'Υπάρχει έκπτωση για περισσότερα τεμάχια;',
+    'answer'    => 'Ναι – με την αγορά 2 ή 3 τεμαχίων η τιμή ανά τεμάχιο είναι χαμηλότερη. Τις προσφορές θα τις δείτε πάνω από το κουμπί παραγγελίας.'),
+  array('questioon' => 'Τι γίνεται αν δεν μου ταιριάζει;',
+    'answer'    => 'Έχετε 30 ημέρες για επιστροφή χρημάτων. Η αποστολή είναι δωρεάν για παραγγελίες άνω των 70 € και πληρώνετε με αντικαταβολή όταν φτάσει το δέμα.'),
+);
+
+$faq_pick = function( $title, $list ) use ( $is_mamabelt, $mamabelt_faq, $is_winecooler, $winecooler_faq, $is_slim, $slim_faq, $is_tradesman, $tradesman_faq, $is_slabproof, $slabproof_faq, $is_bowl, $bowl_faq, $is_snug, $snug_faq, $is_kompwom, $kompwom_faq, $is_pal, $pal_faq, $is_red, $red_faq, $is_kneeheat, $kneeheat_faq, $is_hyd_faq, $hyd_faq, $is_cloud_faq, $cloud_faq, $is_cloath_faq, $cloath_faq, $is_controlpro_faq, $controlpro_faq, $is_ortopas_faq, $ortopas_faq, $is_bunion_faq, $bunion_faq, $is_fisiorest_faq, $fisiorest_faq, $is_norikshers_faq, $norikshers_faq, $is_leakboxers_faq, $leakboxers_faq, $is_kompmajice_faq, $kompmajice_faq, $is_jastuk_faq, $jastuk_faq, $is_kidsnest_faq, $kidsnest_faq, $is_kneefix_faq, $kneefix_faq ) {
   $t = (string) $title;
   // GR product-info FAQ container title token ("προϊόν" = product).
   $is_info = function_exists('mb_stripos')
@@ -1953,6 +1974,7 @@ $faq_pick = function( $title, $list ) use ( $is_winecooler, $winecooler_faq, $is
   if ( $is_slim && $is_info ) { return $slim_faq; }
   if ( $is_slabproof && $is_info ) { return $slabproof_faq; }
   if ( $is_bowl && $is_info ) { return $bowl_faq; }
+  if ( $is_mamabelt && $is_info ) { return $mamabelt_faq; }
   if ( $is_winecooler && $is_info ) { return $winecooler_faq; }
   if ( $is_pal && $is_info ) { return $pal_faq; }
   if ( $is_red && $is_info ) { return $red_faq; }
