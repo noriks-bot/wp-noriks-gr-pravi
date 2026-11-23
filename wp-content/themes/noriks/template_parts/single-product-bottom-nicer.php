@@ -467,7 +467,7 @@ if (  has_term( array( 'orto-majice', 'orto-majice', 'mplouzoakia', 't-shirts', 
   if ( function_exists('noriks_is_type') && noriks_is_type('controlpro') ) { $rv_fallback_title = 'NORIKS ControlPro συσκευή πυελικού εδάφους'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('hyd') ) { $rv_fallback_title = 'NORIKS HYD'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('cloud') ) { $rv_fallback_title = 'NORIKS Cloud'; }
-  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'Polar NORIKS Cloth XXL'; }
+  if ( function_exists('noriks_is_type') && noriks_is_type('cloath') ) { $rv_fallback_title = 'NORIKS DuoDry'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('snug') ) { $rv_fallback_title = 'NORIKS Snug μαξιλάρι σώματος'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('kompwom') ) { $rv_fallback_title = 'NORIKS FIT Woman μπλούζα σμίλευσης'; }
   if ( function_exists('noriks_is_type') && noriks_is_type('pal') ) { $rv_fallback_title = 'NORIKS Pal μπαστούνι βάδισης'; }
@@ -1587,7 +1587,7 @@ $cloath_faq = array(
   ),
   array(
     'questioon' => 'Κάνει για δώρο;',
-    'answer'    => 'Ναι — τα πακέτα 3+3 και 8+4 είναι από τα πιο συνηθισμένα δώρα για νέο σπίτι και γιορτές. Το πανί έρχεται προσεκτικά διπλωμένο, έτοιμο για δώρο.',
+    'answer'    => 'Ναι — τα πακέτα των 4 και 6 τεμαχίων είναι συχνό δώρο για νέο σπίτι και γιορτές. Το πανί έρχεται προσεκτικά διπλωμένο, έτοιμο για δώρο.',
   ),
 );
 
